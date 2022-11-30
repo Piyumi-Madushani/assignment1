@@ -19,7 +19,10 @@ int main(){
         if (array[i]%2==0)
         printf("%d \n",array[i]);
         }
+
+    printf("Sandali");
   
    printf("hello");//
     return 0;
 }
+
