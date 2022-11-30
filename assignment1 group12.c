@@ -19,8 +19,8 @@ int main(){
         if (array[i]%2==0)
         printf("%d \n",array[i]);
         }
-
-    printf("Sandali");
+// print world
+    printf("World");
   
    printf("hello");//
     return 0;
