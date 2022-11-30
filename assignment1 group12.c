@@ -20,6 +20,6 @@ int main(){
         printf("%d \n",array[i]);
         }
   
-    printf("hello");
+   // printf("hello");
 
 }
