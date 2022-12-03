@@ -31,6 +31,8 @@ char c;
 
 printf("----read the entire file----\n");
 //reset the pointer
+file_pointer = fopen("file.txt","w");
+fprintf(file_pointer,"__write it__,%d\n");
 file_pointer = fopen("file.txt", "r");
 while ((c = getc(file_pointer)) != EOF)
 printf("%c", c);
