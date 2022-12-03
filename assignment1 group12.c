@@ -1,28 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-/**int gh();
-int main(){
-   int s;
-   s = gh();
-   FILE *newfile;
-   char g[20];
-
-   newfile = fopen("file.txt","w");
-   fprintf(newfile,"__write it__,%d\n",s);
- //  fgets(g,20,newfile);
- //  fprintf("%s\n",g);
-
-   fclose(newfile);
-   return 0;
-}
-
-int gh(){
-int b=4, c=5;
-int sum;
-sum = b+c;
-  return("%d",sum);
-}
-**/
 struct roomlist
 {
     char hed[30];
@@ -101,6 +78,7 @@ FILE *file_pointer;
 file_pointer = fopen("file.txt", "w");
 struct roomlist s1 = {"single room",03,04};
 fprintf (file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
+fclose(file_pointer);
 }
 
 int update(){
