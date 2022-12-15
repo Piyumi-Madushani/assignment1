@@ -1,97 +1,93 @@
 #include<stdio.h>
 #include<string.h>
-struct roomlist
-{
-    char hed[30];
-    int  acroom1;
-    int  rooms1;
-};
-int n,m,x=3;;
-int update();
-int write();
-void booking();
-void book();
-int main(){
-char str1[]= "Rooms";
-FILE *file_pointer;
-char c;
 
-printf("----read the entire file----\n");
-//reset the pointer
-file_pointer = fopen("file.txt","w");
-fprintf(file_pointer,"__write it__,%d\n");
-file_pointer = fopen("file.txt", "r");
-while ((c = getc(file_pointer)) != EOF)
-printf("%c", c);
-fclose(file_pointer);
+struct contact_details
+{
+    char name[50];
+    int  contact_number;
+    char  Address[50];
+    int d1,d2,m1,m2,y1,y2;
+    char NIC[11];
+    char room[20];
+    char checkin[10];
+    char checkout[10];
+    int n1,n2,n3,n4,n5,n6,n7,n8;
+
+};
+void booking();
+int main(){
 booking();
-return 0;
 }
 void booking(){
-    int v;
-    char bb[3]="yes";
-    char bc[3];
-    printf("Do you wanna book rooms/rooms?\nsay yes or no : ");
-    scanf("%s",bc);
-    v = strcmp(bc,bb);
-    if(v==1){
-        book();
-    }
-    else{
-        printf("THANK YOU\n");
-    }
-}
+int n,m;
+    int n1,n2,n3,n4,n5,n6,n7,n8;
+    printf("\nEnter the following details;\n");
+    FILE *fr;
+    fr = fopen("flr.txt","a");
 
-void book(){
-   char name;
-   char nic[11];
-   int n;
-   printf("________Please enter your information____\n");
-   printf("your name:");
-   scanf("%s",&name);
-   printf("\nNIC number:\n");
-   scanf("%s",&nic);
-   printf("how many rooms do you want?\n");
-   scanf("%d",&n);
-   if (n!=1){
-    char s[]="no",ss[3];
-    int f;
-    printf("Do you want same type of %d rooms?",n);
-    scanf("%s",ss);
-    f = strcmp(s,ss);
-    if(f == 0){
-        printf("enter following numbers for rooms\nsingle -->  1 \ndouble -->  2\nTrible -->  3\nQuad ---->  4\n");
-        while(n>0){
-            int m;
-            printf("enter number of room : ");
-            scanf("%d",&m);
-            update();
-            n--;
+    struct contact_details s1 = {};
+    printf("enter the number of rooms you wanna book:");
+    scanf("%d",&n);
+    printf("enter the relevent %d number(s) of room(s): \n",n);
+    fprintf(fr,"\n________________________________________________________________________________________________________________________________________________________________________________________\nThis costumer have booked following %d rooms.\n",n);
+    while(n>0){
+       printf("enter room number: ");
+       scanf("%d",&m);
+       if (m==1){
+        n1++;
+        fprintf(fr,"%d|ac/Single room/n",n1);
+        }
+       else if(m==2){
+        n2++;
+        fprintf(fr,"%d|non-ac/Single room",n2);
+      }
+       else if(m==3){
+        n3++;
+        fprintf(fr,"%d|ac/Double room",n3); 
+        }
+       else if(m==4){
+        n4++;
+        fprintf(fr,"%d|non-ac/Double room",n4);
+        }
+       else if(m==5){
+        n5++;
+        fprintf(fr,"%d|ac/Triple room",n5);
+        }
+       else if(m==6){
+        n6++;
+        fprintf(fr,"%d|non-ac/Triple room",n6); 
+        }
+       else if(m==7){
+        n7++;
+        fprintf(fr,"%d|ac/Quat room",n7);
+        }
+       else if(m==8){
+        n8++;
+        fprintf(fr,"%d|non-ac/Quat room",n8);
+       }
+       else{
+         printf("\nSorry, wrong input"); 
+         break;}
+       
+       n--;
     }
-    }
-    else{
-        printf("fgd");
-    }
-
-  }
-}
-int write(){
-FILE *file_pointer;
-file_pointer = fopen("file.txt", "w");
-struct roomlist s1 = {"single room",03,04};
-fprintf (file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
-fclose(file_pointer);
-}
-
-int update(){
-
-    FILE *file_pointer;
-    file_pointer = fopen("file.txt", "w");
-    if (m = 1){
-       x--;
-       struct roomlist s1 = {"single room",x,04};
-       fprintf (file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
-       fclose(file_pointer);
-    }
+    fprintf(fr,"\nCostumer Details..,\n\n ");
+    printf("your name :");
+    scanf("%s",&s1.name);
+    printf("NIC NO :");
+    scanf("%s",&s1.NIC);
+    printf("contact number :");
+    scanf("%d",&s1.contact_number);
+    printf("address :");
+    scanf("%s",s1.Address);
+    fprintf (fr,"| %s \n  %s  \n  %d\n   %s  \n  |\n___________________________________________________________________________________________________________________________________________________________________________________________________________________\n\n",s1.name,s1.NIC,s1.contact_number,s1.Address);
+    
+    fprintf(fr,"\nCheck in/out Details..,\n");
+    printf("\nCheck-in(mm/dd/yyyy):");
+    scanf("%s",&s1.checkin);
+    printf("Check-out(mm/dd/yyyy):");
+    scanf("%s",&s1.checkout);
+    fprintf(fr,"check-in:%s\ncheck-out:%s\n",s1.checkin,s1.checkout); 
+    fclose(fr);
 
 }
