@@ -1,25 +1,46 @@
 #include<stdio.h>
 #include<string.h>
+/**int gh();
+int main(){
+   int s;
+   s = gh();
+   FILE *newfile;
+   char g[20];
+
+   newfile = fopen("file.txt","w");
+   fprintf(newfile,"__write it__,%d\n",s);
+ //  fgets(g,20,newfile);
+ //  fprintf("%s\n",g);
+
+   fclose(newfile);
+   return 0;
+}
+
+int gh(){
+int b=4, c=5;
+int sum;
+sum = b+c;
+  return("%d",sum);
+}
+**/
 struct roomlist
 {
     char hed[30];
     int  acroom1;
     int  rooms1;
 };
-int n,m,x=3;;
+int n,m,x=3;
 int update();
 int write();
 void booking();
 void book();
 int main(){
-char str1[]= "Rooms";
+write();
 FILE *file_pointer;
 char c;
 
 printf("----read the entire file----\n");
 //reset the pointer
-file_pointer = fopen("file.txt","w");
-fprintf(file_pointer,"__write it__,%d\n");
 file_pointer = fopen("file.txt", "r");
 while ((c = getc(file_pointer)) != EOF)
 printf("%c", c);
@@ -78,13 +99,12 @@ void book(){
 int write(){
 FILE *file_pointer;
 file_pointer = fopen("file.txt", "w");
-struct roomlist s1 = {"single room",03,04};
-fprintf (file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
+struct roomlist s1 = {"single room",x,04};
+fprintf(file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
 fclose(file_pointer);
 }
 
 int update(){
-
     FILE *file_pointer;
     file_pointer = fopen("file.txt", "w");
     if (m = 1){
@@ -93,5 +113,4 @@ int update(){
        fprintf (file_pointer,"%s %d %d\n",s1.hed,s1.acroom1,s1.rooms1);
        fclose(file_pointer);
     }
-
-}
+    }
