@@ -102,28 +102,6 @@ int n,m;
 
        p++;
     } 
-  int d=0;
-  while(d<=n){
-    if(n1!=0){
-       fprintf(fr,"\n%d|ac/Single room",n1);
-       d+=n1;}
-    else if(n2!=0){  
-      fprintf(fr,"\n%d|non-ac/Single room",n2);
-       d+=n2;}
-    else if(n3!=0){  
-      fprintf(fr,"\n%d|ac/Double room",n3);
-       d+=n3;}   
-    else if(n4!=0){  
-      fprintf(fr,"\n%d|non-ac/Single room",n4);
-       d+=n4;}   
-    else if(n5!=0){  
-      fprintf(fr,"\n%d|ac/Quad room",n5);
-       d+=n5;}   
-    else if(n6!=0){  
-      fprintf(fr,"\n%d|non-ac/Quad room",n6);
-       d+=n6;} 
-  }
-  printf("d=%d",d);     
   
     fprintf(gr,"\n");
     fprintf(gr,"\n%d|ac/Single room\n%d|non-ac/Single room\n%d|ac/Double room\n%d|non-ac/Double room\n%d|ac/Triple room\n%d|non-ac/Triple room\n%d|ac/Quat room\n%d|non-ac/Quat room\n",n1,n2,n3,n4,n5,n6);
