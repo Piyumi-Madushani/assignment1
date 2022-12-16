@@ -22,14 +22,14 @@ int main(){
     //scanf("%d",&u);
     //printf("Enter the password: ");
     //scanf("%d",&p);
-
-
-
-
-
-
-
-
+    //if(u==uname){
+        //if(p==pword){
+        //printf("Successful\n\n");
+        //booking();}
+        //else{
+        //printf("No");}}
+    //else{
+        //printf("Wrong input try again\n\n");main();}
 
 booking();
 }
