@@ -16,6 +16,21 @@ struct contact_details
 };
 void booking();
 int main(){
+
+  //int uname=25,pword=2020,u,p;
+    //printf("Enter the username: ");
+    //scanf("%d",&u);
+    //printf("Enter the password: ");
+    //scanf("%d",&p);
+
+
+
+
+
+
+
+
+
 booking();
 }
 void booking(){
