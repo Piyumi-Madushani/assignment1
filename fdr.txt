@@ -1,0 +1,10 @@
+
+
+2|ac/Single room
+1|non-ac/Single room
+0|ac/Double room
+0|non-ac/Double room
+0|ac/Triple room
+0|non-ac/Triple room
+0|ac/Quat room
+0|non-ac/Quat room
