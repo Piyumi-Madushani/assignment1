@@ -1,0 +1,15897 @@
+%!PS-Adobe-3.0
+%%Title: ass.c
+%%Creator: PScript5.dll Version 5.2.2
+%%CreationDate: 12/3/2022 16:45:8
+%%For: Acer
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%Orientation: Portrait
+%%PageOrder: Special
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources: (atend)
+%%DocumentData: Clean7Bit
+%%TargetDevice: (Solid Edge) (2015.105) 9
+%%LanguageLevel: 3
+%%EndComments
+
+%%BeginDefaults
+%%PageBoundingBox: 0 0 612 792
+%%ViewingOrientation: 1 0 0 1
+%%EndDefaults
+
+
+%%BeginProlog
+%%BeginResource: file Pscript_WinNT_ErrorHandler 5.0 0
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop false
+setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type/stringtype
+ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def currentpoint/toy exch
+def/tox exch def 1 setgray newpath tox toy 2 sub moveto 0 ty rlineto tx 0
+rlineto 0 ty neg rlineto closepath fill tox toy moveto 0 setgray show}bind def
+/nl{currentpoint exch pop lmargin exch moveto 0 -10 rmoveto}def/=={/cp 0 def
+typeprint nl}def/typeprint{dup type exec}readonly def/lmargin 72 def/rmargin 72
+def/tprint{dup length cp add rmargin gt{nl/cp 0 def}if dup length cp add/cp
+exch def prnt}readonly def/cvsprint{=string cvs tprint( )tprint}readonly def
+/integertype{cvsprint}readonly def/realtype{cvsprint}readonly def/booleantype
+{cvsprint}readonly def/operatortype{(--)tprint =string cvs tprint(-- )tprint}
+readonly def/marktype{pop(-mark- )tprint}readonly def/dicttype{pop
+(-dictionary- )tprint}readonly def/nulltype{pop(-null- )tprint}readonly def
+/filetype{pop(-filestream- )tprint}readonly def/savetype{pop(-savelevel- )
+tprint}readonly def/fonttype{pop(-fontid- )tprint}readonly def/nametype{dup
+xcheck not{(/)tprint}if cvsprint}readonly def/stringtype{dup rcheck{(\()tprint
+tprint(\))tprint}{pop(-string- )tprint}ifelse}readonly def/arraytype{dup rcheck
+{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}forall(])
+tprint}ifelse}{pop(-array- )tprint}ifelse}readonly def/packedarraytype{dup
+rcheck{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}
+forall(])tprint}ifelse}{pop(-packedarray- )tprint}ifelse}readonly def/courier
+/Courier findfont 10 scalefont def end errordict/handleerror{systemdict begin
+$error begin $brkpage begin newerror{/newerror false store vmstatus pop pop 0
+ne{grestoreall}if errorname(VMerror)ne{showpage}if initgraphics courier setfont
+lmargin 720 moveto errorname(VMerror)eq{userdict/ehsave known{clear userdict
+/ehsave get restore 2 vmreclaim}if vmstatus exch pop exch pop PrtVMMsg}{
+(ERROR: )prnt errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt
+$error/ostack known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}
+repeat}if}ifelse systemdict/showpage get exec(%%[ Error: )print errorname
+=print(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end
+end}dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking
+where{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndResource
+userdict /Pscript_WinNT_Incr 230 dict dup begin put
+%%BeginResource: file Pscript_FatalError 5.0 0
+userdict begin/FatalErrorIf{{initgraphics findfont 1 index 0 eq{exch pop}{dup
+length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall/Encoding
+{ISOLatin1Encoding}stopped{StandardEncoding}if def currentdict end
+/ErrFont-Latin1 exch definefont}ifelse exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def end
+%%EndResource
+userdict begin/PrtVMMsg{vmstatus exch sub exch pop gt{[
+(This job requires more memory than is available in this printer.)100 500
+(Try one or more of the following, and then print again:)100 485
+(For the output format, choose Optimize For Portability.)115 470
+(In the Device Settings page, make sure the Available PostScript Memory is accurate.)
+115 455(Reduce the number of fonts in the document.)115 440
+(Print the document in parts.)115 425 12/Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%)= true FatalErrorIf}if}bind def end
+version cvi 2016 ge{/VM?{pop}bind def}{/VM? userdict/PrtVMMsg get def}ifelse
+105000 VM?
+%%BeginResource: file Pscript_Win_Basic 5.0 0
+/d/def load def/,/load load d/~/exch , d/?/ifelse , d/!/pop , d/`/begin , d/^
+/index , d/@/dup , d/+/translate , d/$/roll , d/U/userdict , d/M/moveto , d/-
+/rlineto , d/&/currentdict , d/:/gsave , d/;/grestore , d/F/false , d/T/true ,
+d/N/newpath , d/E/end , d/Ac/arc , d/An/arcn , d/A/ashow , d/D/awidthshow , d/C
+/closepath , d/V/div , d/O/eofill , d/L/fill , d/I/lineto , d/-c/curveto , d/-M
+/rmoveto , d/+S/scale , d/Ji/setfont , d/Lc/setlinecap , d/Lj/setlinejoin , d
+/Lw/setlinewidth , d/Lm/setmiterlimit , d/sd/setdash , d/S/show , d/LH/showpage
+, d/K/stroke , d/W/widthshow , d/R/rotate , d/L2? false/languagelevel where{pop
+languagelevel 2 ge{pop true}if}if d L2?{/xS/xshow , d/yS/yshow , d/zS/xyshow ,
+d}if/b{bind d}bind d/bd{bind d}bind d/xd{~ d}bd/ld{, d}bd/bn/bind ld/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/ADO_mxRot null d/self & d/OrgMx matrix
+currentmatrix d/reinitialize{: OrgMx setmatrix[/TextInit/GraphInit/UtilsInit
+counttomark{@ where{self eq}{F}?{cvx exec}{!}?}repeat cleartomark ;}b
+/initialize{`{/Pscript_Win_Data where{!}{U/Pscript_Win_Data & put}?/ADO_mxRot ~
+d/TextInitialised? F d reinitialize E}{U/Pscript_Win_Data 230 dict @ ` put
+/ADO_mxRot ~ d/TextInitialised? F d reinitialize}?}b/terminate{!{& self eq
+{exit}{E}?}loop E}b/suspend/terminate , d/resume{` Pscript_Win_Data `}b U `
+/lucas 21690 d/featurebegin{countdictstack lucas[}b/featurecleanup{stopped
+{cleartomark @ lucas eq{! exit}if}loop countdictstack ~ sub @ 0 gt{{E}repeat}
+{!}?}b E/snap{transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~
+itransform}b/dsnap{dtransform round ~ round ~ idtransform}b/nonzero_round{@ 0.5
+ge{round}{@ -0.5 lt{round}{0 ge{1}{-1}?}?}?}b/nonzero_dsnap{dtransform
+nonzero_round ~ nonzero_round ~ idtransform}b U<04>cvn{}put/rr{1 ^ 0 - 0 ~ -
+neg 0 - C}b/irp{4 -2 $ + +S fx 4 2 $ M 1 ^ 0 - 0 ~ - neg 0 -}b/rp{4 2 $ M 1 ^ 0
+- 0 ~ - neg 0 -}b/solid{[]0 sd}b/g{@ not{U/DefIf_save save put}if U/DefIf_bool
+2 ^ put}b/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e
+{DefIf_El !}b/UDF{L2?{undefinefont}{!}?}b/UDR{L2?{undefineresource}{! !}?}b
+/freeVM{/Courier findfont[40 0 0 -40 0 0]makefont Ji 2 vmreclaim}b/hfRedefFont
+{findfont @ length dict `{1 ^/FID ne{d}{! !}?}forall & E @ ` ~{/CharStrings 1
+dict `/.notdef 0 d & E d}if/Encoding 256 array 0 1 255{1 ^ ~/.notdef put}for d
+E definefont !}bind d/hfMkCIDFont{/CIDFont findresource @ length 2 add dict `{1
+^ @/FID eq ~ @/XUID eq ~/UIDBase eq or or{! !}{d}?}forall/CDevProc ~ d/Metrics2
+16 dict d/CIDFontName 1 ^ d & E 1 ^ ~/CIDFont defineresource ![~]composefont !}
+bind d
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 5.0 0
+/rf/rectfill , d/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 -1 $ @ 0 ge
+{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{4 -2 $
+snap + +S fx rf}b/rs/rectstroke , d/rc/rectclip , d/UtilsInit{currentglobal{F
+setglobal}if}b/scol{! setcolor}b/colspA/DeviceGray d/colspABC/DeviceRGB d
+/colspRefresh{colspABC setcolorspace}b/SetColSpace{colspABC setcolorspace}b
+/resourcestatus where{!/ColorRendering/ProcSet resourcestatus{! ! T}{F}?}{F}?
+not{/ColorRendering<</GetHalftoneName{currenthalftone @/HalftoneName known{
+/HalftoneName get}{!/none}?}bn/GetPageDeviceName{currentpagedevice @
+/PageDeviceName known{/PageDeviceName get @ null eq{!/none}if}{!/none}?}bn
+/GetSubstituteCRD{!/DefaultColorRendering/ColorRendering resourcestatus{! !
+/DefaultColorRendering}{(DefaultColorRendering*){cvn exit}127 string
+/ColorRendering resourceforall}?}bn>>/defineresource where{!/ProcSet
+defineresource !}{! !}?}if/buildcrdname{/ColorRendering/ProcSet findresource `
+mark GetHalftoneName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)
+GetPageDeviceName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)5 ^ 0 5
+-1 1{^ length add}for string 6 1 $ 5 ^ 5{~ 1 ^ cvs length 1 ^ length 1 ^ sub
+getinterval}repeat ! cvn 3 1 $ ! ! E}b/definecolorrendering{~ buildcrdname ~
+/ColorRendering defineresource !}b/findcolorrendering where{!}{
+/findcolorrendering{buildcrdname @/ColorRendering resourcestatus{! ! T}{
+/ColorRendering/ProcSet findresource ` GetSubstituteCRD E F}?}b}?
+/selectcolorrendering{findcolorrendering !/ColorRendering findresource
+setcolorrendering}b/G2UBegin{findresource/FontInfo get/GlyphNames2Unicode get
+`}bind d/G2CCBegin{findresource/FontInfo get/GlyphNames2HostCode get `}bind d
+/G2UEnd{E}bind d/AddFontInfoBegin{/FontInfo 8 dict @ `}bind d/AddFontInfo{
+/GlyphNames2Unicode 16 dict d/GlyphNames2HostCode 16 dict d}bind d
+/AddFontInfoEnd{E d}bind d/T0AddCFFMtx2{/CIDFont findresource/Metrics2 get ` d
+E}bind d
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup
+statusdict begin (%%[ ProductName: ) print product print ( ]%%)= flush end
+[ 1 0 0 1 0 0 ] false Pscript_WinNT_Incr dup /initialize get exec
+featurebegin{
+%%BeginNonPPDFeature: JobTimeout 0
+0 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginNonPPDFeature: WaitTimeout 300
+300 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginFeature: *Resolution 600dpi
+<< /HWResolution [600 600] >> setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *PageSize Letter
+<</PageSize[612 792]/ImagingBBox null>>setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *InstalledMemory 24Meg
+
+%%EndFeature
+}featurecleanup
+1 setlinecap 1 setlinejoin
+/mysetup [ 72 600 V 0 0 -72 600 V 0 792 ] def 
+%%EndSetup
+
+userdict begin /ehsave save def end
+%%Page: 1 1
+%%PageBoundingBox: 0 0 612 792
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+30000 VM?
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_WinNT_Compat 5.0 0
+userdict/Pscript_WinNT_Compat 19 dict dup begin/bd{bind def}bind def/ld{load
+def}bd/$x matrix def/ANSIVec[16#0/grave 16#1/acute 16#2/circumflex 16#3/tilde
+16#4/macron 16#5/breve 16#6/dotaccent 16#7/dieresis 16#8/ring 16#9/cedilla 16#A
+/hungarumlaut 16#B/ogonek 16#C/caron 16#D/dotlessi 16#27/quotesingle 16#60
+/grave 16#7C/bar 16#82/quotesinglbase 16#83/florin 16#84/quotedblbase 16#85
+/ellipsis 16#86/dagger 16#87/daggerdbl 16#88/circumflex 16#89/perthousand 16#8A
+/Scaron 16#8B/guilsinglleft 16#8C/OE 16#91/quoteleft 16#92/quoteright 16#93
+/quotedblleft 16#94/quotedblright 16#95/bullet 16#96/endash 16#97/emdash 16#98
+/tilde 16#99/trademark 16#9A/scaron 16#9B/guilsinglright 16#9C/oe 16#9F
+/Ydieresis 16#A0/space 16#A1/exclamdown 16#A4/currency 16#A5/yen 16#A6
+/brokenbar 16#A7/section 16#A8/dieresis 16#A9/copyright 16#AA/ordfeminine 16#AB
+/guillemotleft 16#AC/logicalnot 16#AD/hyphen 16#AE/registered 16#AF/macron
+16#B0/degree 16#B1/plusminus 16#B2/twosuperior 16#B3/threesuperior 16#B4/acute
+16#B5/mu 16#B6/paragraph 16#B7/periodcentered 16#B8/cedilla 16#B9/onesuperior
+16#BA/ordmasculine 16#BB/guillemotright 16#BC/onequarter 16#BD/onehalf 16#BE
+/threequarters 16#BF/questiondown 16#C0/Agrave 16#C1/Aacute 16#C2/Acircumflex
+16#C3/Atilde 16#C4/Adieresis 16#C5/Aring 16#C6/AE 16#C7/Ccedilla 16#C8/Egrave
+16#C9/Eacute 16#CA/Ecircumflex 16#CB/Edieresis 16#CC/Igrave 16#CD/Iacute 16#CE
+/Icircumflex 16#CF/Idieresis 16#D0/Eth 16#D1/Ntilde 16#D2/Ograve 16#D3/Oacute
+16#D4/Ocircumflex 16#D5/Otilde 16#D6/Odieresis 16#D7/multiply 16#D8/Oslash
+16#D9/Ugrave 16#DA/Uacute 16#DB/Ucircumflex 16#DC/Udieresis 16#DD/Yacute 16#DE
+/Thorn 16#DF/germandbls 16#E0/agrave 16#E1/aacute 16#E2/acircumflex 16#E3
+/atilde 16#E4/adieresis 16#E5/aring 16#E6/ae 16#E7/ccedilla 16#E8/egrave 16#E9
+/eacute 16#EA/ecircumflex 16#EB/edieresis 16#EC/igrave 16#ED/iacute 16#EE
+/icircumflex 16#EF/idieresis 16#F0/eth 16#F1/ntilde 16#F2/ograve 16#F3/oacute
+16#F4/ocircumflex 16#F5/otilde 16#F6/odieresis 16#F7/divide 16#F8/oslash 16#F9
+/ugrave 16#FA/uacute 16#FB/ucircumflex 16#FC/udieresis 16#FD/yacute 16#FE/thorn
+16#FF/ydieresis]def currentdict{dup type/operatortype eq{[exch]cvx def}{pop
+pop}ifelse}forall/initialize{currentdict exch begin begin}bind def/terminate{
+/@FL where not{pop end end}{pop}ifelse}bind def/suspend/terminate load def
+/resume/initialize load def/RS{/pagesave where{pop pagesave restore}{$x matrix
+invertmatrix concat}ifelse}def/SS{/pagesave save def}def/CB{pop pop pop pop}def
+/B{pop pop pop pop}def/:/gsave load def/;/grestore load def/N/newpath load def
+end put
+%%EndResource
+end reinitialize
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+
+save
+/im/initmatrix load def
+/n/newpath load def/m/moveto load def/l/lineto load def/c/curveto load def/h/closepath load def
+/f/fill load def/F/eofill load def/s/stroke load def/W/clip load def/W*/eoclip load def
+/rg/setrgbcolor load def/k/setcmykcolor load def
+/J/setlinecap load def/j/setlinejoin load def/w/setlinewidth load def/M/setmiterlimit load def/d/setdash load def
+/q/gsave load def/Q/grestore load def/iM/imagemask load def
+/Tj/show load def/Ff/findfont load def/Fs/scalefont load def/Sf/setfont load def
+/cm/concat load def/Cm/currentmatrix load def/mx/matrix load def/sm/setmatrix load def
+0 6600 m 0 0 l 5100 0 l 5100 6600 l 0 6600 l h W n
+q
+0 6600 m 0 0 l 5100 0 l 5100 6600 l 0 6600 l h W n
+q
+Q
+q
+0 0.000488281 m 5102 0.000488281 l 5102 6602 l 0 6602 l 0 0.000488281 l h W* n
+0 0.000488281 m 6800 0.000488281 l 6800 8800 l 0 8800 l 0 0.000488281 l h 1 1 1 rg
+f
+Q
+q
+0 0 0 rg
+8 dict begin/FontType 3 def/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 0 0]def/Encoding 256 array def 0 1 255{Encoding exch/.notdef put}for
+/CharProcs 1 dict def CharProcs begin/.notdef {} def end
+/BuildGlyph{1 0 -10 -10 10 10 setcachedevice exch/CharProcs get exch 2 copy known not{pop/.notdef}if get exec}bind def
+/BuildChar{1 index/Encoding get exch get 1 index/BuildGlyph get exec}bind def
+currentdict end
+/X0 exch definefont pop
+/X0 Ff/CharProcs get begin/0{n 0.372559 0 m
+0.284668 0 l
+0.284668 0.560059 l
+0.263672 0.540039 0.23584 0.519775 0.201416 0.499512 c
+0.167236 0.479492 0.13623 0.464355 0.108887 0.454102 c
+0.108887 0.539062 l
+0.157959 0.562012 0.200928 0.590088 0.237793 0.623047 c
+0.274414 0.655762 0.300537 0.687744 0.315918 0.71875 c
+0.372559 0.71875 l
+0.372559 0 l
+f}bind def end
+/X0 Ff/Encoding get 0/0 put
+/X0 Ff/CharProcs get begin/1{n 0.503418 0.0844727 m
+0.503418 0 l
+0.0302734 0 l
+0.0297852 0.0209961 0.032959 0.0415039 0.0405273 0.0610352 c
+0.0524902 0.0932617 0.0717773 0.125 0.0983887 0.15625 c
+0.124756 0.1875 0.163086 0.223633 0.213379 0.264648 c
+0.291016 0.328369 0.34375 0.378906 0.371094 0.41626 c
+0.398438 0.453369 0.412109 0.48877 0.412109 0.521973 c
+0.412109 0.556641 0.399658 0.586182 0.374756 0.610107 c
+0.349854 0.634033 0.317383 0.645996 0.277344 0.645996 c
+0.235107 0.645996 0.201172 0.633301 0.175781 0.60791 c
+0.150391 0.58252 0.137695 0.547363 0.137207 0.502441 c
+0.046875 0.511719 l
+0.0529785 0.579102 0.0761719 0.630371 0.116699 0.665771 c
+0.156982 0.700928 0.211182 0.71875 0.279297 0.71875 c
+0.3479 0.71875 0.402344 0.699707 0.442383 0.661621 c
+0.482422 0.623535 0.502441 0.576416 0.502441 0.52002 c
+0.502441 0.491455 0.496582 0.463379 0.484863 0.435547 c
+0.473145 0.407959 0.453857 0.378906 0.426514 0.348145 c
+0.399414 0.317627 0.354248 0.275635 0.291016 0.222168 c
+0.238281 0.177979 0.20459 0.147949 0.189453 0.13208 c
+0.174561 0.116455 0.162109 0.100586 0.152344 0.0844727 c
+0.503418 0.0844727 l
+f}bind def end
+/X0 Ff/Encoding get 1/1 put
+/X0 Ff/CharProcs get begin/2{n 0 -0.012207 m
+0.20752 0.728027 l
+0.277832 0.728027 l
+0.0708008 -0.012207 l
+0 -0.012207 l
+f}bind def end
+/X0 Ff/Encoding get 2/2 put
+/X0 Ff/CharProcs get begin/3{n 0.0419922 0.188965 m
+0.129883 0.200684 l
+0.139893 0.150879 0.156982 0.11499 0.181396 0.0930176 c
+0.205566 0.0710449 0.235107 0.0600586 0.27002 0.0600586 c
+0.311279 0.0600586 0.346191 0.0742188 0.374756 0.103027 c
+0.403076 0.131592 0.41748 0.166992 0.41748 0.209473 c
+0.41748 0.249756 0.404297 0.282959 0.37793 0.309326 c
+0.351562 0.335449 0.318115 0.348633 0.277344 0.348633 c
+0.260742 0.348633 0.240234 0.345459 0.215332 0.338867 c
+0.225098 0.416016 l
+0.230957 0.415527 0.235596 0.415039 0.239258 0.415039 c
+0.276611 0.415039 0.310303 0.424805 0.340332 0.444336 c
+0.370117 0.463867 0.385254 0.493896 0.385254 0.534668 c
+0.385254 0.566895 0.374512 0.593506 0.352539 0.614746 c
+0.330811 0.635742 0.302734 0.646484 0.268066 0.646484 c
+0.233887 0.646484 0.205566 0.635742 0.182617 0.614258 c
+0.159912 0.592773 0.145264 0.560547 0.138672 0.517578 c
+0.0507812 0.533203 l
+0.0615234 0.592041 0.0859375 0.637695 0.124023 0.670166 c
+0.162109 0.702393 0.209473 0.71875 0.266113 0.71875 c
+0.305176 0.71875 0.341064 0.710449 0.374023 0.693604 c
+0.406738 0.677002 0.431885 0.654053 0.449463 0.625 c
+0.466797 0.596191 0.475586 0.56543 0.475586 0.532715 c
+0.475586 0.501953 0.467285 0.473633 0.450684 0.448242 c
+0.434082 0.422852 0.409668 0.402832 0.376953 0.387695 c
+0.419189 0.37793 0.452148 0.357666 0.475586 0.326904 c
+0.499023 0.296143 0.510742 0.257812 0.510742 0.211426 c
+0.510742 0.148926 0.488037 0.0959473 0.442383 0.0524902 c
+0.396973 0.0090332 0.339355 -0.0126953 0.269531 -0.0126953 c
+0.206787 -0.0126953 0.154541 0.00585938 0.113037 0.043457 c
+0.0715332 0.0808105 0.0478516 0.129395 0.0419922 0.188965 c
+f}bind def end
+/X0 Ff/Encoding get 3/3 put
+/X0 Ff/CharProcs get begin/4{n 0.0888672 0 m
+0.0888672 0.100098 l
+0.188965 0.100098 l
+0.188965 0 l
+0.188965 -0.0366211 0.182617 -0.0664062 0.169434 -0.0891113 c
+0.156494 -0.111572 0.135742 -0.12915 0.107422 -0.141602 c
+0.0830078 -0.104004 l
+0.101562 -0.0959473 0.115234 -0.0839844 0.124023 -0.0681152 c
+0.132812 -0.0524902 0.137695 -0.0297852 0.138672 0 c
+0.0888672 0 l
+f}bind def end
+/X0 Ff/Encoding get 4/4 put
+/X0 Ff/CharProcs get begin/6{n 0.323242 0 m
+0.323242 0.171387 l
+0.0126953 0.171387 l
+0.0126953 0.251953 l
+0.339355 0.71582 l
+0.411133 0.71582 l
+0.411133 0.251953 l
+0.507812 0.251953 l
+0.507812 0.171387 l
+0.411133 0.171387 l
+0.411133 0 l
+0.323242 0 l
+0.323242 0.251953 m
+0.323242 0.574707 l
+0.0991211 0.251953 l
+0.323242 0.251953 l
+f}bind def end
+/X0 Ff/Encoding get 6/6 put
+/X0 Ff/CharProcs get begin/7{n 0.090332 0.418457 m
+0.090332 0.518555 l
+0.19043 0.518555 l
+0.19043 0.418457 l
+0.090332 0.418457 l
+0.090332 0 m
+0.090332 0.100098 l
+0.19043 0.100098 l
+0.19043 0 l
+0.090332 0 l
+f}bind def end
+/X0 Ff/Encoding get 7/7 put
+/X0 Ff/CharProcs get begin/8{n 0.0771484 0 m
+0.0771484 0.71582 l
+0.347168 0.71582 l
+0.394531 0.71582 0.430908 0.713623 0.456055 0.708984 c
+0.491211 0.703125 0.520508 0.692139 0.544434 0.675537 c
+0.568115 0.65918 0.587158 0.63623 0.601807 0.606445 c
+0.616211 0.576904 0.623535 0.544434 0.623535 0.508789 c
+0.623535 0.447998 0.604248 0.396484 0.56543 0.354248 c
+0.526855 0.312256 0.456787 0.291016 0.355469 0.291016 c
+0.171875 0.291016 l
+0.171875 0 l
+0.0771484 0 l
+0.171875 0.375488 m
+0.356934 0.375488 l
+0.417969 0.375488 0.461426 0.386719 0.487305 0.409668 c
+0.512939 0.432373 0.525879 0.464355 0.525879 0.505859 c
+0.525879 0.535645 0.518311 0.561279 0.503174 0.582764 c
+0.488037 0.604004 0.468262 0.618164 0.443359 0.625 c
+0.42749 0.62915 0.397949 0.631348 0.35498 0.631348 c
+0.171875 0.631348 l
+0.171875 0.375488 l
+f}bind def end
+/X0 Ff/Encoding get 8/8 put
+/X0 Ff/CharProcs get begin/9{n 0.0742188 0 m
+0.0742188 0.71582 l
+0.216797 0.71582 l
+0.38623 0.208984 l
+0.401855 0.161865 0.413086 0.126465 0.42041 0.103027 c
+0.428467 0.128906 0.441162 0.167236 0.458496 0.217773 c
+0.629883 0.71582 l
+0.757324 0.71582 l
+0.757324 0 l
+0.666016 0 l
+0.666016 0.599121 l
+0.458008 0 l
+0.372559 0 l
+0.165527 0.609375 l
+0.165527 0 l
+0.0742188 0 l
+f}bind def end
+/X0 Ff/Encoding get 9/9 put
+q[8.33333 0 0 -8.33333 220.443 183.333]cm
+/X0 Ff 8 Fs Sf 0 0 m<00>Tj
+4.448 0 m<01>Tj
+8.896 0 m<02>Tj
+11.112 0 m<03>Tj
+15.56 0 m<02>Tj
+17.776 0 m<01>Tj
+22.224 0 m<01>Tj
+26.672 0 m<04>Tj
+28.888 0 m<05>Tj
+31.104 0 m<06>Tj
+35.552 0 m<07>Tj
+37.768 0 m<06>Tj
+42.216 0 m<06>Tj
+46.664 0 m<05>Tj
+48.88 0 m<08>Tj
+54.208 0 m<09>Tj
+Q
+/X0 Ff/CharProcs get begin/10{n 0.404297 0.0639648 m
+0.371826 0.036377 0.340576 0.0168457 0.310303 0.00537109 c
+0.280273 -0.00585938 0.248047 -0.0117188 0.213379 -0.0117188 c
+0.156494 -0.0117188 0.112793 0.00219727 0.0820312 0.0300293 c
+0.0515137 0.0578613 0.0361328 0.0932617 0.0361328 0.136719 c
+0.0361328 0.162109 0.041748 0.185303 0.0534668 0.206299 c
+0.0649414 0.227295 0.0800781 0.244141 0.098877 0.256836 c
+0.117432 0.269531 0.138672 0.279053 0.162109 0.285645 c
+0.179199 0.290039 0.205322 0.294434 0.240234 0.298828 c
+0.311035 0.307129 0.363281 0.317383 0.396973 0.329102 c
+0.397217 0.341064 0.397461 0.348633 0.397461 0.352051 c
+0.397461 0.387695 0.38916 0.413086 0.372559 0.427734 c
+0.350098 0.44751 0.316895 0.45752 0.272461 0.45752 c
+0.231201 0.45752 0.200684 0.450439 0.180908 0.435791 c
+0.161377 0.421387 0.146729 0.395752 0.137207 0.358887 c
+0.0512695 0.370605 l
+0.059082 0.407227 0.0717773 0.437012 0.0898438 0.459717 c
+0.107666 0.482178 0.133545 0.499756 0.16748 0.511963 c
+0.201172 0.52417 0.240479 0.530273 0.285156 0.530273 c
+0.329346 0.530273 0.365234 0.525146 0.393066 0.514648 c
+0.420654 0.504395 0.440918 0.491211 0.454102 0.475342 c
+0.467041 0.459717 0.476074 0.439697 0.481445 0.415527 c
+0.484375 0.400635 0.48584 0.373535 0.48584 0.334473 c
+0.48584 0.217285 l
+0.48584 0.135742 0.487549 0.0839844 0.491455 0.0622559 c
+0.495117 0.0407715 0.502441 0.0200195 0.513672 0 c
+0.421875 0 l
+0.412842 0.0180664 0.406982 0.0395508 0.404297 0.0639648 c
+0.396973 0.260254 m
+0.365234 0.247314 0.317383 0.236328 0.253418 0.227051 c
+0.217285 0.221924 0.191895 0.216064 0.176758 0.209473 c
+0.161865 0.203125 0.150391 0.193604 0.14209 0.180908 c
+0.134033 0.168457 0.129883 0.154541 0.129883 0.13916 c
+0.129883 0.115723 0.138672 0.0961914 0.156494 0.0805664 c
+0.174072 0.0649414 0.200195 0.0571289 0.234375 0.0571289 c
+0.268066 0.0571289 0.29834 0.0644531 0.324707 0.0793457 c
+0.351074 0.0939941 0.370361 0.114258 0.382812 0.140137 c
+0.39209 0.159912 0.396973 0.189209 0.396973 0.228027 c
+0.396973 0.260254 l
+f}bind def end
+/X0 Ff/Encoding get 10/10 put
+/X0 Ff/CharProcs get begin/11{n 0.0307617 0.154785 m
+0.117676 0.168457 l
+0.122559 0.133789 0.135986 0.106934 0.158447 0.0883789 c
+0.180664 0.0698242 0.211914 0.0605469 0.251953 0.0605469 c
+0.292236 0.0605469 0.322266 0.0686035 0.341797 0.0852051 c
+0.361328 0.101562 0.371094 0.12085 0.371094 0.143066 c
+0.371094 0.162842 0.362549 0.178467 0.345215 0.189941 c
+0.333252 0.197754 0.303223 0.20752 0.255371 0.219727 c
+0.190918 0.23584 0.14624 0.25 0.121338 0.261963 c
+0.0964355 0.273682 0.0776367 0.290283 0.0646973 0.311279 c
+0.052002 0.332275 0.0454102 0.355469 0.0454102 0.380859 c
+0.0454102 0.403809 0.0505371 0.425293 0.0612793 0.445068 c
+0.0717773 0.4646 0.0861816 0.480957 0.104492 0.494141 c
+0.118164 0.50415 0.136719 0.512695 0.1604 0.519775 c
+0.183838 0.526611 0.209229 0.530273 0.236328 0.530273 c
+0.276855 0.530273 0.312744 0.524414 0.343506 0.512695 c
+0.374268 0.500977 0.396973 0.485107 0.411621 0.465088 c
+0.42627 0.445068 0.436279 0.418457 0.441895 0.384766 c
+0.355957 0.373047 l
+0.352051 0.399658 0.34082 0.42041 0.322021 0.435547 c
+0.303467 0.450439 0.276855 0.458008 0.242676 0.458008 c
+0.202393 0.458008 0.173584 0.451416 0.15625 0.437988 c
+0.13916 0.424805 0.130371 0.40918 0.130371 0.391113 c
+0.130371 0.379883 0.133789 0.369629 0.141113 0.360352 c
+0.148193 0.351074 0.159424 0.343262 0.174805 0.336914 c
+0.183594 0.33374 0.209473 0.326172 0.252441 0.314453 c
+0.314453 0.297852 0.35791 0.284424 0.382568 0.273682 c
+0.406982 0.263184 0.42627 0.247803 0.44043 0.227539 c
+0.454346 0.20752 0.461426 0.182373 0.461426 0.152344 c
+0.461426 0.123047 0.452881 0.095459 0.435791 0.0695801 c
+0.418701 0.0437012 0.394043 0.0236816 0.361816 0.00952148 c
+0.32959 -0.00463867 0.293213 -0.0117188 0.252441 -0.0117188 c
+0.185059 -0.0117188 0.133789 0.00219727 0.0983887 0.0302734 c
+0.0632324 0.0581055 0.0405273 0.0996094 0.0307617 0.154785 c
+f}bind def end
+/X0 Ff/Encoding get 11/11 put
+/X0 Ff/CharProcs get begin/12{n 0.0908203 0 m
+0.0908203 0.100098 l
+0.190918 0.100098 l
+0.190918 0 l
+0.0908203 0 l
+f}bind def end
+/X0 Ff/Encoding get 12/12 put
+/X0 Ff/CharProcs get begin/13{n 0.404297 0.189941 m
+0.490723 0.178711 l
+0.481445 0.119141 0.457275 0.0725098 0.418213 0.0388184 c
+0.379395 0.00512695 0.331543 -0.0117188 0.274902 -0.0117188 c
+0.204102 -0.0117188 0.146973 0.0114746 0.10376 0.0578613 c
+0.060791 0.104248 0.0390625 0.170654 0.0390625 0.257324 c
+0.0390625 0.313232 0.0483398 0.362305 0.0668945 0.404297 c
+0.0854492 0.446289 0.113525 0.477783 0.151611 0.498779 c
+0.189453 0.519775 0.230713 0.530273 0.275391 0.530273 c
+0.331543 0.530273 0.377686 0.516113 0.413574 0.487549 c
+0.449219 0.459229 0.472168 0.418701 0.482422 0.366211 c
+0.396973 0.353027 l
+0.388916 0.387695 0.374512 0.414062 0.35376 0.431641 c
+0.333252 0.449219 0.308105 0.458008 0.278809 0.458008 c
+0.234619 0.458008 0.19873 0.442139 0.170898 0.4104 c
+0.143311 0.378662 0.129395 0.328613 0.129395 0.259766 c
+0.129395 0.190186 0.142578 0.139648 0.169434 0.10791 c
+0.196045 0.076416 0.230957 0.0605469 0.273926 0.0605469 c
+0.30835 0.0605469 0.337158 0.0710449 0.360352 0.0922852 c
+0.383301 0.113281 0.397949 0.145996 0.404297 0.189941 c
+f}bind def end
+/X0 Ff/Encoding get 13/13 put
+q[8.33333 0 0 -8.33333 2851.95 183.333]cm
+/X0 Ff 8 Fs Sf 0 0 m<0A>Tj
+4.448 0 m<0B>Tj
+8.448 0 m<0B>Tj
+12.448 0 m<0C>Tj
+14.664 0 m<0D>Tj
+Q
+/X0 Ff/CharProcs get begin/14{n 0.0639648 0 m
+0.0639648 0.71582 l
+0.151855 0.71582 l
+0.151855 0 l
+0.0639648 0 l
+f}bind def end
+/X0 Ff/Encoding get 14/14 put
+/X0 Ff/CharProcs get begin/15{n 0.0332031 0.259277 m
+0.0332031 0.355225 0.0598145 0.42627 0.113281 0.472656 c
+0.157715 0.510986 0.212158 0.530273 0.276367 0.530273 c
+0.347656 0.530273 0.405762 0.50708 0.451172 0.460205 c
+0.496338 0.413574 0.519043 0.349121 0.519043 0.266602 c
+0.519043 0.199951 0.509033 0.147461 0.489014 0.109131 c
+0.468994 0.0710449 0.439941 0.0412598 0.401611 0.0200195 c
+0.363525 -0.000976562 0.321777 -0.0117188 0.276367 -0.0117188 c
+0.203857 -0.0117188 0.145264 0.0114746 0.100342 0.0581055 c
+0.0556641 0.104492 0.0332031 0.171631 0.0332031 0.259277 c
+0.123535 0.259277 m
+0.123535 0.192871 0.137939 0.143311 0.166992 0.110107 c
+0.195801 0.0771484 0.232422 0.0605469 0.276367 0.0605469 c
+0.319824 0.0605469 0.356201 0.0771484 0.385254 0.110352 c
+0.414062 0.143555 0.428711 0.194092 0.428711 0.262207 c
+0.428711 0.326172 0.414307 0.374756 0.38501 0.407959 c
+0.355957 0.440918 0.319824 0.45752 0.276367 0.45752 c
+0.232422 0.45752 0.196045 0.441162 0.166992 0.408203 c
+0.138184 0.375488 0.123535 0.325684 0.123535 0.259277 c
+f}bind def end
+/X0 Ff/Encoding get 15/15 put
+/X0 Ff/CharProcs get begin/16{n 0.065918 0 m
+0.065918 0.71582 l
+0.153809 0.71582 l
+0.153809 0.458984 l
+0.194824 0.506348 0.246582 0.530273 0.309082 0.530273 c
+0.347412 0.530273 0.380859 0.522705 0.40918 0.507568 c
+0.4375 0.492432 0.457764 0.47168 0.469971 0.444824 c
+0.482178 0.418213 0.488281 0.379395 0.488281 0.328613 c
+0.488281 0 l
+0.400391 0 l
+0.400391 0.328613 l
+0.400391 0.372559 0.390869 0.404541 0.371826 0.424561 c
+0.352783 0.44458 0.325928 0.45459 0.291016 0.45459 c
+0.265137 0.45459 0.240479 0.447998 0.217529 0.434326 c
+0.19458 0.420898 0.178223 0.402588 0.168457 0.379395 c
+0.158691 0.356445 0.153809 0.324463 0.153809 0.283691 c
+0.153809 0 l
+0.065918 0 l
+f}bind def end
+/X0 Ff/Encoding get 16/16 put
+/X0 Ff/CharProcs get begin/17{n 0.257812 0.0786133 m
+0.270508 0.000976562 l
+0.24585 -0.00415039 0.223633 -0.00683594 0.204102 -0.00683594 c
+0.172363 -0.00683594 0.147461 -0.00195312 0.129883 0.00830078 c
+0.112305 0.0183105 0.100098 0.0314941 0.0927734 0.0480957 c
+0.0856934 0.0644531 0.0820312 0.0991211 0.0820312 0.151855 c
+0.0820312 0.450195 l
+0.0175781 0.450195 l
+0.0175781 0.518555 l
+0.0820312 0.518555 l
+0.0820312 0.646973 l
+0.169434 0.699707 l
+0.169434 0.518555 l
+0.257812 0.518555 l
+0.257812 0.450195 l
+0.169434 0.450195 l
+0.169434 0.146973 l
+0.169434 0.12207 0.170898 0.105957 0.174072 0.0986328 c
+0.177002 0.0915527 0.182129 0.0859375 0.189209 0.081543 c
+0.196045 0.0773926 0.206055 0.0751953 0.219238 0.0751953 c
+0.229004 0.0751953 0.241699 0.0761719 0.257812 0.0786133 c
+f}bind def end
+/X0 Ff/Encoding get 17/17 put
+/X0 Ff/CharProcs get begin/18{n 0.0546875 0.165527 m
+0.13916 0.17334 l
+0.14624 0.133789 0.159912 0.10498 0.180176 0.0869141 c
+0.200195 0.0690918 0.226074 0.0600586 0.257812 0.0600586 c
+0.284668 0.0600586 0.30835 0.0661621 0.328857 0.0786133 c
+0.349121 0.0908203 0.365723 0.107422 0.378906 0.128174 c
+0.391846 0.148682 0.402832 0.176758 0.411621 0.211914 c
+0.42041 0.24707 0.424805 0.282715 0.424805 0.319336 c
+0.424805 0.323242 0.424805 0.329102 0.424316 0.336914 c
+0.406738 0.309082 0.382812 0.286377 0.352295 0.268799 c
+0.322021 0.251465 0.289062 0.242676 0.253418 0.242676 c
+0.194336 0.242676 0.144043 0.26416 0.103027 0.307129 c
+0.0620117 0.350098 0.0415039 0.406738 0.0415039 0.477051 c
+0.0415039 0.549561 0.0627441 0.60791 0.105713 0.652344 c
+0.148438 0.696533 0.202148 0.71875 0.266602 0.71875 c
+0.312988 0.71875 0.355713 0.706299 0.394287 0.681152 c
+0.432861 0.65625 0.462158 0.620361 0.482178 0.573975 c
+0.502197 0.527588 0.512207 0.460449 0.512207 0.372559 c
+0.512207 0.28125 0.502441 0.208252 0.482422 0.154053 c
+0.462646 0.0998535 0.433105 0.0585938 0.393799 0.0302734 c
+0.354736 0.00195312 0.308594 -0.012207 0.255859 -0.012207 c
+0.199951 -0.012207 0.154297 0.00317383 0.118652 0.0344238 c
+0.083252 0.0654297 0.0620117 0.109131 0.0546875 0.165527 c
+0.414551 0.481445 m
+0.414551 0.531738 0.401123 0.571777 0.374268 0.601562 c
+0.347412 0.631104 0.315186 0.645996 0.277344 0.645996 c
+0.238281 0.645996 0.204346 0.630127 0.175293 0.598145 c
+0.146484 0.566406 0.131836 0.524902 0.131836 0.474121 c
+0.131836 0.428711 0.145508 0.391602 0.173096 0.363037 c
+0.200439 0.334717 0.234375 0.320312 0.274902 0.320312 c
+0.31543 0.320312 0.348877 0.334473 0.375244 0.363037 c
+0.401367 0.391357 0.414551 0.430908 0.414551 0.481445 c
+f}bind def end
+/X0 Ff/Encoding get 18/18 put
+/X0 Ff/CharProcs get begin/19{n 0.176758 0.388184 m
+0.140381 0.401367 0.113281 0.42041 0.0957031 0.445312 c
+0.078125 0.469971 0.0693359 0.499512 0.0693359 0.53418 c
+0.0693359 0.586182 0.0878906 0.629883 0.125488 0.665527 c
+0.162842 0.700928 0.212646 0.71875 0.274902 0.71875 c
+0.337402 0.71875 0.387695 0.700684 0.425781 0.664307 c
+0.463867 0.628174 0.48291 0.583984 0.48291 0.531738 c
+0.48291 0.498535 0.474365 0.469727 0.456787 0.445068 c
+0.439453 0.420654 0.413086 0.401611 0.377441 0.388184 c
+0.421387 0.374023 0.454834 0.35083 0.477783 0.318848 c
+0.500732 0.287109 0.512207 0.249023 0.512207 0.20459 c
+0.512207 0.143555 0.490723 0.092041 0.447266 0.050293 c
+0.404053 0.00878906 0.347168 -0.012207 0.276367 -0.012207 c
+0.205811 -0.012207 0.148926 0.00854492 0.105469 0.0505371 c
+0.0622559 0.0922852 0.0405273 0.144531 0.0405273 0.207031 c
+0.0405273 0.253418 0.0522461 0.29248 0.0759277 0.323975 c
+0.0993652 0.355225 0.133057 0.376709 0.176758 0.388184 c
+0.15918 0.537109 m
+0.15918 0.503418 0.169922 0.475586 0.191895 0.454102 c
+0.213623 0.432617 0.241943 0.421875 0.276855 0.421875 c
+0.310547 0.421875 0.338379 0.432373 0.360107 0.453857 c
+0.381592 0.475098 0.392578 0.501221 0.392578 0.532227 c
+0.392578 0.564453 0.381592 0.591553 0.359131 0.613525 c
+0.336914 0.635498 0.309082 0.646484 0.275879 0.646484 c
+0.242432 0.646484 0.2146 0.635742 0.192383 0.614258 c
+0.17041 0.592773 0.15918 0.567139 0.15918 0.537109 c
+0.130859 0.206543 m
+0.130859 0.181641 0.136719 0.157227 0.148682 0.133789 c
+0.1604 0.110352 0.178223 0.0922852 0.20166 0.0793457 c
+0.225098 0.0666504 0.250244 0.0600586 0.277344 0.0600586 c
+0.319336 0.0600586 0.354004 0.0734863 0.381348 0.100586 c
+0.408691 0.127441 0.422363 0.161865 0.422363 0.203613 c
+0.422363 0.24585 0.408447 0.280762 0.380127 0.308594 c
+0.352051 0.336182 0.316895 0.350098 0.274414 0.350098 c
+0.233154 0.350098 0.198975 0.336426 0.171631 0.309082 c
+0.144531 0.281738 0.130859 0.247559 0.130859 0.206543 c
+f}bind def end
+/X0 Ff/Encoding get 19/19 put
+/X0 Ff/CharProcs get begin/20{n 0.0473633 0.62207 m
+0.0473633 0.706543 l
+0.510742 0.706543 l
+0.510742 0.638184 l
+0.465332 0.589844 0.420166 0.525391 0.375244 0.444824 c
+0.330566 0.364502 0.295898 0.281738 0.271484 0.196777 c
+0.253906 0.136963 0.242676 0.0712891 0.237793 0 c
+0.147461 0 l
+0.148438 0.0561523 0.159424 0.124268 0.180664 0.204102 c
+0.20166 0.283691 0.232178 0.360596 0.271729 0.434814 c
+0.311279 0.508789 0.353271 0.571289 0.397949 0.62207 c
+0.0473633 0.62207 l
+f}bind def end
+/X0 Ff/Encoding get 20/20 put
+/X0 Ff/CharProcs get begin/21{n 0.497559 0.540527 m
+0.410156 0.533691 l
+0.402344 0.568115 0.391357 0.593262 0.376953 0.608887 c
+0.353271 0.633789 0.323975 0.646484 0.289062 0.646484 c
+0.26123 0.646484 0.236572 0.638672 0.215332 0.623047 c
+0.187744 0.603027 0.166016 0.573486 0.149902 0.534668 c
+0.134033 0.496094 0.125732 0.440918 0.125 0.369141 c
+0.145996 0.401367 0.171875 0.425293 0.202637 0.440918 c
+0.233154 0.456543 0.265137 0.464355 0.298828 0.464355 c
+0.357422 0.464355 0.407227 0.442871 0.448486 0.399658 c
+0.489502 0.356689 0.510254 0.300781 0.510254 0.232422 c
+0.510254 0.1875 0.500732 0.145752 0.481201 0.107178 c
+0.461914 0.0686035 0.435303 0.0390625 0.401367 0.0185547 c
+0.367676 -0.00195312 0.329102 -0.012207 0.286133 -0.012207 c
+0.212891 -0.012207 0.15332 0.0146484 0.106934 0.0686035 c
+0.060791 0.122314 0.0375977 0.211182 0.0375977 0.334961 c
+0.0375977 0.473145 0.0629883 0.57373 0.114258 0.636719 c
+0.158691 0.691406 0.21875 0.71875 0.294434 0.71875 c
+0.350586 0.71875 0.396729 0.703125 0.432861 0.671387 c
+0.46875 0.639893 0.490234 0.596191 0.497559 0.540527 c
+0.138672 0.231934 m
+0.138672 0.20166 0.14502 0.172852 0.157959 0.14502 c
+0.170654 0.117432 0.188721 0.0964355 0.211914 0.0817871 c
+0.234863 0.0673828 0.259277 0.0600586 0.284668 0.0600586 c
+0.321777 0.0600586 0.353516 0.0749512 0.380371 0.10498 c
+0.406982 0.134766 0.42041 0.175537 0.42041 0.227051 c
+0.42041 0.276367 0.407227 0.31543 0.380859 0.343994 c
+0.354492 0.372314 0.321289 0.386719 0.28125 0.386719 c
+0.241699 0.386719 0.208008 0.372559 0.180176 0.343994 c
+0.152588 0.315674 0.138672 0.27832 0.138672 0.231934 c
+f}bind def end
+/X0 Ff/Encoding get 21/21 put
+/X0 Ff/CharProcs get begin/22{n 0.0415039 0.1875 m
+0.133789 0.195312 l
+0.140625 0.150391 0.156494 0.116699 0.181396 0.0939941 c
+0.206299 0.0715332 0.236328 0.0600586 0.271484 0.0600586 c
+0.313721 0.0600586 0.349609 0.0759277 0.378906 0.10791 c
+0.408203 0.139648 0.422852 0.182129 0.422852 0.234863 c
+0.422852 0.284912 0.408936 0.324463 0.380615 0.353516 c
+0.352539 0.382324 0.315674 0.396973 0.27002 0.396973 c
+0.241699 0.396973 0.216309 0.390625 0.193359 0.377686 c
+0.170654 0.36499 0.152832 0.348145 0.139648 0.327637 c
+0.0571289 0.338379 l
+0.126465 0.706055 l
+0.482422 0.706055 l
+0.482422 0.62207 l
+0.196777 0.62207 l
+0.158203 0.429688 l
+0.201172 0.459473 0.246094 0.474609 0.293457 0.474609 c
+0.355957 0.474609 0.408691 0.453125 0.45166 0.409668 c
+0.494629 0.366455 0.516113 0.310791 0.516113 0.242676 c
+0.516113 0.177979 0.497314 0.12207 0.459473 0.074707 c
+0.413574 0.0168457 0.351074 -0.012207 0.271484 -0.012207 c
+0.206543 -0.012207 0.15332 0.00585938 0.112061 0.0424805 c
+0.0710449 0.0788574 0.0473633 0.127197 0.0415039 0.1875 c
+f}bind def end
+/X0 Ff/Encoding get 22/22 put
+/X0 Ff/CharProcs get begin/23{n 0.420898 0.166992 m
+0.511719 0.155762 l
+0.497559 0.102783 0.470947 0.0615234 0.432129 0.0322266 c
+0.393555 0.00292969 0.343994 -0.0117188 0.283691 -0.0117188 c
+0.208008 -0.0117188 0.147705 0.0114746 0.103271 0.0583496 c
+0.0588379 0.10498 0.0366211 0.17041 0.0366211 0.254883 c
+0.0366211 0.342041 0.059082 0.409668 0.104004 0.458008 c
+0.148926 0.506104 0.207031 0.530273 0.278809 0.530273 c
+0.348145 0.530273 0.404785 0.506836 0.44873 0.459473 c
+0.492676 0.412354 0.514648 0.345947 0.514648 0.260254 c
+0.514648 0.255127 0.514648 0.247314 0.51416 0.236816 c
+0.127441 0.236816 l
+0.130615 0.179932 0.146729 0.13623 0.175781 0.105957 c
+0.20459 0.0756836 0.240723 0.0605469 0.28418 0.0605469 c
+0.316406 0.0605469 0.34375 0.0688477 0.366699 0.0859375 c
+0.389404 0.102783 0.407471 0.129883 0.420898 0.166992 c
+0.132324 0.309082 m
+0.421875 0.309082 l
+0.417969 0.352539 0.406982 0.385254 0.388672 0.407227 c
+0.36084 0.440918 0.324463 0.458008 0.279785 0.458008 c
+0.239502 0.458008 0.205566 0.44458 0.177979 0.41748 c
+0.150635 0.390625 0.135254 0.354492 0.132324 0.309082 c
+f}bind def end
+/X0 Ff/Encoding get 23/23 put
+/X0 Ff/CharProcs get begin/24{n 0.0317383 0.214844 m
+0.0317383 0.303223 l
+0.301758 0.303223 l
+0.301758 0.214844 l
+0.0317383 0.214844 l
+f}bind def end
+/X0 Ff/Encoding get 24/24 put
+/X0 Ff/CharProcs get begin/25{n 0.0869141 0 m
+0.0869141 0.450195 l
+0.00927734 0.450195 l
+0.00927734 0.518555 l
+0.0869141 0.518555 l
+0.0869141 0.57373 l
+0.0869141 0.608398 0.0898438 0.634277 0.0961914 0.651367 c
+0.104492 0.674072 0.119385 0.692627 0.140869 0.706787 c
+0.162109 0.720947 0.191895 0.728027 0.230469 0.728027 c
+0.255127 0.728027 0.282471 0.725098 0.3125 0.719238 c
+0.299316 0.642578 l
+0.28125 0.645752 0.263916 0.647461 0.247559 0.647461 c
+0.220947 0.647461 0.202148 0.641846 0.190918 0.630371 c
+0.179932 0.619141 0.174316 0.597656 0.174316 0.566406 c
+0.174316 0.518555 l
+0.275391 0.518555 l
+0.275391 0.450195 l
+0.174316 0.450195 l
+0.174316 0 l
+0.0869141 0 l
+f}bind def end
+/X0 Ff/Encoding get 25/25 put
+/X0 Ff/CharProcs get begin/26{n 0.0415039 0.353027 m
+0.0415039 0.4375 0.0500488 0.505615 0.067627 0.557373 c
+0.0849609 0.608887 0.11084 0.648682 0.145264 0.676758 c
+0.179443 0.70459 0.222656 0.71875 0.274902 0.71875 c
+0.313232 0.71875 0.346924 0.711182 0.375977 0.695557 c
+0.404785 0.680176 0.428711 0.657959 0.447754 0.628662 c
+0.466553 0.599609 0.481445 0.564209 0.492188 0.522217 c
+0.50293 0.480469 0.508301 0.424072 0.508301 0.353027 c
+0.508301 0.269043 0.499756 0.201416 0.482422 0.149658 c
+0.465332 0.0981445 0.439453 0.0583496 0.405029 0.0300293 c
+0.37085 0.00195312 0.327393 -0.012207 0.274902 -0.012207 c
+0.206055 -0.012207 0.151855 0.0124512 0.112305 0.0620117 c
+0.0651855 0.121582 0.0415039 0.218506 0.0415039 0.353027 c
+0.131836 0.353027 m
+0.131836 0.235596 0.145508 0.157471 0.173096 0.118408 c
+0.200439 0.0795898 0.234375 0.0600586 0.274902 0.0600586 c
+0.315186 0.0600586 0.349121 0.0795898 0.376709 0.118652 c
+0.404053 0.157715 0.417969 0.23584 0.417969 0.353027 c
+0.417969 0.470703 0.404297 0.549072 0.376709 0.587891 c
+0.349365 0.626465 0.314941 0.645996 0.273926 0.645996 c
+0.233643 0.645996 0.201416 0.628906 0.177246 0.594727 c
+0.146973 0.55127 0.131836 0.470703 0.131836 0.353027 c
+f}bind def end
+/X0 Ff/Encoding get 26/26 put
+/X0 Ff/CharProcs get begin/27{n 0.146973 0 m
+0.0654297 0 l
+0.0654297 0.71582 l
+0.15332 0.71582 l
+0.15332 0.460449 l
+0.19043 0.506836 0.237793 0.530273 0.29541 0.530273 c
+0.327148 0.530273 0.357422 0.523926 0.385986 0.510986 c
+0.414307 0.498291 0.437744 0.480225 0.456299 0.456787 c
+0.474609 0.433594 0.489014 0.405518 0.499512 0.372559 c
+0.509766 0.339844 0.515137 0.304688 0.515137 0.26709 c
+0.515137 0.178223 0.493164 0.109619 0.449219 0.0610352 c
+0.405273 0.0126953 0.352539 -0.0117188 0.291016 -0.0117188 c
+0.22998 -0.0117188 0.181885 0.0136719 0.146973 0.0649414 c
+0.146973 0 l
+0.145996 0.263184 m
+0.145996 0.201172 0.154297 0.15625 0.171387 0.128418 c
+0.198975 0.083252 0.236328 0.0605469 0.283691 0.0605469 c
+0.322021 0.0605469 0.355225 0.0771484 0.383301 0.110596 c
+0.411133 0.143799 0.425293 0.193604 0.425293 0.259766 c
+0.425293 0.327393 0.411865 0.377441 0.38501 0.409668 c
+0.358154 0.441895 0.325684 0.458008 0.287598 0.458008 c
+0.249268 0.458008 0.216064 0.441406 0.187988 0.407959 c
+0.160156 0.374756 0.145996 0.326416 0.145996 0.263184 c
+f}bind def end
+/X0 Ff/Encoding get 27/27 put
+/X0 Ff/CharProcs get begin/28{n 0.402344 0 m
+0.402344 0.0654297 l
+0.369629 0.0141602 0.321289 -0.0117188 0.257324 -0.0117188 c
+0.216064 -0.0117188 0.177979 -0.000488281 0.143311 0.0224609 c
+0.108643 0.045166 0.0817871 0.0769043 0.0627441 0.11792 c
+0.0437012 0.158691 0.0341797 0.205566 0.0341797 0.258789 c
+0.0341797 0.310547 0.0427246 0.357422 0.0600586 0.399658 c
+0.0771484 0.44165 0.103027 0.474121 0.137695 0.496582 c
+0.172119 0.519043 0.210693 0.530273 0.253418 0.530273 c
+0.284668 0.530273 0.3125 0.523682 0.336914 0.510498 c
+0.361328 0.497314 0.381104 0.480225 0.396484 0.458984 c
+0.396484 0.71582 l
+0.483887 0.71582 l
+0.483887 0 l
+0.402344 0 l
+0.124512 0.258789 m
+0.124512 0.192383 0.138428 0.142822 0.166504 0.109863 c
+0.194336 0.0771484 0.227539 0.0605469 0.265625 0.0605469 c
+0.303955 0.0605469 0.33667 0.0761719 0.363525 0.107666 c
+0.390381 0.138916 0.403809 0.187012 0.403809 0.251465 c
+0.403809 0.322266 0.390137 0.374512 0.362793 0.407715 c
+0.335449 0.440918 0.301758 0.45752 0.261719 0.45752 c
+0.222656 0.45752 0.190186 0.44165 0.163818 0.409668 c
+0.137695 0.37793 0.124512 0.327637 0.124512 0.258789 c
+f}bind def end
+/X0 Ff/Encoding get 28/28 put
+q[8.33333 0 0 -8.33333 220.443 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<0E>Tj
+1.776 0 m<0F>Tj
+6.224 0 m<0D>Tj
+10.224 0 m<0A>Tj
+14.672 0 m<0E>Tj
+16.448 0 m<10>Tj
+20.896 0 m<0F>Tj
+25.344 0 m<0B>Tj
+29.344 0 m<11>Tj
+31.56 0 m<07>Tj
+33.776 0 m<12>Tj
+38.224 0 m<00>Tj
+42.672 0 m<13>Tj
+47.12 0 m<14>Tj
+51.568 0 m<02>Tj
+53.784 0 m<15>Tj
+58.232 0 m<00>Tj
+62.68 0 m<12>Tj
+67.128 0 m<16>Tj
+71.576 0 m<16>Tj
+76.024 0 m<17>Tj
+80.472 0 m<12>Tj
+84.92 0 m<12>Tj
+89.368 0 m<18>Tj
+92.032 0 m<00>Tj
+96.48 0 m<13>Tj
+100.928 0 m<15>Tj
+105.376 0 m<13>Tj
+109.824 0 m<18>Tj
+112.488 0 m<06>Tj
+116.936 0 m<19>Tj
+119.152 0 m<06>Tj
+123.6 0 m<1A>Tj
+128.048 0 m<18>Tj
+130.712 0 m<1B>Tj
+135.16 0 m<0D>Tj
+139.16 0 m<14>Tj
+143.608 0 m<1C>Tj
+148.056 0 m<18>Tj
+150.72 0 m<19>Tj
+152.936 0 m<13>Tj
+157.384 0 m<06>Tj
+161.832 0 m<0A>Tj
+166.28 0 m<13>Tj
+170.728 0 m<1C>Tj
+175.176 0 m<13>Tj
+179.624 0 m<0D>Tj
+183.624 0 m<17>Tj
+188.072 0 m<1B>Tj
+192.52 0 m<00>Tj
+196.968 0 m<01>Tj
+201.416 0 m<02>Tj
+Q
+q[8.33333 0 0 -8.33333 4786.72 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<00>Tj
+Q
+q[8.33333 0 0 -8.33333 4823.7 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<02>Tj
+Q
+q[8.33333 0 0 -8.33333 4842.19 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<01>Tj
+Q
+Q
+q
+241.667 241.667 m 4866.67 241.667 l 4866.67 6366.67 l 241.667 6366.67 l 241.667 241.667 l h W* n
+241.667 241.667 m 4866.67 241.667 l 4866.67 11260.4 l 241.667 11260.4 l 241.667 241.667 l h 1 1 1 rg
+f
+Q
+q
+241.667 241.667 m 4866.67 241.667 l 4866.67 6366.67 l 241.667 6366.67 l 241.667 241.667 l h W* n
+416.667 6360.42 m 422.917 6360.42 l 422.917 6466.67 l 416.667 6466.67 l 416.667 6360.42 l h 0.752941 0.752941 0.752941 rg
+f
+Q
+q
+416.667 6254.17 m 422.917 6254.17 l 422.917 6360.42 l 416.667 6360.42 l 416.667 6254.17 l h 0.752941 0.752941 0.752941 rg
+f
+416.667 6147.92 m 422.917 6147.92 l 422.917 6254.17 l 416.667 6254.17 l 416.667 6147.92 l h f
+416.667 6041.67 m 422.917 6041.67 l 422.917 6147.92 l 416.667 6147.92 l 416.667 6041.67 l h f
+416.667 5935.42 m 422.917 5935.42 l 422.917 6041.67 l 416.667 6041.67 l 416.667 5935.42 l h f
+416.667 5741.67 m 422.917 5741.67 l 422.917 5935.42 l 416.667 5935.42 l 416.667 5741.67 l h f
+416.667 5635.42 m 422.917 5635.42 l 422.917 5741.67 l 416.667 5741.67 l 416.667 5635.42 l h f
+416.667 5529.17 m 422.917 5529.17 l 422.917 5635.42 l 416.667 5635.42 l 416.667 5529.17 l h f
+416.667 5422.92 m 422.917 5422.92 l 422.917 5529.17 l 416.667 5529.17 l 416.667 5422.92 l h f
+416.667 5316.67 m 422.917 5316.67 l 422.917 5422.92 l 416.667 5422.92 l 416.667 5316.67 l h f
+416.667 5210.42 m 422.917 5210.42 l 422.917 5316.67 l 416.667 5316.67 l 416.667 5210.42 l h f
+416.667 5104.17 m 422.917 5104.17 l 422.917 5210.42 l 416.667 5210.42 l 416.667 5104.17 l h f
+416.667 4997.92 m 422.917 4997.92 l 422.917 5104.17 l 416.667 5104.17 l 416.667 4997.92 l h f
+416.667 4891.67 m 422.917 4891.67 l 422.917 4997.92 l 416.667 4997.92 l 416.667 4891.67 l h f
+416.667 4785.42 m 422.917 4785.42 l 422.917 4891.67 l 416.667 4891.67 l 416.667 4785.42 l h f
+416.667 4679.17 m 422.917 4679.17 l 422.917 4785.42 l 416.667 4785.42 l 416.667 4679.17 l h f
+416.667 4572.92 m 422.917 4572.92 l 422.917 4679.17 l 416.667 4679.17 l 416.667 4572.92 l h f
+416.667 4466.67 m 422.917 4466.67 l 422.917 4572.92 l 416.667 4572.92 l 416.667 4466.67 l h f
+416.667 4360.42 m 422.917 4360.42 l 422.917 4466.67 l 416.667 4466.67 l 416.667 4360.42 l h f
+416.667 4254.17 m 422.917 4254.17 l 422.917 4360.42 l 416.667 4360.42 l 416.667 4254.17 l h f
+416.667 4147.92 m 422.917 4147.92 l 422.917 4254.17 l 416.667 4254.17 l 416.667 4147.92 l h f
+416.667 4041.67 m 422.917 4041.67 l 422.917 4147.92 l 416.667 4147.92 l 416.667 4041.67 l h f
+416.667 3847.92 m 422.917 3847.92 l 422.917 4041.67 l 416.667 4041.67 l 416.667 3847.92 l h f
+416.667 3741.67 m 422.917 3741.67 l 422.917 3847.92 l 416.667 3847.92 l 416.667 3741.67 l h f
+416.667 3547.92 m 422.917 3547.92 l 422.917 3741.67 l 416.667 3741.67 l 416.667 3547.92 l h f
+416.667 3441.67 m 422.917 3441.67 l 422.917 3547.92 l 416.667 3547.92 l 416.667 3441.67 l h f
+416.667 3335.42 m 422.917 3335.42 l 422.917 3441.67 l 416.667 3441.67 l 416.667 3335.42 l h f
+416.667 3229.17 m 422.917 3229.17 l 422.917 3335.42 l 416.667 3335.42 l 416.667 3229.17 l h f
+416.667 3122.92 m 422.917 3122.92 l 422.917 3229.17 l 416.667 3229.17 l 416.667 3122.92 l h f
+416.667 3016.67 m 422.917 3016.67 l 422.917 3122.92 l 416.667 3122.92 l 416.667 3016.67 l h f
+416.667 2910.42 m 422.917 2910.42 l 422.917 3016.67 l 416.667 3016.67 l 416.667 2910.42 l h f
+416.667 2804.17 m 422.917 2804.17 l 422.917 2910.42 l 416.667 2910.42 l 416.667 2804.17 l h f
+416.667 2697.92 m 422.917 2697.92 l 422.917 2804.17 l 416.667 2804.17 l 416.667 2697.92 l h f
+416.667 2591.67 m 422.917 2591.67 l 422.917 2697.92 l 416.667 2697.92 l 416.667 2591.67 l h f
+416.667 2397.92 m 422.917 2397.92 l 422.917 2591.67 l 416.667 2591.67 l 416.667 2397.92 l h f
+416.667 2291.67 m 422.917 2291.67 l 422.917 2397.92 l 416.667 2397.92 l 416.667 2291.67 l h f
+416.667 2185.42 m 422.917 2185.42 l 422.917 2291.67 l 416.667 2291.67 l 416.667 2185.42 l h f
+416.667 2079.17 m 422.917 2079.17 l 422.917 2185.42 l 416.667 2185.42 l 416.667 2079.17 l h f
+416.667 1885.42 m 422.917 1885.42 l 422.917 2079.17 l 416.667 2079.17 l 416.667 1885.42 l h f
+416.667 1779.17 m 422.917 1779.17 l 422.917 1885.42 l 416.667 1885.42 l 416.667 1779.17 l h f
+416.667 1672.92 m 422.917 1672.92 l 422.917 1779.17 l 416.667 1779.17 l 416.667 1672.92 l h f
+416.667 1566.67 m 422.917 1566.67 l 422.917 1672.92 l 416.667 1672.92 l 416.667 1566.67 l h f
+416.667 1460.42 m 422.917 1460.42 l 422.917 1566.67 l 416.667 1566.67 l 416.667 1460.42 l h f
+416.667 1354.17 m 422.917 1354.17 l 422.917 1460.42 l 416.667 1460.42 l 416.667 1354.17 l h f
+416.667 1247.92 m 422.917 1247.92 l 422.917 1354.17 l 416.667 1354.17 l 416.667 1247.92 l h f
+416.667 1141.67 m 422.917 1141.67 l 422.917 1247.92 l 416.667 1247.92 l 416.667 1141.67 l h f
+416.667 1035.42 m 422.917 1035.42 l 422.917 1141.67 l 416.667 1141.67 l 416.667 1035.42 l h f
+416.667 929.167 m 422.917 929.167 l 422.917 1035.42 l 416.667 1035.42 l 416.667 929.167 l h f
+416.667 822.917 m 422.917 822.917 l 422.917 929.167 l 416.667 929.167 l 416.667 822.917 l h f
+416.667 716.667 m 422.917 716.667 l 422.917 822.917 l 416.667 822.917 l 416.667 716.667 l h f
+416.667 610.417 m 422.917 610.417 l 422.917 716.667 l 416.667 716.667 l 416.667 610.417 l h f
+416.667 504.167 m 422.917 504.167 l 422.917 610.417 l 416.667 610.417 l 416.667 504.167 l h f
+416.667 397.917 m 422.917 397.917 l 422.917 504.167 l 416.667 504.167 l 416.667 397.917 l h f
+416.667 291.667 m 422.917 291.667 l 422.917 397.917 l 416.667 397.917 l 416.667 291.667 l h f
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/29{n 0.486816 0 m
+0.0859375 0 l
+0.0859375 0.0791016 l
+0.25 0.0791016 l
+0.25 0.544922 l
+0.097168 0.461914 l
+0.065918 0.53418 l
+0.269043 0.641113 l
+0.344238 0.641113 l
+0.344238 0.0791016 l
+0.486816 0.0791016 l
+0.486816 0 l
+f}bind def end
+/X0 Ff/Encoding get 29/29 put
+q[6.25 0 0 -6.25 345.866 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+/X0 Ff/CharProcs get begin/30{n 0.50293 0.179199 m
+0.394043 0.179199 l
+0.375977 0 l
+0.303711 0 l
+0.321777 0.179199 l
+0.197266 0.179199 l
+0.179199 0 l
+0.106934 0 l
+0.125 0.179199 l
+0.0209961 0.179199 l
+0.0209961 0.242676 l
+0.131348 0.242676 l
+0.148926 0.413574 l
+0.0458984 0.413574 l
+0.0458984 0.477051 l
+0.155273 0.477051 l
+0.171875 0.638184 l
+0.243164 0.638184 l
+0.227051 0.477051 l
+0.352051 0.477051 l
+0.368652 0.638184 l
+0.440918 0.638184 l
+0.423828 0.477051 l
+0.528809 0.477051 l
+0.528809 0.413574 l
+0.41748 0.413574 l
+0.400391 0.242676 l
+0.50293 0.242676 l
+0.50293 0.179199 l
+0.328613 0.242676 m
+0.345703 0.413574 l
+0.220703 0.413574 l
+0.203613 0.242676 l
+0.328613 0.242676 l
+f}bind def end
+/X0 Ff/Encoding get 30/30 put
+q[6.25 0 0 -6.25 481.217 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+/X0 Ff/CharProcs get begin/31{n 0.359863 0.631836 m
+0.359863 0.621094 0.35791 0.611084 0.354004 0.601562 c
+0.350098 0.592285 0.344727 0.583984 0.337646 0.576904 c
+0.330811 0.570068 0.32251 0.564453 0.312988 0.560303 c
+0.303711 0.556396 0.293457 0.554199 0.282227 0.554199 c
+0.27124 0.554199 0.260986 0.556152 0.251221 0.560303 c
+0.241699 0.564209 0.233398 0.569824 0.226318 0.576904 c
+0.219482 0.58374 0.213867 0.592041 0.209961 0.601562 c
+0.206055 0.61084 0.204102 0.621094 0.204102 0.631836 c
+0.204102 0.642578 0.206055 0.652588 0.209961 0.662109 c
+0.213867 0.671387 0.219238 0.679688 0.226318 0.687012 c
+0.233154 0.694092 0.241455 0.699707 0.251221 0.703857 c
+0.260742 0.707764 0.270996 0.709961 0.282227 0.709961 c
+0.293213 0.709961 0.303467 0.708008 0.312988 0.703857 c
+0.322266 0.699951 0.330566 0.694336 0.337646 0.687012 c
+0.344482 0.679932 0.350098 0.671631 0.354004 0.662109 c
+0.35791 0.652832 0.359863 0.642578 0.359863 0.631836 c
+0.228027 0.40332 m
+0.0878906 0.40332 l
+0.0878906 0.496094 l
+0.350098 0.496094 l
+0.350098 0.0927734 l
+0.493164 0.0927734 l
+0.493164 0 l
+0.0708008 0 l
+0.0708008 0.0927734 l
+0.228027 0.0927734 l
+0.228027 0.40332 l
+f}bind def end
+/X0 Ff/Encoding get 31/31 put
+q[6.25 0 0 -6.25 527.018 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/32{n 0.36377 0 m
+0.36377 0.323242 l
+0.36377 0.377441 0.34375 0.404785 0.303223 0.404785 c
+0.283203 0.404785 0.263916 0.396729 0.245361 0.380371 c
+0.227051 0.364258 0.20752 0.342041 0.187012 0.313965 c
+0.187012 0 l
+0.0678711 0 l
+0.0678711 0.496094 l
+0.170898 0.496094 l
+0.173828 0.422852 l
+0.183838 0.435547 0.194336 0.447021 0.205322 0.45752 c
+0.216064 0.467773 0.228027 0.476807 0.240723 0.484131 c
+0.253418 0.491455 0.26709 0.49707 0.281738 0.500977 c
+0.296387 0.504883 0.312744 0.506836 0.331055 0.506836 c
+0.356445 0.506836 0.378418 0.502686 0.397461 0.494385 c
+0.41626 0.486084 0.432129 0.474365 0.444824 0.459229 c
+0.45752 0.444092 0.467041 0.426025 0.473389 0.404541 c
+0.479736 0.383301 0.48291 0.359375 0.48291 0.333008 c
+0.48291 0 l
+0.36377 0 l
+f}bind def end
+/X0 Ff/Encoding get 32/32 put
+q[6.25 0 0 -6.25 572.824 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+/X0 Ff/CharProcs get begin/33{n 0.469238 0.019043 m
+0.445801 0.00976562 0.421631 0.00268555 0.396484 -0.00195312 c
+0.371582 -0.00634766 0.345215 -0.00878906 0.317871 -0.00878906 c
+0.278564 -0.00878906 0.243164 -0.00341797 0.211914 0.00732422 c
+0.180664 0.0180664 0.154297 0.0339355 0.132324 0.0551758 c
+0.110596 0.0761719 0.0939941 0.102539 0.0822754 0.133789 c
+0.0708008 0.165039 0.0649414 0.201172 0.0649414 0.242188 c
+0.0649414 0.281738 0.0710449 0.317871 0.0837402 0.350098 c
+0.0961914 0.382324 0.11377 0.409668 0.136719 0.432617 c
+0.159424 0.455322 0.186768 0.4729 0.218994 0.485352 c
+0.250977 0.497559 0.286621 0.503906 0.326172 0.503906 c
+0.358398 0.503906 0.385498 0.502197 0.407471 0.498779 c
+0.429443 0.495361 0.449219 0.491211 0.466797 0.48584 c
+0.466797 0.370117 l
+0.446777 0.380127 0.424805 0.387939 0.401123 0.393555 c
+0.377686 0.398926 0.355225 0.401855 0.333984 0.401855 c
+0.312012 0.401855 0.291992 0.398193 0.274414 0.390625 c
+0.256836 0.383301 0.242188 0.372803 0.22998 0.359375 c
+0.218018 0.346191 0.20874 0.329834 0.202393 0.310791 c
+0.196045 0.291748 0.192871 0.270996 0.192871 0.248047 c
+0.192871 0.224365 0.196289 0.203125 0.203125 0.184082 c
+0.209961 0.165283 0.219482 0.14917 0.232178 0.135986 c
+0.244629 0.122803 0.259766 0.112793 0.277344 0.105713 c
+0.294922 0.098877 0.314453 0.0952148 0.335938 0.0952148 c
+0.346191 0.0952148 0.357178 0.0959473 0.368896 0.0974121 c
+0.380371 0.098877 0.391846 0.10083 0.403564 0.10376 c
+0.415039 0.106445 0.426514 0.109619 0.437744 0.113281 c
+0.448975 0.116699 0.459473 0.120605 0.469238 0.125 c
+0.469238 0.019043 l
+f}bind def end
+/X0 Ff/Encoding get 33/33 put
+q[6.25 0 0 -6.25 618.629 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+/X0 Ff/CharProcs get begin/34{n 0.228027 0.597168 m
+0.0878906 0.597168 l
+0.0878906 0.689941 l
+0.350098 0.689941 l
+0.350098 0.0927734 l
+0.493164 0.0927734 l
+0.493164 0 l
+0.0708008 0 l
+0.0708008 0.0927734 l
+0.228027 0.0927734 l
+0.228027 0.597168 l
+f}bind def end
+/X0 Ff/Encoding get 34/34 put
+q[6.25 0 0 -6.25 664.435 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<22>Tj
+Q
+/X0 Ff/CharProcs get begin/35{n 0.186035 0.496094 m
+0.186035 0.172852 l
+0.186035 0.145996 0.190918 0.125488 0.201172 0.111572 c
+0.211182 0.0979004 0.226562 0.0908203 0.24707 0.0908203 c
+0.266846 0.0908203 0.285889 0.098877 0.304443 0.115479 c
+0.322754 0.131836 0.342285 0.154053 0.362793 0.182129 c
+0.362793 0.496094 l
+0.481934 0.496094 l
+0.481934 0 l
+0.378906 0 l
+0.375977 0.0732422 l
+0.365723 0.0605469 0.35498 0.0490723 0.344238 0.0385742 c
+0.333496 0.0283203 0.322021 0.0192871 0.309326 0.0119629 c
+0.296875 0.00463867 0.283203 -0.000976562 0.268311 -0.00512695 c
+0.253662 -0.0090332 0.237305 -0.0112305 0.219238 -0.0112305 c
+0.193848 -0.0112305 0.171631 -0.00708008 0.152588 0.0012207 c
+0.133545 0.00952148 0.117676 0.0212402 0.10498 0.0366211 c
+0.0922852 0.0517578 0.0827637 0.0700684 0.076416 0.0915527 c
+0.0700684 0.112793 0.0668945 0.136719 0.0668945 0.163086 c
+0.0668945 0.496094 l
+0.186035 0.496094 l
+f}bind def end
+/X0 Ff/Encoding get 35/35 put
+q[6.25 0 0 -6.25 710.24 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+/X0 Ff/CharProcs get begin/36{n 0.379883 0 m
+0.376953 0.0732422 l
+0.366699 0.0605469 0.355957 0.0490723 0.344727 0.0385742 c
+0.33374 0.0283203 0.321777 0.0192871 0.309082 0.0119629 c
+0.296387 0.00463867 0.282959 -0.000976562 0.268311 -0.00512695 c
+0.253906 -0.0090332 0.237793 -0.0112305 0.220215 -0.0112305 c
+0.190918 -0.0112305 0.165039 -0.00537109 0.14209 0.00634766 c
+0.119385 0.0180664 0.100342 0.034668 0.0847168 0.0563965 c
+0.0693359 0.0778809 0.0576172 0.104248 0.0493164 0.135254 c
+0.0412598 0.166016 0.0371094 0.200684 0.0371094 0.23877 c
+0.0371094 0.28418 0.043457 0.32373 0.0563965 0.357178 c
+0.0690918 0.390381 0.0869141 0.418213 0.109863 0.440186 c
+0.132568 0.462158 0.159668 0.478271 0.190918 0.489014 c
+0.222168 0.499512 0.256104 0.504883 0.292969 0.504883 c
+0.305176 0.504883 0.317627 0.50415 0.330322 0.502441 c
+0.342773 0.500977 0.354004 0.498779 0.36377 0.496094 c
+0.36377 0.689941 l
+0.48291 0.689941 l
+0.48291 0 l
+0.379883 0 l
+0.162109 0.244141 m
+0.162109 0.216797 0.163818 0.193604 0.167725 0.174072 c
+0.171387 0.154785 0.177002 0.138916 0.184326 0.126465 c
+0.19165 0.114258 0.200684 0.105225 0.211426 0.0993652 c
+0.222168 0.09375 0.234375 0.0908203 0.248047 0.0908203 c
+0.268066 0.0908203 0.287354 0.098877 0.305664 0.115234 c
+0.32373 0.131348 0.343262 0.153809 0.36377 0.182129 c
+0.36377 0.398926 l
+0.354492 0.402344 0.342773 0.405273 0.328857 0.407715 c
+0.315186 0.409912 0.30127 0.411133 0.287109 0.411133 c
+0.268066 0.411133 0.250732 0.407227 0.235352 0.399414 c
+0.220215 0.391602 0.207031 0.380615 0.196045 0.366211 c
+0.185303 0.352051 0.176758 0.334473 0.170898 0.313721 c
+0.165039 0.293213 0.162109 0.27002 0.162109 0.244141 c
+f}bind def end
+/X0 Ff/Encoding get 36/36 put
+q[6.25 0 0 -6.25 756.046 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+/X0 Ff/CharProcs get begin/37{n 0.5 0.286133 m
+0.5 0.278076 0.499756 0.267578 0.499268 0.254395 c
+0.498779 0.241455 0.498047 0.229248 0.49707 0.217773 c
+0.170898 0.217773 l
+0.170898 0.196045 0.174072 0.176758 0.180908 0.160156 c
+0.1875 0.143555 0.197021 0.129639 0.209229 0.118408 c
+0.221436 0.107178 0.236084 0.0986328 0.253174 0.0927734 c
+0.270264 0.0869141 0.289062 0.0839844 0.310059 0.0839844 c
+0.333984 0.0839844 0.359863 0.0856934 0.387451 0.0895996 c
+0.414795 0.0932617 0.443359 0.0993652 0.473145 0.10791 c
+0.473145 0.0131836 l
+0.460449 0.00976562 0.446777 0.00634766 0.431641 0.00341797 c
+0.416748 0.000488281 0.401367 -0.00195312 0.385742 -0.00439453 c
+0.370117 -0.0065918 0.354492 -0.00830078 0.338379 -0.00952148 c
+0.32251 -0.010498 0.307129 -0.0112305 0.291992 -0.0112305 c
+0.254395 -0.0112305 0.220459 -0.00585938 0.19043 0.00488281 c
+0.160645 0.015625 0.135254 0.0314941 0.114258 0.0524902 c
+0.0935059 0.0734863 0.0776367 0.0993652 0.0664062 0.130371 c
+0.0554199 0.161133 0.0498047 0.197021 0.0498047 0.237793 c
+0.0498047 0.278076 0.0551758 0.314697 0.0664062 0.3479 c
+0.0773926 0.380859 0.0930176 0.40918 0.113281 0.432861 c
+0.133301 0.456299 0.157959 0.474609 0.186768 0.487549 c
+0.215576 0.500244 0.247559 0.506836 0.283203 0.506836 c
+0.318359 0.506836 0.349365 0.501465 0.376465 0.490479 c
+0.40332 0.479736 0.426025 0.464355 0.444336 0.444824 c
+0.462402 0.425293 0.476318 0.4021 0.48584 0.375 c
+0.495117 0.348145 0.5 0.318359 0.5 0.286133 c
+0.378906 0.303223 m
+0.37915 0.322754 0.376953 0.3396 0.371582 0.354248 c
+0.366455 0.368652 0.359375 0.380615 0.350342 0.390137 c
+0.341553 0.399414 0.331055 0.406494 0.319092 0.411133 c
+0.307373 0.415527 0.294434 0.417969 0.280762 0.417969 c
+0.250977 0.417969 0.226318 0.407959 0.207031 0.387939 c
+0.187988 0.36792 0.176514 0.339844 0.172852 0.303223 c
+0.378906 0.303223 l
+f}bind def end
+/X0 Ff/Encoding get 37/37 put
+q[6.25 0 0 -6.25 801.852 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+0.168627 0.333333 0.419608 rg
+/X0 Ff/CharProcs get begin/38{n 0.448242 0.0458984 m
+0.39502 -0.0078125 l
+0.0668945 0.266113 l
+0.39502 0.540039 l
+0.448242 0.48584 l
+0.182129 0.26709 l
+0.448242 0.0458984 l
+f}bind def end
+/X0 Ff/Encoding get 38/38 put
+q[6.25 0 0 -6.25 847.624 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+/X0 Ff/CharProcs get begin/39{n 0.466309 0.133789 m
+0.466309 0.116699 0.463379 0.101074 0.45752 0.0874023 c
+0.45166 0.0737305 0.443848 0.0617676 0.433594 0.0510254 c
+0.423584 0.0405273 0.411865 0.0314941 0.398438 0.0239258 c
+0.385254 0.0166016 0.37085 0.0102539 0.355713 0.00537109 c
+0.340576 0.000488281 0.325195 -0.00292969 0.309082 -0.00537109 c
+0.293213 -0.00756836 0.277588 -0.00878906 0.262207 -0.00878906 c
+0.229004 -0.00878906 0.198486 -0.00732422 0.170654 -0.00439453 c
+0.142822 -0.00146484 0.115723 0.00317383 0.0888672 0.00976562 c
+0.0888672 0.0878906 l
+0.117432 0.079834 0.145996 0.0737305 0.174316 0.0693359 c
+0.202637 0.0651855 0.230713 0.0629883 0.258789 0.0629883 c
+0.299316 0.0629883 0.32959 0.0683594 0.349121 0.0795898 c
+0.368652 0.0905762 0.378418 0.106445 0.378418 0.126953 c
+0.378418 0.135742 0.376953 0.143555 0.373779 0.150635 c
+0.37085 0.157471 0.365234 0.164307 0.356934 0.170654 c
+0.348877 0.177002 0.336182 0.183594 0.319092 0.19043 c
+0.302002 0.197266 0.278809 0.205078 0.249023 0.213867 c
+0.227051 0.220215 0.206543 0.227783 0.187744 0.236084 c
+0.169189 0.244385 0.152832 0.25415 0.13916 0.265625 c
+0.125488 0.276855 0.114746 0.290283 0.106934 0.305664 c
+0.0991211 0.320801 0.0952148 0.338867 0.0952148 0.359863 c
+0.0952148 0.373535 0.0983887 0.388428 0.104736 0.404785 c
+0.111084 0.420898 0.121826 0.436035 0.137207 0.450195 c
+0.152344 0.464111 0.173096 0.47583 0.199219 0.485107 c
+0.225098 0.494385 0.257812 0.499023 0.296875 0.499023 c
+0.315918 0.499023 0.337402 0.498047 0.36084 0.49585 c
+0.384277 0.493896 0.408691 0.490234 0.434082 0.484863 c
+0.434082 0.40918 l
+0.407471 0.415527 0.38208 0.42041 0.358154 0.423584 c
+0.334229 0.426514 0.313477 0.428223 0.295898 0.428223 c
+0.274902 0.428223 0.25708 0.426758 0.242432 0.42334 c
+0.228027 0.420166 0.216309 0.415771 0.207275 0.409912 c
+0.198486 0.404297 0.191895 0.397705 0.187988 0.389893 c
+0.184082 0.382324 0.182129 0.374023 0.182129 0.365234 c
+0.182129 0.356445 0.183838 0.348633 0.187256 0.341309 c
+0.190674 0.334229 0.197021 0.327393 0.206299 0.320557 c
+0.215576 0.313965 0.228516 0.307373 0.245117 0.300537 c
+0.261719 0.293945 0.283203 0.286621 0.310059 0.278809 c
+0.338867 0.270508 0.363281 0.261475 0.383301 0.252197 c
+0.403076 0.24292 0.419189 0.232666 0.431641 0.221191 c
+0.443848 0.209961 0.452881 0.197021 0.458252 0.182617 c
+0.463623 0.168457 0.466309 0.1521 0.466309 0.133789 c
+f}bind def end
+/X0 Ff/Encoding get 39/39 put
+q[6.25 0 0 -6.25 893.429 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+/X0 Ff/CharProcs get begin/40{n 0.473145 0.00683594 m
+0.454102 0.00195312 0.434082 -0.00146484 0.413574 -0.00366211 c
+0.393066 -0.00561523 0.372314 -0.00683594 0.351074 -0.00683594 c
+0.289551 -0.00683594 0.243652 0.00708008 0.213379 0.0349121 c
+0.183105 0.0627441 0.167969 0.105469 0.167969 0.163086 c
+0.167969 0.418945 l
+0.0307617 0.418945 l
+0.0307617 0.490234 l
+0.167969 0.490234 l
+0.167969 0.625 l
+0.25293 0.646973 l
+0.25293 0.490234 l
+0.473145 0.490234 l
+0.473145 0.418945 l
+0.25293 0.418945 l
+0.25293 0.169922 l
+0.25293 0.134766 0.262207 0.108643 0.281006 0.0910645 c
+0.299561 0.0737305 0.327148 0.0649414 0.36377 0.0649414 c
+0.379395 0.0649414 0.396484 0.0661621 0.415039 0.0686035 c
+0.433594 0.0710449 0.452881 0.074707 0.473145 0.0800781 c
+0.473145 0.00683594 l
+f}bind def end
+/X0 Ff/Encoding get 40/40 put
+q[6.25 0 0 -6.25 939.235 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/41{n 0.0532227 0.234863 m
+0.0532227 0.276367 0.0588379 0.313477 0.0703125 0.345947 c
+0.081543 0.378174 0.0979004 0.405518 0.118896 0.427979 c
+0.139893 0.450195 0.165039 0.467041 0.19458 0.47876 c
+0.223877 0.490234 0.256836 0.496094 0.292969 0.496094 c
+0.308594 0.496094 0.323975 0.495117 0.339111 0.493164 c
+0.354248 0.491211 0.369141 0.488281 0.383789 0.483887 c
+0.383789 0.689941 l
+0.469238 0.689941 l
+0.469238 0 l
+0.393066 0 l
+0.390137 0.0927734 l
+0.366455 0.0583496 0.34082 0.0327148 0.312988 0.0161133 c
+0.2854 -0.000488281 0.255371 -0.00878906 0.223145 -0.00878906 c
+0.195312 -0.00878906 0.170654 -0.00292969 0.14917 0.00878906 c
+0.12793 0.0205078 0.110107 0.0368652 0.0959473 0.0583496 c
+0.0817871 0.0795898 0.0712891 0.105225 0.0639648 0.135254 c
+0.0568848 0.165039 0.0532227 0.198242 0.0532227 0.234863 c
+0.140137 0.240234 m
+0.140137 0.181152 0.148682 0.136963 0.16626 0.107666 c
+0.183594 0.0786133 0.208252 0.0639648 0.240234 0.0639648 c
+0.261719 0.0639648 0.284424 0.0734863 0.30835 0.0927734 c
+0.332275 0.111816 0.357422 0.140381 0.383789 0.178223 c
+0.383789 0.405762 l
+0.369873 0.412109 0.354492 0.417236 0.337402 0.420654 c
+0.320557 0.424072 0.303711 0.425781 0.287109 0.425781 c
+0.240967 0.425781 0.204834 0.410889 0.178955 0.380859 c
+0.153076 0.351074 0.140137 0.304199 0.140137 0.240234 c
+f}bind def end
+/X0 Ff/Encoding get 41/41 put
+q[6.25 0 0 -6.25 985.04 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+/X0 Ff/CharProcs get begin/42{n 0.245117 0.419922 m
+0.100098 0.419922 l
+0.100098 0.490234 l
+0.331055 0.490234 l
+0.331055 0.0708008 l
+0.477051 0.0708008 l
+0.477051 0 l
+0.0839844 0 l
+0.0839844 0.0708008 l
+0.245117 0.0708008 l
+0.245117 0.419922 l
+0.274902 0.695801 m
+0.28418 0.695801 0.292969 0.694092 0.30127 0.690674 c
+0.309326 0.687256 0.316406 0.682617 0.32251 0.67627 c
+0.328369 0.670166 0.333252 0.663086 0.33667 0.655029 c
+0.340088 0.647217 0.341797 0.638428 0.341797 0.628906 c
+0.341797 0.619873 0.340088 0.611328 0.33667 0.603027 c
+0.333252 0.594971 0.328613 0.587891 0.32251 0.581543 c
+0.31665 0.575439 0.30957 0.570557 0.30127 0.567139 c
+0.293213 0.563721 0.284424 0.562012 0.274902 0.562012 c
+0.265625 0.562012 0.256836 0.563721 0.248535 0.567139 c
+0.240479 0.570557 0.233398 0.575195 0.227295 0.581543 c
+0.221436 0.587646 0.216553 0.594727 0.213135 0.603027 c
+0.209717 0.611084 0.208008 0.619629 0.208008 0.628906 c
+0.208008 0.638184 0.209717 0.646973 0.213135 0.655029 c
+0.216553 0.662842 0.221191 0.669922 0.227295 0.67627 c
+0.233154 0.682373 0.240234 0.687256 0.248535 0.690674 c
+0.256592 0.694092 0.265381 0.695801 0.274902 0.695801 c
+f}bind def end
+/X0 Ff/Encoding get 42/42 put
+q[6.25 0 0 -6.25 1030.85 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+/X0 Ff/CharProcs get begin/43{n 0.504883 0.249023 m
+0.504883 0.210938 0.499512 0.176025 0.48877 0.144287 c
+0.478027 0.112549 0.462646 0.0854492 0.442383 0.0627441 c
+0.422363 0.0402832 0.397705 0.0227051 0.368652 0.0100098 c
+0.339844 -0.00244141 0.306885 -0.00878906 0.27002 -0.00878906 c
+0.234863 -0.00878906 0.203369 -0.00341797 0.175537 0.00756836 c
+0.147705 0.0183105 0.124268 0.0344238 0.104736 0.0556641 c
+0.0854492 0.0766602 0.0705566 0.103027 0.0603027 0.134277 c
+0.0500488 0.165527 0.0449219 0.201416 0.0449219 0.242188 c
+0.0449219 0.280273 0.050293 0.314941 0.0610352 0.346436 c
+0.0717773 0.377686 0.0871582 0.404785 0.107422 0.42749 c
+0.127441 0.449951 0.1521 0.467529 0.181152 0.480225 c
+0.209961 0.492676 0.24292 0.499023 0.279785 0.499023 c
+0.314941 0.499023 0.346436 0.493652 0.374268 0.482666 c
+0.4021 0.471924 0.425537 0.455811 0.445068 0.434814 c
+0.464355 0.413818 0.479248 0.387695 0.489502 0.356445 c
+0.499756 0.325195 0.504883 0.289551 0.504883 0.249023 c
+0.417969 0.245117 m
+0.417969 0.275391 0.414795 0.301758 0.407959 0.324463 c
+0.401367 0.346924 0.391846 0.365967 0.379395 0.381104 c
+0.367188 0.39624 0.352051 0.407471 0.334229 0.415283 c
+0.31665 0.422852 0.296875 0.426758 0.274902 0.426758 c
+0.249512 0.426758 0.227783 0.421875 0.209717 0.411865 c
+0.19165 0.4021 0.177002 0.388672 0.165283 0.37207 c
+0.153809 0.355469 0.145264 0.336182 0.139893 0.314209 c
+0.134521 0.292236 0.131836 0.269287 0.131836 0.245117 c
+0.131836 0.214844 0.13501 0.188477 0.141846 0.165527 c
+0.148438 0.142822 0.157959 0.123779 0.17041 0.108643 c
+0.182617 0.0935059 0.197754 0.0822754 0.215332 0.0744629 c
+0.23291 0.0668945 0.252686 0.0629883 0.274902 0.0629883 c
+0.300293 0.0629883 0.322021 0.0678711 0.340088 0.0778809 c
+0.358154 0.0876465 0.372803 0.101074 0.384521 0.117676 c
+0.395996 0.134277 0.404541 0.153564 0.409912 0.175537 c
+0.415283 0.19751 0.417969 0.220703 0.417969 0.245117 c
+f}bind def end
+/X0 Ff/Encoding get 43/43 put
+q[6.25 0 0 -6.25 1076.65 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+/X0 Ff/CharProcs get begin/44{n 0.270996 0.153809 m
+0.281982 0.153809 0.29248 0.151855 0.30249 0.147461 c
+0.312256 0.143311 0.321045 0.137451 0.328369 0.129883 c
+0.335693 0.122559 0.341309 0.11377 0.345703 0.10376 c
+0.349854 0.0939941 0.352051 0.083252 0.352051 0.0717773 c
+0.352051 0.060791 0.350098 0.050293 0.345703 0.0405273 c
+0.341553 0.0307617 0.335693 0.0222168 0.328369 0.0148926 c
+0.321045 0.00756836 0.3125 0.00195312 0.30249 -0.00244141 c
+0.292725 -0.0065918 0.282227 -0.00878906 0.270996 -0.00878906 c
+0.259766 -0.00878906 0.249023 -0.00683594 0.239258 -0.00244141 c
+0.229492 0.00170898 0.220947 0.00756836 0.213623 0.0148926 c
+0.206299 0.0222168 0.200684 0.0307617 0.196289 0.0405273 c
+0.192139 0.050293 0.189941 0.0605469 0.189941 0.0717773 c
+0.189941 0.0830078 0.191895 0.09375 0.196289 0.10376 c
+0.200439 0.113525 0.206299 0.122314 0.213623 0.129883 c
+0.220947 0.137207 0.229492 0.143066 0.239258 0.147461 c
+0.249023 0.151611 0.259521 0.153809 0.270996 0.153809 c
+f}bind def end
+/X0 Ff/Encoding get 44/44 put
+q[6.25 0 0 -6.25 1122.46 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+/X0 Ff/CharProcs get begin/45{n 0.472168 0 m
+0.387207 0 l
+0.387207 0.312988 l
+0.387207 0.350586 0.380127 0.378906 0.365967 0.397705 c
+0.351807 0.41626 0.331543 0.425781 0.305176 0.425781 c
+0.293945 0.425781 0.283203 0.424316 0.273193 0.421143 c
+0.263428 0.418213 0.25293 0.412842 0.242188 0.405029 c
+0.231445 0.397461 0.219727 0.387207 0.207031 0.374023 c
+0.194336 0.361084 0.179688 0.344727 0.163086 0.325195 c
+0.163086 0 l
+0.078125 0 l
+0.078125 0.689941 l
+0.163086 0.689941 l
+0.163086 0.490234 l
+0.160156 0.413086 l
+0.17334 0.428955 0.186523 0.442383 0.199463 0.453369 c
+0.212158 0.464111 0.225098 0.473145 0.238037 0.47998 c
+0.250732 0.486816 0.263916 0.491699 0.277344 0.494629 c
+0.290527 0.497559 0.304443 0.499023 0.318848 0.499023 c
+0.367676 0.499023 0.405273 0.484131 0.432129 0.454346 c
+0.45874 0.424561 0.472168 0.379883 0.472168 0.319824 c
+0.472168 0 l
+f}bind def end
+/X0 Ff/Encoding get 45/45 put
+q[6.25 0 0 -6.25 1168.26 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+/X0 Ff/CharProcs get begin/46{n 0.102051 0.48584 m
+0.154785 0.540039 l
+0.48291 0.266113 l
+0.154785 -0.0078125 l
+0.102051 0.0458984 l
+0.368164 0.265137 l
+0.102051 0.48584 l
+f}bind def end
+/X0 Ff/Encoding get 46/46 put
+q[6.25 0 0 -6.25 1214.07 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 366.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/48{n 0.492188 0 m
+0.0717773 0 l
+0.0717773 0.0761719 l
+0.236816 0.240234 l
+0.263672 0.266846 0.285645 0.290039 0.302734 0.30957 c
+0.31958 0.329102 0.332764 0.346924 0.342285 0.363037 c
+0.351562 0.37915 0.35791 0.394287 0.361328 0.408691 c
+0.364502 0.422852 0.366211 0.438477 0.366211 0.455078 c
+0.366211 0.470703 0.364258 0.485596 0.359863 0.499756 c
+0.355713 0.513916 0.349121 0.526367 0.340332 0.537109 c
+0.331543 0.547852 0.320312 0.556152 0.306152 0.5625 c
+0.292236 0.568604 0.275391 0.571777 0.255859 0.571777 c
+0.229004 0.571777 0.204346 0.565918 0.182129 0.553711 c
+0.160156 0.541748 0.139648 0.526123 0.121094 0.506836 c
+0.0742188 0.562988 l
+0.0981445 0.588379 0.125977 0.608643 0.157471 0.624023 c
+0.188721 0.63916 0.225342 0.646973 0.26709 0.646973 c
+0.29541 0.646973 0.321045 0.642822 0.344482 0.634277 c
+0.367676 0.625977 0.387695 0.61377 0.404785 0.597656 c
+0.421631 0.581787 0.434814 0.562256 0.444092 0.539062 c
+0.453369 0.516113 0.458008 0.48999 0.458008 0.460938 c
+0.458008 0.436523 0.454834 0.414062 0.448242 0.393066 c
+0.441895 0.372314 0.431885 0.351562 0.418701 0.330811 c
+0.405518 0.310303 0.388916 0.288818 0.368896 0.266602 c
+0.348877 0.244629 0.325195 0.220215 0.297852 0.193848 c
+0.182129 0.0810547 l
+0.492188 0.0810547 l
+0.492188 0 l
+f}bind def end
+/X0 Ff/Encoding get 48/48 put
+q[6.25 0 0 -6.25 345.866 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 481.217 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+/X0 Ff/CharProcs get begin/49{n 0.477051 0.00488281 m
+0.455566 0 0.434082 -0.00390625 0.412109 -0.00683594 c
+0.390381 -0.00976562 0.369629 -0.0112305 0.350098 -0.0112305 c
+0.317627 -0.0112305 0.289551 -0.0078125 0.265869 -0.000976562 c
+0.242432 0.00585938 0.2229 0.0161133 0.207275 0.0302734 c
+0.191895 0.0441895 0.18042 0.0620117 0.173096 0.0837402 c
+0.165771 0.105225 0.162109 0.131104 0.162109 0.161133 c
+0.162109 0.40332 l
+0.0288086 0.40332 l
+0.0288086 0.496094 l
+0.162109 0.496094 l
+0.162109 0.623047 l
+0.28418 0.654785 l
+0.28418 0.496094 l
+0.477051 0.496094 l
+0.477051 0.40332 l
+0.28418 0.40332 l
+0.28418 0.169922 l
+0.28418 0.141602 0.290527 0.120361 0.303711 0.105713 c
+0.31665 0.0913086 0.338379 0.0839844 0.369141 0.0839844 c
+0.388672 0.0839844 0.407715 0.0854492 0.42627 0.0888672 c
+0.444824 0.092041 0.46167 0.0957031 0.477051 0.100098 c
+0.477051 0.00488281 l
+f}bind def end
+/X0 Ff/Encoding get 49/49 put
+q[6.25 0 0 -6.25 572.829 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 618.62 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.25098 0.321569 0.552941 rg
+/X0 Ff/CharProcs get begin/50{n 0.417969 0 m
+0.417969 0.337891 l
+0.417969 0.350098 0.417725 0.361084 0.416992 0.370361 c
+0.416504 0.379639 0.415039 0.387207 0.413086 0.393555 c
+0.411133 0.399658 0.408447 0.404297 0.404541 0.407471 c
+0.400879 0.4104 0.395752 0.412109 0.38916 0.412109 c
+0.37915 0.412109 0.369141 0.405273 0.359375 0.391602 c
+0.349609 0.37793 0.338623 0.354736 0.326172 0.321777 c
+0.326172 0 l
+0.224121 0 l
+0.224121 0.337891 l
+0.224121 0.350098 0.223877 0.361084 0.223145 0.370361 c
+0.222656 0.379639 0.221191 0.387207 0.219238 0.393555 c
+0.217285 0.399658 0.214355 0.404297 0.210449 0.407471 c
+0.206543 0.4104 0.201416 0.412109 0.194824 0.412109 c
+0.186523 0.412109 0.177002 0.405273 0.166504 0.391602 c
+0.15625 0.37793 0.144531 0.354736 0.131836 0.321777 c
+0.131836 0 l
+0.0288086 0 l
+0.0288086 0.496094 l
+0.117188 0.496094 l
+0.119141 0.423828 l
+0.126221 0.438477 0.133301 0.450928 0.140625 0.461426 c
+0.147705 0.47168 0.155273 0.480225 0.163574 0.487061 c
+0.171631 0.493652 0.18042 0.498535 0.189697 0.501465 c
+0.198975 0.504395 0.209473 0.505859 0.221191 0.505859 c
+0.248779 0.505859 0.269775 0.498779 0.284424 0.484131 c
+0.298828 0.469727 0.307129 0.449707 0.309082 0.423828 c
+0.316895 0.438477 0.324463 0.450928 0.332275 0.461426 c
+0.339844 0.47168 0.3479 0.480225 0.356201 0.487061 c
+0.364502 0.493652 0.373291 0.498535 0.383057 0.501465 c
+0.392578 0.504395 0.40332 0.505859 0.415039 0.505859 c
+0.451172 0.505859 0.477783 0.493408 0.495117 0.468018 c
+0.512207 0.442871 0.520996 0.405518 0.520996 0.355957 c
+0.520996 0 l
+0.417969 0 l
+f}bind def end
+/X0 Ff/Encoding get 50/50 put
+q[6.25 0 0 -6.25 664.421 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<32>Tj
+Q
+/X0 Ff/CharProcs get begin/51{n 0.378906 0 m
+0.375977 0.0649414 l
+0.365723 0.0539551 0.354736 0.0437012 0.343262 0.0344238 c
+0.332031 0.0251465 0.319336 0.0170898 0.305664 0.0102539 c
+0.291992 0.00341797 0.2771 -0.00170898 0.260986 -0.00561523 c
+0.244873 -0.00927734 0.227295 -0.0112305 0.208008 -0.0112305 c
+0.182617 -0.0112305 0.1604 -0.00756836 0.141113 0 c
+0.12207 0.00732422 0.105957 0.0178223 0.0927734 0.03125 c
+0.079834 0.0444336 0.0700684 0.0605469 0.0632324 0.0795898 c
+0.0566406 0.0983887 0.0532227 0.119141 0.0532227 0.14209 c
+0.0532227 0.165527 0.0581055 0.187012 0.0681152 0.207031 c
+0.0778809 0.226807 0.0930176 0.243896 0.113525 0.258301 c
+0.133789 0.272461 0.15918 0.283691 0.189697 0.291992 c
+0.219971 0.300049 0.255859 0.304199 0.296875 0.304199 c
+0.361816 0.304199 l
+0.361816 0.333984 l
+0.361816 0.34668 0.360107 0.358154 0.356445 0.368408 c
+0.353027 0.378662 0.347168 0.387207 0.339111 0.394531 c
+0.331299 0.401611 0.320801 0.407227 0.308105 0.411133 c
+0.29541 0.415039 0.279785 0.416992 0.26123 0.416992 c
+0.231934 0.416992 0.203125 0.413818 0.174561 0.406982 c
+0.14624 0.400391 0.118652 0.391113 0.0917969 0.378906 c
+0.0917969 0.474121 l
+0.115479 0.483398 0.142822 0.491211 0.174072 0.497559 c
+0.205078 0.503662 0.237305 0.506836 0.270996 0.506836 c
+0.307617 0.506836 0.339355 0.503418 0.365723 0.496338 c
+0.39209 0.489502 0.413818 0.479004 0.430908 0.464844 c
+0.447998 0.450928 0.460449 0.43335 0.46875 0.412354 c
+0.476807 0.391357 0.480957 0.366943 0.480957 0.338867 c
+0.480957 0 l
+0.378906 0 l
+0.361816 0.219238 m
+0.289062 0.219238 l
+0.269043 0.219238 0.251953 0.217285 0.237793 0.213379 c
+0.223877 0.209473 0.212402 0.204102 0.203613 0.197266 c
+0.194824 0.19043 0.188477 0.182617 0.184326 0.173584 c
+0.18042 0.164795 0.178223 0.155273 0.178223 0.14502 c
+0.178223 0.125 0.18457 0.109619 0.197754 0.098877 c
+0.210693 0.0883789 0.228516 0.0830078 0.250977 0.0830078 c
+0.267578 0.0830078 0.284668 0.0888672 0.302734 0.101074 c
+0.320557 0.113037 0.340332 0.130371 0.361816 0.152832 c
+0.361816 0.219238 l
+f}bind def end
+/X0 Ff/Encoding get 51/51 put
+q[6.25 0 0 -6.25 710.226 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 756.032 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.837 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+/X0 Ff/CharProcs get begin/52{n 0.371582 -0.205078 m
+0.22168 -0.0661621 0.146484 0.0874023 0.146484 0.255859 c
+0.146484 0.295166 0.150391 0.334473 0.158447 0.373779 c
+0.16626 0.412842 0.179199 0.452148 0.197021 0.491699 c
+0.2146 0.531006 0.238037 0.570312 0.267334 0.609863 c
+0.296387 0.64917 0.331787 0.688232 0.373535 0.727051 c
+0.422852 0.676758 l
+0.296631 0.552246 0.233398 0.414062 0.233398 0.262207 c
+0.233398 0.186768 0.249268 0.114258 0.28125 0.0444336 c
+0.312988 -0.0251465 0.360352 -0.0908203 0.422852 -0.152832 c
+0.371582 -0.205078 l
+f}bind def end
+/X0 Ff/Encoding get 52/52 put
+q[6.25 0 0 -6.25 847.624 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+/X0 Ff/CharProcs get begin/53{n 0.178223 0.727051 m
+0.328125 0.588135 0.40332 0.433594 0.40332 0.263184 c
+0.40332 0.228027 0.399902 0.19165 0.392578 0.153809 c
+0.385498 0.116211 0.373291 0.0773926 0.355957 0.0378418 c
+0.338867 -0.00170898 0.315674 -0.041748 0.286377 -0.0825195 c
+0.257324 -0.123047 0.220703 -0.164062 0.17627 -0.205078 c
+0.126953 -0.154785 l
+0.19043 -0.092041 0.237793 -0.0263672 0.269043 0.0419922 c
+0.300293 0.110352 0.315918 0.181885 0.315918 0.256836 c
+0.315918 0.411621 0.25293 0.551025 0.126953 0.674805 c
+0.178223 0.727051 l
+f}bind def end
+/X0 Ff/Encoding get 53/53 put
+q[6.25 0 0 -6.25 893.429 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/54{n 0.437988 -0.200195 m
+0.401855 -0.200195 l
+0.339111 -0.200195 0.29248 -0.185547 0.261719 -0.156006 c
+0.231201 -0.126709 0.21582 -0.0820312 0.21582 -0.0219727 c
+0.21582 0.145996 l
+0.21582 0.161865 0.214111 0.176025 0.210449 0.188721 c
+0.207031 0.201172 0.200684 0.21167 0.19165 0.220459 c
+0.182861 0.229004 0.170898 0.235596 0.156006 0.240234 c
+0.141357 0.244629 0.122559 0.24707 0.100098 0.24707 c
+0.0791016 0.24707 l
+0.0791016 0.314941 l
+0.100098 0.314941 l
+0.123779 0.314941 0.143066 0.316895 0.158203 0.320801 c
+0.173096 0.324707 0.184814 0.330566 0.193359 0.338623 c
+0.20166 0.346436 0.20752 0.356689 0.210938 0.369141 c
+0.214111 0.381348 0.21582 0.395996 0.21582 0.413086 c
+0.21582 0.528809 l
+0.21582 0.556152 0.218994 0.580811 0.225586 0.602783 c
+0.231934 0.624756 0.242676 0.643311 0.257568 0.658936 c
+0.272217 0.674316 0.291504 0.686279 0.315186 0.69458 c
+0.338623 0.702881 0.367676 0.707031 0.401855 0.707031 c
+0.437988 0.707031 l
+0.437988 0.638672 l
+0.40918 0.638672 l
+0.33374 0.638672 0.295898 0.602051 0.295898 0.528809 c
+0.295898 0.415039 l
+0.295898 0.335693 0.261719 0.291016 0.192871 0.280762 c
+0.262207 0.273926 0.296875 0.229492 0.296875 0.146973 c
+0.296875 -0.0200195 l
+0.296875 -0.0944824 0.334229 -0.131836 0.40918 -0.131836 c
+0.437988 -0.131836 l
+0.437988 -0.200195 l
+f}bind def end
+/X0 Ff/Encoding get 54/54 put
+q[6.25 0 0 -6.25 939.225 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 985.026 472.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/55{n 0.47998 0.193848 m
+0.47998 0.166016 0.474365 0.139648 0.462891 0.11499 c
+0.45166 0.0905762 0.43457 0.0690918 0.411621 0.0505371 c
+0.388916 0.0322266 0.360352 0.0178223 0.325684 0.00708008 c
+0.29126 -0.00341797 0.250977 -0.00878906 0.205078 -0.00878906 c
+0.179688 -0.00878906 0.156982 -0.00805664 0.136719 -0.00634766 c
+0.116699 -0.00488281 0.0976562 -0.00268555 0.0800781 0 c
+0.0800781 0.0761719 l
+0.100098 0.0727539 0.121582 0.0698242 0.144043 0.0678711 c
+0.166504 0.065918 0.189453 0.0649414 0.212891 0.0649414 c
+0.244629 0.0649414 0.271973 0.067627 0.294678 0.0734863 c
+0.317139 0.0791016 0.335693 0.0874023 0.350098 0.0981445 c
+0.364258 0.108887 0.374756 0.121826 0.381348 0.137207 c
+0.387695 0.152344 0.391113 0.169678 0.391113 0.188965 c
+0.391113 0.206543 0.387207 0.22168 0.379395 0.234863 c
+0.371582 0.247803 0.360596 0.258789 0.346436 0.267578 c
+0.332275 0.276367 0.31543 0.282959 0.295654 0.287354 c
+0.276123 0.291748 0.254395 0.293945 0.230957 0.293945 c
+0.158203 0.293945 l
+0.158203 0.36377 l
+0.231934 0.36377 l
+0.250977 0.36377 0.268555 0.366211 0.284424 0.371338 c
+0.300049 0.376221 0.313721 0.383545 0.324951 0.393066 c
+0.336182 0.402344 0.344727 0.414062 0.35083 0.427979 c
+0.356689 0.44165 0.359863 0.45752 0.359863 0.475098 c
+0.359863 0.509277 0.349609 0.53418 0.328613 0.549805 c
+0.307861 0.56543 0.277344 0.573242 0.236816 0.573242 c
+0.215332 0.573242 0.193359 0.571289 0.17041 0.566895 c
+0.147705 0.562744 0.123291 0.556396 0.097168 0.547852 c
+0.097168 0.62207 l
+0.108154 0.625977 0.119873 0.629395 0.132568 0.632568 c
+0.14502 0.635498 0.157471 0.638184 0.170166 0.640381 c
+0.182617 0.642334 0.195068 0.644043 0.20752 0.645264 c
+0.219727 0.64624 0.231689 0.646973 0.243164 0.646973 c
+0.276855 0.646973 0.306641 0.643311 0.33252 0.635986 c
+0.358154 0.628662 0.379639 0.618164 0.396973 0.604492 c
+0.414062 0.59082 0.427246 0.574219 0.436035 0.554688 c
+0.444824 0.535156 0.449219 0.513184 0.449219 0.48877 c
+0.449219 0.452393 0.439941 0.421875 0.421143 0.396973 c
+0.402588 0.372314 0.376953 0.352539 0.344238 0.337891 c
+0.36084 0.335449 0.377197 0.330078 0.393311 0.322266 c
+0.409424 0.314453 0.423828 0.304443 0.436768 0.292236 c
+0.449463 0.280029 0.459961 0.265625 0.468018 0.249023 c
+0.47583 0.232422 0.47998 0.214111 0.47998 0.193848 c
+f}bind def end
+/X0 Ff/Encoding get 55/55 put
+q[6.25 0 0 -6.25 345.866 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 664.421 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.226 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 756.032 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 801.823 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/56{n 0.458984 0.0180664 m
+0.437012 0.00976562 0.414307 0.00341797 0.390869 -0.000732422 c
+0.367676 -0.00463867 0.34375 -0.00683594 0.318848 -0.00683594 c
+0.241455 -0.00683594 0.181885 0.0141602 0.139893 0.0561523 c
+0.0981445 0.0981445 0.0771484 0.159424 0.0771484 0.240234 c
+0.0771484 0.278809 0.0830078 0.313965 0.0952148 0.345703 c
+0.107178 0.377197 0.124023 0.404297 0.145996 0.426758 c
+0.167725 0.449219 0.193848 0.466553 0.224121 0.47876 c
+0.254395 0.490967 0.287598 0.49707 0.324219 0.49707 c
+0.349609 0.49707 0.373291 0.495361 0.395508 0.491699 c
+0.41748 0.488281 0.438721 0.482422 0.458984 0.474121 c
+0.458984 0.393066 l
+0.437988 0.404053 0.41626 0.412109 0.394287 0.417236 c
+0.372314 0.422119 0.349609 0.424805 0.326172 0.424805 c
+0.304443 0.424805 0.283936 0.420654 0.264404 0.412354 c
+0.245117 0.404053 0.228027 0.39209 0.213379 0.376465 c
+0.19873 0.36084 0.187256 0.341797 0.178711 0.319336 c
+0.17041 0.296875 0.166016 0.271484 0.166016 0.243164 c
+0.166016 0.184082 0.18042 0.139648 0.209229 0.110107 c
+0.238037 0.0808105 0.277832 0.065918 0.329102 0.065918 c
+0.352051 0.065918 0.374512 0.0683594 0.39624 0.0737305 c
+0.417725 0.0788574 0.438721 0.0866699 0.458984 0.097168 c
+0.458984 0.0180664 l
+f}bind def end
+/X0 Ff/Encoding get 56/56 put
+q[6.25 0 0 -6.25 847.628 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 893.434 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 939.239 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 985.045 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+/X0 Ff/CharProcs get begin/57{n 0.492188 0.270996 m
+0.492188 0.259033 0.492188 0.249023 0.491699 0.240723 c
+0.491455 0.232666 0.490967 0.225098 0.490234 0.217773 c
+0.145996 0.217773 l
+0.145996 0.167725 0.159912 0.12915 0.187988 0.102295 c
+0.21582 0.0754395 0.256348 0.0620117 0.309082 0.0620117 c
+0.323242 0.0620117 0.337646 0.0625 0.352051 0.0637207 c
+0.366211 0.0646973 0.380127 0.0664062 0.393555 0.0683594 c
+0.406738 0.0703125 0.419678 0.0725098 0.431885 0.0749512 c
+0.444092 0.0773926 0.455322 0.0800781 0.46582 0.0830078 c
+0.46582 0.0131836 l
+0.442871 0.00683594 0.416748 0.00146484 0.387451 -0.00268555 c
+0.358398 -0.0065918 0.328125 -0.00878906 0.296875 -0.00878906 c
+0.254883 -0.00878906 0.21875 -0.00317383 0.188477 0.00830078 c
+0.158203 0.0195312 0.133545 0.0361328 0.114014 0.0578613 c
+0.0947266 0.0793457 0.0803223 0.105957 0.0710449 0.137451 c
+0.0617676 0.168701 0.0571289 0.204346 0.0571289 0.244141 c
+0.0571289 0.278564 0.0620117 0.311279 0.0720215 0.342041 c
+0.0817871 0.372803 0.0964355 0.399658 0.115479 0.423096 c
+0.134521 0.446289 0.157715 0.464844 0.185547 0.478516 c
+0.213135 0.492188 0.244629 0.499023 0.279785 0.499023 c
+0.313965 0.499023 0.344238 0.493652 0.370605 0.48291 c
+0.396973 0.472168 0.419189 0.457031 0.437256 0.437256 c
+0.455322 0.417725 0.468994 0.393799 0.478271 0.365479 c
+0.487549 0.337402 0.492188 0.305908 0.492188 0.270996 c
+0.403809 0.283203 m
+0.404785 0.304932 0.402832 0.324951 0.397461 0.343018 c
+0.392334 0.361084 0.384277 0.376465 0.373291 0.389648 c
+0.362549 0.402588 0.348877 0.412842 0.33252 0.420166 c
+0.316406 0.42749 0.297363 0.431152 0.275879 0.431152 c
+0.257324 0.431152 0.240479 0.427734 0.225098 0.42041 c
+0.209961 0.41333 0.196777 0.40332 0.185547 0.390137 c
+0.174561 0.377197 0.165527 0.361572 0.158691 0.343262 c
+0.151855 0.325195 0.147705 0.305176 0.145996 0.283203 c
+0.403809 0.283203 l
+f}bind def end
+/X0 Ff/Encoding get 57/57 put
+q[6.25 0 0 -6.25 1076.66 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/58{n 0.116211 -0.100098 m
+0.132812 -0.100586 0.148926 -0.0993652 0.164551 -0.0957031 c
+0.180176 -0.0922852 0.193848 -0.0869141 0.205811 -0.079834 c
+0.217529 -0.072998 0.227051 -0.064209 0.234375 -0.0537109 c
+0.241455 -0.043457 0.245117 -0.0314941 0.245117 -0.0180664 c
+0.245117 -0.00439453 0.24292 0.0065918 0.238037 0.0151367 c
+0.233398 0.0234375 0.228027 0.03125 0.222168 0.0385742 c
+0.216309 0.0456543 0.211182 0.0532227 0.206299 0.0615234 c
+0.20166 0.0695801 0.199219 0.0805664 0.199219 0.0942383 c
+0.199219 0.101074 0.200439 0.108154 0.203125 0.115723 c
+0.205566 0.123047 0.209717 0.129883 0.215088 0.13623 c
+0.220459 0.142334 0.227295 0.147461 0.235596 0.151367 c
+0.243896 0.155273 0.253662 0.157227 0.265137 0.157227 c
+0.276367 0.157227 0.287354 0.155029 0.298096 0.150146 c
+0.308594 0.145508 0.317871 0.138184 0.325928 0.128418 c
+0.33374 0.118652 0.340088 0.106445 0.344971 0.0917969 c
+0.349609 0.0771484 0.352051 0.0600586 0.352051 0.0400391 c
+0.352051 0.0131836 0.347168 -0.0129395 0.337158 -0.0378418 c
+0.327393 -0.0627441 0.3125 -0.0847168 0.292725 -0.104004 c
+0.273193 -0.123047 0.248535 -0.138428 0.218994 -0.149902 c
+0.189697 -0.161133 0.155273 -0.166992 0.116211 -0.166992 c
+0.116211 -0.100098 l
+f}bind def end
+/X0 Ff/Encoding get 58/58 put
+q[6.25 0 0 -6.25 1122.46 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+/X0 Ff/CharProcs get begin/59{n 0.0981445 0.490234 m
+0.175781 0.490234 l
+0.178223 0.399902 l
+0.207031 0.43457 0.235596 0.459961 0.263916 0.475586 c
+0.291992 0.491211 0.320312 0.499023 0.349121 0.499023 c
+0.399902 0.499023 0.438232 0.482666 0.4646 0.449707 c
+0.490723 0.416992 0.50293 0.368164 0.500977 0.303223 c
+0.415039 0.303223 l
+0.416016 0.346191 0.409912 0.377197 0.39624 0.396729 c
+0.382812 0.416016 0.363037 0.425781 0.336914 0.425781 c
+0.325684 0.425781 0.314209 0.423828 0.30249 0.419678 c
+0.291016 0.415771 0.279053 0.40918 0.266846 0.400146 c
+0.254639 0.391357 0.241699 0.379883 0.228027 0.365723 c
+0.214355 0.351807 0.199707 0.334961 0.184082 0.314941 c
+0.184082 0 l
+0.0981445 0 l
+0.0981445 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 59/59 put
+q[6.25 0 0 -6.25 1168.27 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1214.07 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1259.88 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+/X0 Ff/CharProcs get begin/60{n 0.427734 0 m
+0.427734 0.352051 l
+0.427734 0.367188 0.427246 0.379883 0.426025 0.389648 c
+0.425049 0.399414 0.423096 0.406982 0.420654 0.412842 c
+0.418213 0.418457 0.415283 0.422363 0.411377 0.424805 c
+0.407715 0.427002 0.403076 0.428223 0.397461 0.428223 c
+0.391113 0.428223 0.38501 0.42627 0.379395 0.422363 c
+0.374023 0.418457 0.36792 0.412109 0.361572 0.40332 c
+0.355225 0.394531 0.348389 0.383057 0.340576 0.368408 c
+0.333008 0.354004 0.323975 0.336182 0.313477 0.314941 c
+0.313477 0 l
+0.23584 0 l
+0.23584 0.342773 l
+0.23584 0.360596 0.235352 0.375 0.234131 0.38623 c
+0.233154 0.397217 0.231201 0.405762 0.22876 0.412109 c
+0.226318 0.418213 0.223145 0.422363 0.219238 0.424805 c
+0.215332 0.427002 0.210693 0.428223 0.205078 0.428223 c
+0.199219 0.428223 0.193848 0.426758 0.188477 0.42334 c
+0.18335 0.420166 0.17749 0.414307 0.171143 0.405762 c
+0.164795 0.397461 0.157715 0.385742 0.149902 0.371094 c
+0.14209 0.356445 0.132812 0.337891 0.12207 0.314941 c
+0.12207 0 l
+0.0439453 0 l
+0.0439453 0.490234 l
+0.108887 0.490234 l
+0.112793 0.396973 l
+0.121094 0.415527 0.129395 0.431152 0.137451 0.444336 c
+0.145264 0.457275 0.153564 0.467773 0.162109 0.47583 c
+0.17041 0.483643 0.179443 0.489502 0.189209 0.493408 c
+0.19873 0.49707 0.209473 0.499023 0.221191 0.499023 c
+0.247559 0.499023 0.267578 0.490479 0.28125 0.473145 c
+0.294922 0.456055 0.301758 0.429199 0.301758 0.393066 c
+0.30957 0.409912 0.317139 0.425049 0.324707 0.438232 c
+0.332031 0.451416 0.340088 0.462402 0.348877 0.471436 c
+0.357422 0.480225 0.366943 0.487061 0.377441 0.491943 c
+0.387695 0.496582 0.399902 0.499023 0.413574 0.499023 c
+0.475098 0.499023 0.505859 0.45166 0.505859 0.356934 c
+0.505859 0 l
+0.427734 0 l
+f}bind def end
+/X0 Ff/Encoding get 60/60 put
+q[6.25 0 0 -6.25 1305.68 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+/X0 Ff/CharProcs get begin/61{n 0.12207 -0.100098 m
+0.138672 -0.100586 0.154785 -0.0993652 0.17041 -0.0957031 c
+0.186035 -0.0922852 0.199707 -0.0869141 0.21167 -0.079834 c
+0.223389 -0.072998 0.23291 -0.064209 0.240234 -0.0537109 c
+0.247314 -0.043457 0.250977 -0.0314941 0.250977 -0.0180664 c
+0.250977 -0.00439453 0.248779 0.0065918 0.243896 0.0151367 c
+0.239258 0.0234375 0.233887 0.03125 0.228027 0.0385742 c
+0.222168 0.0456543 0.217041 0.0532227 0.212158 0.0615234 c
+0.20752 0.0695801 0.205078 0.0805664 0.205078 0.0942383 c
+0.205078 0.101074 0.206299 0.108154 0.208984 0.115723 c
+0.211426 0.123047 0.215576 0.129883 0.220947 0.13623 c
+0.226318 0.142334 0.233154 0.147461 0.241455 0.151367 c
+0.249756 0.155273 0.259521 0.157227 0.270996 0.157227 c
+0.282227 0.157227 0.293213 0.155029 0.303955 0.150146 c
+0.314453 0.145508 0.32373 0.138184 0.331787 0.128418 c
+0.3396 0.118652 0.345947 0.106445 0.35083 0.0917969 c
+0.355469 0.0771484 0.35791 0.0600586 0.35791 0.0400391 c
+0.35791 0.0131836 0.353027 -0.0129395 0.343018 -0.0378418 c
+0.333252 -0.0627441 0.318359 -0.0847168 0.298584 -0.104004 c
+0.279053 -0.123047 0.254395 -0.138428 0.224854 -0.149902 c
+0.195557 -0.161133 0.161133 -0.166992 0.12207 -0.166992 c
+0.12207 -0.100098 l
+0.274902 0.499023 m
+0.284912 0.499023 0.294434 0.49707 0.303711 0.49292 c
+0.312744 0.489014 0.320801 0.483398 0.327637 0.476562 c
+0.334473 0.469727 0.339844 0.461914 0.343994 0.452637 c
+0.3479 0.443604 0.350098 0.434082 0.350098 0.423828 c
+0.350098 0.413574 0.348145 0.403809 0.343994 0.394775 c
+0.340088 0.385986 0.334473 0.37793 0.327637 0.371094 c
+0.320801 0.364258 0.312988 0.358887 0.303711 0.35498 c
+0.294678 0.351074 0.285156 0.349121 0.274902 0.349121 c
+0.264648 0.349121 0.254883 0.351074 0.24585 0.35498 c
+0.237061 0.358887 0.229004 0.364258 0.222168 0.371094 c
+0.215332 0.37793 0.209961 0.385742 0.206055 0.394775 c
+0.202148 0.403564 0.200195 0.41333 0.200195 0.423828 c
+0.200195 0.433838 0.202148 0.443359 0.206055 0.452637 c
+0.209961 0.46167 0.215332 0.469727 0.222168 0.476562 c
+0.229004 0.483398 0.236816 0.48877 0.24585 0.49292 c
+0.254639 0.496826 0.264404 0.499023 0.274902 0.499023 c
+f}bind def end
+/X0 Ff/Encoding get 61/61 put
+q[6.25 0 0 -6.25 1351.49 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.23 579.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/62{n 0.523926 0.141113 m
+0.415039 0.141113 l
+0.415039 0 l
+0.328125 0 l
+0.328125 0.141113 l
+0.0209961 0.141113 l
+0.0209961 0.21582 l
+0.292969 0.638184 l
+0.415039 0.638184 l
+0.415039 0.21582 l
+0.523926 0.21582 l
+0.523926 0.141113 l
+0.328125 0.556152 m
+0.105957 0.21582 l
+0.328125 0.21582 l
+0.328125 0.556152 l
+f}bind def end
+/X0 Ff/Encoding get 62/62 put
+q[6.25 0 0 -6.25 345.866 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 664.421 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+/X0 Ff/CharProcs get begin/63{n 0.36377 0 m
+0.36377 0.323242 l
+0.36377 0.377441 0.34375 0.404785 0.303223 0.404785 c
+0.283203 0.404785 0.263916 0.396729 0.245361 0.380371 c
+0.227051 0.364258 0.20752 0.342041 0.187012 0.313965 c
+0.187012 0 l
+0.0678711 0 l
+0.0678711 0.689941 l
+0.187012 0.689941 l
+0.187012 0.52002 l
+0.181152 0.430176 l
+0.191162 0.442139 0.201416 0.452881 0.211914 0.462646 c
+0.222168 0.472168 0.233398 0.480225 0.245605 0.486816 c
+0.257568 0.493164 0.270508 0.498291 0.284668 0.501709 c
+0.298584 0.505127 0.313965 0.506836 0.331055 0.506836 c
+0.356445 0.506836 0.378418 0.502686 0.397461 0.494385 c
+0.41626 0.486084 0.432129 0.474365 0.444824 0.459229 c
+0.45752 0.444092 0.467041 0.426025 0.473389 0.404541 c
+0.479736 0.383301 0.48291 0.359375 0.48291 0.333008 c
+0.48291 0 l
+0.36377 0 l
+f}bind def end
+/X0 Ff/Encoding get 63/63 put
+q[6.25 0 0 -6.25 710.226 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 756.032 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+/X0 Ff/CharProcs get begin/64{n 0.387207 0.303223 m
+0.387695 0.321777 0.386963 0.337402 0.384521 0.350586 c
+0.38208 0.363525 0.378174 0.374268 0.372803 0.382812 c
+0.367432 0.391113 0.36084 0.397461 0.353027 0.401367 c
+0.345215 0.405273 0.336426 0.407227 0.326172 0.407227 c
+0.308594 0.407227 0.290527 0.400146 0.271729 0.385498 c
+0.253174 0.371094 0.232422 0.347168 0.209961 0.313965 c
+0.209961 0 l
+0.0878906 0 l
+0.0878906 0.496094 l
+0.195801 0.496094 l
+0.200195 0.423828 l
+0.208252 0.436523 0.217529 0.447754 0.227783 0.458008 c
+0.238037 0.468018 0.249268 0.476807 0.261963 0.484131 c
+0.274414 0.491455 0.28833 0.49707 0.303711 0.500977 c
+0.318848 0.504883 0.335693 0.506836 0.354004 0.506836 c
+0.378906 0.506836 0.401123 0.502686 0.420654 0.493896 c
+0.439941 0.485352 0.456299 0.472656 0.469482 0.455566 c
+0.482666 0.438721 0.492432 0.41748 0.498779 0.391846 c
+0.505127 0.366455 0.507812 0.336914 0.506836 0.303223 c
+0.387207 0.303223 l
+f}bind def end
+/X0 Ff/Encoding get 64/64 put
+q[6.25 0 0 -6.25 801.837 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 847.624 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.429 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 939.235 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 985.04 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+/X0 Ff/CharProcs get begin/65{n 0.40918 -0.200195 m
+0.168457 -0.200195 l
+0.168457 0.707031 l
+0.40918 0.707031 l
+0.40918 0.638672 l
+0.249512 0.638672 l
+0.249512 -0.131836 l
+0.40918 -0.131836 l
+0.40918 -0.200195 l
+f}bind def end
+/X0 Ff/Encoding get 65/65 put
+q[6.25 0 0 -6.25 1122.46 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<41>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1168.23 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/66{n 0.506836 0.318848 m
+0.506836 0.27002 0.501953 0.225586 0.492188 0.185303 c
+0.482422 0.145264 0.467773 0.110596 0.447754 0.0817871 c
+0.427979 0.0529785 0.40332 0.0307617 0.373779 0.0148926 c
+0.344482 -0.000732422 0.309814 -0.00878906 0.27002 -0.00878906 c
+0.23584 -0.00878906 0.204834 -0.00244141 0.176758 0.010498 c
+0.148926 0.0231934 0.125 0.0429688 0.10498 0.0698242 c
+0.0852051 0.0964355 0.0698242 0.130371 0.059082 0.171875 c
+0.0483398 0.213135 0.0429688 0.262207 0.0429688 0.318848 c
+0.0429688 0.367676 0.0478516 0.412109 0.0578613 0.452637 c
+0.067627 0.49292 0.0825195 0.527588 0.102295 0.556396 c
+0.121826 0.585205 0.146484 0.607422 0.17627 0.623291 c
+0.205811 0.638916 0.240234 0.646973 0.279785 0.646973 c
+0.313965 0.646973 0.344971 0.640625 0.373047 0.627686 c
+0.400879 0.61499 0.424805 0.594971 0.444824 0.568115 c
+0.4646 0.54126 0.47998 0.507324 0.490723 0.46582 c
+0.501465 0.424561 0.506836 0.375488 0.506836 0.318848 c
+0.420898 0.315918 m
+0.420898 0.326904 0.420654 0.337891 0.419678 0.348877 c
+0.418945 0.359619 0.417969 0.370361 0.416992 0.380859 c
+0.146973 0.180176 l
+0.151855 0.16333 0.157959 0.147705 0.165527 0.133301 c
+0.172852 0.119141 0.181885 0.106689 0.192627 0.0964355 c
+0.203125 0.0861816 0.215088 0.0783691 0.22876 0.0725098 c
+0.242188 0.0668945 0.257568 0.0639648 0.274902 0.0639648 c
+0.296875 0.0639648 0.317139 0.0693359 0.335205 0.0800781 c
+0.353271 0.0908203 0.368652 0.106689 0.381348 0.12793 c
+0.394043 0.148926 0.403809 0.175293 0.410645 0.206787 c
+0.41748 0.238037 0.420898 0.274414 0.420898 0.315918 c
+0.128906 0.321777 m
+0.128906 0.311768 0.128906 0.301758 0.12915 0.291504 c
+0.12915 0.281494 0.129883 0.271729 0.130859 0.262207 c
+0.400879 0.461914 l
+0.395996 0.478516 0.389893 0.493652 0.382324 0.507324 c
+0.375 0.520996 0.365967 0.532715 0.355469 0.542725 c
+0.345215 0.55249 0.333252 0.560303 0.319824 0.565918 c
+0.306641 0.571289 0.291504 0.574219 0.274902 0.574219 c
+0.25293 0.574219 0.232666 0.568848 0.2146 0.558105 c
+0.196533 0.547363 0.181152 0.531494 0.168457 0.51001 c
+0.155762 0.48877 0.145996 0.462402 0.13916 0.430908 c
+0.132324 0.399658 0.128906 0.363281 0.128906 0.321777 c
+f}bind def end
+/X0 Ff/Encoding get 66/66 put
+q[6.25 0 0 -6.25 1214.03 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/67{n 0.381348 -0.200195 m
+0.140625 -0.200195 l
+0.140625 -0.131836 l
+0.299316 -0.131836 l
+0.299316 0.638672 l
+0.140625 0.638672 l
+0.140625 0.707031 l
+0.381348 0.707031 l
+0.381348 -0.200195 l
+f}bind def end
+/X0 Ff/Encoding get 67/67 put
+q[6.25 0 0 -6.25 1305.63 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.23 685.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/68{n 0.476074 0.204102 m
+0.476074 0.172607 0.469238 0.143799 0.455566 0.117676 c
+0.441895 0.0917969 0.423096 0.0693359 0.39917 0.0505371 c
+0.375244 0.0319824 0.347168 0.017334 0.314453 0.00683594 c
+0.281982 -0.00341797 0.246826 -0.00878906 0.208984 -0.00878906 c
+0.199707 -0.00878906 0.189453 -0.00854492 0.178467 -0.00805664 c
+0.167725 -0.00756836 0.156738 -0.00708008 0.145996 -0.00610352 c
+0.135254 -0.00537109 0.124756 -0.00439453 0.114502 -0.00341797 c
+0.104248 -0.00244141 0.0952148 -0.00146484 0.0869141 0 c
+0.0869141 0.0771484 l
+0.104492 0.072998 0.124512 0.0698242 0.147217 0.0678711 c
+0.169678 0.065918 0.192627 0.0649414 0.21582 0.0649414 c
+0.241699 0.0649414 0.265137 0.0678711 0.286133 0.0742188 c
+0.306885 0.0803223 0.324707 0.0891113 0.339355 0.10083 c
+0.354004 0.112305 0.365234 0.126221 0.373047 0.142822 c
+0.380859 0.15918 0.384766 0.177734 0.384766 0.198242 c
+0.384766 0.237793 0.370605 0.266846 0.342041 0.284912 c
+0.313721 0.302979 0.272705 0.312012 0.219238 0.312012 c
+0.0981445 0.312012 l
+0.0981445 0.638184 l
+0.441895 0.638184 l
+0.441895 0.563965 l
+0.178223 0.563965 l
+0.178223 0.384766 l
+0.233887 0.384766 l
+0.264404 0.384766 0.294189 0.38208 0.323242 0.376465 c
+0.352051 0.371094 0.37793 0.361328 0.400635 0.347412 c
+0.423096 0.33374 0.441406 0.315186 0.455322 0.291748 c
+0.468994 0.268555 0.476074 0.239258 0.476074 0.204102 c
+f}bind def end
+/X0 Ff/Encoding get 68/68 put
+q[6.25 0 0 -6.25 345.866 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 481.217 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 664.421 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.226 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 756.032 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 801.823 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.628 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 893.434 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/69{n 0.393066 0 m
+0.391113 0.065918 l
+0.364502 0.0395508 0.337402 0.0205078 0.309814 0.00878906 c
+0.282471 -0.00292969 0.253418 -0.00878906 0.223145 -0.00878906 c
+0.195312 -0.00878906 0.171387 -0.00537109 0.151367 0.00195312 c
+0.131592 0.0090332 0.115234 0.0187988 0.102295 0.0314941 c
+0.0895996 0.0439453 0.0800781 0.0585938 0.0739746 0.0756836 c
+0.0681152 0.0925293 0.0649414 0.11084 0.0649414 0.130859 c
+0.0649414 0.179932 0.083252 0.218506 0.119873 0.246338 c
+0.156494 0.27417 0.210449 0.288086 0.282227 0.288086 c
+0.383789 0.288086 l
+0.383789 0.331055 l
+0.383789 0.359863 0.374512 0.383057 0.355957 0.400635 c
+0.337402 0.417969 0.309082 0.426758 0.270996 0.426758 c
+0.243408 0.426758 0.216064 0.423828 0.189209 0.41748 c
+0.162354 0.411377 0.134766 0.402588 0.105957 0.391113 c
+0.105957 0.467773 l
+0.116699 0.47168 0.128662 0.475342 0.141846 0.479248 c
+0.155029 0.48291 0.168945 0.486328 0.183594 0.489258 c
+0.198242 0.492188 0.213379 0.494385 0.229492 0.496338 c
+0.245361 0.498047 0.261475 0.499023 0.277832 0.499023 c
+0.307373 0.499023 0.333984 0.49585 0.35791 0.489258 c
+0.381592 0.48291 0.401611 0.4729 0.418213 0.459473 c
+0.43457 0.446289 0.447266 0.429443 0.456055 0.40918 c
+0.464844 0.38916 0.469238 0.365234 0.469238 0.337891 c
+0.469238 0 l
+0.393066 0 l
+0.383789 0.223145 m
+0.275879 0.223145 l
+0.254883 0.223145 0.236572 0.221191 0.221191 0.216797 c
+0.206055 0.212646 0.193359 0.206543 0.183594 0.19873 c
+0.173828 0.190918 0.166748 0.181641 0.161865 0.170654 c
+0.157227 0.159912 0.154785 0.147461 0.154785 0.133789 c
+0.154785 0.124512 0.15625 0.115479 0.15918 0.106689 c
+0.162109 0.0981445 0.166748 0.0905762 0.17334 0.0837402 c
+0.179688 0.0771484 0.188232 0.0717773 0.19873 0.0678711 c
+0.208984 0.0639648 0.22168 0.0620117 0.236816 0.0620117 c
+0.256348 0.0620117 0.278564 0.0678711 0.303955 0.079834 c
+0.329102 0.0915527 0.355713 0.110352 0.383789 0.13623 c
+0.383789 0.223145 l
+f}bind def end
+/X0 Ff/Encoding get 69/69 put
+q[6.25 0 0 -6.25 939.239 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+/X0 Ff/CharProcs get begin/70{n 0.51416 0.490234 m
+0.347168 0.0517578 l
+0.330078 0.00732422 0.312256 -0.03125 0.293701 -0.0634766 c
+0.275391 -0.0957031 0.255371 -0.12207 0.233398 -0.142822 c
+0.21167 -0.16333 0.187744 -0.178711 0.161621 -0.188477 c
+0.135742 -0.198242 0.106445 -0.203125 0.0742188 -0.203125 c
+0.065918 -0.203125 0.0581055 -0.203125 0.0512695 -0.202637 c
+0.0444336 -0.202393 0.0371094 -0.201904 0.0288086 -0.201172 c
+0.0288086 -0.124023 l
+0.0358887 -0.125 0.0437012 -0.125732 0.0522461 -0.126709 c
+0.0605469 -0.127441 0.0695801 -0.12793 0.0791016 -0.12793 c
+0.0947266 -0.12793 0.109131 -0.125732 0.122803 -0.121094 c
+0.13623 -0.116699 0.148926 -0.109131 0.161133 -0.098877 c
+0.173096 -0.088623 0.18457 -0.0754395 0.195801 -0.059082 c
+0.206787 -0.0429688 0.217529 -0.0231934 0.228027 0 c
+0.0322266 0.490234 l
+0.128906 0.490234 l
+0.25293 0.166016 l
+0.277832 0.0898438 l
+0.306152 0.167969 l
+0.420898 0.490234 l
+0.51416 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 70/70 put
+q[6.25 0 0 -6.25 985.045 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+/X0 Ff/CharProcs get begin/71{n 0.49707 0.253906 m
+0.49707 0.210449 0.490967 0.172363 0.47876 0.139648 c
+0.466553 0.107178 0.449707 0.0800781 0.428223 0.0585938 c
+0.406738 0.0371094 0.381348 0.0209961 0.352051 0.0102539 c
+0.322754 -0.000488281 0.291016 -0.00585938 0.256836 -0.00585938 c
+0.241211 -0.00585938 0.22583 -0.00512695 0.210205 -0.00341797 c
+0.194824 -0.00195312 0.179199 0.000976562 0.163086 0.00488281 c
+0.163086 -0.200195 l
+0.078125 -0.200195 l
+0.078125 0.490234 l
+0.153809 0.490234 l
+0.15918 0.408203 l
+0.183594 0.44165 0.209473 0.465088 0.237305 0.47876 c
+0.264893 0.492188 0.294922 0.499023 0.327148 0.499023 c
+0.35498 0.499023 0.379639 0.493164 0.400879 0.481445 c
+0.421875 0.469727 0.439697 0.453369 0.454102 0.431885 c
+0.468262 0.410645 0.479004 0.38501 0.486328 0.354736 c
+0.493408 0.324707 0.49707 0.291016 0.49707 0.253906 c
+0.410156 0.25 m
+0.410156 0.275635 0.408447 0.299316 0.404541 0.320801 c
+0.400879 0.342285 0.39502 0.360596 0.386719 0.375977 c
+0.378662 0.391113 0.368164 0.403076 0.355469 0.411865 c
+0.342773 0.42041 0.327637 0.424805 0.310059 0.424805 c
+0.299316 0.424805 0.288574 0.423096 0.277344 0.419678 c
+0.266357 0.41626 0.254883 0.410645 0.24292 0.402588 c
+0.231201 0.394775 0.218506 0.384033 0.205322 0.37085 c
+0.192139 0.357666 0.178223 0.341309 0.163086 0.321777 c
+0.163086 0.0839844 l
+0.178711 0.0776367 0.195068 0.0725098 0.212402 0.0686035 c
+0.229492 0.0649414 0.246582 0.0629883 0.263184 0.0629883 c
+0.309082 0.0629883 0.344971 0.0783691 0.371094 0.109619 c
+0.396973 0.140625 0.410156 0.1875 0.410156 0.25 c
+f}bind def end
+/X0 Ff/Encoding get 71/71 put
+q[6.25 0 0 -6.25 1076.66 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.46 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1168.27 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1214.07 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1259.88 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/72{n 0.078125 0.490234 m
+0.153809 0.490234 l
+0.157227 0.411133 l
+0.171387 0.427979 0.185303 0.442139 0.19873 0.453369 c
+0.211914 0.4646 0.225098 0.473633 0.238037 0.480469 c
+0.250732 0.487305 0.263916 0.491943 0.277344 0.494873 c
+0.290527 0.497559 0.304443 0.499023 0.318848 0.499023 c
+0.369141 0.499023 0.407471 0.484131 0.43335 0.454346 c
+0.459229 0.424561 0.472168 0.379883 0.472168 0.319824 c
+0.472168 0 l
+0.387207 0 l
+0.387207 0.312988 l
+0.387207 0.351318 0.380127 0.379639 0.365723 0.398193 c
+0.351562 0.416504 0.330078 0.425781 0.301758 0.425781 c
+0.291504 0.425781 0.28125 0.424316 0.27124 0.421143 c
+0.261475 0.418213 0.250977 0.412842 0.240234 0.405029 c
+0.229492 0.397461 0.218018 0.387207 0.205322 0.374023 c
+0.192871 0.361084 0.178711 0.344727 0.163086 0.325195 c
+0.163086 0 l
+0.078125 0 l
+0.078125 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 72/72 put
+q[6.25 0 0 -6.25 1305.68 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1351.49 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1397.3 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1443.03 791.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/73{n 0.5 0.202148 m
+0.5 0.172852 0.494873 0.145508 0.484131 0.119629 c
+0.473633 0.0939941 0.458496 0.0715332 0.438965 0.0524902 c
+0.419434 0.0334473 0.395996 0.0185547 0.368408 0.00756836 c
+0.341064 -0.00317383 0.310547 -0.00878906 0.276855 -0.00878906 c
+0.241699 -0.00878906 0.210693 -0.00317383 0.183594 0.00805664 c
+0.156738 0.0192871 0.134033 0.036377 0.115723 0.0598145 c
+0.0976562 0.0830078 0.0837402 0.112305 0.0742188 0.147949 c
+0.0649414 0.18335 0.0600586 0.225342 0.0600586 0.273926 c
+0.0600586 0.306396 0.0620117 0.337891 0.0664062 0.368652 c
+0.0705566 0.39917 0.0776367 0.427979 0.0874023 0.455078 c
+0.097168 0.481934 0.110107 0.506836 0.126465 0.529297 c
+0.142578 0.551758 0.162842 0.571045 0.187256 0.587158 c
+0.211426 0.603271 0.23999 0.615723 0.272949 0.624756 c
+0.305664 0.633545 0.34375 0.638184 0.387207 0.638184 c
+0.450195 0.638184 l
+0.450195 0.563965 l
+0.381836 0.563965 l
+0.34375 0.563965 0.310791 0.55957 0.282715 0.550293 c
+0.254883 0.54126 0.231445 0.52832 0.212402 0.511719 c
+0.193604 0.495117 0.179199 0.475098 0.168945 0.45166 c
+0.158936 0.428223 0.152588 0.4021 0.149902 0.373047 c
+0.147949 0.353027 l
+0.168457 0.36499 0.192139 0.374756 0.218994 0.38208 c
+0.24585 0.389404 0.274902 0.393066 0.306152 0.393066 c
+0.338379 0.393066 0.366455 0.388428 0.390869 0.378906 c
+0.415039 0.369629 0.435303 0.356445 0.451416 0.3396 c
+0.467529 0.322998 0.479492 0.302734 0.487793 0.279297 c
+0.49585 0.255859 0.5 0.230225 0.5 0.202148 c
+0.411133 0.196777 m
+0.411133 0.216309 0.408936 0.233887 0.404053 0.249756 c
+0.399414 0.265381 0.39209 0.278809 0.381836 0.289795 c
+0.371826 0.300537 0.359131 0.309082 0.343506 0.315186 c
+0.328125 0.321045 0.30957 0.324219 0.288086 0.324219 c
+0.275879 0.324219 0.263184 0.323242 0.250488 0.320801 c
+0.237793 0.318604 0.225342 0.31543 0.213135 0.311279 c
+0.200928 0.307373 0.189453 0.302734 0.178223 0.297363 c
+0.167236 0.292236 0.157227 0.286621 0.147949 0.280762 c
+0.147949 0.23877 0.150879 0.203857 0.156738 0.175537 c
+0.162598 0.147461 0.171143 0.125 0.182861 0.10791 c
+0.194336 0.0910645 0.208496 0.0791016 0.225586 0.0717773 c
+0.242432 0.0646973 0.261963 0.0610352 0.28418 0.0610352 c
+0.302734 0.0610352 0.31958 0.0639648 0.335205 0.0700684 c
+0.350586 0.0759277 0.364014 0.0849609 0.375244 0.0966797 c
+0.386475 0.108398 0.395264 0.122559 0.401611 0.139404 c
+0.407959 0.156006 0.411133 0.175293 0.411133 0.196777 c
+f}bind def end
+/X0 Ff/Encoding get 73/73 put
+q[6.25 0 0 -6.25 345.866 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 481.217 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 664.421 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 710.226 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 756.032 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 801.837 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 847.624 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.429 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+/X0 Ff/CharProcs get begin/74{n 0.0322266 0.490234 m
+0.128906 0.490234 l
+0.249023 0.166016 l
+0.274902 0.0869141 l
+0.301758 0.167969 l
+0.420898 0.490234 l
+0.51416 0.490234 l
+0.321777 0 l
+0.224121 0 l
+0.0322266 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 74/74 put
+q[6.25 0 0 -6.25 939.235 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 985.04 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<41>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1259.83 897.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/75{n 0.48877 0.559082 m
+0.221191 0 l
+0.124023 0 l
+0.401855 0.559082 l
+0.0571289 0.559082 l
+0.0571289 0.638184 l
+0.48877 0.638184 l
+0.48877 0.559082 l
+f}bind def end
+/X0 Ff/Encoding get 75/75 put
+q[6.25 0 0 -6.25 345.866 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/76{n 0.459961 0.563965 m
+0.188965 0.563965 l
+0.188965 0.356934 l
+0.445801 0.356934 l
+0.445801 0.28418 l
+0.188965 0.28418 l
+0.188965 0 l
+0.100098 0 l
+0.100098 0.638184 l
+0.459961 0.638184 l
+0.459961 0.563965 l
+f}bind def end
+/X0 Ff/Encoding get 76/76 put
+q[6.25 0 0 -6.25 664.44 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+/X0 Ff/CharProcs get begin/77{n 0.230957 0.564941 m
+0.0839844 0.564941 l
+0.0839844 0.638184 l
+0.46582 0.638184 l
+0.46582 0.564941 l
+0.318848 0.564941 l
+0.318848 0.0742188 l
+0.46582 0.0742188 l
+0.46582 0 l
+0.0839844 0 l
+0.0839844 0.0742188 l
+0.230957 0.0742188 l
+0.230957 0.564941 l
+f}bind def end
+/X0 Ff/Encoding get 77/77 put
+q[6.25 0 0 -6.25 710.245 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+/X0 Ff/CharProcs get begin/78{n 0.480957 0 m
+0.11377 0 l
+0.11377 0.638184 l
+0.202148 0.638184 l
+0.202148 0.0742188 l
+0.480957 0.0742188 l
+0.480957 0 l
+f}bind def end
+/X0 Ff/Encoding get 78/78 put
+q[6.25 0 0 -6.25 756.051 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4E>Tj
+Q
+/X0 Ff/CharProcs get begin/79{n 0.460938 0 m
+0.0981445 0 l
+0.0981445 0.638184 l
+0.460938 0.638184 l
+0.460938 0.564941 l
+0.185059 0.564941 l
+0.185059 0.367188 l
+0.450195 0.367188 l
+0.450195 0.293945 l
+0.185059 0.293945 l
+0.185059 0.0742188 l
+0.460938 0.0742188 l
+0.460938 0 l
+f}bind def end
+/X0 Ff/Encoding get 79/79 put
+q[6.25 0 0 -6.25 801.856 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4F>Tj
+Q
+/X0 Ff/CharProcs get begin/80{n 0.469238 0.410156 m
+0.436035 0.352051 l
+0.298828 0.442871 l
+0.310059 0.275879 l
+0.240234 0.275879 l
+0.250977 0.442871 l
+0.11084 0.352051 l
+0.0800781 0.40918 l
+0.22998 0.48291 l
+0.0800781 0.558105 l
+0.11377 0.615234 l
+0.251953 0.522949 l
+0.240234 0.689941 l
+0.310059 0.689941 l
+0.297852 0.522949 l
+0.436035 0.616211 l
+0.470215 0.556152 l
+0.319824 0.481934 l
+0.469238 0.410156 l
+f}bind def end
+/X0 Ff/Encoding get 80/80 put
+q[6.25 0 0 -6.25 847.662 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+/X0 Ff/CharProcs get begin/81{n 0.49707 0.253906 m
+0.49707 0.213379 0.491455 0.177002 0.480225 0.144775 c
+0.468994 0.112793 0.453125 0.0856934 0.432373 0.0632324 c
+0.411865 0.0410156 0.386719 0.0239258 0.356934 0.0119629 c
+0.327393 0.000244141 0.293945 -0.00585938 0.256836 -0.00585938 c
+0.228027 -0.00585938 0.198242 -0.00317383 0.167969 0.00244141 c
+0.137695 0.0078125 0.10791 0.0166016 0.078125 0.0288086 c
+0.078125 0.689941 l
+0.163086 0.689941 l
+0.163086 0.5 l
+0.15918 0.40918 l
+0.183594 0.441895 0.209717 0.465088 0.237549 0.47876 c
+0.265381 0.492188 0.295166 0.499023 0.327148 0.499023 c
+0.35498 0.499023 0.379639 0.493164 0.400879 0.481445 c
+0.421875 0.469727 0.439697 0.453369 0.454102 0.431885 c
+0.468262 0.410645 0.479004 0.38501 0.486328 0.354736 c
+0.493408 0.324707 0.49707 0.291016 0.49707 0.253906 c
+0.410156 0.25 m
+0.410156 0.275635 0.408447 0.299316 0.404541 0.320801 c
+0.400879 0.342285 0.39502 0.360596 0.386719 0.375977 c
+0.378662 0.391113 0.368164 0.403076 0.355469 0.411865 c
+0.342773 0.42041 0.327637 0.424805 0.310059 0.424805 c
+0.299316 0.424805 0.288574 0.423096 0.277344 0.419678 c
+0.266357 0.41626 0.254883 0.410645 0.24292 0.402588 c
+0.231201 0.394775 0.218506 0.384033 0.205322 0.37085 c
+0.192139 0.357666 0.178223 0.341309 0.163086 0.321777 c
+0.163086 0.0839844 l
+0.179688 0.0776367 0.196533 0.0725098 0.213867 0.0686035 c
+0.230957 0.0649414 0.247559 0.0629883 0.263184 0.0629883 c
+0.282715 0.0629883 0.30127 0.065918 0.319092 0.0722656 c
+0.33667 0.0783691 0.352295 0.088623 0.365967 0.103271 c
+0.379395 0.117676 0.390137 0.136963 0.398193 0.160889 c
+0.406006 0.184814 0.410156 0.214355 0.410156 0.25 c
+f}bind def end
+/X0 Ff/Encoding get 81/81 put
+q[6.25 0 0 -6.25 893.467 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+/X0 Ff/CharProcs get begin/82{n 0.519043 0 m
+0.402344 0 l
+0.173828 0.262695 l
+0.173828 0 l
+0.0888672 0 l
+0.0888672 0.689941 l
+0.173828 0.689941 l
+0.173828 0.266113 l
+0.394043 0.490234 l
+0.506348 0.490234 l
+0.276367 0.26416 l
+0.519043 0 l
+f}bind def end
+/X0 Ff/Encoding get 82/82 put
+q[6.25 0 0 -6.25 1030.88 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+/X0 Ff/CharProcs get begin/83{n 0.431152 0.420898 m
+0.440186 0.409668 0.447266 0.39624 0.452393 0.381104 c
+0.457275 0.365967 0.459961 0.349609 0.459961 0.332031 c
+0.459961 0.306641 0.455322 0.283447 0.446045 0.262451 c
+0.436768 0.241455 0.423828 0.223633 0.406738 0.208496 c
+0.389893 0.193604 0.369629 0.181885 0.345947 0.173584 c
+0.32251 0.165283 0.296387 0.161133 0.268066 0.161133 c
+0.247559 0.161133 0.228516 0.16333 0.210449 0.167725 c
+0.192627 0.172119 0.178467 0.17749 0.167969 0.184082 c
+0.161865 0.175049 0.156738 0.166504 0.152344 0.158203 c
+0.148193 0.150146 0.145996 0.141113 0.145996 0.130859 c
+0.145996 0.118652 0.151855 0.108398 0.163818 0.100098 c
+0.175537 0.092041 0.191406 0.0876465 0.210938 0.0869141 c
+0.339844 0.0820312 l
+0.364258 0.081543 0.386719 0.0783691 0.407471 0.0727539 c
+0.427979 0.0673828 0.445801 0.0593262 0.460693 0.0488281 c
+0.475342 0.0385742 0.487061 0.0256348 0.495361 0.0102539 c
+0.503662 -0.00488281 0.507812 -0.0227051 0.507812 -0.0429688 c
+0.507812 -0.0646973 0.503174 -0.0854492 0.493652 -0.10498 c
+0.484375 -0.124512 0.469727 -0.141602 0.449951 -0.156494 c
+0.43042 -0.171143 0.405273 -0.183105 0.375 -0.191895 c
+0.344727 -0.200684 0.308838 -0.205078 0.26709 -0.205078 c
+0.227539 -0.205078 0.193604 -0.201904 0.165771 -0.195557 c
+0.137939 -0.189209 0.115234 -0.18042 0.097168 -0.169189 c
+0.0793457 -0.157959 0.0664062 -0.144775 0.0581055 -0.12915 c
+0.0500488 -0.11377 0.0458984 -0.0966797 0.0458984 -0.078125 c
+0.0458984 -0.0544434 0.0512695 -0.0336914 0.0625 -0.015625 c
+0.0734863 0.00219727 0.0905762 0.0195312 0.11377 0.0361328 c
+0.105469 0.0400391 0.0981445 0.0449219 0.0917969 0.0507812 c
+0.0856934 0.0566406 0.0805664 0.0629883 0.0766602 0.0700684 c
+0.0727539 0.0769043 0.0698242 0.0844727 0.0678711 0.0922852 c
+0.065918 0.100098 0.0649414 0.107666 0.0649414 0.115234 c
+0.0649414 0.13623 0.0698242 0.155762 0.079834 0.17334 c
+0.0895996 0.190918 0.101562 0.20752 0.115234 0.223145 c
+0.109131 0.230469 0.10376 0.237793 0.098877 0.245117 c
+0.0942383 0.252197 0.0900879 0.26001 0.0866699 0.268311 c
+0.083252 0.276611 0.0808105 0.2854 0.0788574 0.295166 c
+0.0771484 0.304688 0.0761719 0.315674 0.0761719 0.328125 c
+0.0761719 0.353516 0.0808105 0.376709 0.0900879 0.397705 c
+0.0993652 0.418701 0.112305 0.436523 0.12915 0.45166 c
+0.145752 0.466553 0.166016 0.478271 0.189697 0.486572 c
+0.213135 0.494873 0.239258 0.499023 0.268066 0.499023 c
+0.280029 0.499023 0.291504 0.498291 0.302734 0.496582 c
+0.313721 0.495117 0.323486 0.49292 0.332031 0.490234 c
+0.509766 0.490234 l
+0.509766 0.420898 l
+0.431152 0.420898 l
+0.13623 -0.0708008 m
+0.13623 -0.09375 0.148193 -0.110596 0.172363 -0.121338 c
+0.196289 -0.131836 0.22998 -0.137207 0.272949 -0.137207 c
+0.299805 -0.137207 0.32251 -0.134766 0.341064 -0.129883 c
+0.359375 -0.125 0.374268 -0.118652 0.385498 -0.110596 c
+0.396729 -0.102783 0.404785 -0.0935059 0.409668 -0.083252 c
+0.414551 -0.072998 0.416992 -0.0625 0.416992 -0.0517578 c
+0.416992 -0.0319824 0.408936 -0.017334 0.392578 -0.0078125 c
+0.376465 0.00146484 0.351562 0.00708008 0.317871 0.00878906 c
+0.189941 0.0131836 l
+0.179199 0.00610352 0.17041 -0.000976562 0.16333 -0.0078125 c
+0.156494 -0.0146484 0.150879 -0.0214844 0.146973 -0.0285645 c
+0.143066 -0.0354004 0.140381 -0.0424805 0.138672 -0.0495605 c
+0.137207 -0.0563965 0.13623 -0.0634766 0.13623 -0.0708008 c
+0.162109 0.330078 m
+0.162109 0.314453 0.164551 0.300293 0.169922 0.287109 c
+0.175049 0.27417 0.182373 0.263184 0.191895 0.253906 c
+0.201172 0.244873 0.212402 0.237793 0.225342 0.232666 c
+0.238037 0.227783 0.252441 0.225098 0.268066 0.225098 c
+0.284912 0.225098 0.300049 0.227783 0.313232 0.233643 c
+0.326416 0.239258 0.337402 0.24707 0.346436 0.256836 c
+0.355225 0.266602 0.362061 0.277832 0.366943 0.290527 c
+0.371582 0.303223 0.374023 0.316406 0.374023 0.330078 c
+0.374023 0.345703 0.371582 0.359863 0.366211 0.373047 c
+0.361084 0.385986 0.35376 0.396973 0.344238 0.40625 c
+0.334961 0.415283 0.32373 0.422363 0.310791 0.42749 c
+0.298096 0.432373 0.283691 0.435059 0.268066 0.435059 c
+0.251221 0.435059 0.236084 0.432129 0.2229 0.42627 c
+0.209717 0.42041 0.19873 0.412842 0.189697 0.403076 c
+0.180908 0.393555 0.174072 0.382324 0.169189 0.369629 c
+0.164551 0.356934 0.162109 0.34375 0.162109 0.330078 c
+f}bind def end
+/X0 Ff/Encoding get 83/83 put
+q[6.25 0 0 -6.25 1168.3 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1259.83 1004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/84{n 0.492188 0.160156 m
+0.492188 0.133301 0.486816 0.109131 0.475586 0.0881348 c
+0.4646 0.0671387 0.449219 0.0495605 0.429199 0.0351562 c
+0.409424 0.0209961 0.385986 0.0100098 0.358887 0.00244141 c
+0.332031 -0.00488281 0.302734 -0.00878906 0.270996 -0.00878906 c
+0.236328 -0.00878906 0.205566 -0.00488281 0.178955 0.00292969 c
+0.152588 0.0107422 0.130371 0.0214844 0.112305 0.0356445 c
+0.0944824 0.0495605 0.0810547 0.0661621 0.0717773 0.0854492 c
+0.0627441 0.104492 0.0581055 0.125732 0.0581055 0.148926 c
+0.0581055 0.187988 0.0688477 0.22168 0.0908203 0.25 c
+0.112549 0.27832 0.14624 0.303955 0.191895 0.327148 c
+0.150391 0.348145 0.119873 0.371826 0.100586 0.397705 c
+0.081543 0.423584 0.0717773 0.453125 0.0717773 0.486816 c
+0.0717773 0.507324 0.0759277 0.5271 0.0844727 0.546387 c
+0.0927734 0.56543 0.105713 0.58252 0.122803 0.597656 c
+0.139893 0.612549 0.161133 0.624512 0.187012 0.633545 c
+0.212646 0.642334 0.24292 0.646973 0.277832 0.646973 c
+0.310547 0.646973 0.3396 0.643555 0.364502 0.636475 c
+0.389404 0.629639 0.410156 0.619629 0.427246 0.606445 c
+0.444092 0.593506 0.456787 0.577637 0.465332 0.559082 c
+0.473633 0.540527 0.478027 0.52002 0.478027 0.49707 c
+0.478027 0.459961 0.467773 0.428467 0.447021 0.402344 c
+0.426514 0.376465 0.396973 0.353516 0.358887 0.333984 c
+0.377686 0.324707 0.395264 0.314209 0.411621 0.302734 c
+0.427734 0.291504 0.441895 0.278809 0.454102 0.264648 c
+0.466064 0.250732 0.475342 0.235107 0.482178 0.217773 c
+0.48877 0.200684 0.492188 0.181396 0.492188 0.160156 c
+0.391113 0.490234 m
+0.391113 0.519043 0.381104 0.540771 0.360596 0.554932 c
+0.340332 0.569092 0.311768 0.576172 0.274902 0.576172 c
+0.238525 0.576172 0.210205 0.569336 0.189697 0.555176 c
+0.169434 0.54126 0.15918 0.520264 0.15918 0.492188 c
+0.15918 0.479492 0.161621 0.467773 0.166504 0.457031 c
+0.171387 0.446289 0.178955 0.436279 0.189209 0.426758 c
+0.199463 0.41748 0.212158 0.408203 0.227539 0.398926 c
+0.242676 0.389893 0.260986 0.380615 0.282227 0.371094 c
+0.318848 0.388184 0.346191 0.40625 0.364258 0.425049 c
+0.38208 0.443604 0.391113 0.465332 0.391113 0.490234 c
+0.399902 0.153809 m
+0.399902 0.165771 0.397949 0.17749 0.394043 0.188965 c
+0.390137 0.200195 0.383301 0.211426 0.373047 0.222656 c
+0.363037 0.233643 0.349609 0.244629 0.33252 0.255859 c
+0.315674 0.266846 0.294189 0.27832 0.268066 0.290039 c
+0.246094 0.279297 0.227295 0.268799 0.212158 0.258057 c
+0.197021 0.247559 0.184814 0.236816 0.175537 0.22583 c
+0.16626 0.215088 0.159668 0.203613 0.155762 0.191895 c
+0.151855 0.180176 0.149902 0.167969 0.149902 0.154785 c
+0.149902 0.140137 0.153076 0.127197 0.159424 0.115967 c
+0.165771 0.104736 0.174316 0.0952148 0.185547 0.0874023 c
+0.196533 0.0795898 0.209717 0.0737305 0.225098 0.0698242 c
+0.240234 0.065918 0.256836 0.0639648 0.274902 0.0639648 c
+0.291992 0.0639648 0.30835 0.0656738 0.32373 0.0693359 c
+0.338867 0.0727539 0.352295 0.0783691 0.363525 0.0856934 c
+0.374756 0.0930176 0.383545 0.102295 0.390137 0.113525 c
+0.396484 0.124756 0.399902 0.138184 0.399902 0.153809 c
+f}bind def end
+/X0 Ff/Encoding get 84/84 put
+q[6.25 0 0 -6.25 345.866 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+/X0 Ff/CharProcs get begin/85{n 0.484863 0.31543 m
+0.0649414 0.31543 l
+0.0649414 0.387207 l
+0.484863 0.387207 l
+0.484863 0.31543 l
+0.484863 0.145508 m
+0.0649414 0.145508 l
+0.0649414 0.217285 l
+0.484863 0.217285 l
+0.484863 0.145508 l
+f}bind def end
+/X0 Ff/Encoding get 85/85 put
+q[6.25 0 0 -6.25 985.078 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+/X0 Ff/CharProcs get begin/86{n 0.513184 0.61084 m
+0.46875 0.620117 0.430176 0.625 0.397949 0.625 c
+0.321533 0.625 0.283203 0.584961 0.283203 0.504883 c
+0.283203 0.418945 l
+0.498047 0.418945 l
+0.498047 0.348145 l
+0.283203 0.348145 l
+0.283203 0 l
+0.196777 0 l
+0.196777 0.348145 l
+0.0390625 0.348145 l
+0.0390625 0.418945 l
+0.196777 0.418945 l
+0.196777 0.5 l
+0.196777 0.630371 0.264648 0.695801 0.400879 0.695801 c
+0.43457 0.695801 0.472168 0.691895 0.513184 0.684082 c
+0.513184 0.61084 l
+f}bind def end
+/X0 Ff/Encoding get 86/86 put
+q[6.25 0 0 -6.25 1030.88 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+/X0 Ff/CharProcs get begin/87{n 0.233887 0.689941 m
+0.220215 0.460938 l
+0.140137 0.460938 l
+0.125977 0.689941 l
+0.233887 0.689941 l
+0.423828 0.689941 m
+0.410156 0.460938 l
+0.330078 0.460938 l
+0.315918 0.689941 l
+0.423828 0.689941 l
+f}bind def end
+/X0 Ff/Encoding get 87/87 put
+q[6.25 0 0 -6.25 1305.63 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/88{n 0.245117 0.620117 m
+0.100098 0.620117 l
+0.100098 0.689941 l
+0.331055 0.689941 l
+0.331055 0.0708008 l
+0.477051 0.0708008 l
+0.477051 0 l
+0.0839844 0 l
+0.0839844 0.0708008 l
+0.245117 0.0708008 l
+0.245117 0.620117 l
+f}bind def end
+/X0 Ff/Encoding get 88/88 put
+q[6.25 0 0 -6.25 1534.66 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1672.08 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1763.69 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1855.3 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1946.91 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2084.33 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2175.94 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2267.55 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/89{n 0.52002 0 m
+0.407227 0 l
+0.274902 0.187012 l
+0.144043 0 l
+0.0341797 0 l
+0.224121 0.246094 l
+0.0429688 0.490234 l
+0.151855 0.490234 l
+0.280762 0.301758 l
+0.407227 0.490234 l
+0.512207 0.490234 l
+0.328125 0.244141 l
+0.52002 0 l
+f}bind def end
+/X0 Ff/Encoding get 89/89 put
+q[6.25 0 0 -6.25 2359.16 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2496.55 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 2542.35 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+/X0 Ff/CharProcs get begin/90{n 0.532227 0.490234 m
+0.460938 0 l
+0.35791 0 l
+0.287109 0.205078 l
+0.272949 0.254883 l
+0.256836 0.202148 l
+0.188965 0 l
+0.0888672 0 l
+0.0180664 0.490234 l
+0.101074 0.490234 l
+0.14209 0.157227 l
+0.150879 0.0830078 l
+0.171875 0.147949 l
+0.243164 0.368164 l
+0.304199 0.368164 l
+0.380859 0.150879 l
+0.402832 0.0859375 l
+0.410156 0.154785 l
+0.448242 0.490234 l
+0.532227 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 90/90 put
+q[6.25 0 0 -6.25 2588.16 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 2633.96 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2679.75 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2725.56 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 2771.35 1110.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/91{n 0.48877 0.35498 m
+0.48877 0.292969 0.481445 0.239502 0.466309 0.19458 c
+0.451416 0.149902 0.429199 0.113037 0.399902 0.0842285 c
+0.370605 0.0554199 0.334473 0.0341797 0.291016 0.0205078 c
+0.247803 0.00683594 0.197754 0 0.141113 0 c
+0.0878906 0 l
+0.0878906 0.0742188 l
+0.146973 0.0742188 l
+0.188965 0.0742188 0.225098 0.0783691 0.255859 0.0869141 c
+0.286377 0.0952148 0.311768 0.107666 0.332275 0.124268 c
+0.352539 0.140625 0.368164 0.160645 0.378906 0.184326 c
+0.389648 0.207764 0.39624 0.234863 0.398926 0.265137 c
+0.400879 0.285156 l
+0.380371 0.273193 0.356934 0.263428 0.330078 0.256104 c
+0.303467 0.248779 0.274414 0.245117 0.243164 0.245117 c
+0.210938 0.245117 0.182617 0.249756 0.158203 0.259277 c
+0.133789 0.268555 0.113525 0.281738 0.0974121 0.298828 c
+0.0812988 0.315674 0.0693359 0.335693 0.0610352 0.359131 c
+0.0529785 0.382324 0.0488281 0.407715 0.0488281 0.435059 c
+0.0488281 0.4646 0.0541992 0.492188 0.0649414 0.518066 c
+0.0756836 0.543701 0.0905762 0.566162 0.110107 0.585205 c
+0.129395 0.604248 0.152588 0.619141 0.179688 0.630371 c
+0.206543 0.641357 0.236328 0.646973 0.269043 0.646973 c
+0.300537 0.646973 0.329834 0.641846 0.356689 0.631348 c
+0.383545 0.621094 0.406738 0.604248 0.42627 0.580811 c
+0.445801 0.557617 0.460938 0.527344 0.472168 0.490234 c
+0.483154 0.453125 0.48877 0.408203 0.48877 0.35498 c
+0.265137 0.577148 m
+0.24707 0.577148 0.230225 0.574219 0.2146 0.568115 c
+0.199219 0.562256 0.185791 0.553467 0.174561 0.541748 c
+0.16333 0.530273 0.154541 0.516113 0.147949 0.499023 c
+0.141602 0.482178 0.138184 0.462891 0.138184 0.440918 c
+0.138184 0.421143 0.140381 0.40332 0.145264 0.387695 c
+0.149902 0.37207 0.157227 0.358887 0.167236 0.3479 c
+0.177002 0.337158 0.189941 0.328613 0.205566 0.322754 c
+0.221191 0.316895 0.239746 0.313965 0.26123 0.313965 c
+0.273193 0.313965 0.285645 0.314941 0.298584 0.317383 c
+0.311279 0.31958 0.323975 0.322754 0.336182 0.32666 c
+0.348389 0.330566 0.359863 0.334961 0.371094 0.340332 c
+0.38208 0.345459 0.39209 0.351074 0.400879 0.356934 c
+0.400879 0.398926 0.397949 0.433838 0.391602 0.462158 c
+0.385498 0.490234 0.376465 0.512939 0.364746 0.530029 c
+0.353027 0.547119 0.338867 0.559082 0.322021 0.566406 c
+0.30542 0.573486 0.286377 0.577148 0.265137 0.577148 c
+f}bind def end
+/X0 Ff/Encoding get 91/91 put
+q[6.25 0 0 -6.25 345.866 1216.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1216.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/92{n 0.274902 0.499023 m
+0.284912 0.499023 0.294434 0.49707 0.303711 0.49292 c
+0.312744 0.489014 0.320801 0.483398 0.327637 0.476562 c
+0.334473 0.469727 0.339844 0.461914 0.343994 0.452637 c
+0.3479 0.443604 0.350098 0.434082 0.350098 0.423828 c
+0.350098 0.413574 0.348145 0.403809 0.343994 0.394775 c
+0.340088 0.385986 0.334473 0.37793 0.327637 0.371094 c
+0.320801 0.364258 0.312988 0.358887 0.303711 0.35498 c
+0.294678 0.351074 0.285156 0.349121 0.274902 0.349121 c
+0.264648 0.349121 0.254883 0.351074 0.24585 0.35498 c
+0.237061 0.358887 0.229004 0.364258 0.222168 0.371094 c
+0.215332 0.37793 0.209961 0.385742 0.206055 0.394775 c
+0.202148 0.403564 0.200195 0.41333 0.200195 0.423828 c
+0.200195 0.433838 0.202148 0.443359 0.206055 0.452637 c
+0.209961 0.46167 0.215332 0.469727 0.222168 0.476562 c
+0.229004 0.483398 0.236816 0.48877 0.24585 0.49292 c
+0.254639 0.496826 0.264404 0.499023 0.274902 0.499023 c
+0.274902 0.141113 m
+0.284912 0.141113 0.294434 0.13916 0.303711 0.13501 c
+0.312744 0.131104 0.320801 0.125488 0.327637 0.118652 c
+0.334473 0.111816 0.339844 0.104004 0.343994 0.0947266 c
+0.3479 0.0856934 0.350098 0.0761719 0.350098 0.065918 c
+0.350098 0.0556641 0.348145 0.0458984 0.343994 0.0368652 c
+0.340088 0.0280762 0.334473 0.0200195 0.327637 0.0131836 c
+0.320801 0.00634766 0.312988 0.000976562 0.303711 -0.00292969 c
+0.294678 -0.00683594 0.285156 -0.00878906 0.274902 -0.00878906 c
+0.264648 -0.00878906 0.254883 -0.00683594 0.24585 -0.00292969 c
+0.237061 0.000976562 0.229004 0.00634766 0.222168 0.0131836 c
+0.215332 0.0200195 0.209961 0.027832 0.206055 0.0368652 c
+0.202148 0.0456543 0.200195 0.0554199 0.200195 0.065918 c
+0.200195 0.0759277 0.202148 0.0854492 0.206055 0.0947266 c
+0.209961 0.10376 0.215332 0.111816 0.222168 0.118652 c
+0.229004 0.125488 0.236816 0.130859 0.24585 0.13501 c
+0.254639 0.138916 0.264404 0.141113 0.274902 0.141113 c
+f}bind def end
+/X0 Ff/Encoding get 92/92 put
+q[6.25 0 0 -6.25 893.467 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 939.225 1322.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 710.226 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 756.032 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 801.837 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 847.643 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 893.448 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 985.026 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1030.83 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1351.47 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1397.28 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1443.08 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1488.89 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1534.69 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1580.5 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1626.3 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+/X0 Ff/CharProcs get begin/93{n 0.494141 -0.10498 m
+0.413086 -0.10498 l
+0.078125 0.689941 l
+0.15918 0.689941 l
+0.494141 -0.10498 l
+f}bind def end
+/X0 Ff/Encoding get 93/93 put
+q[6.25 0 0 -6.25 1672.11 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1717.91 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1763.72 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1809.44 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1855.25 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1901.04 1429.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 1535.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 710.226 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 756.032 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 801.837 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 847.643 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 893.448 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 939.254 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 985.026 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1030.83 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1351.47 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1397.28 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1443.08 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1488.89 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1534.69 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1580.44 1641.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.421 1747.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.421 1854.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 710.226 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 756.032 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 801.837 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 847.643 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 893.448 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 985.026 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1030.83 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+/X0 Ff/CharProcs get begin/94{n 0.472168 0 m
+0.395996 0 l
+0.393066 0.0791016 l
+0.378418 0.0622559 0.364502 0.0480957 0.351318 0.0368652 c
+0.338135 0.0256348 0.325195 0.0166016 0.312012 0.00976562 c
+0.299072 0.00292969 0.285889 -0.00170898 0.272705 -0.00463867 c
+0.259521 -0.00732422 0.245605 -0.00878906 0.230957 -0.00878906 c
+0.180664 -0.00878906 0.142578 0.00585938 0.116699 0.0356445 c
+0.0910645 0.0651855 0.078125 0.109863 0.078125 0.169922 c
+0.078125 0.490234 l
+0.163086 0.490234 l
+0.163086 0.176758 l
+0.163086 0.101562 0.191406 0.0639648 0.248047 0.0639648 c
+0.258301 0.0639648 0.268555 0.0654297 0.278564 0.0686035 c
+0.28833 0.0715332 0.298828 0.0769043 0.309814 0.0847168 c
+0.320557 0.0922852 0.332275 0.102539 0.344971 0.115723 c
+0.357422 0.128662 0.371582 0.14502 0.387207 0.165039 c
+0.387207 0.490234 l
+0.472168 0.490234 l
+0.472168 0 l
+f}bind def end
+/X0 Ff/Encoding get 94/94 put
+q[6.25 0 0 -6.25 1305.66 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1351.47 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1397.28 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1443.08 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1488.89 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1534.69 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1580.5 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1626.3 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1672.11 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1717.91 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1763.72 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1809.53 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 1855.33 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1901.14 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1946.94 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1992.75 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2038.55 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 2084.36 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 2130.16 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2175.97 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2221.78 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2267.58 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2313.39 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2359.19 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2405 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2450.8 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2496.61 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 2542.41 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2588.22 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2634.03 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2679.83 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2725.64 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2771.44 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2817.25 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2863.05 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2908.86 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2954.66 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3000.47 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3046.28 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3092.08 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3137.89 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3183.69 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3229.5 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3275.3 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3321.11 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3366.91 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3412.72 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3458.53 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3504.33 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3550.14 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3595.94 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3641.75 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3687.55 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+/X0 Ff/CharProcs get begin/95{n 0.420898 0.226074 m
+0.128906 0.226074 l
+0.128906 0.306152 l
+0.420898 0.306152 l
+0.420898 0.226074 l
+f}bind def end
+/X0 Ff/Encoding get 95/95 put
+q[6.25 0 0 -6.25 3733.36 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3779.16 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3824.97 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3870.78 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3916.58 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3962.39 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4008.19 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 4054 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4099.8 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 4145.61 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 4191.41 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 4237.22 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4283.03 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 4328.83 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 4374.64 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4420.44 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 4466.25 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4512.05 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 4557.86 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 4603.66 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 4649.47 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 4695.27 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 4741.08 1960.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 664.421 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 710.226 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 756.022 2041.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.421 2154.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 710.226 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 756.032 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 801.837 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 847.643 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 893.424 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 939.225 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+/X0 Ff/CharProcs get begin/96{n 0.540039 0.689941 m
+0.0898438 0 l
+0.00976562 0 l
+0.458984 0.689941 l
+0.540039 0.689941 l
+0.279785 0.553223 m
+0.279785 0.532227 0.276855 0.512451 0.270508 0.494385 c
+0.264404 0.476318 0.255615 0.460693 0.243896 0.44751 c
+0.232422 0.434326 0.218506 0.424072 0.201904 0.41626 c
+0.185547 0.408691 0.167236 0.404785 0.146973 0.404785 c
+0.127197 0.404785 0.109375 0.407715 0.0935059 0.414062 c
+0.0778809 0.420166 0.064209 0.429443 0.0529785 0.44165 c
+0.041748 0.453857 0.0332031 0.46875 0.0270996 0.486816 c
+0.0212402 0.504639 0.0180664 0.525391 0.0180664 0.548828 c
+0.0180664 0.56958 0.0209961 0.589111 0.0273438 0.607178 c
+0.0334473 0.625244 0.0422363 0.640869 0.0539551 0.654297 c
+0.0654297 0.66748 0.0793457 0.677979 0.0959473 0.685547 c
+0.112305 0.692871 0.130615 0.696777 0.150879 0.696777 c
+0.170654 0.696777 0.188477 0.693848 0.204346 0.6875 c
+0.219971 0.681396 0.233643 0.672363 0.244873 0.660156 c
+0.256104 0.648193 0.264648 0.633301 0.270752 0.615234 c
+0.276611 0.597412 0.279785 0.57666 0.279785 0.553223 c
+0.208008 0.550781 m
+0.208008 0.579346 0.202881 0.600586 0.192383 0.614258 c
+0.182129 0.62793 0.16748 0.634766 0.148926 0.634766 c
+0.139648 0.634766 0.131104 0.632812 0.123779 0.628418 c
+0.116455 0.624268 0.110352 0.618408 0.105225 0.61084 c
+0.100342 0.603516 0.0964355 0.594482 0.09375 0.584229 c
+0.0913086 0.573975 0.0898438 0.562988 0.0898438 0.550781 c
+0.0898438 0.522217 0.0949707 0.500977 0.105469 0.487305 c
+0.115723 0.473633 0.130371 0.466797 0.148926 0.466797 c
+0.158203 0.466797 0.166748 0.46875 0.174072 0.473145 c
+0.181396 0.477295 0.1875 0.483154 0.192627 0.490723 c
+0.19751 0.498047 0.201416 0.50708 0.204102 0.517334 c
+0.206543 0.527588 0.208008 0.538574 0.208008 0.550781 c
+0.532227 0.141113 m
+0.532227 0.120117 0.529053 0.100586 0.522705 0.0825195 c
+0.516357 0.0646973 0.507568 0.0490723 0.49585 0.0356445 c
+0.484375 0.0224609 0.470459 0.0119629 0.453857 0.00439453 c
+0.4375 -0.00292969 0.419189 -0.00683594 0.398926 -0.00683594 c
+0.37915 -0.00683594 0.361328 -0.00390625 0.345459 0.00244141 c
+0.329834 0.00854492 0.316162 0.0175781 0.304932 0.0297852 c
+0.293701 0.041748 0.285156 0.0568848 0.279053 0.0749512 c
+0.273193 0.0930176 0.27002 0.11377 0.27002 0.137207 c
+0.27002 0.157959 0.272949 0.17749 0.279297 0.195557 c
+0.2854 0.213623 0.294189 0.229248 0.305908 0.242676 c
+0.317383 0.255859 0.331299 0.266357 0.3479 0.273926 c
+0.364258 0.28125 0.382568 0.285156 0.402832 0.285156 c
+0.422607 0.285156 0.44043 0.282227 0.456543 0.275879 c
+0.472412 0.269775 0.486084 0.260498 0.497314 0.248291 c
+0.508545 0.236084 0.51709 0.221191 0.523193 0.203125 c
+0.529053 0.185303 0.532227 0.164551 0.532227 0.141113 c
+0.460449 0.13916 m
+0.460449 0.167725 0.455322 0.188965 0.44458 0.202637 c
+0.434082 0.216309 0.419434 0.223145 0.400879 0.223145 c
+0.391602 0.223145 0.383057 0.221191 0.375732 0.216797 c
+0.368408 0.212646 0.362305 0.206787 0.357178 0.199219 c
+0.352295 0.191895 0.348389 0.182861 0.345703 0.172607 c
+0.343262 0.162354 0.341797 0.151367 0.341797 0.13916 c
+0.341797 0.110596 0.346924 0.0893555 0.357422 0.0756836 c
+0.367676 0.0620117 0.382324 0.0551758 0.400879 0.0551758 c
+0.410156 0.0551758 0.418701 0.0571289 0.426025 0.0615234 c
+0.43335 0.0656738 0.439453 0.0715332 0.444824 0.0791016 c
+0.449951 0.0864258 0.453857 0.095459 0.456543 0.105713 c
+0.458984 0.115967 0.460449 0.126953 0.460449 0.13916 c
+f}bind def end
+/X0 Ff/Encoding get 96/96 put
+q[6.25 0 0 -6.25 985.031 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+/X0 Ff/CharProcs get begin/97{n 0.5 0.333008 m
+0.5 0.290527 0.49585 0.251709 0.487305 0.216797 c
+0.479004 0.182129 0.466797 0.150879 0.451172 0.123047 c
+0.549805 0 l
+0.437012 0 l
+0.394043 0.0532227 l
+0.371094 0.0336914 0.345215 0.0187988 0.31665 0.00854492 c
+0.28833 -0.00170898 0.257324 -0.00683594 0.224121 -0.00683594 c
+0.192627 -0.00683594 0.164551 -0.00244141 0.140137 0.00634766 c
+0.115723 0.0151367 0.0952148 0.0273438 0.0786133 0.0432129 c
+0.0620117 0.0588379 0.0495605 0.0776367 0.0407715 0.0996094 c
+0.0322266 0.121338 0.027832 0.145508 0.027832 0.171875 c
+0.027832 0.196533 0.0310059 0.218506 0.0375977 0.238037 c
+0.0439453 0.257324 0.0527344 0.274658 0.0639648 0.289795 c
+0.0749512 0.304932 0.0876465 0.318115 0.102295 0.329834 c
+0.116699 0.341309 0.131836 0.352051 0.147949 0.361816 c
+0.137207 0.376953 l
+0.119141 0.399414 0.105469 0.422119 0.0964355 0.445312 c
+0.0876465 0.468262 0.0830078 0.490967 0.0830078 0.513184 c
+0.0830078 0.536621 0.0866699 0.558105 0.0942383 0.578125 c
+0.101562 0.5979 0.112549 0.61499 0.127197 0.629639 c
+0.141602 0.644043 0.159424 0.655273 0.180908 0.663574 c
+0.202148 0.671631 0.226562 0.675781 0.253906 0.675781 c
+0.280273 0.675781 0.303223 0.672119 0.323242 0.664551 c
+0.343018 0.657227 0.359619 0.646973 0.373047 0.633789 c
+0.38623 0.62085 0.39624 0.605713 0.403076 0.588623 c
+0.409668 0.571533 0.413086 0.553467 0.413086 0.53418 c
+0.413086 0.509766 0.408936 0.488525 0.400635 0.469971 c
+0.392334 0.45166 0.381592 0.435303 0.36792 0.421143 c
+0.354492 0.406982 0.339111 0.394531 0.321533 0.383301 c
+0.304199 0.372314 0.286377 0.361572 0.268066 0.351074 c
+0.394043 0.193848 l
+0.408203 0.232178 0.415039 0.278564 0.414062 0.333008 c
+0.5 0.333008 l
+0.116211 0.182129 m
+0.116211 0.165039 0.118896 0.14917 0.124512 0.134766 c
+0.129883 0.120605 0.137939 0.108154 0.148193 0.0979004 c
+0.158447 0.0876465 0.170898 0.079834 0.185791 0.0742188 c
+0.200439 0.0688477 0.217285 0.065918 0.23584 0.065918 c
+0.278076 0.065918 0.315186 0.081543 0.347168 0.112793 c
+0.191895 0.307129 l
+0.180908 0.299805 0.170654 0.291748 0.161377 0.283203 c
+0.1521 0.274902 0.144287 0.265625 0.137451 0.255371 c
+0.130859 0.245361 0.125732 0.234375 0.121826 0.222168 c
+0.118164 0.210205 0.116211 0.196777 0.116211 0.182129 c
+0.327148 0.525879 m
+0.327148 0.550293 0.320312 0.569336 0.306641 0.583252 c
+0.292969 0.596924 0.274414 0.604004 0.250977 0.604004 c
+0.238037 0.604004 0.226562 0.602051 0.216553 0.597656 c
+0.206787 0.593506 0.198242 0.587646 0.191406 0.580078 c
+0.18457 0.572754 0.179443 0.563965 0.176025 0.553711 c
+0.172607 0.543701 0.170898 0.532715 0.170898 0.520996 c
+0.170898 0.503418 0.174072 0.487061 0.180664 0.471924 c
+0.187012 0.456787 0.19751 0.440186 0.211914 0.421875 c
+0.225098 0.404785 l
+0.239014 0.412598 0.252197 0.42041 0.264648 0.428467 c
+0.276855 0.436279 0.287842 0.445068 0.297119 0.454834 c
+0.306396 0.464355 0.313721 0.474854 0.319092 0.486572 c
+0.324463 0.498047 0.327148 0.51123 0.327148 0.525879 c
+f}bind def end
+/X0 Ff/Encoding get 97/97 put
+q[6.25 0 0 -6.25 1168.23 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<61>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1351.46 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1443.07 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1488.83 2260.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.421 2366.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 710.226 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 756.032 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 801.837 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 847.643 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 893.448 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 939.254 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 985.026 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1030.83 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1351.47 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1397.23 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1626.26 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.87 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1809.48 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1901.09 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2038.51 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2130.12 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2221.73 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2313.34 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2404.95 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2450.76 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 2542.37 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2633.98 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2725.59 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2863.01 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 2954.62 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3000.43 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3046.23 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3092.04 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3137.84 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3183.65 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3229.46 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3275.26 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3321.07 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3366.87 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3412.68 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3458.48 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3504.29 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3550.09 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3595.9 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3641.71 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3687.51 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3733.32 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3779.12 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3824.93 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3870.73 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3916.54 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3962.34 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 4008.15 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 4053.96 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4099.76 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+q[6.25 0 0 -6.25 4145.57 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 4191.37 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 4237.18 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4282.98 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4328.79 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 4374.59 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4420.4 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 4466.2 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4512.01 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 4557.82 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 4603.62 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 4649.38 2472.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 847.662 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 893.467 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1259.83 2554.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 710.226 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 756.032 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 801.837 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 847.643 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 893.448 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 985.031 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.45 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1214.06 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1305.67 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1534.64 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1580.44 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1626.25 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1672.05 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.86 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1763.66 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1809.47 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1855.27 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1901.08 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1946.89 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1992.69 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2038.5 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2084.24 2666.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/98{n 0.477051 0.145996 m
+0.477051 0.117676 0.470947 0.0935059 0.458252 0.0734863 c
+0.445801 0.0534668 0.429199 0.0373535 0.408447 0.0246582 c
+0.387939 0.012207 0.364502 0.00317383 0.338135 -0.00268555 c
+0.312012 -0.00830078 0.285156 -0.0112305 0.257812 -0.0112305 c
+0.221436 -0.0112305 0.188477 -0.00952148 0.15918 -0.00610352 c
+0.129883 -0.00268555 0.102295 0.00219727 0.0761719 0.00878906 c
+0.0761719 0.116211 l
+0.106689 0.103516 0.137207 0.0944824 0.167725 0.088623 c
+0.197998 0.0830078 0.226807 0.0800781 0.253906 0.0800781 c
+0.285156 0.0800781 0.30835 0.0849609 0.323975 0.0949707 c
+0.339355 0.104736 0.347168 0.117676 0.347168 0.133789 c
+0.347168 0.141113 0.345703 0.147949 0.342285 0.154297 c
+0.339111 0.1604 0.333008 0.16626 0.323975 0.172119 c
+0.315186 0.177734 0.30249 0.183594 0.286133 0.189697 c
+0.27002 0.195557 0.248535 0.202393 0.222168 0.209961 c
+0.197754 0.216797 0.176514 0.224365 0.157959 0.233154 c
+0.139648 0.241699 0.124512 0.251953 0.112305 0.263672 c
+0.100342 0.275391 0.0913086 0.288818 0.0852051 0.304443 c
+0.0793457 0.319824 0.0761719 0.337891 0.0761719 0.358887 c
+0.0761719 0.378906 0.0805664 0.397949 0.0898438 0.416016 c
+0.098877 0.433838 0.112549 0.449463 0.130615 0.463135 c
+0.148682 0.476562 0.171143 0.487305 0.198242 0.495117 c
+0.225098 0.50293 0.256836 0.506836 0.292969 0.506836 c
+0.324219 0.506836 0.351807 0.505371 0.375977 0.501953 c
+0.399902 0.498779 0.421387 0.495117 0.439941 0.491211 c
+0.439941 0.394043 l
+0.411621 0.403076 0.38501 0.409424 0.360107 0.41333 c
+0.335205 0.416992 0.310547 0.418945 0.286133 0.418945 c
+0.261719 0.418945 0.242188 0.414551 0.227295 0.405762 c
+0.212646 0.396973 0.205078 0.384766 0.205078 0.369141 c
+0.205078 0.361816 0.206543 0.35498 0.209473 0.349121 c
+0.212402 0.343262 0.218018 0.337646 0.226807 0.332031 c
+0.235352 0.32666 0.247314 0.320801 0.262939 0.314697 c
+0.27832 0.308838 0.298828 0.302246 0.324219 0.294922 c
+0.352783 0.286865 0.376953 0.278076 0.396484 0.268799 c
+0.416016 0.259521 0.431641 0.249023 0.443604 0.237305 c
+0.455322 0.225586 0.463867 0.212402 0.469238 0.197266 c
+0.474365 0.182373 0.477051 0.165283 0.477051 0.145996 c
+f}bind def end
+/X0 Ff/Encoding get 98/98 put
+q[6.25 0 0 -6.25 664.421 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<62>Tj
+Q
+/X0 Ff/CharProcs get begin/99{n 0.475098 0 m
+0.342773 0 l
+0.290039 0.157227 l
+0.273926 0.211914 l
+0.257812 0.155762 l
+0.207031 0 l
+0.0742188 0 l
+0.00390625 0.496094 l
+0.117188 0.496094 l
+0.152832 0.21582 l
+0.161133 0.13916 l
+0.181152 0.208008 l
+0.230957 0.358887 l
+0.321777 0.358887 l
+0.375 0.208984 l
+0.397949 0.138184 l
+0.407227 0.216797 l
+0.437012 0.496094 l
+0.544922 0.496094 l
+0.475098 0 l
+f}bind def end
+/X0 Ff/Encoding get 99/99 put
+q[6.25 0 0 -6.25 710.226 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<63>Tj
+Q
+q[6.25 0 0 -6.25 756.032 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.837 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 847.643 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 893.448 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 985.031 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.45 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1214.06 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1259.83 2772.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 847.624 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<62>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1030.83 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1076.63 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 2879.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1122.46 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1580.44 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1672.05 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1763.66 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1855.27 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+/X0 Ff/CharProcs get begin/100{n 0.513184 0 m
+0.415039 0 l
+0.319824 0.204102 l
+0.312744 0.219727 0.30542 0.232666 0.297852 0.24292 c
+0.290527 0.253174 0.282471 0.26123 0.273682 0.267334 c
+0.265137 0.273193 0.255615 0.277588 0.245361 0.280273 c
+0.235107 0.282715 0.223633 0.28418 0.210938 0.28418 c
+0.169922 0.28418 l
+0.169922 0 l
+0.0830078 0 l
+0.0830078 0.638184 l
+0.253906 0.638184 l
+0.291016 0.638184 0.322754 0.634277 0.349609 0.625977 c
+0.376221 0.61792 0.398193 0.606445 0.415283 0.591797 c
+0.432373 0.577148 0.444824 0.55957 0.452881 0.538818 c
+0.460693 0.518311 0.464844 0.495361 0.464844 0.470215 c
+0.464844 0.450439 0.461914 0.431641 0.456055 0.413818 c
+0.450195 0.39624 0.44165 0.380127 0.429932 0.365479 c
+0.418457 0.351074 0.404053 0.338623 0.386963 0.327881 c
+0.369873 0.317383 0.350342 0.30957 0.328125 0.304199 c
+0.345947 0.298096 0.361084 0.287354 0.373779 0.271729 c
+0.38623 0.256348 0.398926 0.23584 0.412109 0.209961 c
+0.513184 0 l
+0.374023 0.462891 m
+0.374023 0.49707 0.363525 0.522461 0.342041 0.539551 c
+0.320801 0.556396 0.290771 0.564941 0.251953 0.564941 c
+0.169922 0.564941 l
+0.169922 0.354004 l
+0.240234 0.354004 l
+0.260742 0.354004 0.279053 0.356201 0.295654 0.361084 c
+0.312012 0.365723 0.325928 0.372803 0.337646 0.38208 c
+0.349121 0.391357 0.358154 0.402588 0.364502 0.41626 c
+0.37085 0.429688 0.374023 0.445312 0.374023 0.462891 c
+f}bind def end
+/X0 Ff/Encoding get 100/100 put
+q[6.25 0 0 -6.25 1901.08 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<64>Tj
+Q
+/X0 Ff/CharProcs get begin/101{n 0.486816 0.172852 m
+0.486816 0.142578 0.480713 0.116211 0.468262 0.0932617 c
+0.456055 0.0705566 0.438721 0.0515137 0.416504 0.036377 c
+0.394531 0.0212402 0.36792 0.0100098 0.33667 0.00244141 c
+0.305664 -0.00488281 0.271484 -0.00878906 0.233887 -0.00878906 c
+0.217041 -0.00878906 0.200195 -0.00830078 0.18335 -0.00683594 c
+0.166748 -0.00561523 0.150635 -0.00390625 0.13501 -0.00195312 c
+0.119629 0 0.10498 0.00219727 0.0913086 0.00488281 c
+0.0776367 0.00732422 0.0654297 0.0102539 0.0541992 0.0131836 c
+0.0541992 0.097168 l
+0.0786133 0.0881348 0.105957 0.0810547 0.136475 0.0756836 c
+0.166748 0.0705566 0.201416 0.0678711 0.240234 0.0678711 c
+0.268066 0.0678711 0.291992 0.0700684 0.311768 0.0744629 c
+0.331299 0.0788574 0.347412 0.0852051 0.360107 0.0939941 c
+0.372559 0.102539 0.381592 0.113037 0.387451 0.125488 c
+0.393066 0.137695 0.395996 0.151855 0.395996 0.167969 c
+0.395996 0.185059 0.391357 0.199951 0.381592 0.212158 c
+0.37207 0.224365 0.359375 0.235107 0.34375 0.244873 c
+0.328125 0.254395 0.310303 0.263184 0.290283 0.27124 c
+0.270264 0.279053 0.25 0.287354 0.229004 0.295898 c
+0.208252 0.304199 0.187744 0.313477 0.167725 0.323486 c
+0.147705 0.333252 0.129883 0.344971 0.114258 0.358643 c
+0.0986328 0.37207 0.0861816 0.387939 0.076416 0.40625 c
+0.0668945 0.424316 0.0620117 0.446045 0.0620117 0.471191 c
+0.0620117 0.49292 0.0664062 0.514404 0.0756836 0.535645 c
+0.0847168 0.556641 0.098877 0.575439 0.118164 0.592041 c
+0.137207 0.608398 0.161865 0.621582 0.192139 0.631836 c
+0.222168 0.641846 0.258057 0.646973 0.299805 0.646973 c
+0.310547 0.646973 0.322021 0.646484 0.334717 0.645508 c
+0.347168 0.644531 0.359863 0.643311 0.372803 0.641357 c
+0.385498 0.639648 0.398193 0.637695 0.410889 0.635254 c
+0.42334 0.633057 0.435059 0.630615 0.445801 0.62793 c
+0.445801 0.549805 l
+0.420898 0.556885 0.395752 0.562256 0.370605 0.566162 c
+0.345703 0.569824 0.321289 0.571777 0.297852 0.571777 c
+0.248047 0.571777 0.211426 0.563477 0.187988 0.546875 c
+0.164551 0.530273 0.152832 0.508057 0.152832 0.47998 c
+0.152832 0.462891 0.157471 0.447998 0.167236 0.435547 c
+0.176758 0.42334 0.189453 0.412109 0.205078 0.402344 c
+0.220703 0.392578 0.238525 0.383789 0.258545 0.375732 c
+0.278564 0.36792 0.298828 0.359619 0.319824 0.351074 c
+0.340576 0.342773 0.361084 0.333496 0.381104 0.323242 c
+0.401123 0.313232 0.418945 0.30127 0.43457 0.287354 c
+0.450195 0.273682 0.462646 0.257324 0.472412 0.23877 c
+0.481934 0.220215 0.486816 0.198242 0.486816 0.172852 c
+f}bind def end
+/X0 Ff/Encoding get 101/101 put
+q[6.25 0 0 -6.25 1946.88 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<65>Tj
+Q
+q[6.25 0 0 -6.25 1992.69 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2038.49 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2084.3 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 2130.1 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 2175.91 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 2221.71 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 2267.52 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2313.33 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2359.13 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2404.85 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2450.66 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 2496.45 2985.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 893.429 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 939.235 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 985.04 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1168.23 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1580.48 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1717.9 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1809.51 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1901.12 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1992.73 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2038.53 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2084.34 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2130.15 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2175.95 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2221.76 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 2267.56 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2313.37 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2359.17 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2404.98 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2450.78 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 2496.59 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2542.4 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2588.2 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2634.01 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2679.81 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2725.62 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2771.42 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2817.23 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 2863.03 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2908.84 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2954.65 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3000.45 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 3046.26 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3092.06 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3137.87 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3183.67 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3229.48 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3275.28 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3321.09 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 3366.9 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3412.7 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3458.51 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3504.26 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3550.07 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 3595.87 3091.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 893.429 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 939.235 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 985.04 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1122.46 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1580.44 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1672.05 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1763.66 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1855.27 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1901.08 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 1946.88 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1992.69 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2038.49 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2084.3 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2130.1 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2175.91 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 2221.71 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2267.52 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2313.33 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2359.13 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2404.94 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2450.74 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2496.55 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2542.35 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2588.16 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2633.96 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 2679.77 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2725.58 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2771.38 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2817.19 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2862.99 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 2908.8 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2954.6 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3000.41 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3046.21 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3092.02 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3137.82 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 3183.63 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3229.44 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 3275.24 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3321.05 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3366.85 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3412.66 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 3458.46 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3504.27 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3550.07 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3595.88 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3641.69 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3687.49 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3733.3 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 3779.1 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3824.91 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3870.71 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3916.47 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3962.28 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 4008.07 3197.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 893.429 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 939.235 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 985.04 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1122.43 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<61>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1534.66 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1672.08 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1763.64 3304.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.624 3410.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 985.026 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/102{n 0.513184 0.588867 m
+0.499023 0.593262 0.481934 0.597168 0.462158 0.600342 c
+0.442627 0.603271 0.422363 0.60498 0.401855 0.60498 c
+0.387939 0.60498 0.375 0.603271 0.362793 0.599365 c
+0.35083 0.595703 0.340332 0.589844 0.331543 0.581543 c
+0.322754 0.573486 0.315918 0.563232 0.310791 0.550537 c
+0.305908 0.538086 0.303223 0.522949 0.303223 0.504883 c
+0.303223 0.424805 l
+0.498047 0.424805 l
+0.498047 0.332031 l
+0.303223 0.332031 l
+0.303223 0 l
+0.183105 0 l
+0.183105 0.332031 l
+0.0390625 0.332031 l
+0.0390625 0.424805 l
+0.183105 0.424805 l
+0.183105 0.5 l
+0.183105 0.535156 0.188232 0.565186 0.198486 0.590576 c
+0.20874 0.615723 0.223145 0.636475 0.241943 0.652588 c
+0.260498 0.668701 0.283203 0.68042 0.30957 0.687988 c
+0.335938 0.695312 0.365234 0.699219 0.397949 0.699219 c
+0.419434 0.699219 0.439697 0.697998 0.459229 0.695068 c
+0.478516 0.692383 0.496582 0.688965 0.513184 0.685059 c
+0.513184 0.588867 l
+f}bind def end
+/X0 Ff/Encoding get 102/102 put
+q[6.25 0 0 -6.25 1030.83 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<66>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1351.46 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1397.27 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+q[6.25 0 0 -6.25 1443.07 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1488.83 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1534.64 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1580.44 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 3516.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1351.43 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1763.64 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1809.44 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1855.25 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.06 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1946.86 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1992.67 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2038.47 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2084.28 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2130.08 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2175.89 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2221.69 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2267.5 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 2313.31 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2359.11 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2404.92 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2450.72 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2496.53 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2542.33 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2588.14 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 2633.94 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2679.75 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2725.56 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2771.36 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2817.17 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2862.97 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2908.78 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2954.58 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3000.39 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3046.19 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3092 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3137.81 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 3183.61 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3229.42 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 3275.22 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3321.03 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3366.83 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3412.64 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3458.44 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3504.25 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3550.06 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 3595.86 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3641.67 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 3687.47 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3733.28 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3779.08 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3824.89 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3870.69 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 3916.5 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3962.31 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 4008.11 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 4053.92 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 4099.72 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 4145.53 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 4191.33 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 4237.14 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 4282.94 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 4328.75 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 4374.56 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 4420.36 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4466.17 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 4511.97 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 4557.78 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4603.58 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 4649.39 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4695.19 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 4741 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4786.78 3622.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.33 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1672.14 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1717.94 3704.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1351.43 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1763.64 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1809.44 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1855.25 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1901.06 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1946.86 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1992.67 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2038.47 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2084.28 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2130.08 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2175.89 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 2221.69 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2267.5 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2313.31 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2359.11 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 2404.92 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 2450.72 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2496.53 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2542.33 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2588.14 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2633.94 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 2679.75 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2725.56 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2771.36 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2817.17 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2862.97 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2908.78 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2954.58 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3000.39 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3046.19 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 3092 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3137.81 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3183.61 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 3229.42 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3275.22 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3321.03 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3366.76 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3412.57 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3458.38 3816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2954.63 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3000.43 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3046.24 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3092.04 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3137.85 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 3183.65 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3229.46 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 3275.27 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3321.07 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3366.88 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3412.68 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3458.49 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 3504.29 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3550.1 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 3595.9 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3641.71 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 3687.52 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3733.32 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3779.13 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3824.93 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3870.74 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 3916.54 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3962.35 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 4008.15 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4053.96 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 4099.77 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 4145.57 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4191.38 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 4237.18 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4282.99 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 4328.79 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4374.58 3922.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.33 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1672.14 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1717.94 4004.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2954.56 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3000.36 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3046.17 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 3091.96 4116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1305.63 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1488.83 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1534.64 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<61>Tj
+Q
+q[6.25 0 0 -6.25 1580.45 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1626.25 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1672.06 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1717.86 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1763.67 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1809.47 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1855.24 4222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1626.36 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1672.16 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1717.97 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1763.77 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1809.58 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1855.38 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1901.19 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1946.94 4329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1397.23 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.24 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1763.65 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1855.26 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1901.04 4435.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1626.36 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1672.16 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.97 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1763.77 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1809.58 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1855.38 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.19 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1946.99 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1992.8 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 2038.54 4541.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/103{n 0.111816 0.707031 m
+0.147949 0.707031 l
+0.210693 0.707031 0.257324 0.692383 0.288086 0.662842 c
+0.318604 0.633545 0.333984 0.588867 0.333984 0.528809 c
+0.333984 0.416016 l
+0.333984 0.400146 0.335693 0.385986 0.339355 0.373291 c
+0.342773 0.36084 0.349121 0.350342 0.358154 0.341553 c
+0.366943 0.333008 0.378906 0.326416 0.394043 0.321777 c
+0.408936 0.317383 0.427734 0.314941 0.450195 0.314941 c
+0.471191 0.314941 l
+0.471191 0.24707 l
+0.450195 0.24707 l
+0.426514 0.24707 0.406982 0.245117 0.391846 0.241211 c
+0.376709 0.237305 0.36499 0.231445 0.356445 0.223389 c
+0.348145 0.215576 0.342285 0.205322 0.338867 0.192871 c
+0.335693 0.180664 0.333984 0.166016 0.333984 0.148926 c
+0.333984 -0.0219727 l
+0.333984 -0.0493164 0.330811 -0.0739746 0.324219 -0.0959473 c
+0.317871 -0.11792 0.307129 -0.136475 0.29248 -0.1521 c
+0.277832 -0.16748 0.258789 -0.179443 0.234863 -0.187744 c
+0.211182 -0.196045 0.182129 -0.200195 0.147949 -0.200195 c
+0.111816 -0.200195 l
+0.111816 -0.131836 l
+0.141113 -0.131836 l
+0.216309 -0.131836 0.253906 -0.0952148 0.253906 -0.0219727 c
+0.253906 0.146973 l
+0.253906 0.226318 0.288086 0.270996 0.356934 0.280762 c
+0.287598 0.288086 0.25293 0.333008 0.25293 0.415039 c
+0.25293 0.526855 l
+0.25293 0.601318 0.21582 0.638672 0.141113 0.638672 c
+0.111816 0.638672 l
+0.111816 0.707031 l
+f}bind def end
+/X0 Ff/Encoding get 103/103 put
+q[6.25 0 0 -6.25 1030.88 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<67>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1076.63 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<22>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<62>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1305.63 4647.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/104{n 0.439941 0.40918 m
+0.448975 0.397949 0.455322 0.385986 0.459229 0.373291 c
+0.462891 0.36084 0.464844 0.348145 0.464844 0.334961 c
+0.464844 0.307373 0.460205 0.282959 0.450439 0.261719 c
+0.440918 0.240723 0.42749 0.2229 0.409912 0.208496 c
+0.392578 0.194336 0.371826 0.18335 0.347412 0.176025 c
+0.323242 0.168701 0.296387 0.165039 0.26709 0.165039 c
+0.25 0.165039 0.233887 0.166748 0.219238 0.170166 c
+0.20459 0.173584 0.193604 0.17749 0.186035 0.182129 c
+0.180664 0.176758 0.175781 0.170654 0.171875 0.163818 c
+0.167969 0.157227 0.166016 0.149658 0.166016 0.141113 c
+0.166016 0.135986 0.167236 0.130859 0.169922 0.125488 c
+0.172363 0.120361 0.17627 0.115723 0.181396 0.111572 c
+0.186279 0.107666 0.192383 0.104248 0.199463 0.101562 c
+0.206299 0.0991211 0.214355 0.0976562 0.223145 0.097168 c
+0.34082 0.0927734 l
+0.367188 0.0922852 0.390869 0.0888672 0.412354 0.0827637 c
+0.433594 0.0769043 0.451904 0.0683594 0.467285 0.0571289 c
+0.482422 0.0461426 0.494385 0.0327148 0.502686 0.0168457 c
+0.510986 0.0012207 0.515137 -0.0168457 0.515137 -0.0371094 c
+0.515137 -0.0600586 0.51001 -0.0820312 0.499512 -0.102539 c
+0.489258 -0.123047 0.473389 -0.140869 0.452393 -0.156006 c
+0.431396 -0.171143 0.405273 -0.183105 0.374023 -0.191895 c
+0.342773 -0.200684 0.306641 -0.205078 0.265137 -0.205078 c
+0.225098 -0.205078 0.190674 -0.201904 0.161865 -0.195557 c
+0.133057 -0.189209 0.109619 -0.18042 0.0910645 -0.168945 c
+0.0727539 -0.157715 0.059082 -0.144043 0.050293 -0.128174 c
+0.0415039 -0.112549 0.0371094 -0.0952148 0.0371094 -0.0761719 c
+0.0371094 -0.0649414 0.0385742 -0.0541992 0.0415039 -0.0444336 c
+0.0444336 -0.034668 0.0488281 -0.0253906 0.0546875 -0.0163574 c
+0.0605469 -0.00756836 0.0678711 0.0012207 0.0766602 0.00976562 c
+0.0854492 0.0180664 0.0957031 0.0266113 0.10791 0.0351562 c
+0.092041 0.0441895 0.079834 0.0559082 0.0715332 0.0703125 c
+0.0632324 0.0844727 0.059082 0.0998535 0.059082 0.116211 c
+0.059082 0.127197 0.0605469 0.137451 0.0634766 0.147217 c
+0.0664062 0.156738 0.0700684 0.166016 0.0749512 0.174805 c
+0.0795898 0.183594 0.0849609 0.191895 0.0913086 0.200195 c
+0.0974121 0.208252 0.104004 0.216309 0.11084 0.224121 c
+0.098877 0.236084 0.0888672 0.250732 0.0808105 0.267822 c
+0.072998 0.284912 0.0688477 0.306152 0.0688477 0.332031 c
+0.0688477 0.359619 0.0737305 0.384277 0.0837402 0.406006 c
+0.0935059 0.42749 0.107422 0.445801 0.125 0.460693 c
+0.142578 0.475342 0.16333 0.486572 0.187744 0.494385 c
+0.211914 0.501953 0.238281 0.505859 0.26709 0.505859 c
+0.281738 0.505859 0.295654 0.505127 0.309326 0.503662 c
+0.322754 0.502197 0.334961 0.499756 0.346191 0.496094 c
+0.518066 0.496094 l
+0.518066 0.40918 l
+0.439941 0.40918 l
+0.15918 -0.065918 m
+0.15918 -0.0849609 0.168701 -0.0991211 0.188232 -0.108398 c
+0.20752 -0.117432 0.234863 -0.12207 0.27002 -0.12207 c
+0.29248 -0.12207 0.311279 -0.120117 0.326904 -0.115723 c
+0.342285 -0.111572 0.35498 -0.105957 0.364746 -0.0991211 c
+0.374512 -0.0922852 0.381348 -0.0844727 0.385742 -0.0751953 c
+0.389893 -0.0661621 0.39209 -0.0566406 0.39209 -0.046875 c
+0.39209 -0.0380859 0.390137 -0.0307617 0.385986 -0.0246582 c
+0.38208 -0.0187988 0.376221 -0.0136719 0.368896 -0.00952148 c
+0.361572 -0.00561523 0.353027 -0.00244141 0.343018 -0.000244141 c
+0.333252 0.00170898 0.322266 0.00317383 0.310059 0.00390625 c
+0.205078 0.00585938 l
+0.195801 -0.000488281 0.187988 -0.00683594 0.181885 -0.0126953 c
+0.176025 -0.0185547 0.171143 -0.0241699 0.167725 -0.0300293 c
+0.164307 -0.0356445 0.162109 -0.0415039 0.160889 -0.0473633 c
+0.159912 -0.0532227 0.15918 -0.0593262 0.15918 -0.065918 c
+0.179199 0.332031 m
+0.179199 0.305664 0.186768 0.284912 0.202393 0.269287 c
+0.217773 0.253906 0.239258 0.246094 0.26709 0.246094 c
+0.281738 0.246094 0.294434 0.248535 0.30542 0.253418 c
+0.316162 0.258301 0.325195 0.264648 0.33252 0.272949 c
+0.3396 0.281006 0.344971 0.290527 0.348633 0.30127 c
+0.352051 0.312012 0.354004 0.323242 0.354004 0.334961 c
+0.354004 0.362549 0.346436 0.384033 0.330811 0.399658 c
+0.31543 0.415039 0.293945 0.422852 0.266113 0.422852 c
+0.251465 0.422852 0.23877 0.42041 0.227783 0.415527 c
+0.217041 0.410645 0.208008 0.404053 0.200684 0.395752 c
+0.193604 0.387451 0.188232 0.37793 0.18457 0.366699 c
+0.181152 0.355713 0.179199 0.344238 0.179199 0.332031 c
+f}bind def end
+/X0 Ff/Encoding get 104/104 put
+q[6.25 0 0 -6.25 1214.03 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<68>Tj
+Q
+/X0 Ff/CharProcs get begin/105{n 0.514648 0.251953 m
+0.514648 0.212891 0.509277 0.177246 0.498047 0.144775 c
+0.487061 0.112549 0.471191 0.0847168 0.450195 0.0615234 c
+0.429443 0.0385742 0.403809 0.0205078 0.373535 0.0078125 c
+0.343262 -0.00488281 0.308838 -0.0112305 0.27002 -0.0112305 c
+0.233398 -0.0112305 0.200439 -0.00585938 0.171387 0.00488281 c
+0.142578 0.015625 0.11792 0.0314941 0.0976562 0.0529785 c
+0.0776367 0.0742188 0.0620117 0.10083 0.0512695 0.133057 c
+0.0405273 0.165039 0.0351562 0.202393 0.0351562 0.245117 c
+0.0351562 0.284424 0.0407715 0.320312 0.052002 0.352539 c
+0.0632324 0.384766 0.0793457 0.412109 0.100342 0.435059 c
+0.121338 0.457764 0.146973 0.475342 0.177246 0.488037 c
+0.20752 0.500488 0.241699 0.506836 0.279785 0.506836 c
+0.316895 0.506836 0.349854 0.501465 0.378906 0.490479 c
+0.407715 0.479736 0.432373 0.463379 0.452637 0.441895 c
+0.472656 0.42041 0.488037 0.393799 0.498779 0.362061 c
+0.509277 0.330322 0.514648 0.293701 0.514648 0.251953 c
+0.390625 0.249023 m
+0.390625 0.300293 0.381104 0.339111 0.361572 0.36499 c
+0.342285 0.390869 0.313721 0.403809 0.275879 0.403809 c
+0.255127 0.403809 0.237305 0.399902 0.222656 0.391602 c
+0.208008 0.383545 0.196045 0.372314 0.186523 0.358154 c
+0.177246 0.343994 0.170166 0.327637 0.165771 0.308594 c
+0.161377 0.289795 0.15918 0.269531 0.15918 0.248047 c
+0.15918 0.196289 0.169434 0.157471 0.19043 0.131104 c
+0.211182 0.10498 0.239746 0.0917969 0.275879 0.0917969 c
+0.295654 0.0917969 0.312988 0.0957031 0.327637 0.10376 c
+0.342285 0.111572 0.354004 0.122803 0.363281 0.136963 c
+0.372314 0.151123 0.37915 0.167725 0.383789 0.187012 c
+0.388184 0.206055 0.390625 0.226807 0.390625 0.249023 c
+f}bind def end
+/X0 Ff/Encoding get 105/105 put
+q[6.25 0 0 -6.25 1259.84 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<69>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<69>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1397.23 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1626.26 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1717.84 4754.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<67>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 4860.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/106{n 0.51416 0.256836 m
+0.51416 0.211426 0.507812 0.171875 0.494873 0.138672 c
+0.482178 0.105469 0.464111 0.0778809 0.441162 0.0559082 c
+0.418213 0.0339355 0.391113 0.0178223 0.359863 0.00708008 c
+0.328613 -0.00341797 0.294678 -0.00878906 0.257812 -0.00878906 c
+0.22168 -0.00878906 0.188232 -0.00610352 0.156982 -0.000732422 c
+0.125977 0.00463867 0.0961914 0.0117188 0.0678711 0.0209961 c
+0.0678711 0.689941 l
+0.187012 0.689941 l
+0.187012 0.527832 l
+0.182129 0.430176 l
+0.199951 0.453125 0.220947 0.47168 0.244873 0.48584 c
+0.268799 0.499756 0.297363 0.506836 0.331055 0.506836 c
+0.360352 0.506836 0.38623 0.500977 0.40918 0.489258 c
+0.431885 0.477539 0.450928 0.460938 0.466553 0.439209 c
+0.481934 0.417725 0.493652 0.391357 0.501953 0.360596 c
+0.51001 0.329834 0.51416 0.29541 0.51416 0.256836 c
+0.38916 0.251953 m
+0.38916 0.279297 0.387207 0.30249 0.383301 0.321777 c
+0.379395 0.34082 0.373779 0.356689 0.366455 0.369141 c
+0.359131 0.381348 0.350342 0.390381 0.3396 0.39624 c
+0.329102 0.401855 0.316895 0.404785 0.303223 0.404785 c
+0.283203 0.404785 0.263916 0.396729 0.245361 0.380371 c
+0.227051 0.364258 0.20752 0.342041 0.187012 0.313965 c
+0.187012 0.097168 l
+0.196289 0.09375 0.208008 0.0908203 0.221924 0.0883789 c
+0.235596 0.0861816 0.249756 0.0849609 0.26416 0.0849609 c
+0.282959 0.0849609 0.300049 0.0888672 0.315674 0.0966797 c
+0.331055 0.104492 0.344238 0.115479 0.355225 0.129883 c
+0.365967 0.144043 0.374512 0.161621 0.380371 0.182373 c
+0.38623 0.202881 0.38916 0.226074 0.38916 0.251953 c
+f}bind def end
+/X0 Ff/Encoding get 106/106 put
+q[6.25 0 0 -6.25 1030.83 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<6A>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+/X0 Ff/CharProcs get begin/107{n 0.375 0 m
+0.191895 0.248047 l
+0.191895 0 l
+0.0727539 0 l
+0.0727539 0.689941 l
+0.191895 0.689941 l
+0.191895 0.286133 l
+0.365234 0.496094 l
+0.51416 0.496094 l
+0.312988 0.27002 l
+0.530762 0 l
+0.375 0 l
+f}bind def end
+/X0 Ff/Encoding get 107/107 put
+q[6.25 0 0 -6.25 1214.05 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<6B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1305.63 4966.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 847.624 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 893.429 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 939.235 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<62>Tj
+Q
+q[6.25 0 0 -6.25 985.04 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1030.83 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1076.63 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 5072.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 893.424 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 939.23 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 985.036 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1122.45 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1214.03 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1397.25 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1488.86 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<64>Tj
+Q
+q[6.25 0 0 -6.25 1580.47 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<65>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 1717.89 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1809.5 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1901.11 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1992.72 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2038.44 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2084.25 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 2130.05 5179.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 893.429 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 939.235 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 985.04 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1168.23 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1580.48 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1717.9 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1809.51 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1901.12 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1992.73 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2038.53 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2084.34 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2130.15 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2175.95 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2221.76 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 2267.56 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2313.37 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2359.17 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2404.98 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2450.78 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 2496.59 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 2542.4 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2588.2 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2634.01 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2679.81 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2725.62 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2771.42 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2817.23 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 2863.03 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2908.84 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2954.65 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3000.45 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 3046.26 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3092.06 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3137.87 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 3183.67 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3229.48 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3275.28 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5F>Tj
+Q
+q[6.25 0 0 -6.25 3321.09 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 3366.9 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3412.7 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3458.51 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3504.26 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3550.07 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 3595.87 5285.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 893.429 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 939.235 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 985.04 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1122.43 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<61>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1534.66 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1672.08 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1763.64 5391.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.624 5497.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1030.83 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<66>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1351.46 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1443.07 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1534.64 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1580.44 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 5604.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.026 5710.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 2954.63 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3000.43 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 3046.24 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3092.04 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3137.85 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 3183.65 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 3229.46 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 3275.27 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3321.07 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3366.88 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3412.68 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3458.49 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 3504.29 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3550.1 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 3595.9 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3641.71 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 3687.52 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 3733.32 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3779.13 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3824.93 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3870.74 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 3916.54 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 3962.35 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 4008.15 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4053.96 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 4099.77 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 4145.57 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4191.38 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 4237.18 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 4282.99 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 4328.79 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 4374.58 5816.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 527.023 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 572.829 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 618.634 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 664.44 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 710.245 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 756.051 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 801.856 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 847.662 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 893.467 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 939.273 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 985.078 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.33 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1672.14 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1717.94 5897.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 345.871 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 481.217 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2954.56 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 3000.36 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 3046.17 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 3091.96 6010.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 345.871 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1305.63 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<60>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1488.83 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1534.64 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<61>Tj
+Q
+q[6.25 0 0 -6.25 1580.45 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1626.25 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1672.06 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1717.86 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1763.67 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 1809.47 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1855.24 6116.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 345.871 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 481.217 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1397.23 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.24 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1763.65 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1855.26 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1901.04 6222.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 6329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 345.871 6329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 6329.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+Q
+Q
+Q
+
+restore
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+LH
+(%%[Page: 1]%%) = 
+%%PageTrailer
+
+%%Page: 2 2
+%%PageBoundingBox: 0 0 612 792
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+30000 VM?
+Pscript_WinNT_Compat begin /$x mysetup def end
+Pscript_WinNT_Incr dup /suspend get exec
+Pscript_WinNT_Compat dup /initialize get exec
+%%BeginDocument: Pscript_Win_PassThrough
+
+save
+/im/initmatrix load def
+/n/newpath load def/m/moveto load def/l/lineto load def/c/curveto load def/h/closepath load def
+/f/fill load def/F/eofill load def/s/stroke load def/W/clip load def/W*/eoclip load def
+/rg/setrgbcolor load def/k/setcmykcolor load def
+/J/setlinecap load def/j/setlinejoin load def/w/setlinewidth load def/M/setmiterlimit load def/d/setdash load def
+/q/gsave load def/Q/grestore load def/iM/imagemask load def
+/Tj/show load def/Ff/findfont load def/Fs/scalefont load def/Sf/setfont load def
+/cm/concat load def/Cm/currentmatrix load def/mx/matrix load def/sm/setmatrix load def
+0 6600 m 0 0 l 5100 0 l 5100 6600 l 0 6600 l h W n
+q
+0 6600 m 0 0 l 5100 0 l 5100 6600 l 0 6600 l h W n
+q
+Q
+q
+0 0.000488281 m 5102 0.000488281 l 5102 6602 l 0 6602 l 0 0.000488281 l h W* n
+0 0.000488281 m 6800 0.000488281 l 6800 8800 l 0 8800 l 0 0.000488281 l h 1 1 1 rg
+f
+Q
+q
+0 0 0 rg
+8 dict begin/FontType 3 def/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 0 0]def/Encoding 256 array def 0 1 255{Encoding exch/.notdef put}for
+/CharProcs 1 dict def CharProcs begin/.notdef {} def end
+/BuildGlyph{1 0 -10 -10 10 10 setcachedevice exch/CharProcs get exch 2 copy known not{pop/.notdef}if get exec}bind def
+/BuildChar{1 index/Encoding get exch get 1 index/BuildGlyph get exec}bind def
+currentdict end
+/X0 exch definefont pop
+/X0 Ff/CharProcs get begin/0{n 0.372559 0 m
+0.284668 0 l
+0.284668 0.560059 l
+0.263672 0.540039 0.23584 0.519775 0.201416 0.499512 c
+0.167236 0.479492 0.13623 0.464355 0.108887 0.454102 c
+0.108887 0.539062 l
+0.157959 0.562012 0.200928 0.590088 0.237793 0.623047 c
+0.274414 0.655762 0.300537 0.687744 0.315918 0.71875 c
+0.372559 0.71875 l
+0.372559 0 l
+f}bind def end
+/X0 Ff/Encoding get 0/0 put
+/X0 Ff/CharProcs get begin/1{n 0.503418 0.0844727 m
+0.503418 0 l
+0.0302734 0 l
+0.0297852 0.0209961 0.032959 0.0415039 0.0405273 0.0610352 c
+0.0524902 0.0932617 0.0717773 0.125 0.0983887 0.15625 c
+0.124756 0.1875 0.163086 0.223633 0.213379 0.264648 c
+0.291016 0.328369 0.34375 0.378906 0.371094 0.41626 c
+0.398438 0.453369 0.412109 0.48877 0.412109 0.521973 c
+0.412109 0.556641 0.399658 0.586182 0.374756 0.610107 c
+0.349854 0.634033 0.317383 0.645996 0.277344 0.645996 c
+0.235107 0.645996 0.201172 0.633301 0.175781 0.60791 c
+0.150391 0.58252 0.137695 0.547363 0.137207 0.502441 c
+0.046875 0.511719 l
+0.0529785 0.579102 0.0761719 0.630371 0.116699 0.665771 c
+0.156982 0.700928 0.211182 0.71875 0.279297 0.71875 c
+0.3479 0.71875 0.402344 0.699707 0.442383 0.661621 c
+0.482422 0.623535 0.502441 0.576416 0.502441 0.52002 c
+0.502441 0.491455 0.496582 0.463379 0.484863 0.435547 c
+0.473145 0.407959 0.453857 0.378906 0.426514 0.348145 c
+0.399414 0.317627 0.354248 0.275635 0.291016 0.222168 c
+0.238281 0.177979 0.20459 0.147949 0.189453 0.13208 c
+0.174561 0.116455 0.162109 0.100586 0.152344 0.0844727 c
+0.503418 0.0844727 l
+f}bind def end
+/X0 Ff/Encoding get 1/1 put
+/X0 Ff/CharProcs get begin/2{n 0 -0.012207 m
+0.20752 0.728027 l
+0.277832 0.728027 l
+0.0708008 -0.012207 l
+0 -0.012207 l
+f}bind def end
+/X0 Ff/Encoding get 2/2 put
+/X0 Ff/CharProcs get begin/3{n 0.0419922 0.188965 m
+0.129883 0.200684 l
+0.139893 0.150879 0.156982 0.11499 0.181396 0.0930176 c
+0.205566 0.0710449 0.235107 0.0600586 0.27002 0.0600586 c
+0.311279 0.0600586 0.346191 0.0742188 0.374756 0.103027 c
+0.403076 0.131592 0.41748 0.166992 0.41748 0.209473 c
+0.41748 0.249756 0.404297 0.282959 0.37793 0.309326 c
+0.351562 0.335449 0.318115 0.348633 0.277344 0.348633 c
+0.260742 0.348633 0.240234 0.345459 0.215332 0.338867 c
+0.225098 0.416016 l
+0.230957 0.415527 0.235596 0.415039 0.239258 0.415039 c
+0.276611 0.415039 0.310303 0.424805 0.340332 0.444336 c
+0.370117 0.463867 0.385254 0.493896 0.385254 0.534668 c
+0.385254 0.566895 0.374512 0.593506 0.352539 0.614746 c
+0.330811 0.635742 0.302734 0.646484 0.268066 0.646484 c
+0.233887 0.646484 0.205566 0.635742 0.182617 0.614258 c
+0.159912 0.592773 0.145264 0.560547 0.138672 0.517578 c
+0.0507812 0.533203 l
+0.0615234 0.592041 0.0859375 0.637695 0.124023 0.670166 c
+0.162109 0.702393 0.209473 0.71875 0.266113 0.71875 c
+0.305176 0.71875 0.341064 0.710449 0.374023 0.693604 c
+0.406738 0.677002 0.431885 0.654053 0.449463 0.625 c
+0.466797 0.596191 0.475586 0.56543 0.475586 0.532715 c
+0.475586 0.501953 0.467285 0.473633 0.450684 0.448242 c
+0.434082 0.422852 0.409668 0.402832 0.376953 0.387695 c
+0.419189 0.37793 0.452148 0.357666 0.475586 0.326904 c
+0.499023 0.296143 0.510742 0.257812 0.510742 0.211426 c
+0.510742 0.148926 0.488037 0.0959473 0.442383 0.0524902 c
+0.396973 0.0090332 0.339355 -0.0126953 0.269531 -0.0126953 c
+0.206787 -0.0126953 0.154541 0.00585938 0.113037 0.043457 c
+0.0715332 0.0808105 0.0478516 0.129395 0.0419922 0.188965 c
+f}bind def end
+/X0 Ff/Encoding get 3/3 put
+/X0 Ff/CharProcs get begin/4{n 0.0888672 0 m
+0.0888672 0.100098 l
+0.188965 0.100098 l
+0.188965 0 l
+0.188965 -0.0366211 0.182617 -0.0664062 0.169434 -0.0891113 c
+0.156494 -0.111572 0.135742 -0.12915 0.107422 -0.141602 c
+0.0830078 -0.104004 l
+0.101562 -0.0959473 0.115234 -0.0839844 0.124023 -0.0681152 c
+0.132812 -0.0524902 0.137695 -0.0297852 0.138672 0 c
+0.0888672 0 l
+f}bind def end
+/X0 Ff/Encoding get 4/4 put
+/X0 Ff/CharProcs get begin/6{n 0.323242 0 m
+0.323242 0.171387 l
+0.0126953 0.171387 l
+0.0126953 0.251953 l
+0.339355 0.71582 l
+0.411133 0.71582 l
+0.411133 0.251953 l
+0.507812 0.251953 l
+0.507812 0.171387 l
+0.411133 0.171387 l
+0.411133 0 l
+0.323242 0 l
+0.323242 0.251953 m
+0.323242 0.574707 l
+0.0991211 0.251953 l
+0.323242 0.251953 l
+f}bind def end
+/X0 Ff/Encoding get 6/6 put
+/X0 Ff/CharProcs get begin/7{n 0.090332 0.418457 m
+0.090332 0.518555 l
+0.19043 0.518555 l
+0.19043 0.418457 l
+0.090332 0.418457 l
+0.090332 0 m
+0.090332 0.100098 l
+0.19043 0.100098 l
+0.19043 0 l
+0.090332 0 l
+f}bind def end
+/X0 Ff/Encoding get 7/7 put
+/X0 Ff/CharProcs get begin/8{n 0.0771484 0 m
+0.0771484 0.71582 l
+0.347168 0.71582 l
+0.394531 0.71582 0.430908 0.713623 0.456055 0.708984 c
+0.491211 0.703125 0.520508 0.692139 0.544434 0.675537 c
+0.568115 0.65918 0.587158 0.63623 0.601807 0.606445 c
+0.616211 0.576904 0.623535 0.544434 0.623535 0.508789 c
+0.623535 0.447998 0.604248 0.396484 0.56543 0.354248 c
+0.526855 0.312256 0.456787 0.291016 0.355469 0.291016 c
+0.171875 0.291016 l
+0.171875 0 l
+0.0771484 0 l
+0.171875 0.375488 m
+0.356934 0.375488 l
+0.417969 0.375488 0.461426 0.386719 0.487305 0.409668 c
+0.512939 0.432373 0.525879 0.464355 0.525879 0.505859 c
+0.525879 0.535645 0.518311 0.561279 0.503174 0.582764 c
+0.488037 0.604004 0.468262 0.618164 0.443359 0.625 c
+0.42749 0.62915 0.397949 0.631348 0.35498 0.631348 c
+0.171875 0.631348 l
+0.171875 0.375488 l
+f}bind def end
+/X0 Ff/Encoding get 8/8 put
+/X0 Ff/CharProcs get begin/9{n 0.0742188 0 m
+0.0742188 0.71582 l
+0.216797 0.71582 l
+0.38623 0.208984 l
+0.401855 0.161865 0.413086 0.126465 0.42041 0.103027 c
+0.428467 0.128906 0.441162 0.167236 0.458496 0.217773 c
+0.629883 0.71582 l
+0.757324 0.71582 l
+0.757324 0 l
+0.666016 0 l
+0.666016 0.599121 l
+0.458008 0 l
+0.372559 0 l
+0.165527 0.609375 l
+0.165527 0 l
+0.0742188 0 l
+f}bind def end
+/X0 Ff/Encoding get 9/9 put
+q[8.33333 0 0 -8.33333 220.443 183.333]cm
+/X0 Ff 8 Fs Sf 0 0 m<00>Tj
+4.448 0 m<01>Tj
+8.896 0 m<02>Tj
+11.112 0 m<03>Tj
+15.56 0 m<02>Tj
+17.776 0 m<01>Tj
+22.224 0 m<01>Tj
+26.672 0 m<04>Tj
+28.888 0 m<05>Tj
+31.104 0 m<06>Tj
+35.552 0 m<07>Tj
+37.768 0 m<06>Tj
+42.216 0 m<06>Tj
+46.664 0 m<05>Tj
+48.88 0 m<08>Tj
+54.208 0 m<09>Tj
+Q
+/X0 Ff/CharProcs get begin/10{n 0.404297 0.0639648 m
+0.371826 0.036377 0.340576 0.0168457 0.310303 0.00537109 c
+0.280273 -0.00585938 0.248047 -0.0117188 0.213379 -0.0117188 c
+0.156494 -0.0117188 0.112793 0.00219727 0.0820312 0.0300293 c
+0.0515137 0.0578613 0.0361328 0.0932617 0.0361328 0.136719 c
+0.0361328 0.162109 0.041748 0.185303 0.0534668 0.206299 c
+0.0649414 0.227295 0.0800781 0.244141 0.098877 0.256836 c
+0.117432 0.269531 0.138672 0.279053 0.162109 0.285645 c
+0.179199 0.290039 0.205322 0.294434 0.240234 0.298828 c
+0.311035 0.307129 0.363281 0.317383 0.396973 0.329102 c
+0.397217 0.341064 0.397461 0.348633 0.397461 0.352051 c
+0.397461 0.387695 0.38916 0.413086 0.372559 0.427734 c
+0.350098 0.44751 0.316895 0.45752 0.272461 0.45752 c
+0.231201 0.45752 0.200684 0.450439 0.180908 0.435791 c
+0.161377 0.421387 0.146729 0.395752 0.137207 0.358887 c
+0.0512695 0.370605 l
+0.059082 0.407227 0.0717773 0.437012 0.0898438 0.459717 c
+0.107666 0.482178 0.133545 0.499756 0.16748 0.511963 c
+0.201172 0.52417 0.240479 0.530273 0.285156 0.530273 c
+0.329346 0.530273 0.365234 0.525146 0.393066 0.514648 c
+0.420654 0.504395 0.440918 0.491211 0.454102 0.475342 c
+0.467041 0.459717 0.476074 0.439697 0.481445 0.415527 c
+0.484375 0.400635 0.48584 0.373535 0.48584 0.334473 c
+0.48584 0.217285 l
+0.48584 0.135742 0.487549 0.0839844 0.491455 0.0622559 c
+0.495117 0.0407715 0.502441 0.0200195 0.513672 0 c
+0.421875 0 l
+0.412842 0.0180664 0.406982 0.0395508 0.404297 0.0639648 c
+0.396973 0.260254 m
+0.365234 0.247314 0.317383 0.236328 0.253418 0.227051 c
+0.217285 0.221924 0.191895 0.216064 0.176758 0.209473 c
+0.161865 0.203125 0.150391 0.193604 0.14209 0.180908 c
+0.134033 0.168457 0.129883 0.154541 0.129883 0.13916 c
+0.129883 0.115723 0.138672 0.0961914 0.156494 0.0805664 c
+0.174072 0.0649414 0.200195 0.0571289 0.234375 0.0571289 c
+0.268066 0.0571289 0.29834 0.0644531 0.324707 0.0793457 c
+0.351074 0.0939941 0.370361 0.114258 0.382812 0.140137 c
+0.39209 0.159912 0.396973 0.189209 0.396973 0.228027 c
+0.396973 0.260254 l
+f}bind def end
+/X0 Ff/Encoding get 10/10 put
+/X0 Ff/CharProcs get begin/11{n 0.0307617 0.154785 m
+0.117676 0.168457 l
+0.122559 0.133789 0.135986 0.106934 0.158447 0.0883789 c
+0.180664 0.0698242 0.211914 0.0605469 0.251953 0.0605469 c
+0.292236 0.0605469 0.322266 0.0686035 0.341797 0.0852051 c
+0.361328 0.101562 0.371094 0.12085 0.371094 0.143066 c
+0.371094 0.162842 0.362549 0.178467 0.345215 0.189941 c
+0.333252 0.197754 0.303223 0.20752 0.255371 0.219727 c
+0.190918 0.23584 0.14624 0.25 0.121338 0.261963 c
+0.0964355 0.273682 0.0776367 0.290283 0.0646973 0.311279 c
+0.052002 0.332275 0.0454102 0.355469 0.0454102 0.380859 c
+0.0454102 0.403809 0.0505371 0.425293 0.0612793 0.445068 c
+0.0717773 0.4646 0.0861816 0.480957 0.104492 0.494141 c
+0.118164 0.50415 0.136719 0.512695 0.1604 0.519775 c
+0.183838 0.526611 0.209229 0.530273 0.236328 0.530273 c
+0.276855 0.530273 0.312744 0.524414 0.343506 0.512695 c
+0.374268 0.500977 0.396973 0.485107 0.411621 0.465088 c
+0.42627 0.445068 0.436279 0.418457 0.441895 0.384766 c
+0.355957 0.373047 l
+0.352051 0.399658 0.34082 0.42041 0.322021 0.435547 c
+0.303467 0.450439 0.276855 0.458008 0.242676 0.458008 c
+0.202393 0.458008 0.173584 0.451416 0.15625 0.437988 c
+0.13916 0.424805 0.130371 0.40918 0.130371 0.391113 c
+0.130371 0.379883 0.133789 0.369629 0.141113 0.360352 c
+0.148193 0.351074 0.159424 0.343262 0.174805 0.336914 c
+0.183594 0.33374 0.209473 0.326172 0.252441 0.314453 c
+0.314453 0.297852 0.35791 0.284424 0.382568 0.273682 c
+0.406982 0.263184 0.42627 0.247803 0.44043 0.227539 c
+0.454346 0.20752 0.461426 0.182373 0.461426 0.152344 c
+0.461426 0.123047 0.452881 0.095459 0.435791 0.0695801 c
+0.418701 0.0437012 0.394043 0.0236816 0.361816 0.00952148 c
+0.32959 -0.00463867 0.293213 -0.0117188 0.252441 -0.0117188 c
+0.185059 -0.0117188 0.133789 0.00219727 0.0983887 0.0302734 c
+0.0632324 0.0581055 0.0405273 0.0996094 0.0307617 0.154785 c
+f}bind def end
+/X0 Ff/Encoding get 11/11 put
+/X0 Ff/CharProcs get begin/12{n 0.0908203 0 m
+0.0908203 0.100098 l
+0.190918 0.100098 l
+0.190918 0 l
+0.0908203 0 l
+f}bind def end
+/X0 Ff/Encoding get 12/12 put
+/X0 Ff/CharProcs get begin/13{n 0.404297 0.189941 m
+0.490723 0.178711 l
+0.481445 0.119141 0.457275 0.0725098 0.418213 0.0388184 c
+0.379395 0.00512695 0.331543 -0.0117188 0.274902 -0.0117188 c
+0.204102 -0.0117188 0.146973 0.0114746 0.10376 0.0578613 c
+0.060791 0.104248 0.0390625 0.170654 0.0390625 0.257324 c
+0.0390625 0.313232 0.0483398 0.362305 0.0668945 0.404297 c
+0.0854492 0.446289 0.113525 0.477783 0.151611 0.498779 c
+0.189453 0.519775 0.230713 0.530273 0.275391 0.530273 c
+0.331543 0.530273 0.377686 0.516113 0.413574 0.487549 c
+0.449219 0.459229 0.472168 0.418701 0.482422 0.366211 c
+0.396973 0.353027 l
+0.388916 0.387695 0.374512 0.414062 0.35376 0.431641 c
+0.333252 0.449219 0.308105 0.458008 0.278809 0.458008 c
+0.234619 0.458008 0.19873 0.442139 0.170898 0.4104 c
+0.143311 0.378662 0.129395 0.328613 0.129395 0.259766 c
+0.129395 0.190186 0.142578 0.139648 0.169434 0.10791 c
+0.196045 0.076416 0.230957 0.0605469 0.273926 0.0605469 c
+0.30835 0.0605469 0.337158 0.0710449 0.360352 0.0922852 c
+0.383301 0.113281 0.397949 0.145996 0.404297 0.189941 c
+f}bind def end
+/X0 Ff/Encoding get 13/13 put
+q[8.33333 0 0 -8.33333 2851.95 183.333]cm
+/X0 Ff 8 Fs Sf 0 0 m<0A>Tj
+4.448 0 m<0B>Tj
+8.448 0 m<0B>Tj
+12.448 0 m<0C>Tj
+14.664 0 m<0D>Tj
+Q
+/X0 Ff/CharProcs get begin/14{n 0.0639648 0 m
+0.0639648 0.71582 l
+0.151855 0.71582 l
+0.151855 0 l
+0.0639648 0 l
+f}bind def end
+/X0 Ff/Encoding get 14/14 put
+/X0 Ff/CharProcs get begin/15{n 0.0332031 0.259277 m
+0.0332031 0.355225 0.0598145 0.42627 0.113281 0.472656 c
+0.157715 0.510986 0.212158 0.530273 0.276367 0.530273 c
+0.347656 0.530273 0.405762 0.50708 0.451172 0.460205 c
+0.496338 0.413574 0.519043 0.349121 0.519043 0.266602 c
+0.519043 0.199951 0.509033 0.147461 0.489014 0.109131 c
+0.468994 0.0710449 0.439941 0.0412598 0.401611 0.0200195 c
+0.363525 -0.000976562 0.321777 -0.0117188 0.276367 -0.0117188 c
+0.203857 -0.0117188 0.145264 0.0114746 0.100342 0.0581055 c
+0.0556641 0.104492 0.0332031 0.171631 0.0332031 0.259277 c
+0.123535 0.259277 m
+0.123535 0.192871 0.137939 0.143311 0.166992 0.110107 c
+0.195801 0.0771484 0.232422 0.0605469 0.276367 0.0605469 c
+0.319824 0.0605469 0.356201 0.0771484 0.385254 0.110352 c
+0.414062 0.143555 0.428711 0.194092 0.428711 0.262207 c
+0.428711 0.326172 0.414307 0.374756 0.38501 0.407959 c
+0.355957 0.440918 0.319824 0.45752 0.276367 0.45752 c
+0.232422 0.45752 0.196045 0.441162 0.166992 0.408203 c
+0.138184 0.375488 0.123535 0.325684 0.123535 0.259277 c
+f}bind def end
+/X0 Ff/Encoding get 15/15 put
+/X0 Ff/CharProcs get begin/16{n 0.065918 0 m
+0.065918 0.71582 l
+0.153809 0.71582 l
+0.153809 0.458984 l
+0.194824 0.506348 0.246582 0.530273 0.309082 0.530273 c
+0.347412 0.530273 0.380859 0.522705 0.40918 0.507568 c
+0.4375 0.492432 0.457764 0.47168 0.469971 0.444824 c
+0.482178 0.418213 0.488281 0.379395 0.488281 0.328613 c
+0.488281 0 l
+0.400391 0 l
+0.400391 0.328613 l
+0.400391 0.372559 0.390869 0.404541 0.371826 0.424561 c
+0.352783 0.44458 0.325928 0.45459 0.291016 0.45459 c
+0.265137 0.45459 0.240479 0.447998 0.217529 0.434326 c
+0.19458 0.420898 0.178223 0.402588 0.168457 0.379395 c
+0.158691 0.356445 0.153809 0.324463 0.153809 0.283691 c
+0.153809 0 l
+0.065918 0 l
+f}bind def end
+/X0 Ff/Encoding get 16/16 put
+/X0 Ff/CharProcs get begin/17{n 0.257812 0.0786133 m
+0.270508 0.000976562 l
+0.24585 -0.00415039 0.223633 -0.00683594 0.204102 -0.00683594 c
+0.172363 -0.00683594 0.147461 -0.00195312 0.129883 0.00830078 c
+0.112305 0.0183105 0.100098 0.0314941 0.0927734 0.0480957 c
+0.0856934 0.0644531 0.0820312 0.0991211 0.0820312 0.151855 c
+0.0820312 0.450195 l
+0.0175781 0.450195 l
+0.0175781 0.518555 l
+0.0820312 0.518555 l
+0.0820312 0.646973 l
+0.169434 0.699707 l
+0.169434 0.518555 l
+0.257812 0.518555 l
+0.257812 0.450195 l
+0.169434 0.450195 l
+0.169434 0.146973 l
+0.169434 0.12207 0.170898 0.105957 0.174072 0.0986328 c
+0.177002 0.0915527 0.182129 0.0859375 0.189209 0.081543 c
+0.196045 0.0773926 0.206055 0.0751953 0.219238 0.0751953 c
+0.229004 0.0751953 0.241699 0.0761719 0.257812 0.0786133 c
+f}bind def end
+/X0 Ff/Encoding get 17/17 put
+/X0 Ff/CharProcs get begin/18{n 0.0546875 0.165527 m
+0.13916 0.17334 l
+0.14624 0.133789 0.159912 0.10498 0.180176 0.0869141 c
+0.200195 0.0690918 0.226074 0.0600586 0.257812 0.0600586 c
+0.284668 0.0600586 0.30835 0.0661621 0.328857 0.0786133 c
+0.349121 0.0908203 0.365723 0.107422 0.378906 0.128174 c
+0.391846 0.148682 0.402832 0.176758 0.411621 0.211914 c
+0.42041 0.24707 0.424805 0.282715 0.424805 0.319336 c
+0.424805 0.323242 0.424805 0.329102 0.424316 0.336914 c
+0.406738 0.309082 0.382812 0.286377 0.352295 0.268799 c
+0.322021 0.251465 0.289062 0.242676 0.253418 0.242676 c
+0.194336 0.242676 0.144043 0.26416 0.103027 0.307129 c
+0.0620117 0.350098 0.0415039 0.406738 0.0415039 0.477051 c
+0.0415039 0.549561 0.0627441 0.60791 0.105713 0.652344 c
+0.148438 0.696533 0.202148 0.71875 0.266602 0.71875 c
+0.312988 0.71875 0.355713 0.706299 0.394287 0.681152 c
+0.432861 0.65625 0.462158 0.620361 0.482178 0.573975 c
+0.502197 0.527588 0.512207 0.460449 0.512207 0.372559 c
+0.512207 0.28125 0.502441 0.208252 0.482422 0.154053 c
+0.462646 0.0998535 0.433105 0.0585938 0.393799 0.0302734 c
+0.354736 0.00195312 0.308594 -0.012207 0.255859 -0.012207 c
+0.199951 -0.012207 0.154297 0.00317383 0.118652 0.0344238 c
+0.083252 0.0654297 0.0620117 0.109131 0.0546875 0.165527 c
+0.414551 0.481445 m
+0.414551 0.531738 0.401123 0.571777 0.374268 0.601562 c
+0.347412 0.631104 0.315186 0.645996 0.277344 0.645996 c
+0.238281 0.645996 0.204346 0.630127 0.175293 0.598145 c
+0.146484 0.566406 0.131836 0.524902 0.131836 0.474121 c
+0.131836 0.428711 0.145508 0.391602 0.173096 0.363037 c
+0.200439 0.334717 0.234375 0.320312 0.274902 0.320312 c
+0.31543 0.320312 0.348877 0.334473 0.375244 0.363037 c
+0.401367 0.391357 0.414551 0.430908 0.414551 0.481445 c
+f}bind def end
+/X0 Ff/Encoding get 18/18 put
+/X0 Ff/CharProcs get begin/19{n 0.176758 0.388184 m
+0.140381 0.401367 0.113281 0.42041 0.0957031 0.445312 c
+0.078125 0.469971 0.0693359 0.499512 0.0693359 0.53418 c
+0.0693359 0.586182 0.0878906 0.629883 0.125488 0.665527 c
+0.162842 0.700928 0.212646 0.71875 0.274902 0.71875 c
+0.337402 0.71875 0.387695 0.700684 0.425781 0.664307 c
+0.463867 0.628174 0.48291 0.583984 0.48291 0.531738 c
+0.48291 0.498535 0.474365 0.469727 0.456787 0.445068 c
+0.439453 0.420654 0.413086 0.401611 0.377441 0.388184 c
+0.421387 0.374023 0.454834 0.35083 0.477783 0.318848 c
+0.500732 0.287109 0.512207 0.249023 0.512207 0.20459 c
+0.512207 0.143555 0.490723 0.092041 0.447266 0.050293 c
+0.404053 0.00878906 0.347168 -0.012207 0.276367 -0.012207 c
+0.205811 -0.012207 0.148926 0.00854492 0.105469 0.0505371 c
+0.0622559 0.0922852 0.0405273 0.144531 0.0405273 0.207031 c
+0.0405273 0.253418 0.0522461 0.29248 0.0759277 0.323975 c
+0.0993652 0.355225 0.133057 0.376709 0.176758 0.388184 c
+0.15918 0.537109 m
+0.15918 0.503418 0.169922 0.475586 0.191895 0.454102 c
+0.213623 0.432617 0.241943 0.421875 0.276855 0.421875 c
+0.310547 0.421875 0.338379 0.432373 0.360107 0.453857 c
+0.381592 0.475098 0.392578 0.501221 0.392578 0.532227 c
+0.392578 0.564453 0.381592 0.591553 0.359131 0.613525 c
+0.336914 0.635498 0.309082 0.646484 0.275879 0.646484 c
+0.242432 0.646484 0.2146 0.635742 0.192383 0.614258 c
+0.17041 0.592773 0.15918 0.567139 0.15918 0.537109 c
+0.130859 0.206543 m
+0.130859 0.181641 0.136719 0.157227 0.148682 0.133789 c
+0.1604 0.110352 0.178223 0.0922852 0.20166 0.0793457 c
+0.225098 0.0666504 0.250244 0.0600586 0.277344 0.0600586 c
+0.319336 0.0600586 0.354004 0.0734863 0.381348 0.100586 c
+0.408691 0.127441 0.422363 0.161865 0.422363 0.203613 c
+0.422363 0.24585 0.408447 0.280762 0.380127 0.308594 c
+0.352051 0.336182 0.316895 0.350098 0.274414 0.350098 c
+0.233154 0.350098 0.198975 0.336426 0.171631 0.309082 c
+0.144531 0.281738 0.130859 0.247559 0.130859 0.206543 c
+f}bind def end
+/X0 Ff/Encoding get 19/19 put
+/X0 Ff/CharProcs get begin/20{n 0.0473633 0.62207 m
+0.0473633 0.706543 l
+0.510742 0.706543 l
+0.510742 0.638184 l
+0.465332 0.589844 0.420166 0.525391 0.375244 0.444824 c
+0.330566 0.364502 0.295898 0.281738 0.271484 0.196777 c
+0.253906 0.136963 0.242676 0.0712891 0.237793 0 c
+0.147461 0 l
+0.148438 0.0561523 0.159424 0.124268 0.180664 0.204102 c
+0.20166 0.283691 0.232178 0.360596 0.271729 0.434814 c
+0.311279 0.508789 0.353271 0.571289 0.397949 0.62207 c
+0.0473633 0.62207 l
+f}bind def end
+/X0 Ff/Encoding get 20/20 put
+/X0 Ff/CharProcs get begin/21{n 0.497559 0.540527 m
+0.410156 0.533691 l
+0.402344 0.568115 0.391357 0.593262 0.376953 0.608887 c
+0.353271 0.633789 0.323975 0.646484 0.289062 0.646484 c
+0.26123 0.646484 0.236572 0.638672 0.215332 0.623047 c
+0.187744 0.603027 0.166016 0.573486 0.149902 0.534668 c
+0.134033 0.496094 0.125732 0.440918 0.125 0.369141 c
+0.145996 0.401367 0.171875 0.425293 0.202637 0.440918 c
+0.233154 0.456543 0.265137 0.464355 0.298828 0.464355 c
+0.357422 0.464355 0.407227 0.442871 0.448486 0.399658 c
+0.489502 0.356689 0.510254 0.300781 0.510254 0.232422 c
+0.510254 0.1875 0.500732 0.145752 0.481201 0.107178 c
+0.461914 0.0686035 0.435303 0.0390625 0.401367 0.0185547 c
+0.367676 -0.00195312 0.329102 -0.012207 0.286133 -0.012207 c
+0.212891 -0.012207 0.15332 0.0146484 0.106934 0.0686035 c
+0.060791 0.122314 0.0375977 0.211182 0.0375977 0.334961 c
+0.0375977 0.473145 0.0629883 0.57373 0.114258 0.636719 c
+0.158691 0.691406 0.21875 0.71875 0.294434 0.71875 c
+0.350586 0.71875 0.396729 0.703125 0.432861 0.671387 c
+0.46875 0.639893 0.490234 0.596191 0.497559 0.540527 c
+0.138672 0.231934 m
+0.138672 0.20166 0.14502 0.172852 0.157959 0.14502 c
+0.170654 0.117432 0.188721 0.0964355 0.211914 0.0817871 c
+0.234863 0.0673828 0.259277 0.0600586 0.284668 0.0600586 c
+0.321777 0.0600586 0.353516 0.0749512 0.380371 0.10498 c
+0.406982 0.134766 0.42041 0.175537 0.42041 0.227051 c
+0.42041 0.276367 0.407227 0.31543 0.380859 0.343994 c
+0.354492 0.372314 0.321289 0.386719 0.28125 0.386719 c
+0.241699 0.386719 0.208008 0.372559 0.180176 0.343994 c
+0.152588 0.315674 0.138672 0.27832 0.138672 0.231934 c
+f}bind def end
+/X0 Ff/Encoding get 21/21 put
+/X0 Ff/CharProcs get begin/22{n 0.0415039 0.1875 m
+0.133789 0.195312 l
+0.140625 0.150391 0.156494 0.116699 0.181396 0.0939941 c
+0.206299 0.0715332 0.236328 0.0600586 0.271484 0.0600586 c
+0.313721 0.0600586 0.349609 0.0759277 0.378906 0.10791 c
+0.408203 0.139648 0.422852 0.182129 0.422852 0.234863 c
+0.422852 0.284912 0.408936 0.324463 0.380615 0.353516 c
+0.352539 0.382324 0.315674 0.396973 0.27002 0.396973 c
+0.241699 0.396973 0.216309 0.390625 0.193359 0.377686 c
+0.170654 0.36499 0.152832 0.348145 0.139648 0.327637 c
+0.0571289 0.338379 l
+0.126465 0.706055 l
+0.482422 0.706055 l
+0.482422 0.62207 l
+0.196777 0.62207 l
+0.158203 0.429688 l
+0.201172 0.459473 0.246094 0.474609 0.293457 0.474609 c
+0.355957 0.474609 0.408691 0.453125 0.45166 0.409668 c
+0.494629 0.366455 0.516113 0.310791 0.516113 0.242676 c
+0.516113 0.177979 0.497314 0.12207 0.459473 0.074707 c
+0.413574 0.0168457 0.351074 -0.012207 0.271484 -0.012207 c
+0.206543 -0.012207 0.15332 0.00585938 0.112061 0.0424805 c
+0.0710449 0.0788574 0.0473633 0.127197 0.0415039 0.1875 c
+f}bind def end
+/X0 Ff/Encoding get 22/22 put
+/X0 Ff/CharProcs get begin/23{n 0.420898 0.166992 m
+0.511719 0.155762 l
+0.497559 0.102783 0.470947 0.0615234 0.432129 0.0322266 c
+0.393555 0.00292969 0.343994 -0.0117188 0.283691 -0.0117188 c
+0.208008 -0.0117188 0.147705 0.0114746 0.103271 0.0583496 c
+0.0588379 0.10498 0.0366211 0.17041 0.0366211 0.254883 c
+0.0366211 0.342041 0.059082 0.409668 0.104004 0.458008 c
+0.148926 0.506104 0.207031 0.530273 0.278809 0.530273 c
+0.348145 0.530273 0.404785 0.506836 0.44873 0.459473 c
+0.492676 0.412354 0.514648 0.345947 0.514648 0.260254 c
+0.514648 0.255127 0.514648 0.247314 0.51416 0.236816 c
+0.127441 0.236816 l
+0.130615 0.179932 0.146729 0.13623 0.175781 0.105957 c
+0.20459 0.0756836 0.240723 0.0605469 0.28418 0.0605469 c
+0.316406 0.0605469 0.34375 0.0688477 0.366699 0.0859375 c
+0.389404 0.102783 0.407471 0.129883 0.420898 0.166992 c
+0.132324 0.309082 m
+0.421875 0.309082 l
+0.417969 0.352539 0.406982 0.385254 0.388672 0.407227 c
+0.36084 0.440918 0.324463 0.458008 0.279785 0.458008 c
+0.239502 0.458008 0.205566 0.44458 0.177979 0.41748 c
+0.150635 0.390625 0.135254 0.354492 0.132324 0.309082 c
+f}bind def end
+/X0 Ff/Encoding get 23/23 put
+/X0 Ff/CharProcs get begin/24{n 0.0317383 0.214844 m
+0.0317383 0.303223 l
+0.301758 0.303223 l
+0.301758 0.214844 l
+0.0317383 0.214844 l
+f}bind def end
+/X0 Ff/Encoding get 24/24 put
+/X0 Ff/CharProcs get begin/25{n 0.0869141 0 m
+0.0869141 0.450195 l
+0.00927734 0.450195 l
+0.00927734 0.518555 l
+0.0869141 0.518555 l
+0.0869141 0.57373 l
+0.0869141 0.608398 0.0898438 0.634277 0.0961914 0.651367 c
+0.104492 0.674072 0.119385 0.692627 0.140869 0.706787 c
+0.162109 0.720947 0.191895 0.728027 0.230469 0.728027 c
+0.255127 0.728027 0.282471 0.725098 0.3125 0.719238 c
+0.299316 0.642578 l
+0.28125 0.645752 0.263916 0.647461 0.247559 0.647461 c
+0.220947 0.647461 0.202148 0.641846 0.190918 0.630371 c
+0.179932 0.619141 0.174316 0.597656 0.174316 0.566406 c
+0.174316 0.518555 l
+0.275391 0.518555 l
+0.275391 0.450195 l
+0.174316 0.450195 l
+0.174316 0 l
+0.0869141 0 l
+f}bind def end
+/X0 Ff/Encoding get 25/25 put
+/X0 Ff/CharProcs get begin/26{n 0.0415039 0.353027 m
+0.0415039 0.4375 0.0500488 0.505615 0.067627 0.557373 c
+0.0849609 0.608887 0.11084 0.648682 0.145264 0.676758 c
+0.179443 0.70459 0.222656 0.71875 0.274902 0.71875 c
+0.313232 0.71875 0.346924 0.711182 0.375977 0.695557 c
+0.404785 0.680176 0.428711 0.657959 0.447754 0.628662 c
+0.466553 0.599609 0.481445 0.564209 0.492188 0.522217 c
+0.50293 0.480469 0.508301 0.424072 0.508301 0.353027 c
+0.508301 0.269043 0.499756 0.201416 0.482422 0.149658 c
+0.465332 0.0981445 0.439453 0.0583496 0.405029 0.0300293 c
+0.37085 0.00195312 0.327393 -0.012207 0.274902 -0.012207 c
+0.206055 -0.012207 0.151855 0.0124512 0.112305 0.0620117 c
+0.0651855 0.121582 0.0415039 0.218506 0.0415039 0.353027 c
+0.131836 0.353027 m
+0.131836 0.235596 0.145508 0.157471 0.173096 0.118408 c
+0.200439 0.0795898 0.234375 0.0600586 0.274902 0.0600586 c
+0.315186 0.0600586 0.349121 0.0795898 0.376709 0.118652 c
+0.404053 0.157715 0.417969 0.23584 0.417969 0.353027 c
+0.417969 0.470703 0.404297 0.549072 0.376709 0.587891 c
+0.349365 0.626465 0.314941 0.645996 0.273926 0.645996 c
+0.233643 0.645996 0.201416 0.628906 0.177246 0.594727 c
+0.146973 0.55127 0.131836 0.470703 0.131836 0.353027 c
+f}bind def end
+/X0 Ff/Encoding get 26/26 put
+/X0 Ff/CharProcs get begin/27{n 0.146973 0 m
+0.0654297 0 l
+0.0654297 0.71582 l
+0.15332 0.71582 l
+0.15332 0.460449 l
+0.19043 0.506836 0.237793 0.530273 0.29541 0.530273 c
+0.327148 0.530273 0.357422 0.523926 0.385986 0.510986 c
+0.414307 0.498291 0.437744 0.480225 0.456299 0.456787 c
+0.474609 0.433594 0.489014 0.405518 0.499512 0.372559 c
+0.509766 0.339844 0.515137 0.304688 0.515137 0.26709 c
+0.515137 0.178223 0.493164 0.109619 0.449219 0.0610352 c
+0.405273 0.0126953 0.352539 -0.0117188 0.291016 -0.0117188 c
+0.22998 -0.0117188 0.181885 0.0136719 0.146973 0.0649414 c
+0.146973 0 l
+0.145996 0.263184 m
+0.145996 0.201172 0.154297 0.15625 0.171387 0.128418 c
+0.198975 0.083252 0.236328 0.0605469 0.283691 0.0605469 c
+0.322021 0.0605469 0.355225 0.0771484 0.383301 0.110596 c
+0.411133 0.143799 0.425293 0.193604 0.425293 0.259766 c
+0.425293 0.327393 0.411865 0.377441 0.38501 0.409668 c
+0.358154 0.441895 0.325684 0.458008 0.287598 0.458008 c
+0.249268 0.458008 0.216064 0.441406 0.187988 0.407959 c
+0.160156 0.374756 0.145996 0.326416 0.145996 0.263184 c
+f}bind def end
+/X0 Ff/Encoding get 27/27 put
+/X0 Ff/CharProcs get begin/28{n 0.402344 0 m
+0.402344 0.0654297 l
+0.369629 0.0141602 0.321289 -0.0117188 0.257324 -0.0117188 c
+0.216064 -0.0117188 0.177979 -0.000488281 0.143311 0.0224609 c
+0.108643 0.045166 0.0817871 0.0769043 0.0627441 0.11792 c
+0.0437012 0.158691 0.0341797 0.205566 0.0341797 0.258789 c
+0.0341797 0.310547 0.0427246 0.357422 0.0600586 0.399658 c
+0.0771484 0.44165 0.103027 0.474121 0.137695 0.496582 c
+0.172119 0.519043 0.210693 0.530273 0.253418 0.530273 c
+0.284668 0.530273 0.3125 0.523682 0.336914 0.510498 c
+0.361328 0.497314 0.381104 0.480225 0.396484 0.458984 c
+0.396484 0.71582 l
+0.483887 0.71582 l
+0.483887 0 l
+0.402344 0 l
+0.124512 0.258789 m
+0.124512 0.192383 0.138428 0.142822 0.166504 0.109863 c
+0.194336 0.0771484 0.227539 0.0605469 0.265625 0.0605469 c
+0.303955 0.0605469 0.33667 0.0761719 0.363525 0.107666 c
+0.390381 0.138916 0.403809 0.187012 0.403809 0.251465 c
+0.403809 0.322266 0.390137 0.374512 0.362793 0.407715 c
+0.335449 0.440918 0.301758 0.45752 0.261719 0.45752 c
+0.222656 0.45752 0.190186 0.44165 0.163818 0.409668 c
+0.137695 0.37793 0.124512 0.327637 0.124512 0.258789 c
+f}bind def end
+/X0 Ff/Encoding get 28/28 put
+q[8.33333 0 0 -8.33333 220.443 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<0E>Tj
+1.776 0 m<0F>Tj
+6.224 0 m<0D>Tj
+10.224 0 m<0A>Tj
+14.672 0 m<0E>Tj
+16.448 0 m<10>Tj
+20.896 0 m<0F>Tj
+25.344 0 m<0B>Tj
+29.344 0 m<11>Tj
+31.56 0 m<07>Tj
+33.776 0 m<12>Tj
+38.224 0 m<00>Tj
+42.672 0 m<13>Tj
+47.12 0 m<14>Tj
+51.568 0 m<02>Tj
+53.784 0 m<15>Tj
+58.232 0 m<00>Tj
+62.68 0 m<12>Tj
+67.128 0 m<16>Tj
+71.576 0 m<16>Tj
+76.024 0 m<17>Tj
+80.472 0 m<12>Tj
+84.92 0 m<12>Tj
+89.368 0 m<18>Tj
+92.032 0 m<00>Tj
+96.48 0 m<13>Tj
+100.928 0 m<15>Tj
+105.376 0 m<13>Tj
+109.824 0 m<18>Tj
+112.488 0 m<06>Tj
+116.936 0 m<19>Tj
+119.152 0 m<06>Tj
+123.6 0 m<1A>Tj
+128.048 0 m<18>Tj
+130.712 0 m<1B>Tj
+135.16 0 m<0D>Tj
+139.16 0 m<14>Tj
+143.608 0 m<1C>Tj
+148.056 0 m<18>Tj
+150.72 0 m<19>Tj
+152.936 0 m<13>Tj
+157.384 0 m<06>Tj
+161.832 0 m<0A>Tj
+166.28 0 m<13>Tj
+170.728 0 m<1C>Tj
+175.176 0 m<13>Tj
+179.624 0 m<0D>Tj
+183.624 0 m<17>Tj
+188.072 0 m<1B>Tj
+192.52 0 m<00>Tj
+196.968 0 m<01>Tj
+201.416 0 m<02>Tj
+Q
+q[8.33333 0 0 -8.33333 4786.72 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<01>Tj
+Q
+q[8.33333 0 0 -8.33333 4823.7 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<02>Tj
+Q
+q[8.33333 0 0 -8.33333 4842.19 6458.33]cm
+/X0 Ff 8 Fs Sf 0 0 m<01>Tj
+Q
+Q
+q
+241.667 241.667 m 4866.67 241.667 l 4866.67 6366.67 l 241.667 6366.67 l 241.667 241.667 l h W* n
+241.667 -5883.33 m 4866.67 -5883.33 l 4866.67 5135.42 l 241.667 5135.42 l 241.667 -5883.33 l h 1 1 1 rg
+f
+Q
+q
+416.667 4979.17 m 422.917 4979.17 l 422.917 5085.42 l 416.667 5085.42 l 416.667 4979.17 l h 0.752941 0.752941 0.752941 rg
+f
+416.667 4872.92 m 422.917 4872.92 l 422.917 4979.17 l 416.667 4979.17 l 416.667 4872.92 l h f
+416.667 4766.67 m 422.917 4766.67 l 422.917 4872.92 l 416.667 4872.92 l 416.667 4766.67 l h f
+416.667 4660.42 m 422.917 4660.42 l 422.917 4766.67 l 416.667 4766.67 l 416.667 4660.42 l h f
+416.667 4554.17 m 422.917 4554.17 l 422.917 4660.42 l 416.667 4660.42 l 416.667 4554.17 l h f
+416.667 4447.92 m 422.917 4447.92 l 422.917 4554.17 l 416.667 4554.17 l 416.667 4447.92 l h f
+416.667 4341.67 m 422.917 4341.67 l 422.917 4447.92 l 416.667 4447.92 l 416.667 4341.67 l h f
+416.667 4235.42 m 422.917 4235.42 l 422.917 4341.67 l 416.667 4341.67 l 416.667 4235.42 l h f
+416.667 4129.17 m 422.917 4129.17 l 422.917 4235.42 l 416.667 4235.42 l 416.667 4129.17 l h f
+416.667 4022.92 m 422.917 4022.92 l 422.917 4129.17 l 416.667 4129.17 l 416.667 4022.92 l h f
+416.667 3916.67 m 422.917 3916.67 l 422.917 4022.92 l 416.667 4022.92 l 416.667 3916.67 l h f
+416.667 3810.42 m 422.917 3810.42 l 422.917 3916.67 l 416.667 3916.67 l 416.667 3810.42 l h f
+416.667 3704.17 m 422.917 3704.17 l 422.917 3810.42 l 416.667 3810.42 l 416.667 3704.17 l h f
+416.667 3597.92 m 422.917 3597.92 l 422.917 3704.17 l 416.667 3704.17 l 416.667 3597.92 l h f
+416.667 3491.67 m 422.917 3491.67 l 422.917 3597.92 l 416.667 3597.92 l 416.667 3491.67 l h f
+416.667 3297.92 m 422.917 3297.92 l 422.917 3491.67 l 416.667 3491.67 l 416.667 3297.92 l h f
+416.667 3191.67 m 422.917 3191.67 l 422.917 3297.92 l 416.667 3297.92 l 416.667 3191.67 l h f
+416.667 3085.42 m 422.917 3085.42 l 422.917 3191.67 l 416.667 3191.67 l 416.667 3085.42 l h f
+416.667 2979.17 m 422.917 2979.17 l 422.917 3085.42 l 416.667 3085.42 l 416.667 2979.17 l h f
+416.667 2872.92 m 422.917 2872.92 l 422.917 2979.17 l 416.667 2979.17 l 416.667 2872.92 l h f
+416.667 2766.67 m 422.917 2766.67 l 422.917 2872.92 l 416.667 2872.92 l 416.667 2766.67 l h f
+416.667 2660.42 m 422.917 2660.42 l 422.917 2766.67 l 416.667 2766.67 l 416.667 2660.42 l h f
+416.667 2554.17 m 422.917 2554.17 l 422.917 2660.42 l 416.667 2660.42 l 416.667 2554.17 l h f
+416.667 2447.92 m 422.917 2447.92 l 422.917 2554.17 l 416.667 2554.17 l 416.667 2447.92 l h f
+416.667 2341.67 m 422.917 2341.67 l 422.917 2447.92 l 416.667 2447.92 l 416.667 2341.67 l h f
+416.667 2235.42 m 422.917 2235.42 l 422.917 2341.67 l 416.667 2341.67 l 416.667 2235.42 l h f
+416.667 2129.17 m 422.917 2129.17 l 422.917 2235.42 l 416.667 2235.42 l 416.667 2129.17 l h f
+416.667 2022.92 m 422.917 2022.92 l 422.917 2129.17 l 416.667 2129.17 l 416.667 2022.92 l h f
+416.667 1916.67 m 422.917 1916.67 l 422.917 2022.92 l 416.667 2022.92 l 416.667 1916.67 l h f
+416.667 1810.42 m 422.917 1810.42 l 422.917 1916.67 l 416.667 1916.67 l 416.667 1810.42 l h f
+416.667 1704.17 m 422.917 1704.17 l 422.917 1810.42 l 416.667 1810.42 l 416.667 1704.17 l h f
+416.667 1597.92 m 422.917 1597.92 l 422.917 1704.17 l 416.667 1704.17 l 416.667 1597.92 l h f
+416.667 1404.17 m 422.917 1404.17 l 422.917 1597.92 l 416.667 1597.92 l 416.667 1404.17 l h f
+416.667 1297.92 m 422.917 1297.92 l 422.917 1404.17 l 416.667 1404.17 l 416.667 1297.92 l h f
+416.667 1191.67 m 422.917 1191.67 l 422.917 1297.92 l 416.667 1297.92 l 416.667 1191.67 l h f
+416.667 1085.42 m 422.917 1085.42 l 422.917 1191.67 l 416.667 1191.67 l 416.667 1085.42 l h f
+416.667 979.167 m 422.917 979.167 l 422.917 1085.42 l 416.667 1085.42 l 416.667 979.167 l h f
+416.667 872.917 m 422.917 872.917 l 422.917 979.167 l 416.667 979.167 l 416.667 872.917 l h f
+416.667 766.667 m 422.917 766.667 l 422.917 872.917 l 416.667 872.917 l 416.667 766.667 l h f
+416.667 660.417 m 422.917 660.417 l 422.917 766.667 l 416.667 766.667 l 416.667 660.417 l h f
+416.667 554.167 m 422.917 554.167 l 422.917 660.417 l 416.667 660.417 l 416.667 554.167 l h f
+416.667 447.917 m 422.917 447.917 l 422.917 554.167 l 416.667 554.167 l 416.667 447.917 l h f
+416.667 341.667 m 422.917 341.667 l 422.917 447.917 l 416.667 447.917 l 416.667 341.667 l h f
+Q
+q
+241.667 241.667 m 4866.67 241.667 l 4866.67 5135.42 l 241.667 5135.42 l 241.667 241.667 l h W* n
+416.667 235.417 m 422.917 235.417 l 422.917 341.667 l 416.667 341.667 l 416.667 235.417 l h 0.752941 0.752941 0.752941 rg
+f
+Q
+q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/29{n 0.476074 0.204102 m
+0.476074 0.172607 0.469238 0.143799 0.455566 0.117676 c
+0.441895 0.0917969 0.423096 0.0693359 0.39917 0.0505371 c
+0.375244 0.0319824 0.347168 0.017334 0.314453 0.00683594 c
+0.281982 -0.00341797 0.246826 -0.00878906 0.208984 -0.00878906 c
+0.199707 -0.00878906 0.189453 -0.00854492 0.178467 -0.00805664 c
+0.167725 -0.00756836 0.156738 -0.00708008 0.145996 -0.00610352 c
+0.135254 -0.00537109 0.124756 -0.00439453 0.114502 -0.00341797 c
+0.104248 -0.00244141 0.0952148 -0.00146484 0.0869141 0 c
+0.0869141 0.0771484 l
+0.104492 0.072998 0.124512 0.0698242 0.147217 0.0678711 c
+0.169678 0.065918 0.192627 0.0649414 0.21582 0.0649414 c
+0.241699 0.0649414 0.265137 0.0678711 0.286133 0.0742188 c
+0.306885 0.0803223 0.324707 0.0891113 0.339355 0.10083 c
+0.354004 0.112305 0.365234 0.126221 0.373047 0.142822 c
+0.380859 0.15918 0.384766 0.177734 0.384766 0.198242 c
+0.384766 0.237793 0.370605 0.266846 0.342041 0.284912 c
+0.313721 0.302979 0.272705 0.312012 0.219238 0.312012 c
+0.0981445 0.312012 l
+0.0981445 0.638184 l
+0.441895 0.638184 l
+0.441895 0.563965 l
+0.178223 0.563965 l
+0.178223 0.384766 l
+0.233887 0.384766 l
+0.264404 0.384766 0.294189 0.38208 0.323242 0.376465 c
+0.352051 0.371094 0.37793 0.361328 0.400635 0.347412 c
+0.423096 0.33374 0.441406 0.315186 0.455322 0.291748 c
+0.468994 0.268555 0.476074 0.239258 0.476074 0.204102 c
+f}bind def end
+/X0 Ff/Encoding get 29/29 put
+q[6.25 0 0 -6.25 300.065 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/30{n 0.523926 0.141113 m
+0.415039 0.141113 l
+0.415039 0 l
+0.328125 0 l
+0.328125 0.141113 l
+0.0209961 0.141113 l
+0.0209961 0.21582 l
+0.292969 0.638184 l
+0.415039 0.638184 l
+0.415039 0.21582 l
+0.523926 0.21582 l
+0.523926 0.141113 l
+0.328125 0.556152 m
+0.105957 0.21582 l
+0.328125 0.21582 l
+0.328125 0.556152 l
+f}bind def end
+/X0 Ff/Encoding get 30/30 put
+q[6.25 0 0 -6.25 345.871 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/32{n 0.111816 0.707031 m
+0.147949 0.707031 l
+0.210693 0.707031 0.257324 0.692383 0.288086 0.662842 c
+0.318604 0.633545 0.333984 0.588867 0.333984 0.528809 c
+0.333984 0.416016 l
+0.333984 0.400146 0.335693 0.385986 0.339355 0.373291 c
+0.342773 0.36084 0.349121 0.350342 0.358154 0.341553 c
+0.366943 0.333008 0.378906 0.326416 0.394043 0.321777 c
+0.408936 0.317383 0.427734 0.314941 0.450195 0.314941 c
+0.471191 0.314941 l
+0.471191 0.24707 l
+0.450195 0.24707 l
+0.426514 0.24707 0.406982 0.245117 0.391846 0.241211 c
+0.376709 0.237305 0.36499 0.231445 0.356445 0.223389 c
+0.348145 0.215576 0.342285 0.205322 0.338867 0.192871 c
+0.335693 0.180664 0.333984 0.166016 0.333984 0.148926 c
+0.333984 -0.0219727 l
+0.333984 -0.0493164 0.330811 -0.0739746 0.324219 -0.0959473 c
+0.317871 -0.11792 0.307129 -0.136475 0.29248 -0.1521 c
+0.277832 -0.16748 0.258789 -0.179443 0.234863 -0.187744 c
+0.211182 -0.196045 0.182129 -0.200195 0.147949 -0.200195 c
+0.111816 -0.200195 l
+0.111816 -0.131836 l
+0.141113 -0.131836 l
+0.216309 -0.131836 0.253906 -0.0952148 0.253906 -0.0219727 c
+0.253906 0.146973 l
+0.253906 0.226318 0.288086 0.270996 0.356934 0.280762 c
+0.287598 0.288086 0.25293 0.333008 0.25293 0.415039 c
+0.25293 0.526855 l
+0.25293 0.601318 0.21582 0.638672 0.141113 0.638672 c
+0.111816 0.638672 l
+0.111816 0.707031 l
+f}bind def end
+/X0 Ff/Encoding get 32/32 put
+q[6.25 0 0 -6.25 1030.88 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/33{n 0.5 0.286133 m
+0.5 0.278076 0.499756 0.267578 0.499268 0.254395 c
+0.498779 0.241455 0.498047 0.229248 0.49707 0.217773 c
+0.170898 0.217773 l
+0.170898 0.196045 0.174072 0.176758 0.180908 0.160156 c
+0.1875 0.143555 0.197021 0.129639 0.209229 0.118408 c
+0.221436 0.107178 0.236084 0.0986328 0.253174 0.0927734 c
+0.270264 0.0869141 0.289062 0.0839844 0.310059 0.0839844 c
+0.333984 0.0839844 0.359863 0.0856934 0.387451 0.0895996 c
+0.414795 0.0932617 0.443359 0.0993652 0.473145 0.10791 c
+0.473145 0.0131836 l
+0.460449 0.00976562 0.446777 0.00634766 0.431641 0.00341797 c
+0.416748 0.000488281 0.401367 -0.00195312 0.385742 -0.00439453 c
+0.370117 -0.0065918 0.354492 -0.00830078 0.338379 -0.00952148 c
+0.32251 -0.010498 0.307129 -0.0112305 0.291992 -0.0112305 c
+0.254395 -0.0112305 0.220459 -0.00585938 0.19043 0.00488281 c
+0.160645 0.015625 0.135254 0.0314941 0.114258 0.0524902 c
+0.0935059 0.0734863 0.0776367 0.0993652 0.0664062 0.130371 c
+0.0554199 0.161133 0.0498047 0.197021 0.0498047 0.237793 c
+0.0498047 0.278076 0.0551758 0.314697 0.0664062 0.3479 c
+0.0773926 0.380859 0.0930176 0.40918 0.113281 0.432861 c
+0.133301 0.456299 0.157959 0.474609 0.186768 0.487549 c
+0.215576 0.500244 0.247559 0.506836 0.283203 0.506836 c
+0.318359 0.506836 0.349365 0.501465 0.376465 0.490479 c
+0.40332 0.479736 0.426025 0.464355 0.444336 0.444824 c
+0.462402 0.425293 0.476318 0.4021 0.48584 0.375 c
+0.495117 0.348145 0.5 0.318359 0.5 0.286133 c
+0.378906 0.303223 m
+0.37915 0.322754 0.376953 0.3396 0.371582 0.354248 c
+0.366455 0.368652 0.359375 0.380615 0.350342 0.390137 c
+0.341553 0.399414 0.331055 0.406494 0.319092 0.411133 c
+0.307373 0.415527 0.294434 0.417969 0.280762 0.417969 c
+0.250977 0.417969 0.226318 0.407959 0.207031 0.387939 c
+0.187988 0.36792 0.176514 0.339844 0.172852 0.303223 c
+0.378906 0.303223 l
+f}bind def end
+/X0 Ff/Encoding get 33/33 put
+q[6.25 0 0 -6.25 1076.63 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+/X0 Ff/CharProcs get begin/34{n 0.228027 0.597168 m
+0.0878906 0.597168 l
+0.0878906 0.689941 l
+0.350098 0.689941 l
+0.350098 0.0927734 l
+0.493164 0.0927734 l
+0.493164 0 l
+0.0708008 0 l
+0.0708008 0.0927734 l
+0.228027 0.0927734 l
+0.228027 0.597168 l
+f}bind def end
+/X0 Ff/Encoding get 34/34 put
+q[6.25 0 0 -6.25 1122.43 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<22>Tj
+Q
+/X0 Ff/CharProcs get begin/35{n 0.477051 0.145996 m
+0.477051 0.117676 0.470947 0.0935059 0.458252 0.0734863 c
+0.445801 0.0534668 0.429199 0.0373535 0.408447 0.0246582 c
+0.387939 0.012207 0.364502 0.00317383 0.338135 -0.00268555 c
+0.312012 -0.00830078 0.285156 -0.0112305 0.257812 -0.0112305 c
+0.221436 -0.0112305 0.188477 -0.00952148 0.15918 -0.00610352 c
+0.129883 -0.00268555 0.102295 0.00219727 0.0761719 0.00878906 c
+0.0761719 0.116211 l
+0.106689 0.103516 0.137207 0.0944824 0.167725 0.088623 c
+0.197998 0.0830078 0.226807 0.0800781 0.253906 0.0800781 c
+0.285156 0.0800781 0.30835 0.0849609 0.323975 0.0949707 c
+0.339355 0.104736 0.347168 0.117676 0.347168 0.133789 c
+0.347168 0.141113 0.345703 0.147949 0.342285 0.154297 c
+0.339111 0.1604 0.333008 0.16626 0.323975 0.172119 c
+0.315186 0.177734 0.30249 0.183594 0.286133 0.189697 c
+0.27002 0.195557 0.248535 0.202393 0.222168 0.209961 c
+0.197754 0.216797 0.176514 0.224365 0.157959 0.233154 c
+0.139648 0.241699 0.124512 0.251953 0.112305 0.263672 c
+0.100342 0.275391 0.0913086 0.288818 0.0852051 0.304443 c
+0.0793457 0.319824 0.0761719 0.337891 0.0761719 0.358887 c
+0.0761719 0.378906 0.0805664 0.397949 0.0898438 0.416016 c
+0.098877 0.433838 0.112549 0.449463 0.130615 0.463135 c
+0.148682 0.476562 0.171143 0.487305 0.198242 0.495117 c
+0.225098 0.50293 0.256836 0.506836 0.292969 0.506836 c
+0.324219 0.506836 0.351807 0.505371 0.375977 0.501953 c
+0.399902 0.498779 0.421387 0.495117 0.439941 0.491211 c
+0.439941 0.394043 l
+0.411621 0.403076 0.38501 0.409424 0.360107 0.41333 c
+0.335205 0.416992 0.310547 0.418945 0.286133 0.418945 c
+0.261719 0.418945 0.242188 0.414551 0.227295 0.405762 c
+0.212646 0.396973 0.205078 0.384766 0.205078 0.369141 c
+0.205078 0.361816 0.206543 0.35498 0.209473 0.349121 c
+0.212402 0.343262 0.218018 0.337646 0.226807 0.332031 c
+0.235352 0.32666 0.247314 0.320801 0.262939 0.314697 c
+0.27832 0.308838 0.298828 0.302246 0.324219 0.294922 c
+0.352783 0.286865 0.376953 0.278076 0.396484 0.268799 c
+0.416016 0.259521 0.431641 0.249023 0.443604 0.237305 c
+0.455322 0.225586 0.463867 0.212402 0.469238 0.197266 c
+0.474365 0.182373 0.477051 0.165283 0.477051 0.145996 c
+f}bind def end
+/X0 Ff/Encoding get 35/35 put
+q[6.25 0 0 -6.25 1168.24 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/36{n 0.437988 -0.200195 m
+0.401855 -0.200195 l
+0.339111 -0.200195 0.29248 -0.185547 0.261719 -0.156006 c
+0.231201 -0.126709 0.21582 -0.0820312 0.21582 -0.0219727 c
+0.21582 0.145996 l
+0.21582 0.161865 0.214111 0.176025 0.210449 0.188721 c
+0.207031 0.201172 0.200684 0.21167 0.19165 0.220459 c
+0.182861 0.229004 0.170898 0.235596 0.156006 0.240234 c
+0.141357 0.244629 0.122559 0.24707 0.100098 0.24707 c
+0.0791016 0.24707 l
+0.0791016 0.314941 l
+0.100098 0.314941 l
+0.123779 0.314941 0.143066 0.316895 0.158203 0.320801 c
+0.173096 0.324707 0.184814 0.330566 0.193359 0.338623 c
+0.20166 0.346436 0.20752 0.356689 0.210938 0.369141 c
+0.214111 0.381348 0.21582 0.395996 0.21582 0.413086 c
+0.21582 0.528809 l
+0.21582 0.556152 0.218994 0.580811 0.225586 0.602783 c
+0.231934 0.624756 0.242676 0.643311 0.257568 0.658936 c
+0.272217 0.674316 0.291504 0.686279 0.315186 0.69458 c
+0.338623 0.702881 0.367676 0.707031 0.401855 0.707031 c
+0.437988 0.707031 l
+0.437988 0.638672 l
+0.40918 0.638672 l
+0.33374 0.638672 0.295898 0.602051 0.295898 0.528809 c
+0.295898 0.415039 l
+0.295898 0.335693 0.261719 0.291016 0.192871 0.280762 c
+0.262207 0.273926 0.296875 0.229492 0.296875 0.146973 c
+0.296875 -0.0200195 l
+0.296875 -0.0944824 0.334229 -0.131836 0.40918 -0.131836 c
+0.437988 -0.131836 l
+0.437988 -0.200195 l
+f}bind def end
+/X0 Ff/Encoding get 36/36 put
+q[6.25 0 0 -6.25 1259.83 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+q[6.25 0 0 -6.25 1305.63 310.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/37{n 0.439941 0.40918 m
+0.448975 0.397949 0.455322 0.385986 0.459229 0.373291 c
+0.462891 0.36084 0.464844 0.348145 0.464844 0.334961 c
+0.464844 0.307373 0.460205 0.282959 0.450439 0.261719 c
+0.440918 0.240723 0.42749 0.2229 0.409912 0.208496 c
+0.392578 0.194336 0.371826 0.18335 0.347412 0.176025 c
+0.323242 0.168701 0.296387 0.165039 0.26709 0.165039 c
+0.25 0.165039 0.233887 0.166748 0.219238 0.170166 c
+0.20459 0.173584 0.193604 0.17749 0.186035 0.182129 c
+0.180664 0.176758 0.175781 0.170654 0.171875 0.163818 c
+0.167969 0.157227 0.166016 0.149658 0.166016 0.141113 c
+0.166016 0.135986 0.167236 0.130859 0.169922 0.125488 c
+0.172363 0.120361 0.17627 0.115723 0.181396 0.111572 c
+0.186279 0.107666 0.192383 0.104248 0.199463 0.101562 c
+0.206299 0.0991211 0.214355 0.0976562 0.223145 0.097168 c
+0.34082 0.0927734 l
+0.367188 0.0922852 0.390869 0.0888672 0.412354 0.0827637 c
+0.433594 0.0769043 0.451904 0.0683594 0.467285 0.0571289 c
+0.482422 0.0461426 0.494385 0.0327148 0.502686 0.0168457 c
+0.510986 0.0012207 0.515137 -0.0168457 0.515137 -0.0371094 c
+0.515137 -0.0600586 0.51001 -0.0820312 0.499512 -0.102539 c
+0.489258 -0.123047 0.473389 -0.140869 0.452393 -0.156006 c
+0.431396 -0.171143 0.405273 -0.183105 0.374023 -0.191895 c
+0.342773 -0.200684 0.306641 -0.205078 0.265137 -0.205078 c
+0.225098 -0.205078 0.190674 -0.201904 0.161865 -0.195557 c
+0.133057 -0.189209 0.109619 -0.18042 0.0910645 -0.168945 c
+0.0727539 -0.157715 0.059082 -0.144043 0.050293 -0.128174 c
+0.0415039 -0.112549 0.0371094 -0.0952148 0.0371094 -0.0761719 c
+0.0371094 -0.0649414 0.0385742 -0.0541992 0.0415039 -0.0444336 c
+0.0444336 -0.034668 0.0488281 -0.0253906 0.0546875 -0.0163574 c
+0.0605469 -0.00756836 0.0678711 0.0012207 0.0766602 0.00976562 c
+0.0854492 0.0180664 0.0957031 0.0266113 0.10791 0.0351562 c
+0.092041 0.0441895 0.079834 0.0559082 0.0715332 0.0703125 c
+0.0632324 0.0844727 0.059082 0.0998535 0.059082 0.116211 c
+0.059082 0.127197 0.0605469 0.137451 0.0634766 0.147217 c
+0.0664062 0.156738 0.0700684 0.166016 0.0749512 0.174805 c
+0.0795898 0.183594 0.0849609 0.191895 0.0913086 0.200195 c
+0.0974121 0.208252 0.104004 0.216309 0.11084 0.224121 c
+0.098877 0.236084 0.0888672 0.250732 0.0808105 0.267822 c
+0.072998 0.284912 0.0688477 0.306152 0.0688477 0.332031 c
+0.0688477 0.359619 0.0737305 0.384277 0.0837402 0.406006 c
+0.0935059 0.42749 0.107422 0.445801 0.125 0.460693 c
+0.142578 0.475342 0.16333 0.486572 0.187744 0.494385 c
+0.211914 0.501953 0.238281 0.505859 0.26709 0.505859 c
+0.281738 0.505859 0.295654 0.505127 0.309326 0.503662 c
+0.322754 0.502197 0.334961 0.499756 0.346191 0.496094 c
+0.518066 0.496094 l
+0.518066 0.40918 l
+0.439941 0.40918 l
+0.15918 -0.065918 m
+0.15918 -0.0849609 0.168701 -0.0991211 0.188232 -0.108398 c
+0.20752 -0.117432 0.234863 -0.12207 0.27002 -0.12207 c
+0.29248 -0.12207 0.311279 -0.120117 0.326904 -0.115723 c
+0.342285 -0.111572 0.35498 -0.105957 0.364746 -0.0991211 c
+0.374512 -0.0922852 0.381348 -0.0844727 0.385742 -0.0751953 c
+0.389893 -0.0661621 0.39209 -0.0566406 0.39209 -0.046875 c
+0.39209 -0.0380859 0.390137 -0.0307617 0.385986 -0.0246582 c
+0.38208 -0.0187988 0.376221 -0.0136719 0.368896 -0.00952148 c
+0.361572 -0.00561523 0.353027 -0.00244141 0.343018 -0.000244141 c
+0.333252 0.00170898 0.322266 0.00317383 0.310059 0.00390625 c
+0.205078 0.00585938 l
+0.195801 -0.000488281 0.187988 -0.00683594 0.181885 -0.0126953 c
+0.176025 -0.0185547 0.171143 -0.0241699 0.167725 -0.0300293 c
+0.164307 -0.0356445 0.162109 -0.0415039 0.160889 -0.0473633 c
+0.159912 -0.0532227 0.15918 -0.0593262 0.15918 -0.065918 c
+0.179199 0.332031 m
+0.179199 0.305664 0.186768 0.284912 0.202393 0.269287 c
+0.217773 0.253906 0.239258 0.246094 0.26709 0.246094 c
+0.281738 0.246094 0.294434 0.248535 0.30542 0.253418 c
+0.316162 0.258301 0.325195 0.264648 0.33252 0.272949 c
+0.3396 0.281006 0.344971 0.290527 0.348633 0.30127 c
+0.352051 0.312012 0.354004 0.323242 0.354004 0.334961 c
+0.354004 0.362549 0.346436 0.384033 0.330811 0.399658 c
+0.31543 0.415039 0.293945 0.422852 0.266113 0.422852 c
+0.251465 0.422852 0.23877 0.42041 0.227783 0.415527 c
+0.217041 0.410645 0.208008 0.404053 0.200684 0.395752 c
+0.193604 0.387451 0.188232 0.37793 0.18457 0.366699 c
+0.181152 0.355713 0.179199 0.344238 0.179199 0.332031 c
+f}bind def end
+/X0 Ff/Encoding get 37/37 put
+q[6.25 0 0 -6.25 1214.03 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+/X0 Ff/CharProcs get begin/38{n 0.514648 0.251953 m
+0.514648 0.212891 0.509277 0.177246 0.498047 0.144775 c
+0.487061 0.112549 0.471191 0.0847168 0.450195 0.0615234 c
+0.429443 0.0385742 0.403809 0.0205078 0.373535 0.0078125 c
+0.343262 -0.00488281 0.308838 -0.0112305 0.27002 -0.0112305 c
+0.233398 -0.0112305 0.200439 -0.00585938 0.171387 0.00488281 c
+0.142578 0.015625 0.11792 0.0314941 0.0976562 0.0529785 c
+0.0776367 0.0742188 0.0620117 0.10083 0.0512695 0.133057 c
+0.0405273 0.165039 0.0351562 0.202393 0.0351562 0.245117 c
+0.0351562 0.284424 0.0407715 0.320312 0.052002 0.352539 c
+0.0632324 0.384766 0.0793457 0.412109 0.100342 0.435059 c
+0.121338 0.457764 0.146973 0.475342 0.177246 0.488037 c
+0.20752 0.500488 0.241699 0.506836 0.279785 0.506836 c
+0.316895 0.506836 0.349854 0.501465 0.378906 0.490479 c
+0.407715 0.479736 0.432373 0.463379 0.452637 0.441895 c
+0.472656 0.42041 0.488037 0.393799 0.498779 0.362061 c
+0.509277 0.330322 0.514648 0.293701 0.514648 0.251953 c
+0.390625 0.249023 m
+0.390625 0.300293 0.381104 0.339111 0.361572 0.36499 c
+0.342285 0.390869 0.313721 0.403809 0.275879 0.403809 c
+0.255127 0.403809 0.237305 0.399902 0.222656 0.391602 c
+0.208008 0.383545 0.196045 0.372314 0.186523 0.358154 c
+0.177246 0.343994 0.170166 0.327637 0.165771 0.308594 c
+0.161377 0.289795 0.15918 0.269531 0.15918 0.248047 c
+0.15918 0.196289 0.169434 0.157471 0.19043 0.131104 c
+0.211182 0.10498 0.239746 0.0917969 0.275879 0.0917969 c
+0.295654 0.0917969 0.312988 0.0957031 0.327637 0.10376 c
+0.342285 0.111572 0.354004 0.122803 0.363281 0.136963 c
+0.372314 0.151123 0.37915 0.167725 0.383789 0.187012 c
+0.388184 0.206055 0.390625 0.226807 0.390625 0.249023 c
+f}bind def end
+/X0 Ff/Encoding get 38/38 put
+q[6.25 0 0 -6.25 1259.84 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+/X0 Ff/CharProcs get begin/39{n 0.477051 0.00488281 m
+0.455566 0 0.434082 -0.00390625 0.412109 -0.00683594 c
+0.390381 -0.00976562 0.369629 -0.0112305 0.350098 -0.0112305 c
+0.317627 -0.0112305 0.289551 -0.0078125 0.265869 -0.000976562 c
+0.242432 0.00585938 0.2229 0.0161133 0.207275 0.0302734 c
+0.191895 0.0441895 0.18042 0.0620117 0.173096 0.0837402 c
+0.165771 0.105225 0.162109 0.131104 0.162109 0.161133 c
+0.162109 0.40332 l
+0.0288086 0.40332 l
+0.0288086 0.496094 l
+0.162109 0.496094 l
+0.162109 0.623047 l
+0.28418 0.654785 l
+0.28418 0.496094 l
+0.477051 0.496094 l
+0.477051 0.40332 l
+0.28418 0.40332 l
+0.28418 0.169922 l
+0.28418 0.141602 0.290527 0.120361 0.303711 0.105713 c
+0.31665 0.0913086 0.338379 0.0839844 0.369141 0.0839844 c
+0.388672 0.0839844 0.407715 0.0854492 0.42627 0.0888672 c
+0.444824 0.092041 0.46167 0.0957031 0.477051 0.100098 c
+0.477051 0.00488281 l
+f}bind def end
+/X0 Ff/Encoding get 39/39 put
+q[6.25 0 0 -6.25 1305.64 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1397.23 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/40{n 0.466309 0.133789 m
+0.466309 0.116699 0.463379 0.101074 0.45752 0.0874023 c
+0.45166 0.0737305 0.443848 0.0617676 0.433594 0.0510254 c
+0.423584 0.0405273 0.411865 0.0314941 0.398438 0.0239258 c
+0.385254 0.0166016 0.37085 0.0102539 0.355713 0.00537109 c
+0.340576 0.000488281 0.325195 -0.00292969 0.309082 -0.00537109 c
+0.293213 -0.00756836 0.277588 -0.00878906 0.262207 -0.00878906 c
+0.229004 -0.00878906 0.198486 -0.00732422 0.170654 -0.00439453 c
+0.142822 -0.00146484 0.115723 0.00317383 0.0888672 0.00976562 c
+0.0888672 0.0878906 l
+0.117432 0.079834 0.145996 0.0737305 0.174316 0.0693359 c
+0.202637 0.0651855 0.230713 0.0629883 0.258789 0.0629883 c
+0.299316 0.0629883 0.32959 0.0683594 0.349121 0.0795898 c
+0.368652 0.0905762 0.378418 0.106445 0.378418 0.126953 c
+0.378418 0.135742 0.376953 0.143555 0.373779 0.150635 c
+0.37085 0.157471 0.365234 0.164307 0.356934 0.170654 c
+0.348877 0.177002 0.336182 0.183594 0.319092 0.19043 c
+0.302002 0.197266 0.278809 0.205078 0.249023 0.213867 c
+0.227051 0.220215 0.206543 0.227783 0.187744 0.236084 c
+0.169189 0.244385 0.152832 0.25415 0.13916 0.265625 c
+0.125488 0.276855 0.114746 0.290283 0.106934 0.305664 c
+0.0991211 0.320801 0.0952148 0.338867 0.0952148 0.359863 c
+0.0952148 0.373535 0.0983887 0.388428 0.104736 0.404785 c
+0.111084 0.420898 0.121826 0.436035 0.137207 0.450195 c
+0.152344 0.464111 0.173096 0.47583 0.199219 0.485107 c
+0.225098 0.494385 0.257812 0.499023 0.296875 0.499023 c
+0.315918 0.499023 0.337402 0.498047 0.36084 0.49585 c
+0.384277 0.493896 0.408691 0.490234 0.434082 0.484863 c
+0.434082 0.40918 l
+0.407471 0.415527 0.38208 0.42041 0.358154 0.423584 c
+0.334229 0.426514 0.313477 0.428223 0.295898 0.428223 c
+0.274902 0.428223 0.25708 0.426758 0.242432 0.42334 c
+0.228027 0.420166 0.216309 0.415771 0.207275 0.409912 c
+0.198486 0.404297 0.191895 0.397705 0.187988 0.389893 c
+0.184082 0.382324 0.182129 0.374023 0.182129 0.365234 c
+0.182129 0.356445 0.183838 0.348633 0.187256 0.341309 c
+0.190674 0.334229 0.197021 0.327393 0.206299 0.320557 c
+0.215576 0.313965 0.228516 0.307373 0.245117 0.300537 c
+0.261719 0.293945 0.283203 0.286621 0.310059 0.278809 c
+0.338867 0.270508 0.363281 0.261475 0.383301 0.252197 c
+0.403076 0.24292 0.419189 0.232666 0.431641 0.221191 c
+0.443848 0.209961 0.452881 0.197021 0.458252 0.182617 c
+0.463623 0.168457 0.466309 0.1521 0.466309 0.133789 c
+f}bind def end
+/X0 Ff/Encoding get 40/40 put
+q[6.25 0 0 -6.25 1443.04 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/41{n 0.473145 0.00683594 m
+0.454102 0.00195312 0.434082 -0.00146484 0.413574 -0.00366211 c
+0.393066 -0.00561523 0.372314 -0.00683594 0.351074 -0.00683594 c
+0.289551 -0.00683594 0.243652 0.00708008 0.213379 0.0349121 c
+0.183105 0.0627441 0.167969 0.105469 0.167969 0.163086 c
+0.167969 0.418945 l
+0.0307617 0.418945 l
+0.0307617 0.490234 l
+0.167969 0.490234 l
+0.167969 0.625 l
+0.25293 0.646973 l
+0.25293 0.490234 l
+0.473145 0.490234 l
+0.473145 0.418945 l
+0.25293 0.418945 l
+0.25293 0.169922 l
+0.25293 0.134766 0.262207 0.108643 0.281006 0.0910645 c
+0.299561 0.0737305 0.327148 0.0649414 0.36377 0.0649414 c
+0.379395 0.0649414 0.396484 0.0661621 0.415039 0.0686035 c
+0.433594 0.0710449 0.452881 0.074707 0.473145 0.0800781 c
+0.473145 0.00683594 l
+f}bind def end
+/X0 Ff/Encoding get 41/41 put
+q[6.25 0 0 -6.25 1488.84 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+/X0 Ff/CharProcs get begin/42{n 0.393066 0 m
+0.391113 0.065918 l
+0.364502 0.0395508 0.337402 0.0205078 0.309814 0.00878906 c
+0.282471 -0.00292969 0.253418 -0.00878906 0.223145 -0.00878906 c
+0.195312 -0.00878906 0.171387 -0.00537109 0.151367 0.00195312 c
+0.131592 0.0090332 0.115234 0.0187988 0.102295 0.0314941 c
+0.0895996 0.0439453 0.0800781 0.0585938 0.0739746 0.0756836 c
+0.0681152 0.0925293 0.0649414 0.11084 0.0649414 0.130859 c
+0.0649414 0.179932 0.083252 0.218506 0.119873 0.246338 c
+0.156494 0.27417 0.210449 0.288086 0.282227 0.288086 c
+0.383789 0.288086 l
+0.383789 0.331055 l
+0.383789 0.359863 0.374512 0.383057 0.355957 0.400635 c
+0.337402 0.417969 0.309082 0.426758 0.270996 0.426758 c
+0.243408 0.426758 0.216064 0.423828 0.189209 0.41748 c
+0.162354 0.411377 0.134766 0.402588 0.105957 0.391113 c
+0.105957 0.467773 l
+0.116699 0.47168 0.128662 0.475342 0.141846 0.479248 c
+0.155029 0.48291 0.168945 0.486328 0.183594 0.489258 c
+0.198242 0.492188 0.213379 0.494385 0.229492 0.496338 c
+0.245361 0.498047 0.261475 0.499023 0.277832 0.499023 c
+0.307373 0.499023 0.333984 0.49585 0.35791 0.489258 c
+0.381592 0.48291 0.401611 0.4729 0.418213 0.459473 c
+0.43457 0.446289 0.447266 0.429443 0.456055 0.40918 c
+0.464844 0.38916 0.469238 0.365234 0.469238 0.337891 c
+0.469238 0 l
+0.393066 0 l
+0.383789 0.223145 m
+0.275879 0.223145 l
+0.254883 0.223145 0.236572 0.221191 0.221191 0.216797 c
+0.206055 0.212646 0.193359 0.206543 0.183594 0.19873 c
+0.173828 0.190918 0.166748 0.181641 0.161865 0.170654 c
+0.157227 0.159912 0.154785 0.147461 0.154785 0.133789 c
+0.154785 0.124512 0.15625 0.115479 0.15918 0.106689 c
+0.162109 0.0981445 0.166748 0.0905762 0.17334 0.0837402 c
+0.179688 0.0771484 0.188232 0.0717773 0.19873 0.0678711 c
+0.208984 0.0639648 0.22168 0.0620117 0.236816 0.0620117 c
+0.256348 0.0620117 0.278564 0.0678711 0.303955 0.079834 c
+0.329102 0.0915527 0.355713 0.110352 0.383789 0.13623 c
+0.383789 0.223145 l
+f}bind def end
+/X0 Ff/Encoding get 42/42 put
+q[6.25 0 0 -6.25 1534.65 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+/X0 Ff/CharProcs get begin/43{n 0.0981445 0.490234 m
+0.175781 0.490234 l
+0.178223 0.399902 l
+0.207031 0.43457 0.235596 0.459961 0.263916 0.475586 c
+0.291992 0.491211 0.320312 0.499023 0.349121 0.499023 c
+0.399902 0.499023 0.438232 0.482666 0.4646 0.449707 c
+0.490723 0.416992 0.50293 0.368164 0.500977 0.303223 c
+0.415039 0.303223 l
+0.416016 0.346191 0.409912 0.377197 0.39624 0.396729 c
+0.382812 0.416016 0.363037 0.425781 0.336914 0.425781 c
+0.325684 0.425781 0.314209 0.423828 0.30249 0.419678 c
+0.291016 0.415771 0.279053 0.40918 0.266846 0.400146 c
+0.254639 0.391357 0.241699 0.379883 0.228027 0.365723 c
+0.214355 0.351807 0.199707 0.334961 0.184082 0.314941 c
+0.184082 0 l
+0.0981445 0 l
+0.0981445 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 43/43 put
+q[6.25 0 0 -6.25 1580.46 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1626.26 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+/X0 Ff/CharProcs get begin/44{n 0.12207 -0.100098 m
+0.138672 -0.100586 0.154785 -0.0993652 0.17041 -0.0957031 c
+0.186035 -0.0922852 0.199707 -0.0869141 0.21167 -0.079834 c
+0.223389 -0.072998 0.23291 -0.064209 0.240234 -0.0537109 c
+0.247314 -0.043457 0.250977 -0.0314941 0.250977 -0.0180664 c
+0.250977 -0.00439453 0.248779 0.0065918 0.243896 0.0151367 c
+0.239258 0.0234375 0.233887 0.03125 0.228027 0.0385742 c
+0.222168 0.0456543 0.217041 0.0532227 0.212158 0.0615234 c
+0.20752 0.0695801 0.205078 0.0805664 0.205078 0.0942383 c
+0.205078 0.101074 0.206299 0.108154 0.208984 0.115723 c
+0.211426 0.123047 0.215576 0.129883 0.220947 0.13623 c
+0.226318 0.142334 0.233154 0.147461 0.241455 0.151367 c
+0.249756 0.155273 0.259521 0.157227 0.270996 0.157227 c
+0.282227 0.157227 0.293213 0.155029 0.303955 0.150146 c
+0.314453 0.145508 0.32373 0.138184 0.331787 0.128418 c
+0.3396 0.118652 0.345947 0.106445 0.35083 0.0917969 c
+0.355469 0.0771484 0.35791 0.0600586 0.35791 0.0400391 c
+0.35791 0.0131836 0.353027 -0.0129395 0.343018 -0.0378418 c
+0.333252 -0.0627441 0.318359 -0.0847168 0.298584 -0.104004 c
+0.279053 -0.123047 0.254395 -0.138428 0.224854 -0.149902 c
+0.195557 -0.161133 0.161133 -0.166992 0.12207 -0.166992 c
+0.12207 -0.100098 l
+0.274902 0.499023 m
+0.284912 0.499023 0.294434 0.49707 0.303711 0.49292 c
+0.312744 0.489014 0.320801 0.483398 0.327637 0.476562 c
+0.334473 0.469727 0.339844 0.461914 0.343994 0.452637 c
+0.3479 0.443604 0.350098 0.434082 0.350098 0.423828 c
+0.350098 0.413574 0.348145 0.403809 0.343994 0.394775 c
+0.340088 0.385986 0.334473 0.37793 0.327637 0.371094 c
+0.320801 0.364258 0.312988 0.358887 0.303711 0.35498 c
+0.294678 0.351074 0.285156 0.349121 0.274902 0.349121 c
+0.264648 0.349121 0.254883 0.351074 0.24585 0.35498 c
+0.237061 0.358887 0.229004 0.364258 0.222168 0.371094 c
+0.215332 0.37793 0.209961 0.385742 0.206055 0.394775 c
+0.202148 0.403564 0.200195 0.41333 0.200195 0.423828 c
+0.200195 0.433838 0.202148 0.443359 0.206055 0.452637 c
+0.209961 0.46167 0.215332 0.469727 0.222168 0.476562 c
+0.229004 0.483398 0.236816 0.48877 0.24585 0.49292 c
+0.254639 0.496826 0.264404 0.499023 0.274902 0.499023 c
+f}bind def end
+/X0 Ff/Encoding get 44/44 put
+q[6.25 0 0 -6.25 1672.07 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1717.84 416.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/45{n 0.5 0.202148 m
+0.5 0.172852 0.494873 0.145508 0.484131 0.119629 c
+0.473633 0.0939941 0.458496 0.0715332 0.438965 0.0524902 c
+0.419434 0.0334473 0.395996 0.0185547 0.368408 0.00756836 c
+0.341064 -0.00317383 0.310547 -0.00878906 0.276855 -0.00878906 c
+0.241699 -0.00878906 0.210693 -0.00317383 0.183594 0.00805664 c
+0.156738 0.0192871 0.134033 0.036377 0.115723 0.0598145 c
+0.0976562 0.0830078 0.0837402 0.112305 0.0742188 0.147949 c
+0.0649414 0.18335 0.0600586 0.225342 0.0600586 0.273926 c
+0.0600586 0.306396 0.0620117 0.337891 0.0664062 0.368652 c
+0.0705566 0.39917 0.0776367 0.427979 0.0874023 0.455078 c
+0.097168 0.481934 0.110107 0.506836 0.126465 0.529297 c
+0.142578 0.551758 0.162842 0.571045 0.187256 0.587158 c
+0.211426 0.603271 0.23999 0.615723 0.272949 0.624756 c
+0.305664 0.633545 0.34375 0.638184 0.387207 0.638184 c
+0.450195 0.638184 l
+0.450195 0.563965 l
+0.381836 0.563965 l
+0.34375 0.563965 0.310791 0.55957 0.282715 0.550293 c
+0.254883 0.54126 0.231445 0.52832 0.212402 0.511719 c
+0.193604 0.495117 0.179199 0.475098 0.168945 0.45166 c
+0.158936 0.428223 0.152588 0.4021 0.149902 0.373047 c
+0.147949 0.353027 l
+0.168457 0.36499 0.192139 0.374756 0.218994 0.38208 c
+0.24585 0.389404 0.274902 0.393066 0.306152 0.393066 c
+0.338379 0.393066 0.366455 0.388428 0.390869 0.378906 c
+0.415039 0.369629 0.435303 0.356445 0.451416 0.3396 c
+0.467529 0.322998 0.479492 0.302734 0.487793 0.279297 c
+0.49585 0.255859 0.5 0.230225 0.5 0.202148 c
+0.411133 0.196777 m
+0.411133 0.216309 0.408936 0.233887 0.404053 0.249756 c
+0.399414 0.265381 0.39209 0.278809 0.381836 0.289795 c
+0.371826 0.300537 0.359131 0.309082 0.343506 0.315186 c
+0.328125 0.321045 0.30957 0.324219 0.288086 0.324219 c
+0.275879 0.324219 0.263184 0.323242 0.250488 0.320801 c
+0.237793 0.318604 0.225342 0.31543 0.213135 0.311279 c
+0.200928 0.307373 0.189453 0.302734 0.178223 0.297363 c
+0.167236 0.292236 0.157227 0.286621 0.147949 0.280762 c
+0.147949 0.23877 0.150879 0.203857 0.156738 0.175537 c
+0.162598 0.147461 0.171143 0.125 0.182861 0.10791 c
+0.194336 0.0910645 0.208496 0.0791016 0.225586 0.0717773 c
+0.242432 0.0646973 0.261963 0.0610352 0.28418 0.0610352 c
+0.302734 0.0610352 0.31958 0.0639648 0.335205 0.0700684 c
+0.350586 0.0759277 0.364014 0.0849609 0.375244 0.0966797 c
+0.386475 0.108398 0.395264 0.122559 0.401611 0.139404 c
+0.407959 0.156006 0.411133 0.175293 0.411133 0.196777 c
+f}bind def end
+/X0 Ff/Encoding get 45/45 put
+q[6.25 0 0 -6.25 345.871 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 893.424 522.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/46{n 0.48877 0.559082 m
+0.221191 0 l
+0.124023 0 l
+0.401855 0.559082 l
+0.0571289 0.559082 l
+0.0571289 0.638184 l
+0.48877 0.638184 l
+0.48877 0.559082 l
+f}bind def end
+/X0 Ff/Encoding get 46/46 put
+q[6.25 0 0 -6.25 345.871 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/47{n 0.51416 0.256836 m
+0.51416 0.211426 0.507812 0.171875 0.494873 0.138672 c
+0.482178 0.105469 0.464111 0.0778809 0.441162 0.0559082 c
+0.418213 0.0339355 0.391113 0.0178223 0.359863 0.00708008 c
+0.328613 -0.00341797 0.294678 -0.00878906 0.257812 -0.00878906 c
+0.22168 -0.00878906 0.188232 -0.00610352 0.156982 -0.000732422 c
+0.125977 0.00463867 0.0961914 0.0117188 0.0678711 0.0209961 c
+0.0678711 0.689941 l
+0.187012 0.689941 l
+0.187012 0.527832 l
+0.182129 0.430176 l
+0.199951 0.453125 0.220947 0.47168 0.244873 0.48584 c
+0.268799 0.499756 0.297363 0.506836 0.331055 0.506836 c
+0.360352 0.506836 0.38623 0.500977 0.40918 0.489258 c
+0.431885 0.477539 0.450928 0.460938 0.466553 0.439209 c
+0.481934 0.417725 0.493652 0.391357 0.501953 0.360596 c
+0.51001 0.329834 0.51416 0.29541 0.51416 0.256836 c
+0.38916 0.251953 m
+0.38916 0.279297 0.387207 0.30249 0.383301 0.321777 c
+0.379395 0.34082 0.373779 0.356689 0.366455 0.369141 c
+0.359131 0.381348 0.350342 0.390381 0.3396 0.39624 c
+0.329102 0.401855 0.316895 0.404785 0.303223 0.404785 c
+0.283203 0.404785 0.263916 0.396729 0.245361 0.380371 c
+0.227051 0.364258 0.20752 0.342041 0.187012 0.313965 c
+0.187012 0.097168 l
+0.196289 0.09375 0.208008 0.0908203 0.221924 0.0883789 c
+0.235596 0.0861816 0.249756 0.0849609 0.26416 0.0849609 c
+0.282959 0.0849609 0.300049 0.0888672 0.315674 0.0966797 c
+0.331055 0.104492 0.344238 0.115479 0.355225 0.129883 c
+0.365967 0.144043 0.374512 0.161621 0.380371 0.182373 c
+0.38623 0.202881 0.38916 0.226074 0.38916 0.251953 c
+f}bind def end
+/X0 Ff/Encoding get 47/47 put
+q[6.25 0 0 -6.25 847.624 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+/X0 Ff/CharProcs get begin/48{n 0.387207 0.303223 m
+0.387695 0.321777 0.386963 0.337402 0.384521 0.350586 c
+0.38208 0.363525 0.378174 0.374268 0.372803 0.382812 c
+0.367432 0.391113 0.36084 0.397461 0.353027 0.401367 c
+0.345215 0.405273 0.336426 0.407227 0.326172 0.407227 c
+0.308594 0.407227 0.290527 0.400146 0.271729 0.385498 c
+0.253174 0.371094 0.232422 0.347168 0.209961 0.313965 c
+0.209961 0 l
+0.0878906 0 l
+0.0878906 0.496094 l
+0.195801 0.496094 l
+0.200195 0.423828 l
+0.208252 0.436523 0.217529 0.447754 0.227783 0.458008 c
+0.238037 0.468018 0.249268 0.476807 0.261963 0.484131 c
+0.274414 0.491455 0.28833 0.49707 0.303711 0.500977 c
+0.318848 0.504883 0.335693 0.506836 0.354004 0.506836 c
+0.378906 0.506836 0.401123 0.502686 0.420654 0.493896 c
+0.439941 0.485352 0.456299 0.472656 0.469482 0.455566 c
+0.482666 0.438721 0.492432 0.41748 0.498779 0.391846 c
+0.505127 0.366455 0.507812 0.336914 0.506836 0.303223 c
+0.387207 0.303223 l
+f}bind def end
+/X0 Ff/Encoding get 48/48 put
+q[6.25 0 0 -6.25 893.429 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 939.235 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+/X0 Ff/CharProcs get begin/49{n 0.378906 0 m
+0.375977 0.0649414 l
+0.365723 0.0539551 0.354736 0.0437012 0.343262 0.0344238 c
+0.332031 0.0251465 0.319336 0.0170898 0.305664 0.0102539 c
+0.291992 0.00341797 0.2771 -0.00170898 0.260986 -0.00561523 c
+0.244873 -0.00927734 0.227295 -0.0112305 0.208008 -0.0112305 c
+0.182617 -0.0112305 0.1604 -0.00756836 0.141113 0 c
+0.12207 0.00732422 0.105957 0.0178223 0.0927734 0.03125 c
+0.079834 0.0444336 0.0700684 0.0605469 0.0632324 0.0795898 c
+0.0566406 0.0983887 0.0532227 0.119141 0.0532227 0.14209 c
+0.0532227 0.165527 0.0581055 0.187012 0.0681152 0.207031 c
+0.0778809 0.226807 0.0930176 0.243896 0.113525 0.258301 c
+0.133789 0.272461 0.15918 0.283691 0.189697 0.291992 c
+0.219971 0.300049 0.255859 0.304199 0.296875 0.304199 c
+0.361816 0.304199 l
+0.361816 0.333984 l
+0.361816 0.34668 0.360107 0.358154 0.356445 0.368408 c
+0.353027 0.378662 0.347168 0.387207 0.339111 0.394531 c
+0.331299 0.401611 0.320801 0.407227 0.308105 0.411133 c
+0.29541 0.415039 0.279785 0.416992 0.26123 0.416992 c
+0.231934 0.416992 0.203125 0.413818 0.174561 0.406982 c
+0.14624 0.400391 0.118652 0.391113 0.0917969 0.378906 c
+0.0917969 0.474121 l
+0.115479 0.483398 0.142822 0.491211 0.174072 0.497559 c
+0.205078 0.503662 0.237305 0.506836 0.270996 0.506836 c
+0.307617 0.506836 0.339355 0.503418 0.365723 0.496338 c
+0.39209 0.489502 0.413818 0.479004 0.430908 0.464844 c
+0.447998 0.450928 0.460449 0.43335 0.46875 0.412354 c
+0.476807 0.391357 0.480957 0.366943 0.480957 0.338867 c
+0.480957 0 l
+0.378906 0 l
+0.361816 0.219238 m
+0.289062 0.219238 l
+0.269043 0.219238 0.251953 0.217285 0.237793 0.213379 c
+0.223877 0.209473 0.212402 0.204102 0.203613 0.197266 c
+0.194824 0.19043 0.188477 0.182617 0.184326 0.173584 c
+0.18042 0.164795 0.178223 0.155273 0.178223 0.14502 c
+0.178223 0.125 0.18457 0.109619 0.197754 0.098877 c
+0.210693 0.0883789 0.228516 0.0830078 0.250977 0.0830078 c
+0.267578 0.0830078 0.284668 0.0888672 0.302734 0.101074 c
+0.320557 0.113037 0.340332 0.130371 0.361816 0.152832 c
+0.361816 0.219238 l
+f}bind def end
+/X0 Ff/Encoding get 49/49 put
+q[6.25 0 0 -6.25 985.04 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+/X0 Ff/CharProcs get begin/50{n 0.375 0 m
+0.191895 0.248047 l
+0.191895 0 l
+0.0727539 0 l
+0.0727539 0.689941 l
+0.191895 0.689941 l
+0.191895 0.286133 l
+0.365234 0.496094 l
+0.51416 0.496094 l
+0.312988 0.27002 l
+0.530762 0 l
+0.375 0 l
+f}bind def end
+/X0 Ff/Encoding get 50/50 put
+q[6.25 0 0 -6.25 1030.85 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<32>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 629.167]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/51{n 0.492188 0.160156 m
+0.492188 0.133301 0.486816 0.109131 0.475586 0.0881348 c
+0.4646 0.0671387 0.449219 0.0495605 0.429199 0.0351562 c
+0.409424 0.0209961 0.385986 0.0100098 0.358887 0.00244141 c
+0.332031 -0.00488281 0.302734 -0.00878906 0.270996 -0.00878906 c
+0.236328 -0.00878906 0.205566 -0.00488281 0.178955 0.00292969 c
+0.152588 0.0107422 0.130371 0.0214844 0.112305 0.0356445 c
+0.0944824 0.0495605 0.0810547 0.0661621 0.0717773 0.0854492 c
+0.0627441 0.104492 0.0581055 0.125732 0.0581055 0.148926 c
+0.0581055 0.187988 0.0688477 0.22168 0.0908203 0.25 c
+0.112549 0.27832 0.14624 0.303955 0.191895 0.327148 c
+0.150391 0.348145 0.119873 0.371826 0.100586 0.397705 c
+0.081543 0.423584 0.0717773 0.453125 0.0717773 0.486816 c
+0.0717773 0.507324 0.0759277 0.5271 0.0844727 0.546387 c
+0.0927734 0.56543 0.105713 0.58252 0.122803 0.597656 c
+0.139893 0.612549 0.161133 0.624512 0.187012 0.633545 c
+0.212646 0.642334 0.24292 0.646973 0.277832 0.646973 c
+0.310547 0.646973 0.3396 0.643555 0.364502 0.636475 c
+0.389404 0.629639 0.410156 0.619629 0.427246 0.606445 c
+0.444092 0.593506 0.456787 0.577637 0.465332 0.559082 c
+0.473633 0.540527 0.478027 0.52002 0.478027 0.49707 c
+0.478027 0.459961 0.467773 0.428467 0.447021 0.402344 c
+0.426514 0.376465 0.396973 0.353516 0.358887 0.333984 c
+0.377686 0.324707 0.395264 0.314209 0.411621 0.302734 c
+0.427734 0.291504 0.441895 0.278809 0.454102 0.264648 c
+0.466064 0.250732 0.475342 0.235107 0.482178 0.217773 c
+0.48877 0.200684 0.492188 0.181396 0.492188 0.160156 c
+0.391113 0.490234 m
+0.391113 0.519043 0.381104 0.540771 0.360596 0.554932 c
+0.340332 0.569092 0.311768 0.576172 0.274902 0.576172 c
+0.238525 0.576172 0.210205 0.569336 0.189697 0.555176 c
+0.169434 0.54126 0.15918 0.520264 0.15918 0.492188 c
+0.15918 0.479492 0.161621 0.467773 0.166504 0.457031 c
+0.171387 0.446289 0.178955 0.436279 0.189209 0.426758 c
+0.199463 0.41748 0.212158 0.408203 0.227539 0.398926 c
+0.242676 0.389893 0.260986 0.380615 0.282227 0.371094 c
+0.318848 0.388184 0.346191 0.40625 0.364258 0.425049 c
+0.38208 0.443604 0.391113 0.465332 0.391113 0.490234 c
+0.399902 0.153809 m
+0.399902 0.165771 0.397949 0.17749 0.394043 0.188965 c
+0.390137 0.200195 0.383301 0.211426 0.373047 0.222656 c
+0.363037 0.233643 0.349609 0.244629 0.33252 0.255859 c
+0.315674 0.266846 0.294189 0.27832 0.268066 0.290039 c
+0.246094 0.279297 0.227295 0.268799 0.212158 0.258057 c
+0.197021 0.247559 0.184814 0.236816 0.175537 0.22583 c
+0.16626 0.215088 0.159668 0.203613 0.155762 0.191895 c
+0.151855 0.180176 0.149902 0.167969 0.149902 0.154785 c
+0.149902 0.140137 0.153076 0.127197 0.159424 0.115967 c
+0.165771 0.104736 0.174316 0.0952148 0.185547 0.0874023 c
+0.196533 0.0795898 0.209717 0.0737305 0.225098 0.0698242 c
+0.240234 0.065918 0.256836 0.0639648 0.274902 0.0639648 c
+0.291992 0.0639648 0.30835 0.0656738 0.32373 0.0693359 c
+0.338867 0.0727539 0.352295 0.0783691 0.363525 0.0856934 c
+0.374756 0.0930176 0.383545 0.102295 0.390137 0.113525 c
+0.396484 0.124756 0.399902 0.138184 0.399902 0.153809 c
+f}bind def end
+/X0 Ff/Encoding get 51/51 put
+q[6.25 0 0 -6.25 345.871 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 481.217 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/52{n 0.469238 0.019043 m
+0.445801 0.00976562 0.421631 0.00268555 0.396484 -0.00195312 c
+0.371582 -0.00634766 0.345215 -0.00878906 0.317871 -0.00878906 c
+0.278564 -0.00878906 0.243164 -0.00341797 0.211914 0.00732422 c
+0.180664 0.0180664 0.154297 0.0339355 0.132324 0.0551758 c
+0.110596 0.0761719 0.0939941 0.102539 0.0822754 0.133789 c
+0.0708008 0.165039 0.0649414 0.201172 0.0649414 0.242188 c
+0.0649414 0.281738 0.0710449 0.317871 0.0837402 0.350098 c
+0.0961914 0.382324 0.11377 0.409668 0.136719 0.432617 c
+0.159424 0.455322 0.186768 0.4729 0.218994 0.485352 c
+0.250977 0.497559 0.286621 0.503906 0.326172 0.503906 c
+0.358398 0.503906 0.385498 0.502197 0.407471 0.498779 c
+0.429443 0.495361 0.449219 0.491211 0.466797 0.48584 c
+0.466797 0.370117 l
+0.446777 0.380127 0.424805 0.387939 0.401123 0.393555 c
+0.377686 0.398926 0.355225 0.401855 0.333984 0.401855 c
+0.312012 0.401855 0.291992 0.398193 0.274414 0.390625 c
+0.256836 0.383301 0.242188 0.372803 0.22998 0.359375 c
+0.218018 0.346191 0.20874 0.329834 0.202393 0.310791 c
+0.196045 0.291748 0.192871 0.270996 0.192871 0.248047 c
+0.192871 0.224365 0.196289 0.203125 0.203125 0.184082 c
+0.209961 0.165283 0.219482 0.14917 0.232178 0.135986 c
+0.244629 0.122803 0.259766 0.112793 0.277344 0.105713 c
+0.294922 0.098877 0.314453 0.0952148 0.335938 0.0952148 c
+0.346191 0.0952148 0.357178 0.0959473 0.368896 0.0974121 c
+0.380371 0.098877 0.391846 0.10083 0.403564 0.10376 c
+0.415039 0.106445 0.426514 0.109619 0.437744 0.113281 c
+0.448975 0.116699 0.459473 0.120605 0.469238 0.125 c
+0.469238 0.019043 l
+f}bind def end
+/X0 Ff/Encoding get 52/52 put
+q[6.25 0 0 -6.25 847.624 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 893.429 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 939.235 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+q[6.25 0 0 -6.25 985.04 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1030.83 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+/X0 Ff/CharProcs get begin/53{n 0.47998 0.193848 m
+0.47998 0.166016 0.474365 0.139648 0.462891 0.11499 c
+0.45166 0.0905762 0.43457 0.0690918 0.411621 0.0505371 c
+0.388916 0.0322266 0.360352 0.0178223 0.325684 0.00708008 c
+0.29126 -0.00341797 0.250977 -0.00878906 0.205078 -0.00878906 c
+0.179688 -0.00878906 0.156982 -0.00805664 0.136719 -0.00634766 c
+0.116699 -0.00488281 0.0976562 -0.00268555 0.0800781 0 c
+0.0800781 0.0761719 l
+0.100098 0.0727539 0.121582 0.0698242 0.144043 0.0678711 c
+0.166504 0.065918 0.189453 0.0649414 0.212891 0.0649414 c
+0.244629 0.0649414 0.271973 0.067627 0.294678 0.0734863 c
+0.317139 0.0791016 0.335693 0.0874023 0.350098 0.0981445 c
+0.364258 0.108887 0.374756 0.121826 0.381348 0.137207 c
+0.387695 0.152344 0.391113 0.169678 0.391113 0.188965 c
+0.391113 0.206543 0.387207 0.22168 0.379395 0.234863 c
+0.371582 0.247803 0.360596 0.258789 0.346436 0.267578 c
+0.332275 0.276367 0.31543 0.282959 0.295654 0.287354 c
+0.276123 0.291748 0.254395 0.293945 0.230957 0.293945 c
+0.158203 0.293945 l
+0.158203 0.36377 l
+0.231934 0.36377 l
+0.250977 0.36377 0.268555 0.366211 0.284424 0.371338 c
+0.300049 0.376221 0.313721 0.383545 0.324951 0.393066 c
+0.336182 0.402344 0.344727 0.414062 0.35083 0.427979 c
+0.356689 0.44165 0.359863 0.45752 0.359863 0.475098 c
+0.359863 0.509277 0.349609 0.53418 0.328613 0.549805 c
+0.307861 0.56543 0.277344 0.573242 0.236816 0.573242 c
+0.215332 0.573242 0.193359 0.571289 0.17041 0.566895 c
+0.147705 0.562744 0.123291 0.556396 0.097168 0.547852 c
+0.097168 0.62207 l
+0.108154 0.625977 0.119873 0.629395 0.132568 0.632568 c
+0.14502 0.635498 0.157471 0.638184 0.170166 0.640381 c
+0.182617 0.642334 0.195068 0.644043 0.20752 0.645264 c
+0.219727 0.64624 0.231689 0.646973 0.243164 0.646973 c
+0.276855 0.646973 0.306641 0.643311 0.33252 0.635986 c
+0.358154 0.628662 0.379639 0.618164 0.396973 0.604492 c
+0.414062 0.59082 0.427246 0.574219 0.436035 0.554688 c
+0.444824 0.535156 0.449219 0.513184 0.449219 0.48877 c
+0.449219 0.452393 0.439941 0.421875 0.421143 0.396973 c
+0.402588 0.372314 0.376953 0.352539 0.344238 0.337891 c
+0.36084 0.335449 0.377197 0.330078 0.393311 0.322266 c
+0.409424 0.314453 0.423828 0.304443 0.436768 0.292236 c
+0.449463 0.280029 0.459961 0.265625 0.468018 0.249023 c
+0.47583 0.232422 0.47998 0.214111 0.47998 0.193848 c
+f}bind def end
+/X0 Ff/Encoding get 53/53 put
+q[6.25 0 0 -6.25 1076.63 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/54{n 0.274902 0.499023 m
+0.284912 0.499023 0.294434 0.49707 0.303711 0.49292 c
+0.312744 0.489014 0.320801 0.483398 0.327637 0.476562 c
+0.334473 0.469727 0.339844 0.461914 0.343994 0.452637 c
+0.3479 0.443604 0.350098 0.434082 0.350098 0.423828 c
+0.350098 0.413574 0.348145 0.403809 0.343994 0.394775 c
+0.340088 0.385986 0.334473 0.37793 0.327637 0.371094 c
+0.320801 0.364258 0.312988 0.358887 0.303711 0.35498 c
+0.294678 0.351074 0.285156 0.349121 0.274902 0.349121 c
+0.264648 0.349121 0.254883 0.351074 0.24585 0.35498 c
+0.237061 0.358887 0.229004 0.364258 0.222168 0.371094 c
+0.215332 0.37793 0.209961 0.385742 0.206055 0.394775 c
+0.202148 0.403564 0.200195 0.41333 0.200195 0.423828 c
+0.200195 0.433838 0.202148 0.443359 0.206055 0.452637 c
+0.209961 0.46167 0.215332 0.469727 0.222168 0.476562 c
+0.229004 0.483398 0.236816 0.48877 0.24585 0.49292 c
+0.254639 0.496826 0.264404 0.499023 0.274902 0.499023 c
+0.274902 0.141113 m
+0.284912 0.141113 0.294434 0.13916 0.303711 0.13501 c
+0.312744 0.131104 0.320801 0.125488 0.327637 0.118652 c
+0.334473 0.111816 0.339844 0.104004 0.343994 0.0947266 c
+0.3479 0.0856934 0.350098 0.0761719 0.350098 0.065918 c
+0.350098 0.0556641 0.348145 0.0458984 0.343994 0.0368652 c
+0.340088 0.0280762 0.334473 0.0200195 0.327637 0.0131836 c
+0.320801 0.00634766 0.312988 0.000976562 0.303711 -0.00292969 c
+0.294678 -0.00683594 0.285156 -0.00878906 0.274902 -0.00878906 c
+0.264648 -0.00878906 0.254883 -0.00683594 0.24585 -0.00292969 c
+0.237061 0.000976562 0.229004 0.00634766 0.222168 0.0131836 c
+0.215332 0.0200195 0.209961 0.027832 0.206055 0.0368652 c
+0.202148 0.0456543 0.200195 0.0554199 0.200195 0.065918 c
+0.200195 0.0759277 0.202148 0.0854492 0.206055 0.0947266 c
+0.209961 0.10376 0.215332 0.111816 0.222168 0.118652 c
+0.229004 0.125488 0.236816 0.130859 0.24585 0.13501 c
+0.254639 0.138916 0.264404 0.141113 0.274902 0.141113 c
+f}bind def end
+/X0 Ff/Encoding get 54/54 put
+q[6.25 0 0 -6.25 1122.43 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 735.417]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+/X0 Ff/CharProcs get begin/55{n 0.48877 0.35498 m
+0.48877 0.292969 0.481445 0.239502 0.466309 0.19458 c
+0.451416 0.149902 0.429199 0.113037 0.399902 0.0842285 c
+0.370605 0.0554199 0.334473 0.0341797 0.291016 0.0205078 c
+0.247803 0.00683594 0.197754 0 0.141113 0 c
+0.0878906 0 l
+0.0878906 0.0742188 l
+0.146973 0.0742188 l
+0.188965 0.0742188 0.225098 0.0783691 0.255859 0.0869141 c
+0.286377 0.0952148 0.311768 0.107666 0.332275 0.124268 c
+0.352539 0.140625 0.368164 0.160645 0.378906 0.184326 c
+0.389648 0.207764 0.39624 0.234863 0.398926 0.265137 c
+0.400879 0.285156 l
+0.380371 0.273193 0.356934 0.263428 0.330078 0.256104 c
+0.303467 0.248779 0.274414 0.245117 0.243164 0.245117 c
+0.210938 0.245117 0.182617 0.249756 0.158203 0.259277 c
+0.133789 0.268555 0.113525 0.281738 0.0974121 0.298828 c
+0.0812988 0.315674 0.0693359 0.335693 0.0610352 0.359131 c
+0.0529785 0.382324 0.0488281 0.407715 0.0488281 0.435059 c
+0.0488281 0.4646 0.0541992 0.492188 0.0649414 0.518066 c
+0.0756836 0.543701 0.0905762 0.566162 0.110107 0.585205 c
+0.129395 0.604248 0.152588 0.619141 0.179688 0.630371 c
+0.206543 0.641357 0.236328 0.646973 0.269043 0.646973 c
+0.300537 0.646973 0.329834 0.641846 0.356689 0.631348 c
+0.383545 0.621094 0.406738 0.604248 0.42627 0.580811 c
+0.445801 0.557617 0.460938 0.527344 0.472168 0.490234 c
+0.483154 0.453125 0.48877 0.408203 0.48877 0.35498 c
+0.265137 0.577148 m
+0.24707 0.577148 0.230225 0.574219 0.2146 0.568115 c
+0.199219 0.562256 0.185791 0.553467 0.174561 0.541748 c
+0.16333 0.530273 0.154541 0.516113 0.147949 0.499023 c
+0.141602 0.482178 0.138184 0.462891 0.138184 0.440918 c
+0.138184 0.421143 0.140381 0.40332 0.145264 0.387695 c
+0.149902 0.37207 0.157227 0.358887 0.167236 0.3479 c
+0.177002 0.337158 0.189941 0.328613 0.205566 0.322754 c
+0.221191 0.316895 0.239746 0.313965 0.26123 0.313965 c
+0.273193 0.313965 0.285645 0.314941 0.298584 0.317383 c
+0.311279 0.31958 0.323975 0.322754 0.336182 0.32666 c
+0.348389 0.330566 0.359863 0.334961 0.371094 0.340332 c
+0.38208 0.345459 0.39209 0.351074 0.400879 0.356934 c
+0.400879 0.398926 0.397949 0.433838 0.391602 0.462158 c
+0.385498 0.490234 0.376465 0.512939 0.364746 0.530029 c
+0.353027 0.547119 0.338867 0.559082 0.322021 0.566406 c
+0.30542 0.573486 0.286377 0.577148 0.265137 0.577148 c
+f}bind def end
+/X0 Ff/Encoding get 55/55 put
+q[6.25 0 0 -6.25 345.871 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+/X0 Ff/CharProcs get begin/56{n 0.49707 0.253906 m
+0.49707 0.210449 0.490967 0.172363 0.47876 0.139648 c
+0.466553 0.107178 0.449707 0.0800781 0.428223 0.0585938 c
+0.406738 0.0371094 0.381348 0.0209961 0.352051 0.0102539 c
+0.322754 -0.000488281 0.291016 -0.00585938 0.256836 -0.00585938 c
+0.241211 -0.00585938 0.22583 -0.00512695 0.210205 -0.00341797 c
+0.194824 -0.00195312 0.179199 0.000976562 0.163086 0.00488281 c
+0.163086 -0.200195 l
+0.078125 -0.200195 l
+0.078125 0.490234 l
+0.153809 0.490234 l
+0.15918 0.408203 l
+0.183594 0.44165 0.209473 0.465088 0.237305 0.47876 c
+0.264893 0.492188 0.294922 0.499023 0.327148 0.499023 c
+0.35498 0.499023 0.379639 0.493164 0.400879 0.481445 c
+0.421875 0.469727 0.439697 0.453369 0.454102 0.431885 c
+0.468262 0.410645 0.479004 0.38501 0.486328 0.354736 c
+0.493408 0.324707 0.49707 0.291016 0.49707 0.253906 c
+0.410156 0.25 m
+0.410156 0.275635 0.408447 0.299316 0.404541 0.320801 c
+0.400879 0.342285 0.39502 0.360596 0.386719 0.375977 c
+0.378662 0.391113 0.368164 0.403076 0.355469 0.411865 c
+0.342773 0.42041 0.327637 0.424805 0.310059 0.424805 c
+0.299316 0.424805 0.288574 0.423096 0.277344 0.419678 c
+0.266357 0.41626 0.254883 0.410645 0.24292 0.402588 c
+0.231201 0.394775 0.218506 0.384033 0.205322 0.37085 c
+0.192139 0.357666 0.178223 0.341309 0.163086 0.321777 c
+0.163086 0.0839844 l
+0.178711 0.0776367 0.195068 0.0725098 0.212402 0.0686035 c
+0.229492 0.0649414 0.246582 0.0629883 0.263184 0.0629883 c
+0.309082 0.0629883 0.344971 0.0783691 0.371094 0.109619 c
+0.396973 0.140625 0.410156 0.1875 0.410156 0.25 c
+f}bind def end
+/X0 Ff/Encoding get 56/56 put
+q[6.25 0 0 -6.25 893.424 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 939.23 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+/X0 Ff/CharProcs get begin/57{n 0.245117 0.419922 m
+0.100098 0.419922 l
+0.100098 0.490234 l
+0.331055 0.490234 l
+0.331055 0.0708008 l
+0.477051 0.0708008 l
+0.477051 0 l
+0.0839844 0 l
+0.0839844 0.0708008 l
+0.245117 0.0708008 l
+0.245117 0.419922 l
+0.274902 0.695801 m
+0.28418 0.695801 0.292969 0.694092 0.30127 0.690674 c
+0.309326 0.687256 0.316406 0.682617 0.32251 0.67627 c
+0.328369 0.670166 0.333252 0.663086 0.33667 0.655029 c
+0.340088 0.647217 0.341797 0.638428 0.341797 0.628906 c
+0.341797 0.619873 0.340088 0.611328 0.33667 0.603027 c
+0.333252 0.594971 0.328613 0.587891 0.32251 0.581543 c
+0.31665 0.575439 0.30957 0.570557 0.30127 0.567139 c
+0.293213 0.563721 0.284424 0.562012 0.274902 0.562012 c
+0.265625 0.562012 0.256836 0.563721 0.248535 0.567139 c
+0.240479 0.570557 0.233398 0.575195 0.227295 0.581543 c
+0.221436 0.587646 0.216553 0.594727 0.213135 0.603027 c
+0.209717 0.611084 0.208008 0.619629 0.208008 0.628906 c
+0.208008 0.638184 0.209717 0.646973 0.213135 0.655029 c
+0.216553 0.662842 0.221191 0.669922 0.227295 0.67627 c
+0.233154 0.682373 0.240234 0.687256 0.248535 0.690674 c
+0.256592 0.694092 0.265381 0.695801 0.274902 0.695801 c
+f}bind def end
+/X0 Ff/Encoding get 57/57 put
+q[6.25 0 0 -6.25 985.036 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/58{n 0.078125 0.490234 m
+0.153809 0.490234 l
+0.157227 0.411133 l
+0.171387 0.427979 0.185303 0.442139 0.19873 0.453369 c
+0.211914 0.4646 0.225098 0.473633 0.238037 0.480469 c
+0.250732 0.487305 0.263916 0.491943 0.277344 0.494873 c
+0.290527 0.497559 0.304443 0.499023 0.318848 0.499023 c
+0.369141 0.499023 0.407471 0.484131 0.43335 0.454346 c
+0.459229 0.424561 0.472168 0.379883 0.472168 0.319824 c
+0.472168 0 l
+0.387207 0 l
+0.387207 0.312988 l
+0.387207 0.351318 0.380127 0.379639 0.365723 0.398193 c
+0.351562 0.416504 0.330078 0.425781 0.301758 0.425781 c
+0.291504 0.425781 0.28125 0.424316 0.27124 0.421143 c
+0.261475 0.418213 0.250977 0.412842 0.240234 0.405029 c
+0.229492 0.397461 0.218018 0.387207 0.205322 0.374023 c
+0.192871 0.361084 0.178711 0.344727 0.163086 0.325195 c
+0.163086 0 l
+0.078125 0 l
+0.078125 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 58/58 put
+q[6.25 0 0 -6.25 1030.84 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+/X0 Ff/CharProcs get begin/59{n 0.513184 0.61084 m
+0.46875 0.620117 0.430176 0.625 0.397949 0.625 c
+0.321533 0.625 0.283203 0.584961 0.283203 0.504883 c
+0.283203 0.418945 l
+0.498047 0.418945 l
+0.498047 0.348145 l
+0.283203 0.348145 l
+0.283203 0 l
+0.196777 0 l
+0.196777 0.348145 l
+0.0390625 0.348145 l
+0.0390625 0.418945 l
+0.196777 0.418945 l
+0.196777 0.5 l
+0.196777 0.630371 0.264648 0.695801 0.400879 0.695801 c
+0.43457 0.695801 0.472168 0.691895 0.513184 0.684082 c
+0.513184 0.61084 l
+f}bind def end
+/X0 Ff/Encoding get 59/59 put
+q[6.25 0 0 -6.25 1122.45 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/60{n 0.371582 -0.205078 m
+0.22168 -0.0661621 0.146484 0.0874023 0.146484 0.255859 c
+0.146484 0.295166 0.150391 0.334473 0.158447 0.373779 c
+0.16626 0.412842 0.179199 0.452148 0.197021 0.491699 c
+0.2146 0.531006 0.238037 0.570312 0.267334 0.609863 c
+0.296387 0.64917 0.331787 0.688232 0.373535 0.727051 c
+0.422852 0.676758 l
+0.296631 0.552246 0.233398 0.414062 0.233398 0.262207 c
+0.233398 0.186768 0.249268 0.114258 0.28125 0.0444336 c
+0.312988 -0.0251465 0.360352 -0.0908203 0.422852 -0.152832 c
+0.371582 -0.205078 l
+f}bind def end
+/X0 Ff/Encoding get 60/60 put
+q[6.25 0 0 -6.25 1168.23 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+/X0 Ff/CharProcs get begin/61{n 0.233887 0.689941 m
+0.220215 0.460938 l
+0.140137 0.460938 l
+0.125977 0.689941 l
+0.233887 0.689941 l
+0.423828 0.689941 m
+0.410156 0.460938 l
+0.330078 0.460938 l
+0.315918 0.689941 l
+0.423828 0.689941 l
+f}bind def end
+/X0 Ff/Encoding get 61/61 put
+q[6.25 0 0 -6.25 1214.03 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/62{n 0.458984 0.0180664 m
+0.437012 0.00976562 0.414307 0.00341797 0.390869 -0.000732422 c
+0.367676 -0.00463867 0.34375 -0.00683594 0.318848 -0.00683594 c
+0.241455 -0.00683594 0.181885 0.0141602 0.139893 0.0561523 c
+0.0981445 0.0981445 0.0771484 0.159424 0.0771484 0.240234 c
+0.0771484 0.278809 0.0830078 0.313965 0.0952148 0.345703 c
+0.107178 0.377197 0.124023 0.404297 0.145996 0.426758 c
+0.167725 0.449219 0.193848 0.466553 0.224121 0.47876 c
+0.254395 0.490967 0.287598 0.49707 0.324219 0.49707 c
+0.349609 0.49707 0.373291 0.495361 0.395508 0.491699 c
+0.41748 0.488281 0.438721 0.482422 0.458984 0.474121 c
+0.458984 0.393066 l
+0.437988 0.404053 0.41626 0.412109 0.394287 0.417236 c
+0.372314 0.422119 0.349609 0.424805 0.326172 0.424805 c
+0.304443 0.424805 0.283936 0.420654 0.264404 0.412354 c
+0.245117 0.404053 0.228027 0.39209 0.213379 0.376465 c
+0.19873 0.36084 0.187256 0.341797 0.178711 0.319336 c
+0.17041 0.296875 0.166016 0.271484 0.166016 0.243164 c
+0.166016 0.184082 0.18042 0.139648 0.209229 0.110107 c
+0.238037 0.0808105 0.277832 0.065918 0.329102 0.065918 c
+0.352051 0.065918 0.374512 0.0683594 0.39624 0.0737305 c
+0.417725 0.0788574 0.438721 0.0866699 0.458984 0.097168 c
+0.458984 0.0180664 l
+f}bind def end
+/X0 Ff/Encoding get 62/62 put
+q[6.25 0 0 -6.25 1397.25 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+/X0 Ff/CharProcs get begin/63{n 0.492188 0.270996 m
+0.492188 0.259033 0.492188 0.249023 0.491699 0.240723 c
+0.491455 0.232666 0.490967 0.225098 0.490234 0.217773 c
+0.145996 0.217773 l
+0.145996 0.167725 0.159912 0.12915 0.187988 0.102295 c
+0.21582 0.0754395 0.256348 0.0620117 0.309082 0.0620117 c
+0.323242 0.0620117 0.337646 0.0625 0.352051 0.0637207 c
+0.366211 0.0646973 0.380127 0.0664062 0.393555 0.0683594 c
+0.406738 0.0703125 0.419678 0.0725098 0.431885 0.0749512 c
+0.444092 0.0773926 0.455322 0.0800781 0.46582 0.0830078 c
+0.46582 0.0131836 l
+0.442871 0.00683594 0.416748 0.00146484 0.387451 -0.00268555 c
+0.358398 -0.0065918 0.328125 -0.00878906 0.296875 -0.00878906 c
+0.254883 -0.00878906 0.21875 -0.00317383 0.188477 0.00830078 c
+0.158203 0.0195312 0.133545 0.0361328 0.114014 0.0578613 c
+0.0947266 0.0793457 0.0803223 0.105957 0.0710449 0.137451 c
+0.0617676 0.168701 0.0571289 0.204346 0.0571289 0.244141 c
+0.0571289 0.278564 0.0620117 0.311279 0.0720215 0.342041 c
+0.0817871 0.372803 0.0964355 0.399658 0.115479 0.423096 c
+0.134521 0.446289 0.157715 0.464844 0.185547 0.478516 c
+0.213135 0.492188 0.244629 0.499023 0.279785 0.499023 c
+0.313965 0.499023 0.344238 0.493652 0.370605 0.48291 c
+0.396973 0.472168 0.419189 0.457031 0.437256 0.437256 c
+0.455322 0.417725 0.468994 0.393799 0.478271 0.365479 c
+0.487549 0.337402 0.492188 0.305908 0.492188 0.270996 c
+0.403809 0.283203 m
+0.404785 0.304932 0.402832 0.324951 0.397461 0.343018 c
+0.392334 0.361084 0.384277 0.376465 0.373291 0.389648 c
+0.362549 0.402588 0.348877 0.412842 0.33252 0.420166 c
+0.316406 0.42749 0.297363 0.431152 0.275879 0.431152 c
+0.257324 0.431152 0.240479 0.427734 0.225098 0.42041 c
+0.209961 0.41333 0.196777 0.40332 0.185547 0.390137 c
+0.174561 0.377197 0.165527 0.361572 0.158691 0.343262 c
+0.151855 0.325195 0.147705 0.305176 0.145996 0.283203 c
+0.403809 0.283203 l
+f}bind def end
+/X0 Ff/Encoding get 63/63 put
+q[6.25 0 0 -6.25 1443.06 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+/X0 Ff/CharProcs get begin/64{n 0.484863 0.31543 m
+0.0649414 0.31543 l
+0.0649414 0.387207 l
+0.484863 0.387207 l
+0.484863 0.31543 l
+0.484863 0.145508 m
+0.0649414 0.145508 l
+0.0649414 0.217285 l
+0.484863 0.217285 l
+0.484863 0.145508 l
+f}bind def end
+/X0 Ff/Encoding get 64/64 put
+q[6.25 0 0 -6.25 1488.86 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+/X0 Ff/CharProcs get begin/65{n 0.513184 0 m
+0.415039 0 l
+0.319824 0.204102 l
+0.312744 0.219727 0.30542 0.232666 0.297852 0.24292 c
+0.290527 0.253174 0.282471 0.26123 0.273682 0.267334 c
+0.265137 0.273193 0.255615 0.277588 0.245361 0.280273 c
+0.235107 0.282715 0.223633 0.28418 0.210938 0.28418 c
+0.169922 0.28418 l
+0.169922 0 l
+0.0830078 0 l
+0.0830078 0.638184 l
+0.253906 0.638184 l
+0.291016 0.638184 0.322754 0.634277 0.349609 0.625977 c
+0.376221 0.61792 0.398193 0.606445 0.415283 0.591797 c
+0.432373 0.577148 0.444824 0.55957 0.452881 0.538818 c
+0.460693 0.518311 0.464844 0.495361 0.464844 0.470215 c
+0.464844 0.450439 0.461914 0.431641 0.456055 0.413818 c
+0.450195 0.39624 0.44165 0.380127 0.429932 0.365479 c
+0.418457 0.351074 0.404053 0.338623 0.386963 0.327881 c
+0.369873 0.317383 0.350342 0.30957 0.328125 0.304199 c
+0.345947 0.298096 0.361084 0.287354 0.373779 0.271729 c
+0.38623 0.256348 0.398926 0.23584 0.412109 0.209961 c
+0.513184 0 l
+0.374023 0.462891 m
+0.374023 0.49707 0.363525 0.522461 0.342041 0.539551 c
+0.320801 0.556396 0.290771 0.564941 0.251953 0.564941 c
+0.169922 0.564941 l
+0.169922 0.354004 l
+0.240234 0.354004 l
+0.260742 0.354004 0.279053 0.356201 0.295654 0.361084 c
+0.312012 0.365723 0.325928 0.372803 0.337646 0.38208 c
+0.349121 0.391357 0.358154 0.402588 0.364502 0.41626 c
+0.37085 0.429688 0.374023 0.445312 0.374023 0.462891 c
+f}bind def end
+/X0 Ff/Encoding get 65/65 put
+q[6.25 0 0 -6.25 1534.67 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<41>Tj
+Q
+/X0 Ff/CharProcs get begin/66{n 0.486816 0.172852 m
+0.486816 0.142578 0.480713 0.116211 0.468262 0.0932617 c
+0.456055 0.0705566 0.438721 0.0515137 0.416504 0.036377 c
+0.394531 0.0212402 0.36792 0.0100098 0.33667 0.00244141 c
+0.305664 -0.00488281 0.271484 -0.00878906 0.233887 -0.00878906 c
+0.217041 -0.00878906 0.200195 -0.00830078 0.18335 -0.00683594 c
+0.166748 -0.00561523 0.150635 -0.00390625 0.13501 -0.00195312 c
+0.119629 0 0.10498 0.00219727 0.0913086 0.00488281 c
+0.0776367 0.00732422 0.0654297 0.0102539 0.0541992 0.0131836 c
+0.0541992 0.097168 l
+0.0786133 0.0881348 0.105957 0.0810547 0.136475 0.0756836 c
+0.166748 0.0705566 0.201416 0.0678711 0.240234 0.0678711 c
+0.268066 0.0678711 0.291992 0.0700684 0.311768 0.0744629 c
+0.331299 0.0788574 0.347412 0.0852051 0.360107 0.0939941 c
+0.372559 0.102539 0.381592 0.113037 0.387451 0.125488 c
+0.393066 0.137695 0.395996 0.151855 0.395996 0.167969 c
+0.395996 0.185059 0.391357 0.199951 0.381592 0.212158 c
+0.37207 0.224365 0.359375 0.235107 0.34375 0.244873 c
+0.328125 0.254395 0.310303 0.263184 0.290283 0.27124 c
+0.270264 0.279053 0.25 0.287354 0.229004 0.295898 c
+0.208252 0.304199 0.187744 0.313477 0.167725 0.323486 c
+0.147705 0.333252 0.129883 0.344971 0.114258 0.358643 c
+0.0986328 0.37207 0.0861816 0.387939 0.076416 0.40625 c
+0.0668945 0.424316 0.0620117 0.446045 0.0620117 0.471191 c
+0.0620117 0.49292 0.0664062 0.514404 0.0756836 0.535645 c
+0.0847168 0.556641 0.098877 0.575439 0.118164 0.592041 c
+0.137207 0.608398 0.161865 0.621582 0.192139 0.631836 c
+0.222168 0.641846 0.258057 0.646973 0.299805 0.646973 c
+0.310547 0.646973 0.322021 0.646484 0.334717 0.645508 c
+0.347168 0.644531 0.359863 0.643311 0.372803 0.641357 c
+0.385498 0.639648 0.398193 0.637695 0.410889 0.635254 c
+0.42334 0.633057 0.435059 0.630615 0.445801 0.62793 c
+0.445801 0.549805 l
+0.420898 0.556885 0.395752 0.562256 0.370605 0.566162 c
+0.345703 0.569824 0.321289 0.571777 0.297852 0.571777 c
+0.248047 0.571777 0.211426 0.563477 0.187988 0.546875 c
+0.164551 0.530273 0.152832 0.508057 0.152832 0.47998 c
+0.152832 0.462891 0.157471 0.447998 0.167236 0.435547 c
+0.176758 0.42334 0.189453 0.412109 0.205078 0.402344 c
+0.220703 0.392578 0.238525 0.383789 0.258545 0.375732 c
+0.278564 0.36792 0.298828 0.359619 0.319824 0.351074 c
+0.340576 0.342773 0.361084 0.333496 0.381104 0.323242 c
+0.401123 0.313232 0.418945 0.30127 0.43457 0.287354 c
+0.450195 0.273682 0.462646 0.257324 0.472412 0.23877 c
+0.481934 0.220215 0.486816 0.198242 0.486816 0.172852 c
+f}bind def end
+/X0 Ff/Encoding get 66/66 put
+q[6.25 0 0 -6.25 1580.47 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+/X0 Ff/CharProcs get begin/67{n 0.506836 0.318848 m
+0.506836 0.27002 0.501953 0.225586 0.492188 0.185303 c
+0.482422 0.145264 0.467773 0.110596 0.447754 0.0817871 c
+0.427979 0.0529785 0.40332 0.0307617 0.373779 0.0148926 c
+0.344482 -0.000732422 0.309814 -0.00878906 0.27002 -0.00878906 c
+0.23584 -0.00878906 0.204834 -0.00244141 0.176758 0.010498 c
+0.148926 0.0231934 0.125 0.0429688 0.10498 0.0698242 c
+0.0852051 0.0964355 0.0698242 0.130371 0.059082 0.171875 c
+0.0483398 0.213135 0.0429688 0.262207 0.0429688 0.318848 c
+0.0429688 0.367676 0.0478516 0.412109 0.0578613 0.452637 c
+0.067627 0.49292 0.0825195 0.527588 0.102295 0.556396 c
+0.121826 0.585205 0.146484 0.607422 0.17627 0.623291 c
+0.205811 0.638916 0.240234 0.646973 0.279785 0.646973 c
+0.313965 0.646973 0.344971 0.640625 0.373047 0.627686 c
+0.400879 0.61499 0.424805 0.594971 0.444824 0.568115 c
+0.4646 0.54126 0.47998 0.507324 0.490723 0.46582 c
+0.501465 0.424561 0.506836 0.375488 0.506836 0.318848 c
+0.420898 0.315918 m
+0.420898 0.326904 0.420654 0.337891 0.419678 0.348877 c
+0.418945 0.359619 0.417969 0.370361 0.416992 0.380859 c
+0.146973 0.180176 l
+0.151855 0.16333 0.157959 0.147705 0.165527 0.133301 c
+0.172852 0.119141 0.181885 0.106689 0.192627 0.0964355 c
+0.203125 0.0861816 0.215088 0.0783691 0.22876 0.0725098 c
+0.242188 0.0668945 0.257568 0.0639648 0.274902 0.0639648 c
+0.296875 0.0639648 0.317139 0.0693359 0.335205 0.0800781 c
+0.353271 0.0908203 0.368652 0.106689 0.381348 0.12793 c
+0.394043 0.148926 0.403809 0.175293 0.410645 0.206787 c
+0.41748 0.238037 0.420898 0.274414 0.420898 0.315918 c
+0.128906 0.321777 m
+0.128906 0.311768 0.128906 0.301758 0.12915 0.291504 c
+0.12915 0.281494 0.129883 0.271729 0.130859 0.262207 c
+0.400879 0.461914 l
+0.395996 0.478516 0.389893 0.493652 0.382324 0.507324 c
+0.375 0.520996 0.365967 0.532715 0.355469 0.542725 c
+0.345215 0.55249 0.333252 0.560303 0.319824 0.565918 c
+0.306641 0.571289 0.291504 0.574219 0.274902 0.574219 c
+0.25293 0.574219 0.232666 0.568848 0.2146 0.558105 c
+0.196533 0.547363 0.181152 0.531494 0.168457 0.51001 c
+0.155762 0.48877 0.145996 0.462402 0.13916 0.430908 c
+0.132324 0.399658 0.128906 0.363281 0.128906 0.321777 c
+f}bind def end
+/X0 Ff/Encoding get 67/67 put
+q[6.25 0 0 -6.25 1717.89 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1809.5 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+/X0 Ff/CharProcs get begin/68{n 0.494141 -0.10498 m
+0.413086 -0.10498 l
+0.078125 0.689941 l
+0.15918 0.689941 l
+0.494141 -0.10498 l
+f}bind def end
+/X0 Ff/Encoding get 68/68 put
+q[6.25 0 0 -6.25 1901.11 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1992.72 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/69{n 0.178223 0.727051 m
+0.328125 0.588135 0.40332 0.433594 0.40332 0.263184 c
+0.40332 0.228027 0.399902 0.19165 0.392578 0.153809 c
+0.385498 0.116211 0.373291 0.0773926 0.355957 0.0378418 c
+0.338867 -0.00170898 0.315674 -0.041748 0.286377 -0.0825195 c
+0.257324 -0.123047 0.220703 -0.164062 0.17627 -0.205078 c
+0.126953 -0.154785 l
+0.19043 -0.092041 0.237793 -0.0263672 0.269043 0.0419922 c
+0.300293 0.110352 0.315918 0.181885 0.315918 0.256836 c
+0.315918 0.411621 0.25293 0.551025 0.126953 0.674805 c
+0.178223 0.727051 l
+f}bind def end
+/X0 Ff/Encoding get 69/69 put
+q[6.25 0 0 -6.25 2038.44 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2084.25 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 2130.05 841.667]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 481.217 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 893.429 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 939.235 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 985.04 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1168.23 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+/X0 Ff/CharProcs get begin/70{n 0.51416 0.490234 m
+0.347168 0.0517578 l
+0.330078 0.00732422 0.312256 -0.03125 0.293701 -0.0634766 c
+0.275391 -0.0957031 0.255371 -0.12207 0.233398 -0.142822 c
+0.21167 -0.16333 0.187744 -0.178711 0.161621 -0.188477 c
+0.135742 -0.198242 0.106445 -0.203125 0.0742188 -0.203125 c
+0.065918 -0.203125 0.0581055 -0.203125 0.0512695 -0.202637 c
+0.0444336 -0.202393 0.0371094 -0.201904 0.0288086 -0.201172 c
+0.0288086 -0.124023 l
+0.0358887 -0.125 0.0437012 -0.125732 0.0522461 -0.126709 c
+0.0605469 -0.127441 0.0695801 -0.12793 0.0791016 -0.12793 c
+0.0947266 -0.12793 0.109131 -0.125732 0.122803 -0.121094 c
+0.13623 -0.116699 0.148926 -0.109131 0.161133 -0.098877 c
+0.173096 -0.088623 0.18457 -0.0754395 0.195801 -0.059082 c
+0.206787 -0.0429688 0.217529 -0.0231934 0.228027 0 c
+0.0322266 0.490234 l
+0.128906 0.490234 l
+0.25293 0.166016 l
+0.277832 0.0898438 l
+0.306152 0.167969 l
+0.420898 0.490234 l
+0.51416 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 70/70 put
+q[6.25 0 0 -6.25 1305.65 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+/X0 Ff/CharProcs get begin/71{n 0.504883 0.249023 m
+0.504883 0.210938 0.499512 0.176025 0.48877 0.144287 c
+0.478027 0.112549 0.462646 0.0854492 0.442383 0.0627441 c
+0.422363 0.0402832 0.397705 0.0227051 0.368652 0.0100098 c
+0.339844 -0.00244141 0.306885 -0.00878906 0.27002 -0.00878906 c
+0.234863 -0.00878906 0.203369 -0.00341797 0.175537 0.00756836 c
+0.147705 0.0183105 0.124268 0.0344238 0.104736 0.0556641 c
+0.0854492 0.0766602 0.0705566 0.103027 0.0603027 0.134277 c
+0.0500488 0.165527 0.0449219 0.201416 0.0449219 0.242188 c
+0.0449219 0.280273 0.050293 0.314941 0.0610352 0.346436 c
+0.0717773 0.377686 0.0871582 0.404785 0.107422 0.42749 c
+0.127441 0.449951 0.1521 0.467529 0.181152 0.480225 c
+0.209961 0.492676 0.24292 0.499023 0.279785 0.499023 c
+0.314941 0.499023 0.346436 0.493652 0.374268 0.482666 c
+0.4021 0.471924 0.425537 0.455811 0.445068 0.434814 c
+0.464355 0.413818 0.479248 0.387695 0.489502 0.356445 c
+0.499756 0.325195 0.504883 0.289551 0.504883 0.249023 c
+0.417969 0.245117 m
+0.417969 0.275391 0.414795 0.301758 0.407959 0.324463 c
+0.401367 0.346924 0.391846 0.365967 0.379395 0.381104 c
+0.367188 0.39624 0.352051 0.407471 0.334229 0.415283 c
+0.31665 0.422852 0.296875 0.426758 0.274902 0.426758 c
+0.249512 0.426758 0.227783 0.421875 0.209717 0.411865 c
+0.19165 0.4021 0.177002 0.388672 0.165283 0.37207 c
+0.153809 0.355469 0.145264 0.336182 0.139893 0.314209 c
+0.134521 0.292236 0.131836 0.269287 0.131836 0.245117 c
+0.131836 0.214844 0.13501 0.188477 0.141846 0.165527 c
+0.148438 0.142822 0.157959 0.123779 0.17041 0.108643 c
+0.182617 0.0935059 0.197754 0.0822754 0.215332 0.0744629 c
+0.23291 0.0668945 0.252686 0.0629883 0.274902 0.0629883 c
+0.300293 0.0629883 0.322021 0.0678711 0.340088 0.0778809 c
+0.358154 0.0876465 0.372803 0.101074 0.384521 0.117676 c
+0.395996 0.134277 0.404541 0.153564 0.409912 0.175537 c
+0.415283 0.19751 0.417969 0.220703 0.417969 0.245117 c
+f}bind def end
+/X0 Ff/Encoding get 71/71 put
+q[6.25 0 0 -6.25 1351.45 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+/X0 Ff/CharProcs get begin/72{n 0.472168 0 m
+0.395996 0 l
+0.393066 0.0791016 l
+0.378418 0.0622559 0.364502 0.0480957 0.351318 0.0368652 c
+0.338135 0.0256348 0.325195 0.0166016 0.312012 0.00976562 c
+0.299072 0.00292969 0.285889 -0.00170898 0.272705 -0.00463867 c
+0.259521 -0.00732422 0.245605 -0.00878906 0.230957 -0.00878906 c
+0.180664 -0.00878906 0.142578 0.00585938 0.116699 0.0356445 c
+0.0910645 0.0651855 0.078125 0.109863 0.078125 0.169922 c
+0.078125 0.490234 l
+0.163086 0.490234 l
+0.163086 0.176758 l
+0.163086 0.101562 0.191406 0.0639648 0.248047 0.0639648 c
+0.258301 0.0639648 0.268555 0.0654297 0.278564 0.0686035 c
+0.28833 0.0715332 0.298828 0.0769043 0.309814 0.0847168 c
+0.320557 0.0922852 0.332275 0.102539 0.344971 0.115723 c
+0.357422 0.128662 0.371582 0.14502 0.387207 0.165039 c
+0.387207 0.490234 l
+0.472168 0.490234 l
+0.472168 0 l
+f}bind def end
+/X0 Ff/Encoding get 72/72 put
+q[6.25 0 0 -6.25 1397.26 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/73{n 0.532227 0.490234 m
+0.460938 0 l
+0.35791 0 l
+0.287109 0.205078 l
+0.272949 0.254883 l
+0.256836 0.202148 l
+0.188965 0 l
+0.0888672 0 l
+0.0180664 0.490234 l
+0.101074 0.490234 l
+0.14209 0.157227 l
+0.150879 0.0830078 l
+0.171875 0.147949 l
+0.243164 0.368164 l
+0.304199 0.368164 l
+0.380859 0.150879 l
+0.402832 0.0859375 l
+0.410156 0.154785 l
+0.448242 0.490234 l
+0.532227 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 73/73 put
+q[6.25 0 0 -6.25 1488.87 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.48 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1717.9 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+/X0 Ff/CharProcs get begin/74{n 0.472168 0 m
+0.387207 0 l
+0.387207 0.312988 l
+0.387207 0.350586 0.380127 0.378906 0.365967 0.397705 c
+0.351807 0.41626 0.331543 0.425781 0.305176 0.425781 c
+0.293945 0.425781 0.283203 0.424316 0.273193 0.421143 c
+0.263428 0.418213 0.25293 0.412842 0.242188 0.405029 c
+0.231445 0.397461 0.219727 0.387207 0.207031 0.374023 c
+0.194336 0.361084 0.179688 0.344727 0.163086 0.325195 c
+0.163086 0 l
+0.078125 0 l
+0.078125 0.689941 l
+0.163086 0.689941 l
+0.163086 0.490234 l
+0.160156 0.413086 l
+0.17334 0.428955 0.186523 0.442383 0.199463 0.453369 c
+0.212158 0.464111 0.225098 0.473145 0.238037 0.47998 c
+0.250732 0.486816 0.263916 0.491699 0.277344 0.494629 c
+0.290527 0.497559 0.304443 0.499023 0.318848 0.499023 c
+0.367676 0.499023 0.405273 0.484131 0.432129 0.454346 c
+0.45874 0.424561 0.472168 0.379883 0.472168 0.319824 c
+0.472168 0 l
+f}bind def end
+/X0 Ff/Encoding get 74/74 put
+q[6.25 0 0 -6.25 1763.7 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1809.51 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1901.12 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1992.73 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2038.53 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+/X0 Ff/CharProcs get begin/75{n 0.427734 0 m
+0.427734 0.352051 l
+0.427734 0.367188 0.427246 0.379883 0.426025 0.389648 c
+0.425049 0.399414 0.423096 0.406982 0.420654 0.412842 c
+0.418213 0.418457 0.415283 0.422363 0.411377 0.424805 c
+0.407715 0.427002 0.403076 0.428223 0.397461 0.428223 c
+0.391113 0.428223 0.38501 0.42627 0.379395 0.422363 c
+0.374023 0.418457 0.36792 0.412109 0.361572 0.40332 c
+0.355225 0.394531 0.348389 0.383057 0.340576 0.368408 c
+0.333008 0.354004 0.323975 0.336182 0.313477 0.314941 c
+0.313477 0 l
+0.23584 0 l
+0.23584 0.342773 l
+0.23584 0.360596 0.235352 0.375 0.234131 0.38623 c
+0.233154 0.397217 0.231201 0.405762 0.22876 0.412109 c
+0.226318 0.418213 0.223145 0.422363 0.219238 0.424805 c
+0.215332 0.427002 0.210693 0.428223 0.205078 0.428223 c
+0.199219 0.428223 0.193848 0.426758 0.188477 0.42334 c
+0.18335 0.420166 0.17749 0.414307 0.171143 0.405762 c
+0.164795 0.397461 0.157715 0.385742 0.149902 0.371094 c
+0.14209 0.356445 0.132812 0.337891 0.12207 0.314941 c
+0.12207 0 l
+0.0439453 0 l
+0.0439453 0.490234 l
+0.108887 0.490234 l
+0.112793 0.396973 l
+0.121094 0.415527 0.129395 0.431152 0.137451 0.444336 c
+0.145264 0.457275 0.153564 0.467773 0.162109 0.47583 c
+0.17041 0.483643 0.179443 0.489502 0.189209 0.493408 c
+0.19873 0.49707 0.209473 0.499023 0.221191 0.499023 c
+0.247559 0.499023 0.267578 0.490479 0.28125 0.473145 c
+0.294922 0.456055 0.301758 0.429199 0.301758 0.393066 c
+0.30957 0.409912 0.317139 0.425049 0.324707 0.438232 c
+0.332031 0.451416 0.340088 0.462402 0.348877 0.471436 c
+0.357422 0.480225 0.366943 0.487061 0.377441 0.491943 c
+0.387695 0.496582 0.399902 0.499023 0.413574 0.499023 c
+0.475098 0.499023 0.505859 0.45166 0.505859 0.356934 c
+0.505859 0 l
+0.427734 0 l
+f}bind def end
+/X0 Ff/Encoding get 75/75 put
+q[6.25 0 0 -6.25 2084.34 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 2130.15 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2175.95 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+/X0 Ff/CharProcs get begin/76{n 0.486816 0 m
+0.0859375 0 l
+0.0859375 0.0791016 l
+0.25 0.0791016 l
+0.25 0.544922 l
+0.097168 0.461914 l
+0.065918 0.53418 l
+0.269043 0.641113 l
+0.344238 0.641113 l
+0.344238 0.0791016 l
+0.486816 0.0791016 l
+0.486816 0 l
+f}bind def end
+/X0 Ff/Encoding get 76/76 put
+q[6.25 0 0 -6.25 2221.76 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 2267.56 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2313.37 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2359.17 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2404.98 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+/X0 Ff/CharProcs get begin/77{n 0.492188 0 m
+0.0717773 0 l
+0.0717773 0.0761719 l
+0.236816 0.240234 l
+0.263672 0.266846 0.285645 0.290039 0.302734 0.30957 c
+0.31958 0.329102 0.332764 0.346924 0.342285 0.363037 c
+0.351562 0.37915 0.35791 0.394287 0.361328 0.408691 c
+0.364502 0.422852 0.366211 0.438477 0.366211 0.455078 c
+0.366211 0.470703 0.364258 0.485596 0.359863 0.499756 c
+0.355713 0.513916 0.349121 0.526367 0.340332 0.537109 c
+0.331543 0.547852 0.320312 0.556152 0.306152 0.5625 c
+0.292236 0.568604 0.275391 0.571777 0.255859 0.571777 c
+0.229004 0.571777 0.204346 0.565918 0.182129 0.553711 c
+0.160156 0.541748 0.139648 0.526123 0.121094 0.506836 c
+0.0742188 0.562988 l
+0.0981445 0.588379 0.125977 0.608643 0.157471 0.624023 c
+0.188721 0.63916 0.225342 0.646973 0.26709 0.646973 c
+0.29541 0.646973 0.321045 0.642822 0.344482 0.634277 c
+0.367676 0.625977 0.387695 0.61377 0.404785 0.597656 c
+0.421631 0.581787 0.434814 0.562256 0.444092 0.539062 c
+0.453369 0.516113 0.458008 0.48999 0.458008 0.460938 c
+0.458008 0.436523 0.454834 0.414062 0.448242 0.393066 c
+0.441895 0.372314 0.431885 0.351562 0.418701 0.330811 c
+0.405518 0.310303 0.388916 0.288818 0.368896 0.266602 c
+0.348877 0.244629 0.325195 0.220215 0.297852 0.193848 c
+0.182129 0.0810547 l
+0.492188 0.0810547 l
+0.492188 0 l
+f}bind def end
+/X0 Ff/Encoding get 77/77 put
+q[6.25 0 0 -6.25 2450.78 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 2496.59 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2542.4 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2588.2 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2634.01 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2679.81 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2725.62 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2771.42 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2817.23 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2863.03 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2908.84 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2954.65 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3000.45 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 3046.26 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3092.06 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3137.87 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3183.67 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+/X0 Ff/CharProcs get begin/78{n 0.420898 0.226074 m
+0.128906 0.226074 l
+0.128906 0.306152 l
+0.420898 0.306152 l
+0.420898 0.226074 l
+f}bind def end
+/X0 Ff/Encoding get 78/78 put
+q[6.25 0 0 -6.25 3229.48 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4E>Tj
+Q
+q[6.25 0 0 -6.25 3275.28 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4E>Tj
+Q
+/X0 Ff/CharProcs get begin/79{n 0.102051 0.48584 m
+0.154785 0.540039 l
+0.48291 0.266113 l
+0.154785 -0.0078125 l
+0.102051 0.0458984 l
+0.368164 0.265137 l
+0.102051 0.48584 l
+f}bind def end
+/X0 Ff/Encoding get 79/79 put
+q[6.25 0 0 -6.25 3321.09 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4F>Tj
+Q
+q[6.25 0 0 -6.25 3366.9 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 3412.7 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3458.51 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3504.26 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3550.07 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 3595.87 947.917]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 893.429 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 939.235 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 985.04 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1122.43 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+/X0 Ff/CharProcs get begin/80{n 0.540039 0.689941 m
+0.0898438 0 l
+0.00976562 0 l
+0.458984 0.689941 l
+0.540039 0.689941 l
+0.279785 0.553223 m
+0.279785 0.532227 0.276855 0.512451 0.270508 0.494385 c
+0.264404 0.476318 0.255615 0.460693 0.243896 0.44751 c
+0.232422 0.434326 0.218506 0.424072 0.201904 0.41626 c
+0.185547 0.408691 0.167236 0.404785 0.146973 0.404785 c
+0.127197 0.404785 0.109375 0.407715 0.0935059 0.414062 c
+0.0778809 0.420166 0.064209 0.429443 0.0529785 0.44165 c
+0.041748 0.453857 0.0332031 0.46875 0.0270996 0.486816 c
+0.0212402 0.504639 0.0180664 0.525391 0.0180664 0.548828 c
+0.0180664 0.56958 0.0209961 0.589111 0.0273438 0.607178 c
+0.0334473 0.625244 0.0422363 0.640869 0.0539551 0.654297 c
+0.0654297 0.66748 0.0793457 0.677979 0.0959473 0.685547 c
+0.112305 0.692871 0.130615 0.696777 0.150879 0.696777 c
+0.170654 0.696777 0.188477 0.693848 0.204346 0.6875 c
+0.219971 0.681396 0.233643 0.672363 0.244873 0.660156 c
+0.256104 0.648193 0.264648 0.633301 0.270752 0.615234 c
+0.276611 0.597412 0.279785 0.57666 0.279785 0.553223 c
+0.208008 0.550781 m
+0.208008 0.579346 0.202881 0.600586 0.192383 0.614258 c
+0.182129 0.62793 0.16748 0.634766 0.148926 0.634766 c
+0.139648 0.634766 0.131104 0.632812 0.123779 0.628418 c
+0.116455 0.624268 0.110352 0.618408 0.105225 0.61084 c
+0.100342 0.603516 0.0964355 0.594482 0.09375 0.584229 c
+0.0913086 0.573975 0.0898438 0.562988 0.0898438 0.550781 c
+0.0898438 0.522217 0.0949707 0.500977 0.105469 0.487305 c
+0.115723 0.473633 0.130371 0.466797 0.148926 0.466797 c
+0.158203 0.466797 0.166748 0.46875 0.174072 0.473145 c
+0.181396 0.477295 0.1875 0.483154 0.192627 0.490723 c
+0.19751 0.498047 0.201416 0.50708 0.204102 0.517334 c
+0.206543 0.527588 0.208008 0.538574 0.208008 0.550781 c
+0.532227 0.141113 m
+0.532227 0.120117 0.529053 0.100586 0.522705 0.0825195 c
+0.516357 0.0646973 0.507568 0.0490723 0.49585 0.0356445 c
+0.484375 0.0224609 0.470459 0.0119629 0.453857 0.00439453 c
+0.4375 -0.00292969 0.419189 -0.00683594 0.398926 -0.00683594 c
+0.37915 -0.00683594 0.361328 -0.00390625 0.345459 0.00244141 c
+0.329834 0.00854492 0.316162 0.0175781 0.304932 0.0297852 c
+0.293701 0.041748 0.285156 0.0568848 0.279053 0.0749512 c
+0.273193 0.0930176 0.27002 0.11377 0.27002 0.137207 c
+0.27002 0.157959 0.272949 0.17749 0.279297 0.195557 c
+0.2854 0.213623 0.294189 0.229248 0.305908 0.242676 c
+0.317383 0.255859 0.331299 0.266357 0.3479 0.273926 c
+0.364258 0.28125 0.382568 0.285156 0.402832 0.285156 c
+0.422607 0.285156 0.44043 0.282227 0.456543 0.275879 c
+0.472412 0.269775 0.486084 0.260498 0.497314 0.248291 c
+0.508545 0.236084 0.51709 0.221191 0.523193 0.203125 c
+0.529053 0.185303 0.532227 0.164551 0.532227 0.141113 c
+0.460449 0.13916 m
+0.460449 0.167725 0.455322 0.188965 0.44458 0.202637 c
+0.434082 0.216309 0.419434 0.223145 0.400879 0.223145 c
+0.391602 0.223145 0.383057 0.221191 0.375732 0.216797 c
+0.368408 0.212646 0.362305 0.206787 0.357178 0.199219 c
+0.352295 0.191895 0.348389 0.182861 0.345703 0.172607 c
+0.343262 0.162354 0.341797 0.151367 0.341797 0.13916 c
+0.341797 0.110596 0.346924 0.0893555 0.357422 0.0756836 c
+0.367676 0.0620117 0.382324 0.0551758 0.400879 0.0551758 c
+0.410156 0.0551758 0.418701 0.0571289 0.426025 0.0615234 c
+0.43335 0.0656738 0.439453 0.0715332 0.444824 0.0791016 c
+0.449951 0.0864258 0.453857 0.095459 0.456543 0.105713 c
+0.458984 0.115967 0.460449 0.126953 0.460449 0.13916 c
+f}bind def end
+/X0 Ff/Encoding get 80/80 put
+q[6.25 0 0 -6.25 1168.23 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+/X0 Ff/CharProcs get begin/81{n 0.0532227 0.234863 m
+0.0532227 0.276367 0.0588379 0.313477 0.0703125 0.345947 c
+0.081543 0.378174 0.0979004 0.405518 0.118896 0.427979 c
+0.139893 0.450195 0.165039 0.467041 0.19458 0.47876 c
+0.223877 0.490234 0.256836 0.496094 0.292969 0.496094 c
+0.308594 0.496094 0.323975 0.495117 0.339111 0.493164 c
+0.354248 0.491211 0.369141 0.488281 0.383789 0.483887 c
+0.383789 0.689941 l
+0.469238 0.689941 l
+0.469238 0 l
+0.393066 0 l
+0.390137 0.0927734 l
+0.366455 0.0583496 0.34082 0.0327148 0.312988 0.0161133 c
+0.2854 -0.000488281 0.255371 -0.00878906 0.223145 -0.00878906 c
+0.195312 -0.00878906 0.170654 -0.00292969 0.14917 0.00878906 c
+0.12793 0.0205078 0.110107 0.0368652 0.0959473 0.0583496 c
+0.0817871 0.0795898 0.0712891 0.105225 0.0639648 0.135254 c
+0.0568848 0.165039 0.0532227 0.198242 0.0532227 0.234863 c
+0.140137 0.240234 m
+0.140137 0.181152 0.148682 0.136963 0.16626 0.107666 c
+0.183594 0.0786133 0.208252 0.0639648 0.240234 0.0639648 c
+0.261719 0.0639648 0.284424 0.0734863 0.30835 0.0927734 c
+0.332275 0.111816 0.357422 0.140381 0.383789 0.178223 c
+0.383789 0.405762 l
+0.369873 0.412109 0.354492 0.417236 0.337402 0.420654 c
+0.320557 0.424072 0.303711 0.425781 0.287109 0.425781 c
+0.240967 0.425781 0.204834 0.410889 0.178955 0.380859 c
+0.153076 0.351074 0.140137 0.304199 0.140137 0.240234 c
+f}bind def end
+/X0 Ff/Encoding get 81/81 put
+q[6.25 0 0 -6.25 1214.04 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/82{n 0.116211 -0.100098 m
+0.132812 -0.100586 0.148926 -0.0993652 0.164551 -0.0957031 c
+0.180176 -0.0922852 0.193848 -0.0869141 0.205811 -0.079834 c
+0.217529 -0.072998 0.227051 -0.064209 0.234375 -0.0537109 c
+0.241455 -0.043457 0.245117 -0.0314941 0.245117 -0.0180664 c
+0.245117 -0.00439453 0.24292 0.0065918 0.238037 0.0151367 c
+0.233398 0.0234375 0.228027 0.03125 0.222168 0.0385742 c
+0.216309 0.0456543 0.211182 0.0532227 0.206299 0.0615234 c
+0.20166 0.0695801 0.199219 0.0805664 0.199219 0.0942383 c
+0.199219 0.101074 0.200439 0.108154 0.203125 0.115723 c
+0.205566 0.123047 0.209717 0.129883 0.215088 0.13623 c
+0.220459 0.142334 0.227295 0.147461 0.235596 0.151367 c
+0.243896 0.155273 0.253662 0.157227 0.265137 0.157227 c
+0.276367 0.157227 0.287354 0.155029 0.298096 0.150146 c
+0.308594 0.145508 0.317871 0.138184 0.325928 0.128418 c
+0.33374 0.118652 0.340088 0.106445 0.344971 0.0917969 c
+0.349609 0.0771484 0.352051 0.0600586 0.352051 0.0400391 c
+0.352051 0.0131836 0.347168 -0.0129395 0.337158 -0.0378418 c
+0.327393 -0.0627441 0.3125 -0.0847168 0.292725 -0.104004 c
+0.273193 -0.123047 0.248535 -0.138428 0.218994 -0.149902 c
+0.189697 -0.161133 0.155273 -0.166992 0.116211 -0.166992 c
+0.116211 -0.100098 l
+f}bind def end
+/X0 Ff/Encoding get 82/82 put
+q[6.25 0 0 -6.25 1305.63 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+/X0 Ff/CharProcs get begin/83{n 0.5 0.333008 m
+0.5 0.290527 0.49585 0.251709 0.487305 0.216797 c
+0.479004 0.182129 0.466797 0.150879 0.451172 0.123047 c
+0.549805 0 l
+0.437012 0 l
+0.394043 0.0532227 l
+0.371094 0.0336914 0.345215 0.0187988 0.31665 0.00854492 c
+0.28833 -0.00170898 0.257324 -0.00683594 0.224121 -0.00683594 c
+0.192627 -0.00683594 0.164551 -0.00244141 0.140137 0.00634766 c
+0.115723 0.0151367 0.0952148 0.0273438 0.0786133 0.0432129 c
+0.0620117 0.0588379 0.0495605 0.0776367 0.0407715 0.0996094 c
+0.0322266 0.121338 0.027832 0.145508 0.027832 0.171875 c
+0.027832 0.196533 0.0310059 0.218506 0.0375977 0.238037 c
+0.0439453 0.257324 0.0527344 0.274658 0.0639648 0.289795 c
+0.0749512 0.304932 0.0876465 0.318115 0.102295 0.329834 c
+0.116699 0.341309 0.131836 0.352051 0.147949 0.361816 c
+0.137207 0.376953 l
+0.119141 0.399414 0.105469 0.422119 0.0964355 0.445312 c
+0.0876465 0.468262 0.0830078 0.490967 0.0830078 0.513184 c
+0.0830078 0.536621 0.0866699 0.558105 0.0942383 0.578125 c
+0.101562 0.5979 0.112549 0.61499 0.127197 0.629639 c
+0.141602 0.644043 0.159424 0.655273 0.180908 0.663574 c
+0.202148 0.671631 0.226562 0.675781 0.253906 0.675781 c
+0.280273 0.675781 0.303223 0.672119 0.323242 0.664551 c
+0.343018 0.657227 0.359619 0.646973 0.373047 0.633789 c
+0.38623 0.62085 0.39624 0.605713 0.403076 0.588623 c
+0.409668 0.571533 0.413086 0.553467 0.413086 0.53418 c
+0.413086 0.509766 0.408936 0.488525 0.400635 0.469971 c
+0.392334 0.45166 0.381592 0.435303 0.36792 0.421143 c
+0.354492 0.406982 0.339111 0.394531 0.321533 0.383301 c
+0.304199 0.372314 0.286377 0.361572 0.268066 0.351074 c
+0.394043 0.193848 l
+0.408203 0.232178 0.415039 0.278564 0.414062 0.333008 c
+0.5 0.333008 l
+0.116211 0.182129 m
+0.116211 0.165039 0.118896 0.14917 0.124512 0.134766 c
+0.129883 0.120605 0.137939 0.108154 0.148193 0.0979004 c
+0.158447 0.0876465 0.170898 0.079834 0.185791 0.0742188 c
+0.200439 0.0688477 0.217285 0.065918 0.23584 0.065918 c
+0.278076 0.065918 0.315186 0.081543 0.347168 0.112793 c
+0.191895 0.307129 l
+0.180908 0.299805 0.170654 0.291748 0.161377 0.283203 c
+0.1521 0.274902 0.144287 0.265625 0.137451 0.255371 c
+0.130859 0.245361 0.125732 0.234375 0.121826 0.222168 c
+0.118164 0.210205 0.116211 0.196777 0.116211 0.182129 c
+0.327148 0.525879 m
+0.327148 0.550293 0.320312 0.569336 0.306641 0.583252 c
+0.292969 0.596924 0.274414 0.604004 0.250977 0.604004 c
+0.238037 0.604004 0.226562 0.602051 0.216553 0.597656 c
+0.206787 0.593506 0.198242 0.587646 0.191406 0.580078 c
+0.18457 0.572754 0.179443 0.563965 0.176025 0.553711 c
+0.172607 0.543701 0.170898 0.532715 0.170898 0.520996 c
+0.170898 0.503418 0.174072 0.487061 0.180664 0.471924 c
+0.187012 0.456787 0.19751 0.440186 0.211914 0.421875 c
+0.225098 0.404785 l
+0.239014 0.412598 0.252197 0.42041 0.264648 0.428467 c
+0.276855 0.436279 0.287842 0.445068 0.297119 0.454834 c
+0.306396 0.464355 0.313721 0.474854 0.319092 0.486572 c
+0.324463 0.498047 0.327148 0.51123 0.327148 0.525879 c
+f}bind def end
+/X0 Ff/Encoding get 83/83 put
+q[6.25 0 0 -6.25 1351.44 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1534.66 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1672.08 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1763.64 1054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.624 1160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+/X0 Ff/CharProcs get begin/84{n 0.359863 0.631836 m
+0.359863 0.621094 0.35791 0.611084 0.354004 0.601562 c
+0.350098 0.592285 0.344727 0.583984 0.337646 0.576904 c
+0.330811 0.570068 0.32251 0.564453 0.312988 0.560303 c
+0.303711 0.556396 0.293457 0.554199 0.282227 0.554199 c
+0.27124 0.554199 0.260986 0.556152 0.251221 0.560303 c
+0.241699 0.564209 0.233398 0.569824 0.226318 0.576904 c
+0.219482 0.58374 0.213867 0.592041 0.209961 0.601562 c
+0.206055 0.61084 0.204102 0.621094 0.204102 0.631836 c
+0.204102 0.642578 0.206055 0.652588 0.209961 0.662109 c
+0.213867 0.671387 0.219238 0.679688 0.226318 0.687012 c
+0.233154 0.694092 0.241455 0.699707 0.251221 0.703857 c
+0.260742 0.707764 0.270996 0.709961 0.282227 0.709961 c
+0.293213 0.709961 0.303467 0.708008 0.312988 0.703857 c
+0.322266 0.699951 0.330566 0.694336 0.337646 0.687012 c
+0.344482 0.679932 0.350098 0.671631 0.354004 0.662109 c
+0.35791 0.652832 0.359863 0.642578 0.359863 0.631836 c
+0.228027 0.40332 m
+0.0878906 0.40332 l
+0.0878906 0.496094 l
+0.350098 0.496094 l
+0.350098 0.0927734 l
+0.493164 0.0927734 l
+0.493164 0 l
+0.0708008 0 l
+0.0708008 0.0927734 l
+0.228027 0.0927734 l
+0.228027 0.40332 l
+f}bind def end
+/X0 Ff/Encoding get 84/84 put
+q[6.25 0 0 -6.25 1030.83 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+/X0 Ff/CharProcs get begin/85{n 0.513184 0.588867 m
+0.499023 0.593262 0.481934 0.597168 0.462158 0.600342 c
+0.442627 0.603271 0.422363 0.60498 0.401855 0.60498 c
+0.387939 0.60498 0.375 0.603271 0.362793 0.599365 c
+0.35083 0.595703 0.340332 0.589844 0.331543 0.581543 c
+0.322754 0.573486 0.315918 0.563232 0.310791 0.550537 c
+0.305908 0.538086 0.303223 0.522949 0.303223 0.504883 c
+0.303223 0.424805 l
+0.498047 0.424805 l
+0.498047 0.332031 l
+0.303223 0.332031 l
+0.303223 0 l
+0.183105 0 l
+0.183105 0.332031 l
+0.0390625 0.332031 l
+0.0390625 0.424805 l
+0.183105 0.424805 l
+0.183105 0.5 l
+0.183105 0.535156 0.188232 0.565186 0.198486 0.590576 c
+0.20874 0.615723 0.223145 0.636475 0.241943 0.652588 c
+0.260498 0.668701 0.283203 0.68042 0.30957 0.687988 c
+0.335938 0.695312 0.365234 0.699219 0.397949 0.699219 c
+0.419434 0.699219 0.439697 0.697998 0.459229 0.695068 c
+0.478516 0.692383 0.496582 0.688965 0.513184 0.685059 c
+0.513184 0.588867 l
+f}bind def end
+/X0 Ff/Encoding get 85/85 put
+q[6.25 0 0 -6.25 1076.63 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1351.46 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1443.07 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1534.64 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1580.44 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 1266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.026 1372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+/X0 Ff/CharProcs get begin/86{n 0.49707 0.253906 m
+0.49707 0.213379 0.491455 0.177002 0.480225 0.144775 c
+0.468994 0.112793 0.453125 0.0856934 0.432373 0.0632324 c
+0.411865 0.0410156 0.386719 0.0239258 0.356934 0.0119629 c
+0.327393 0.000244141 0.293945 -0.00585938 0.256836 -0.00585938 c
+0.228027 -0.00585938 0.198242 -0.00317383 0.167969 0.00244141 c
+0.137695 0.0078125 0.10791 0.0166016 0.078125 0.0288086 c
+0.078125 0.689941 l
+0.163086 0.689941 l
+0.163086 0.5 l
+0.15918 0.40918 l
+0.183594 0.441895 0.209717 0.465088 0.237549 0.47876 c
+0.265381 0.492188 0.295166 0.499023 0.327148 0.499023 c
+0.35498 0.499023 0.379639 0.493164 0.400879 0.481445 c
+0.421875 0.469727 0.439697 0.453369 0.454102 0.431885 c
+0.468262 0.410645 0.479004 0.38501 0.486328 0.354736 c
+0.493408 0.324707 0.49707 0.291016 0.49707 0.253906 c
+0.410156 0.25 m
+0.410156 0.275635 0.408447 0.299316 0.404541 0.320801 c
+0.400879 0.342285 0.39502 0.360596 0.386719 0.375977 c
+0.378662 0.391113 0.368164 0.403076 0.355469 0.411865 c
+0.342773 0.42041 0.327637 0.424805 0.310059 0.424805 c
+0.299316 0.424805 0.288574 0.423096 0.277344 0.419678 c
+0.266357 0.41626 0.254883 0.410645 0.24292 0.402588 c
+0.231201 0.394775 0.218506 0.384033 0.205322 0.37085 c
+0.192139 0.357666 0.178223 0.341309 0.163086 0.321777 c
+0.163086 0.0839844 l
+0.179688 0.0776367 0.196533 0.0725098 0.213867 0.0686035 c
+0.230957 0.0649414 0.247559 0.0629883 0.263184 0.0629883 c
+0.282715 0.0629883 0.30127 0.065918 0.319092 0.0722656 c
+0.33667 0.0783691 0.352295 0.088623 0.365967 0.103271 c
+0.379395 0.117676 0.390137 0.136963 0.398193 0.160889 c
+0.406006 0.184814 0.410156 0.214355 0.410156 0.25 c
+f}bind def end
+/X0 Ff/Encoding get 86/86 put
+q[6.25 0 0 -6.25 2817.21 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2954.63 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 3000.43 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 3046.24 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3092.04 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3137.85 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3183.65 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 3229.46 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 3275.27 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 3321.07 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3366.88 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 3412.68 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3458.49 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3504.29 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+/X0 Ff/CharProcs get begin/87{n 0.0322266 0.490234 m
+0.128906 0.490234 l
+0.249023 0.166016 l
+0.274902 0.0869141 l
+0.301758 0.167969 l
+0.420898 0.490234 l
+0.51416 0.490234 l
+0.321777 0 l
+0.224121 0 l
+0.0322266 0.490234 l
+f}bind def end
+/X0 Ff/Encoding get 87/87 put
+q[6.25 0 0 -6.25 3550.1 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 3595.9 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3641.71 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3687.52 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3733.32 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 3779.13 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3824.93 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3870.74 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3916.54 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 3962.35 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 4008.15 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 4053.96 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 4099.77 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 4145.57 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+/X0 Ff/CharProcs get begin/88{n 0.519043 0 m
+0.402344 0 l
+0.173828 0.262695 l
+0.173828 0 l
+0.0888672 0 l
+0.0888672 0.689941 l
+0.173828 0.689941 l
+0.173828 0.266113 l
+0.394043 0.490234 l
+0.506348 0.490234 l
+0.276367 0.26416 l
+0.519043 0 l
+f}bind def end
+/X0 Ff/Encoding get 88/88 put
+q[6.25 0 0 -6.25 4191.38 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 4237.18 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 4282.99 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4328.79 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 4374.58 1479.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.33 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1672.14 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1717.94 1560.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+/X0 Ff/CharProcs get begin/89{n 0.431152 0.420898 m
+0.440186 0.409668 0.447266 0.39624 0.452393 0.381104 c
+0.457275 0.365967 0.459961 0.349609 0.459961 0.332031 c
+0.459961 0.306641 0.455322 0.283447 0.446045 0.262451 c
+0.436768 0.241455 0.423828 0.223633 0.406738 0.208496 c
+0.389893 0.193604 0.369629 0.181885 0.345947 0.173584 c
+0.32251 0.165283 0.296387 0.161133 0.268066 0.161133 c
+0.247559 0.161133 0.228516 0.16333 0.210449 0.167725 c
+0.192627 0.172119 0.178467 0.17749 0.167969 0.184082 c
+0.161865 0.175049 0.156738 0.166504 0.152344 0.158203 c
+0.148193 0.150146 0.145996 0.141113 0.145996 0.130859 c
+0.145996 0.118652 0.151855 0.108398 0.163818 0.100098 c
+0.175537 0.092041 0.191406 0.0876465 0.210938 0.0869141 c
+0.339844 0.0820312 l
+0.364258 0.081543 0.386719 0.0783691 0.407471 0.0727539 c
+0.427979 0.0673828 0.445801 0.0593262 0.460693 0.0488281 c
+0.475342 0.0385742 0.487061 0.0256348 0.495361 0.0102539 c
+0.503662 -0.00488281 0.507812 -0.0227051 0.507812 -0.0429688 c
+0.507812 -0.0646973 0.503174 -0.0854492 0.493652 -0.10498 c
+0.484375 -0.124512 0.469727 -0.141602 0.449951 -0.156494 c
+0.43042 -0.171143 0.405273 -0.183105 0.375 -0.191895 c
+0.344727 -0.200684 0.308838 -0.205078 0.26709 -0.205078 c
+0.227539 -0.205078 0.193604 -0.201904 0.165771 -0.195557 c
+0.137939 -0.189209 0.115234 -0.18042 0.097168 -0.169189 c
+0.0793457 -0.157959 0.0664062 -0.144775 0.0581055 -0.12915 c
+0.0500488 -0.11377 0.0458984 -0.0966797 0.0458984 -0.078125 c
+0.0458984 -0.0544434 0.0512695 -0.0336914 0.0625 -0.015625 c
+0.0734863 0.00219727 0.0905762 0.0195312 0.11377 0.0361328 c
+0.105469 0.0400391 0.0981445 0.0449219 0.0917969 0.0507812 c
+0.0856934 0.0566406 0.0805664 0.0629883 0.0766602 0.0700684 c
+0.0727539 0.0769043 0.0698242 0.0844727 0.0678711 0.0922852 c
+0.065918 0.100098 0.0649414 0.107666 0.0649414 0.115234 c
+0.0649414 0.13623 0.0698242 0.155762 0.079834 0.17334 c
+0.0895996 0.190918 0.101562 0.20752 0.115234 0.223145 c
+0.109131 0.230469 0.10376 0.237793 0.098877 0.245117 c
+0.0942383 0.252197 0.0900879 0.26001 0.0866699 0.268311 c
+0.083252 0.276611 0.0808105 0.2854 0.0788574 0.295166 c
+0.0771484 0.304688 0.0761719 0.315674 0.0761719 0.328125 c
+0.0761719 0.353516 0.0808105 0.376709 0.0900879 0.397705 c
+0.0993652 0.418701 0.112305 0.436523 0.12915 0.45166 c
+0.145752 0.466553 0.166016 0.478271 0.189697 0.486572 c
+0.213135 0.494873 0.239258 0.499023 0.268066 0.499023 c
+0.280029 0.499023 0.291504 0.498291 0.302734 0.496582 c
+0.313721 0.495117 0.323486 0.49292 0.332031 0.490234 c
+0.509766 0.490234 l
+0.509766 0.420898 l
+0.431152 0.420898 l
+0.13623 -0.0708008 m
+0.13623 -0.09375 0.148193 -0.110596 0.172363 -0.121338 c
+0.196289 -0.131836 0.22998 -0.137207 0.272949 -0.137207 c
+0.299805 -0.137207 0.32251 -0.134766 0.341064 -0.129883 c
+0.359375 -0.125 0.374268 -0.118652 0.385498 -0.110596 c
+0.396729 -0.102783 0.404785 -0.0935059 0.409668 -0.083252 c
+0.414551 -0.072998 0.416992 -0.0625 0.416992 -0.0517578 c
+0.416992 -0.0319824 0.408936 -0.017334 0.392578 -0.0078125 c
+0.376465 0.00146484 0.351562 0.00708008 0.317871 0.00878906 c
+0.189941 0.0131836 l
+0.179199 0.00610352 0.17041 -0.000976562 0.16333 -0.0078125 c
+0.156494 -0.0146484 0.150879 -0.0214844 0.146973 -0.0285645 c
+0.143066 -0.0354004 0.140381 -0.0424805 0.138672 -0.0495605 c
+0.137207 -0.0563965 0.13623 -0.0634766 0.13623 -0.0708008 c
+0.162109 0.330078 m
+0.162109 0.314453 0.164551 0.300293 0.169922 0.287109 c
+0.175049 0.27417 0.182373 0.263184 0.191895 0.253906 c
+0.201172 0.244873 0.212402 0.237793 0.225342 0.232666 c
+0.238037 0.227783 0.252441 0.225098 0.268066 0.225098 c
+0.284912 0.225098 0.300049 0.227783 0.313232 0.233643 c
+0.326416 0.239258 0.337402 0.24707 0.346436 0.256836 c
+0.355225 0.266602 0.362061 0.277832 0.366943 0.290527 c
+0.371582 0.303223 0.374023 0.316406 0.374023 0.330078 c
+0.374023 0.345703 0.371582 0.359863 0.366211 0.373047 c
+0.361084 0.385986 0.35376 0.396973 0.344238 0.40625 c
+0.334961 0.415283 0.32373 0.422363 0.310791 0.42749 c
+0.298096 0.432373 0.283691 0.435059 0.268066 0.435059 c
+0.251221 0.435059 0.236084 0.432129 0.2229 0.42627 c
+0.209717 0.42041 0.19873 0.412842 0.189697 0.403076 c
+0.180908 0.393555 0.174072 0.382324 0.169189 0.369629 c
+0.164551 0.356934 0.162109 0.34375 0.162109 0.330078 c
+f}bind def end
+/X0 Ff/Encoding get 89/89 put
+q[6.25 0 0 -6.25 1946.9 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+/X0 Ff/CharProcs get begin/90{n 0.52002 0 m
+0.407227 0 l
+0.274902 0.187012 l
+0.144043 0 l
+0.0341797 0 l
+0.224121 0.246094 l
+0.0429688 0.490234 l
+0.151855 0.490234 l
+0.280762 0.301758 l
+0.407227 0.490234 l
+0.512207 0.490234 l
+0.328125 0.244141 l
+0.52002 0 l
+f}bind def end
+/X0 Ff/Encoding get 90/90 put
+q[6.25 0 0 -6.25 2221.74 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2954.56 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 3000.36 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3046.17 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 3091.96 1672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1305.63 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1488.83 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1534.64 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1580.45 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1626.25 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.06 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1717.86 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1763.67 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1809.47 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1855.24 1779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1397.23 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+0.431373 0.419608 0.368627 rg
+/X0 Ff/CharProcs get begin/91{n 0.469238 0.410156 m
+0.436035 0.352051 l
+0.298828 0.442871 l
+0.310059 0.275879 l
+0.240234 0.275879 l
+0.250977 0.442871 l
+0.11084 0.352051 l
+0.0800781 0.40918 l
+0.22998 0.48291 l
+0.0800781 0.558105 l
+0.11377 0.615234 l
+0.251953 0.522949 l
+0.240234 0.689941 l
+0.310059 0.689941 l
+0.297852 0.522949 l
+0.436035 0.616211 l
+0.470215 0.556152 l
+0.319824 0.481934 l
+0.469238 0.410156 l
+f}bind def end
+/X0 Ff/Encoding get 91/91 put
+q[6.25 0 0 -6.25 1626.24 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1763.65 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1855.26 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1901.04 1885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 1991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 345.871 1991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 1991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1076.63 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<22>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+q[6.25 0 0 -6.25 1305.63 2097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1214.03 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1397.23 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1626.26 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1717.84 2204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 893.424 2416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 847.624 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<32>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 2522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 847.624 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<34>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1030.83 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1076.63 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 2629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 893.424 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 939.23 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 985.036 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1122.45 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1168.23 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1214.03 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1397.25 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1488.86 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<41>Tj
+Q
+q[6.25 0 0 -6.25 1580.47 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<42>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 1717.89 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1809.5 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1901.11 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1992.72 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2038.44 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2084.25 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 2130.05 2735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1168.23 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1214.03 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1443.06 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<49>Tj
+Q
+q[6.25 0 0 -6.25 1534.67 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.48 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1626.28 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.09 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1717.9 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1763.7 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1809.51 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1855.31 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1901.12 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1946.92 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1992.73 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2038.53 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2084.34 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 2130.15 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2175.95 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2221.76 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 2267.56 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2313.37 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2359.17 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2404.98 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2450.78 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 2496.59 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2542.4 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2588.2 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2634.01 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2679.81 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2725.62 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2771.42 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2817.23 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2863.03 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2908.84 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2954.65 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3000.45 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 3046.26 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3092.06 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3137.87 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 3183.67 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 3229.48 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4E>Tj
+Q
+q[6.25 0 0 -6.25 3275.28 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4E>Tj
+Q
+q[6.25 0 0 -6.25 3321.09 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4F>Tj
+Q
+q[6.25 0 0 -6.25 3366.9 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 3412.7 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3458.51 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 3504.26 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3550.07 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 3595.87 2841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 481.217 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 847.624 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 893.429 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 939.235 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 985.04 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1030.85 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1076.63 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1122.43 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1534.66 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1672.08 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1763.64 2947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.624 3054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1030.83 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<54>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<55>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1305.65 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1351.46 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1397.26 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1443.07 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+q[6.25 0 0 -6.25 1488.87 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1534.64 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1580.44 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1626.24 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 3160.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.026 3266.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 2954.63 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 3000.43 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 3046.24 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3092.04 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 3137.85 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 3183.65 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 3229.46 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 3275.27 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 3321.07 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3366.88 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 3412.68 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3458.49 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 3504.29 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 3550.1 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<57>Tj
+Q
+q[6.25 0 0 -6.25 3595.9 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3641.71 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3687.52 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 3733.32 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 3779.13 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 3824.93 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 3870.74 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 3916.54 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 3962.35 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 4008.15 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 4053.96 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 4099.77 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 4145.57 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 4191.38 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 4237.18 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 4282.99 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 4328.79 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 4374.58 3372.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1397.33 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1443.13 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 1488.94 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<44>Tj
+Q
+q[6.25 0 0 -6.25 1534.75 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1580.55 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.33 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1672.14 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1717.94 3454.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1259.85 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1305.63 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1351.43 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1488.85 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1626.27 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1717.88 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1763.68 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 1809.49 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1855.29 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1901.1 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1946.9 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 1992.71 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4A>Tj
+Q
+q[6.25 0 0 -6.25 2038.52 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2084.32 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2130.13 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2175.93 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2221.74 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5A>Tj
+Q
+q[6.25 0 0 -6.25 2267.54 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 2313.35 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2359.15 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 2404.96 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2450.77 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2496.57 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2542.38 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 2588.18 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2633.99 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 2679.79 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2725.6 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 2771.4 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 2817.21 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 2863.02 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<36>Tj
+Q
+q[6.25 0 0 -6.25 2908.82 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 2954.56 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 3000.36 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 3046.17 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 3091.96 3566.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1030.83 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 1305.63 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1351.44 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1397.24 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1443.05 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1488.83 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1534.64 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<53>Tj
+Q
+q[6.25 0 0 -6.25 1580.45 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1626.25 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.06 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1717.86 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1763.67 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1809.47 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1855.24 3672.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 1397.23 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1626.24 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5B>Tj
+Q
+q[6.25 0 0 -6.25 1672.04 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1717.85 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1763.65 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1809.46 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1855.26 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1901.04 3779.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3885.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1076.63 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 1122.43 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<22>Tj
+Q
+q[6.25 0 0 -6.25 1168.24 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<23>Tj
+Q
+q[6.25 0 0 -6.25 1214.04 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1259.83 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<24>Tj
+Q
+q[6.25 0 0 -6.25 1305.63 3991.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 1214.03 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<25>Tj
+Q
+q[6.25 0 0 -6.25 1259.84 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+q[6.25 0 0 -6.25 1305.64 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+q[6.25 0 0 -6.25 1351.45 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<26>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1397.23 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1443.04 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 1488.84 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1534.65 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1580.46 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1626.26 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1672.07 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1717.84 4097.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<33>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 939.225 4204.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 756.051 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 893.424 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2F>Tj
+Q
+q[6.25 0 0 -6.25 939.23 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 985.036 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 1030.84 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<31>Tj
+Q
+q[6.25 0 0 -6.25 1076.65 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<32>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1122.43 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1168.23 4310.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4C>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 710.221 4416.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 664.421 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 710.226 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 756.032 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 801.837 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 847.643 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 893.448 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+0.376471 0.67451 0.223529 rg
+q[6.25 0 0 -6.25 985.026 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+q[6.25 0 0 -6.25 1030.83 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1076.64 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.44 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<48>Tj
+Q
+q[6.25 0 0 -6.25 1168.25 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2B>Tj
+Q
+q[6.25 0 0 -6.25 1214.05 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 1259.86 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1305.66 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1351.47 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1397.28 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1443.08 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 1488.89 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1534.69 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 1580.5 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<40>Tj
+Q
+q[6.25 0 0 -6.25 1626.3 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<50>Tj
+Q
+q[6.25 0 0 -6.25 1672.11 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<51>Tj
+Q
+q[6.25 0 0 -6.25 1717.91 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3D>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1763.64 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<52>Tj
+Q
+q[6.25 0 0 -6.25 1809.44 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<38>Tj
+Q
+q[6.25 0 0 -6.25 1855.25 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2A>Tj
+Q
+q[6.25 0 0 -6.25 1901.06 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<46>Tj
+Q
+q[6.25 0 0 -6.25 1946.86 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<4B>Tj
+Q
+q[6.25 0 0 -6.25 1992.67 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 2038.47 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 2084.28 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<29>Tj
+Q
+q[6.25 0 0 -6.25 2130.08 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 2175.89 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 2221.65 4522.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<35>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.44 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3B>Tj
+Q
+q[6.25 0 0 -6.25 710.245 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3E>Tj
+Q
+/X0 Ff/CharProcs get begin/92{n 0.245117 0.620117 m
+0.100098 0.620117 l
+0.100098 0.689941 l
+0.331055 0.689941 l
+0.331055 0.0708008 l
+0.477051 0.0708008 l
+0.477051 0 l
+0.0839844 0 l
+0.0839844 0.0708008 l
+0.245117 0.0708008 l
+0.245117 0.620117 l
+f}bind def end
+/X0 Ff/Encoding get 92/92 put
+q[6.25 0 0 -6.25 756.051 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5C>Tj
+Q
+q[6.25 0 0 -6.25 801.856 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 847.662 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<28>Tj
+Q
+q[6.25 0 0 -6.25 893.467 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3F>Tj
+Q
+q[6.25 0 0 -6.25 939.273 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3C>Tj
+Q
+q[6.25 0 0 -6.25 985.078 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<56>Tj
+Q
+q[6.25 0 0 -6.25 1030.88 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1076.69 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<47>Tj
+Q
+q[6.25 0 0 -6.25 1122.5 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<58>Tj
+Q
+q[6.25 0 0 -6.25 1168.3 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<39>Tj
+Q
+q[6.25 0 0 -6.25 1214.11 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<3A>Tj
+Q
+q[6.25 0 0 -6.25 1259.91 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<59>Tj
+Q
+q[6.25 0 0 -6.25 1305.72 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<45>Tj
+Q
+q[6.25 0 0 -6.25 1351.52 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1397.23 4629.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.435294 0.196078 0.501961 rg
+q[6.25 0 0 -6.25 664.421 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+q[6.25 0 0 -6.25 710.226 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<21>Tj
+Q
+q[6.25 0 0 -6.25 756.032 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<27>Tj
+Q
+/X0 Ff/CharProcs get begin/93{n 0.186035 0.496094 m
+0.186035 0.172852 l
+0.186035 0.145996 0.190918 0.125488 0.201172 0.111572 c
+0.211182 0.0979004 0.226562 0.0908203 0.24707 0.0908203 c
+0.266846 0.0908203 0.285889 0.098877 0.304443 0.115479 c
+0.322754 0.131836 0.342285 0.154053 0.362793 0.182129 c
+0.362793 0.496094 l
+0.481934 0.496094 l
+0.481934 0 l
+0.378906 0 l
+0.375977 0.0732422 l
+0.365723 0.0605469 0.35498 0.0490723 0.344238 0.0385742 c
+0.333496 0.0283203 0.322021 0.0192871 0.309326 0.0119629 c
+0.296875 0.00463867 0.283203 -0.000976562 0.268311 -0.00512695 c
+0.253662 -0.0090332 0.237305 -0.0112305 0.219238 -0.0112305 c
+0.193848 -0.0112305 0.171631 -0.00708008 0.152588 0.0012207 c
+0.133545 0.00952148 0.117676 0.0212402 0.10498 0.0366211 c
+0.0922852 0.0517578 0.0827637 0.0700684 0.076416 0.0915527 c
+0.0700684 0.112793 0.0668945 0.136719 0.0668945 0.163086 c
+0.0668945 0.496094 l
+0.186035 0.496094 l
+f}bind def end
+/X0 Ff/Encoding get 93/93 put
+q[6.25 0 0 -6.25 801.837 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5D>Tj
+Q
+q[6.25 0 0 -6.25 847.643 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<30>Tj
+Q
+/X0 Ff/CharProcs get begin/94{n 0.36377 0 m
+0.36377 0.323242 l
+0.36377 0.377441 0.34375 0.404785 0.303223 0.404785 c
+0.283203 0.404785 0.263916 0.396729 0.245361 0.380371 c
+0.227051 0.364258 0.20752 0.342041 0.187012 0.313965 c
+0.187012 0 l
+0.0678711 0 l
+0.0678711 0.496094 l
+0.170898 0.496094 l
+0.173828 0.422852 l
+0.183838 0.435547 0.194336 0.447021 0.205322 0.45752 c
+0.216064 0.467773 0.228027 0.476807 0.240723 0.484131 c
+0.253418 0.491455 0.26709 0.49707 0.281738 0.500977 c
+0.296387 0.504883 0.312744 0.506836 0.331055 0.506836 c
+0.356445 0.506836 0.378418 0.502686 0.397461 0.494385 c
+0.41626 0.486084 0.432129 0.474365 0.444824 0.459229 c
+0.45752 0.444092 0.467041 0.426025 0.473389 0.404541 c
+0.479736 0.383301 0.48291 0.359375 0.48291 0.333008 c
+0.48291 0 l
+0.36377 0 l
+f}bind def end
+/X0 Ff/Encoding get 94/94 put
+q[6.25 0 0 -6.25 893.448 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<5E>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 939.225 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+0.713725 0.337255 0.0666667 rg
+q[6.25 0 0 -6.25 985.026 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<43>Tj
+Q
+0.431373 0.419608 0.368627 rg
+q[6.25 0 0 -6.25 1030.83 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2C>Tj
+Q
+q[6.25 0 0 -6.25 1076.63 4735.42]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 527.023 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 572.829 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 618.634 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 664.421 4841.67]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 4947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 4947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2D>Tj
+Q
+q[6.25 0 0 -6.25 481.217 4947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<20>Tj
+Q
+q[6.25 0 0 -6.25 527.018 4947.92]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+q[6.25 0 0 -6.25 300.065 5054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<37>Tj
+Q
+q[6.25 0 0 -6.25 345.871 5054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<2E>Tj
+Q
+q[6.25 0 0 -6.25 481.217 5054.17]cm
+/X0 Ff 13.33 Fs Sf 0 0 m<1F>Tj
+Q
+Q
+Q
+Q
+
+restore
+
+%%EndDocument
+
+Pscript_WinNT_Compat dup /suspend get exec
+Pscript_WinNT_Incr dup /resume get exec
+LH
+(%%[Page: 2]%%) = 
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%DocumentNeededResources: 
+%%DocumentSuppliedResources: 
+%%+ procset Pscript_WinNT_ErrorHandler 5.0 0
+%%+ procset Pscript_FatalError 5.0 0
+%%+ procset Pscript_Win_Basic 5.0 0
+%%+ procset Pscript_Win_Utils_L2 5.0 0
+%%+ procset Pscript_WinNT_Compat 5.0 0
+Pscript_WinNT_Incr dup /terminate get exec
+ehsave restore
+%%Pages: 2
+(%%[LastPage]%%) = 
+%%EOF
+
