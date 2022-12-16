@@ -89,5 +89,4 @@ int n,m;
     scanf("%s",&s1.checkout);
     fprintf(fr,"check-in:%s\ncheck-out:%s\n",s1.checkin,s1.checkout); 
     fclose(fr);
-    //printf("x");
 }
