@@ -17,8 +17,21 @@ struct contact_details
 void booking();
 void Room_datails();
 int main(){
-<<<<<<< HEAD
-char a[3]="yes",b[3];
+    //int uname=25,pword=2020,u,p;
+    //printf("Enter the username: ");
+    //scanf("%d",&u);
+    //printf("Enter the password: ");
+    //scanf("%d",&p);
+    //if(u==uname){
+        //if(p==pword){
+        //printf("Successful\n\n");
+        //booking();}
+        //else{
+        //printf("Wrong input try again\n\n");main();}}
+    //else{
+        //printf("Wrong input try again\n\n");main();}
+
+    char a[3]="yes",b[3];
     int c;
 
     Room_datails();
@@ -39,24 +52,6 @@ void Room_datails(){
  printf(" \n\n          ~~~~~~~~~*   ROOMS DETAILS   *~~~~~~~~~ \n ");
  printf("__________________________________________________________\n|Room ID |   Room      |      A/C       | Cost for a nigth |\n __________________________________________________________\n|   01   |  Single     |     with       |      RS.5000     |\n------------------------------------------------------------\n|   02   |  Single     |     without    |      RS.3000     |\n------------------------------------------------------------\n|   02   |  Double     |     with       |      RS.8000     |\n------------------------------------------------------------\n|   04   |  Double     |     without    |      RS.5000     |\n------------------------------------------------------------\n|   05   |  Quad       |     with       |      RS.10000    |\n------------------------------------------------------------\n|   06   |  Quad       |     without    |      RS.9000     |\n------------------------------------------------------------");
 
-=======
-
-  //int uname=25,pword=2020,u,p;
-    //printf("Enter the username: ");
-    //scanf("%d",&u);
-    //printf("Enter the password: ");
-    //scanf("%d",&p);
-    //if(u==uname){
-        //if(p==pword){
-        //printf("Successful\n\n");
-        //booking();}
-        //else{
-        //printf("Wrong input try again\n\n");main();}}
-    //else{
-        //printf("Wrong input try again\n\n");main();}
-
-booking();
->>>>>>> 39ff15219e938d9e15419570ffa3814f3a5c3e80
 }
 void booking(){
 int n,m;
