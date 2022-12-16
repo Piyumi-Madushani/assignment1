@@ -27,7 +27,7 @@ int main(){
         //printf("Successful\n\n");
         //booking();}
         //else{
-        //printf("No");}}
+        //printf("Wrong input try again\n\n");main();}}
     //else{
         //printf("Wrong input try again\n\n");main();}
 
