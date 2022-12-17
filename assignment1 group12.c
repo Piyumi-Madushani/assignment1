@@ -36,7 +36,7 @@ int main(){
 
     Room_datails();
     printf("\n Do you wanna book rooms (Yes/No)=");
-    scanf("%s",&b);
+    scanf("%s",b);
     c=strcmp(a,b);
     if(c>0){
         printf("\n~~~~~~ Thank you ~~~~~");
@@ -126,7 +126,7 @@ int n,m;
     fclose(fr);
     
     float dates = 0 , total = 0;
-    dates = checkout - checkin;
+    dates = s1.checkout - s1.checkin;
     printf("\t\t\t HOTEL RECEIPT\n");
     printf("Customer name :\n\t\t%s\n", s1.name);
     printf("Your reserved hotel room\n\t\t%s\n",n);
