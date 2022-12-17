@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include<string.h>
-
+#include<stdlib.h>
+int n,m,m1,m2,m3,m4,m5,m6;
+int n,m,p=1;;
+int n1=5,n2=5,n3=5,n4=5,n5=5,n6=5;
+int day,mon,year,day1,day2,mon1,mon2,year1,year2,year_diff,mon_diff,day_diff;
 struct contact_details
 {
     char name[50];
@@ -8,17 +12,19 @@ struct contact_details
     char  Address[50];
     int d1,d2,m1,m2,y1,y2;
     char NIC[11];
-    int n1,n2,n3,n4,n5,n6,n7,n8;
+    
 
 };
+int valid_date(int day, int mon, int year);
+void difference ();
+void receipt(int year_diff, int mon_diff, int day_diff);
+void details();
 void booking();
 void Room_datails();
-int main(){
-   
 
+int main(){
     char a[3]="yes",b[3];
     int c;
-
     Room_datails();
     printf("\n Do you wanna book rooms (Yes/No)=");
     scanf("%s",b);
@@ -30,7 +36,7 @@ int main(){
        booking();
        valid_date(day,mon,year);
        difference();
-       
+       receipt(year_diff,mon_diff,year_diff);
     }
     return 0;
 
@@ -297,58 +303,3 @@ void receipt(int year_diff, int mon_diff, int day_diff){
         printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m6,total);
 }
 }
-struct contact_details s1={};
-void receipt(int year_diff, int mon_diff, int day_diff){
-   int m1,m2,m3,m4,m5,m6;
-    int dates = 0 ;
-    int total = 0;
-    dates = year_diff *365 + mon_diff * 30 + day_diff;
-    printf("\t\t\t HOTEL RECEIPT\n");
-    printf("Customer name :\n\t\t%s\n", s1.name);
-
-    printf("Total days = %02d \n", day_diff);
-    if (m==1){
-        printf("Cost per night = \n \t\t%d\n", m1);
-        total = dates * m1;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m1,total);
-
-
-    }
-    else if (m==2){
-        printf("Cost per night = \n \t\t%d\n", m2);
-        total = dates * m2;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m2,total);
-
-
-    }
-    else if (m==3){
-        printf("Cost per night = \n \t\t%d\n", m3);
-        total = dates * m3;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m3,total);
-
-
-    }
-    else if(m==4){
-        printf("Cost per night = \n \t\t%d\n", m4);
-        total = dates * m4;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m4,total);
-
-
-    }
-    else if(m==5){
-        printf("Cost per night = \n \t\t%d\n", m5);
-        total = dates * m5;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m5,total);
-
-
-    }
-    else {
-        printf("Cost per night = \n \t\t%d\n", m6);
-        total = dates * m6;
-        printf("Total amount =\n \t\t%d\t*\t%d = \t%d", dates,m6,total);
-
-
-    }
-}
-
-    
