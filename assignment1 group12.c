@@ -124,4 +124,60 @@ int n,m;
     scanf("%s",s1.checkout);
     fprintf(fr,"check-in:%s\ncheck-out:%s\n____________________________________________________________________________________________________________________________________________________________________________________________________________________________\n",s1.checkin,s1.checkout);
     fclose(fr);
+    
+    float dates = 0 , total = 0;
+    dates = checkout - checkin;
+    printf("\t\t\t HOTEL RECEIPT\n");
+    printf("Customer name :\n\t\t%s\n", s1.name);
+    printf("Your reserved hotel room\n\t\t%s\n",n);
+    printf("Total days = \n \t\t%d \n", dates);
+    if (m==1){
+        printf("Cost per night = \n \t\t%d\n", n1);
+        total = dates * n1;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n1,total);
+
+
     }
+    else if (m==2){
+        printf("Cost per night = \n \t\t%d\n", n2);
+        total = dates * n2;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n2,total);
+
+
+    }
+    else if (m==3){
+        printf("Cost per night = \n \t\t%d\n", n3);
+        total = dates * n3;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n3,total);
+
+
+    }
+    else if(m==4){
+        printf("Cost per night = \n \t\t%d\n", n4);
+        total = dates * n4;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n4,total);
+
+
+    }
+    else if(m==5){
+        printf("Cost per night = \n \t\t%d\n", n5);
+        total = dates * n5;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n5,total);
+
+
+    }
+    else if (m==6){
+        printf("Cost per night = \n \t\t%d\n", n6);
+        total = dates * n6;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n6,total);
+
+
+    }
+    else {
+        printf("Cost per night = \n \t\t%d\n", n7);
+        total = dates * n7;
+        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n7,total);
+    }
+}
+
+    
