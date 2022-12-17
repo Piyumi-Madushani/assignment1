@@ -111,12 +111,6 @@ int n,m,p=1;;
     printf("address :");
     scanf("%s",s1.Address);
     fprintf (fr,"\nName: %s \nNIC: %s  \nContact Number: %d\nAddress: %s  \n  \n",s1.name,s1.NIC,s1.contact_number,s1.Address);
-
-    fprintf(fr,"\nCheck in/out Details..,\n");
-    printf("\nCheck-in(mm/dd/yyyy):");
-    scanf("%d/%d/%d",&s1.m1,&s1.d1,&s1.y1);
-    printf("Check-out(mm/dd/yyyy):");
-    scanf("%d/%d/%d",&s1.m2,&s1.d2,&s1.y2);
    
     fclose(fr);
     fclose(gr);
