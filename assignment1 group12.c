@@ -129,7 +129,7 @@ int n,m;
     dates = s1.checkout - s1.checkin;
     printf("\t\t\t HOTEL RECEIPT\n");
     printf("Customer name :\n\t\t%s\n", s1.name);
-    printf("Your reserved hotel room\n\t\t%s\n",n);
+    printf("Your reserved hotel room\n\t\t%d\n",&m);
     printf("Total days = \n \t\t%d \n", dates);
     if (m==1){
         printf("Cost per night = \n \t\t%d\n", n1);
@@ -166,17 +166,11 @@ int n,m;
 
 
     }
-    else if (m==6){
+    else {
         printf("Cost per night = \n \t\t%d\n", n6);
         total = dates * n6;
         printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n6,total);
 
-
-    }
-    else {
-        printf("Cost per night = \n \t\t%d\n", n7);
-        total = dates * n7;
-        printf("Total amount =\n \t\t%f\t*\t%d = \t%f", dates,n7,total);
     }
 }
 
