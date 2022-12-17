@@ -17,19 +17,7 @@ struct contact_details
 void booking();
 void Room_datails();
 int main(){
-    //int uname=25,pword=2020,u,p;
-    //printf("Enter the username: ");
-    //scanf("%d",&u);
-    //printf("Enter the password: ");
-    //scanf("%d",&p);
-    //if(u==uname){
-        //if(p==pword){
-        //printf("Successful\n\n");
-        //booking();}
-        //else{
-        //printf("Wrong input try again\n\n");main();}}
-    //else{
-        //printf("Wrong input try again\n\n");main();}
+   
 
     char a[3]="yes",b[3];
     int c;
@@ -55,7 +43,7 @@ void Room_datails(){
 }
 void booking(){
 int n,m;
-    int n1=0,n2=0,n3=0,n4=0,n5=0,n6=0;
+    int n1=0,n2=0,n3=0,n4=0,n5=0,n6=0,n7=0;
     printf("\nEnter the following details;\n");
     FILE *fr,*gr;
     fr = fopen("flr.txt","a");
@@ -127,7 +115,7 @@ int n,m;
     
     float dates = 0 , total = 0;
     dates = s1.checkout - s1.checkin;
-    printf("\t\t\t HOTEL RECEIPT\n");
+    printf("\n\t\t\t HOTEL RECEIPT\n");
     printf("Customer name :\n\t\t%s\n", s1.name);
     printf("Your reserved hotel room\n\t\t%d\n",&m);
     printf("Total days = \n \t\t%d \n", dates);
