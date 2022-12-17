@@ -17,19 +17,7 @@ struct contact_details
 void booking();
 void Room_datails();
 int main(){
-    //int uname=25,pword=2020,u,p;
-    //printf("Enter the username: ");
-    //scanf("%d",&u);
-    //printf("Enter the password: ");
-    //scanf("%d",&p);
-    //if(u==uname){
-        //if(p==pword){
-        //printf("Successful\n\n");
-        //booking();}
-        //else{
-        //printf("Wrong input try again\n\n");main();}}
-    //else{
-        //printf("Wrong input try again\n\n");main();}
+   
 
     char a[3]="yes",b[3];
     int c;
