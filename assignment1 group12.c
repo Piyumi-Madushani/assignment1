@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>                                                    //nisansala
 #include<string.h>
 #include<stdlib.h>
 int n,m,m1,m2,m3,m4,m5,m6,s,x;
@@ -48,7 +48,7 @@ void Room_details(){
  printf(" \n\n          ~~~~~~~~~*   ROOMS DETAILS   *~~~~~~~~~ \n ");
  printf("__________________________________________________________\n|Room ID |   Room      |      A/C       | Cost for a nigth |\n __________________________________________________________\n|   01   |  Single     |     with       |      RS.5000     |\n------------------------------------------------------------\n|   02   |  Single     |     without    |      RS.3000     |\n------------------------------------------------------------\n|   03   |  Double     |     with       |      RS.8000     |\n------------------------------------------------------------\n|   04   |  Double     |     without    |      RS.5000     |\n------------------------------------------------------------\n|   05   |  Quad       |     with       |      RS.10000    |\n------------------------------------------------------------\n|   06   |  Quad       |     without    |      RS.9000     |\n------------------------------------------------------------");
 
-}
+}                                                                     //piyumi      
 void booking(){
 
     printf("\nEnter the following details;\n");
@@ -117,7 +117,7 @@ void booking(){
 
        p++;
        x=(p1+p2+p3+p4+p5+p6);         //x: number of types of rooms that customer booked.
-       s= x;                         // s:to print types of rooms in slip
+                               
     }
     fprintf(gr,"\t\t\tAvailabilities after booking \nNo.rooms | Room Name \n   %d     |ac/Single room\n   %d     |non-ac/Single room\n   %d     |ac/Double room\n   %d     |non-ac/Double room\n   %d     |ac/Quat room\n   %d     |non-ac/Quat room\n",n1,n2,n3,n4,n5,n6);
 
@@ -132,10 +132,7 @@ void booking(){
     scanf("%s",s1.Address);
     fprintf (fr,"\nName: %s \nNIC: %s  \nContact Number: %d\nAddress: %s  \n  \n",s1.name,s1.NIC,s1.contact_number,s1.Address);
     fclose(gr);
-
-
-   // find difference of check in-out
-    int day_diff, mon_diff, year_diff;
+    
     fprintf(fr,"\nCheck in/out Details..,\n");
     printf("\nCheck-in(mm/dd/yyyy):");
     scanf("%d/%d/%d",&s1.m1,&s1.d1,&s1.y1);
@@ -143,7 +140,10 @@ void booking(){
     scanf("%d/%d/%d",&s1.m2,&s1.d2,&s1.y2);
     fprintf(fr,"check-in:%d/%d/%d\ncheck-out:%d/%d/%d\n____________________________________________________________________________________________________________________________________________________________________________________________________________________________\n",s1.m1,s1.d1,s1.y1,s1.m2,s1.d2,s1.y2);
     fclose(fr);
-
+    
+                                                               //chamodani
+ // find difference of check in-out
+    int day_diff, mon_diff, year_diff;
     if(!valid_date(s1.d1, s1.m1, s1.y1))
     {
         printf("First date is invalid.\n");
@@ -195,8 +195,8 @@ void booking(){
     day_diff = s1.d2 - s1.d1;
     mon_diff = s1.m2 - s1.m1;
     year_diff = s1.y2 - s1.y1;
-
-
+                                             
+                                                        //dilsha
       // print slip
 
     int dates = year_diff *365 + mon_diff * 30 + day_diff;
@@ -255,26 +255,10 @@ x--;
     printf("Total days    : %02d \n", dates);
     printf("Total amount for %d rooms for %d days:Rs.%d.00\n",n,dates,total);
 
-    while(s>0){
-        if (p1!=0){
-            strcpy(str1,s1.Room);
-           // printf("%s\n",s1.Room);
-        }else if (p2!=0){
-            strcpy(s1.Room,str2);
-        }else if (p3!=0){
-            strcpy(s1.Room,str3);
-        }else if (p4!=0){
-            strcpy(s1.Room,str4);
-        }else if (p5!=0){
-            strcpy(s1.Room,str5);
-        }else{
-           strcpy(s1.Room,str6);}
-
-     s--;
-    }
+   
 }
 
-
+                                                     //sandali
 int valid_date(int day, int mon, int year)
 {
     int is_valid = 1, is_leap = 0;
