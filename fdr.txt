@@ -1,20 +1,8 @@
-
-
-2|ac/Single room
-1|non-ac/Single room
-0|ac/Double room
-0|non-ac/Double room
-0|ac/Triple room
-0|non-ac/Triple room
-0|ac/Quat room
-0|non-ac/Quat room
-
-
-2|ac/Single room
-0|non-ac/Single room
-0|ac/Double room
-0|non-ac/Double room
-0|ac/Triple room
-0|non-ac/Triple room
-0|ac/Quat room
-0|non-ac/Quat room
+			Availabilities after booking 
+No.rooms | Room Name 
+   4     |ac/Single room
+   4     |non-ac/Single room
+   4     |ac/Double room
+   5     |non-ac/Double room
+   5     |ac/Quat room
+   4     |non-ac/Quat room
