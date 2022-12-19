@@ -26,11 +26,13 @@ int main(){
     char a[3]="yes",b[3];
     int c;
     Room_details();
-    printf("\n Do you wanna book rooms (Yes/No)=");
+    printf("\n\n>> Do you wanna book rooms (Yes/No)=");
     scanf("%s",b);
     c=strcmp(a,b);
     if(c>0){
+        printf("\033[0;31m");
         printf("\n~~~~~~ Thank you ~~~~~");
+        printf("\033[0m");
     }
     else{
        booking();
@@ -40,28 +42,34 @@ int main(){
     return 0;
 }
 void Room_details(){
+ printf("\033[0;32m");
  printf("\n                            ******************************************************                                \n                            *              WELCOME TO ABC HOTEL                  *\n                            *                                                    *\n                            ******************************************************                                  ");
+ printf("\033[0m");
+ printf("\033[0;36m");
  printf(" \n\n          ~~~~~~~~~*   ROOMS DETAILS   *~~~~~~~~~ \n ");
  printf("__________________________________________________________\n|Room ID |   Room      |      A/C       | Cost for a nigth |\n __________________________________________________________\n|   01   |  Single     |     with       |      RS.5000     |\n------------------------------------------------------------\n|   02   |  Single     |     without    |      RS.3000     |\n------------------------------------------------------------\n|   03   |  Double     |     with       |      RS.8000     |\n------------------------------------------------------------\n|   04   |  Double     |     without    |      RS.5000     |\n------------------------------------------------------------\n|   05   |  Quad       |     with       |      RS.10000    |\n------------------------------------------------------------\n|   06   |  Quad       |     without    |      RS.9000     |\n------------------------------------------------------------");
-
+ printf("\033[0m");
 }
 void booking(){
-
+    printf("\033[0;34m");
     printf("\nEnter the following details;\n");
+    printf("\033[0m");
     FILE *fr,*gr;
     fr = fopen("flr.txt","a");                                     // write customer details,checkin-out
     gr =fopen("fdr.txt","w+");                                     // update room details      
 
     struct contact_details s1 = {};
-    printf("enter the number of rooms you wanna book:");
+    
+    printf(">>>enter the number of rooms you wanna book:");
     scanf("%d",&n);
-
-    printf("enter the relevent %d number(s) of room(s): \n",n);
+    printf("\033[0;34m");
+    printf(">>>enter the relevent %d number(s) of room(s): \n",n);
+    printf("\033[0m");
     fprintf(fr,"\n________________________________________________________________________________________________________________________________________________________________________________________\nThis costumer have booked following %d rooms.\n",n);
 
 
     while(p<=n){
-       printf("enter room number: ");
+       printf("       >>enter room number: ");
        scanf("%d",&m);
        if (m==1){
         n1--;
@@ -108,7 +116,9 @@ void booking(){
         }
 
        else{
-         printf("\nSorry, wrong input/n");
+         printf("\033[0;33m");
+         printf("\n~~~`Sorry, wrong input ,enter please Room ID again~~~~~\n");
+         printf("\033[0m");
          p--;}
 
        p++;
@@ -119,20 +129,26 @@ void booking(){
     fclose(gr);
 
     fprintf(fr,"\nCostumer Details.., ");
-    printf("your name :");
+    printf("\033[0;34m");
+    printf("\nCostumer Details.., \n");
+    printf("\033[0m");
+    printf("   >>your name :");
     scanf("%s",s1.name);
-    printf("NIC NO :");
+    printf("   >>NIC NO :");
     scanf("%s",s1.NIC);
-    printf("contact number :");
+    printf("   >>contact number :");
     scanf("%d",&s1.contact_number);
-    printf("address :");
+    printf("   >>address :");
     scanf("%s",s1.Address);
     fprintf (fr,"\nName: %s \nNIC: %s  \nContact Number: %d\nAddress: %s  \n  \n",s1.name,s1.NIC,s1.contact_number,s1.Address);
 
     fprintf(fr,"\nCheck in/out Details..,\n");
-    printf("\nCheck-in(mm/dd/yyyy):");
+    printf("\033[0;34m");
+    printf("\nCheck in/out Details..,\n");
+    printf("\033[0m");
+    printf("\n   >>Check-in(mm/dd/yyyy):");
     scanf("%d/%d/%d",&s1.m1,&s1.d1,&s1.y1);
-    printf("Check-out(mm/dd/yyyy):");
+    printf("   >>Check-out(mm/dd/yyyy):");
     scanf("%d/%d/%d",&s1.m2,&s1.d2,&s1.y2);
     fprintf(fr,"check-in:%d/%d/%d\ncheck-out:%d/%d/%d__________________________________________________________________________________________________________________________________________________________________________________\n",s1.m1,s1.d1,s1.y1,s1.m2,s1.d2,s1.y2);
     fclose(fr);
@@ -245,12 +261,12 @@ void booking(){
      p6--;}}
 x--;
 }
-
+    printf("\033[0;33m");
     printf("\n\n\n\t\t\t HOTEL RECEIPT\n");
     printf("Customer name :%s\n", s1.name);
     printf("Total days    : %02d \n", dates);
     printf("Total amount for %d rooms for %d days:Rs.%d.00\n",n,dates,total);
-
+    printf("\033[0m");
  
 }
 
