@@ -1,4 +1,4 @@
-#include<stdio.h>                                                    //nisansala
+#include<stdio.h>                                                    //tharushi
 #include<string.h>
 #include<stdlib.h>
 int n,m,m1,m2,m3,m4,m5,m6,s,x;
@@ -19,9 +19,6 @@ struct contact_details
 
 };
 int valid_date(int day, int mon, int year);
-void difference ();
-void receipt(int year_diff, int mon_diff, int day_diff);
-void details();
 void booking();
 void Room_details();
 
